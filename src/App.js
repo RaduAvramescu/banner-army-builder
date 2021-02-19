@@ -13,8 +13,8 @@ function App() {
       <Container maxWidth="lg">
         <Banner />
         <FactionSelector />
-        <Footer />
       </Container>
+      <Footer />
     </div>
   );
 }
