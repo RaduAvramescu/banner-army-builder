@@ -15,7 +15,7 @@ const FactionSelector = ({ handleFactionChange }) => {
           inputProps={{ id: "faction-select" }}
         >
           {factions.map((faction, i) => (
-            <option key={i} value={faction}>
+            <option key={i} value={faction.name}>
               {faction.name}
             </option>
           ))}
