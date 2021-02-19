@@ -25,7 +25,7 @@ let theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: ['"Open Sans"', "sans-serif"].join(","),
+    fontFamily: ['"Caslon Antique"', "serif"].join(","),
   },
 });
 
