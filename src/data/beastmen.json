@@ -4,251 +4,323 @@
     "name": "Malagor the Dark Omen",
     "category": "Lords",
     "price": 350,
-    "image": "bst_ch_malagor_0"
+    "image": "bst_ch_malagor_0",
+    "category_icon": "wh_dlc03_bst_lore_wild",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 2,
     "name": "Beastlord",
     "category": "Lords",
     "price": 350,
-    "image": "bst_beastlords_campaign_01_0"
+    "image": "bst_beastlords_campaign_01_0",
+    "category_icon": "infantry_axe",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 3,
     "name": "Khazrak the One-Eye",
     "category": "Lords",
     "price": 350,
-    "image": "bst_ch_khazrak_0"
+    "image": "bst_ch_khazrak_0",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 4,
     "name": "Morghur the Shadowgave",
     "category": "Lords",
     "price": 350,
-    "image": "bst_ch_morghur_0"
+    "image": "bst_ch_morghur_0",
+    "category_icon": "infantry_axe",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 4,
     "name": "Bray-Shaman (Beasts)",
     "category": "Heroes",
     "price": 350,
-    "image": "bst_bray_shaman_campaign_01_0"
+    "image": "bst_bray_shaman_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 4,
     "name": "Bray-Shaman (Death)",
     "category": "Heroes",
     "price": 350,
-    "image": "bst_bray_shaman_campaign_02_0"
+    "image": "bst_bray_shaman_campaign_02_0",
+    "category_icon": "wh_main_lore_death",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 4,
     "name": "Bray-Shaman (Shadows)",
     "category": "Heroes",
     "price": 350,
-    "image": "bst_bray_shaman_campaign_04_0"
+    "image": "bst_bray_shaman_campaign_04_0",
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 4,
     "name": "Bray-Shaman (Wild)",
     "category": "Heroes",
     "price": 350,
-    "image": "bst_bray_shaman_campaign_03_0"
+    "image": "bst_bray_shaman_campaign_03_0",
+    "category_icon": "wh_dlc03_bst_lore_wild",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 4,
     "name": "Gorebull",
     "category": "Heroes",
     "price": 350,
-    "image": "bst_gorebulls_campaign_03_0"
+    "image": "bst_gorebulls_campaign_03_0",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 1,
     "name": "Ungor Spearmen Herd",
     "category": "Infantry",
     "price": 350,
-    "image": "wh_dlc03_bst_ungor_spearmen"
+    "image": "wh_dlc03_bst_ungor_spearmen",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 2,
     "name": "Ungor Herd",
     "category": "Infantry",
     "price": 400,
-    "image": "wh_dlc03_bst_ungor_herd_shield"
+    "image": "wh_dlc03_bst_ungor_herd_shield",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 3,
     "name": "Ungor Spearman Herd (Shields)",
     "category": "Infantry",
     "price": 400,
-    "image": "wh_dlc03_bst_ungor_spearmen_shield"
+    "image": "wh_dlc03_bst_ungor_spearmen_shield",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 4,
     "name": "Gor Herd (Shields)",
     "category": "Infantry",
     "price": 550,
-    "image": "wh_dlc03_bst_gor_herd_shields"
+    "image": "wh_dlc03_bst_gor_herd_shields",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 5,
     "name": "Gor Herd",
     "category": "Infantry",
     "price": 600,
-    "image": "wh_dlc03_bst_gor_herd_dual_weapons"
+    "image": "wh_dlc03_bst_gor_herd_dual_weapons",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 6,
     "name": "Destroyers of the Drakwald (Ungor spearman Herd - Shields)",
     "category": "Infantry",
     "price": 600,
-    "image": "wh_pro04_bst_ror_ungor_spearmen_shield"
+    "image": "wh_pro04_bst_ror_ungor_spearmen_shield",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 7,
     "name": "Black-Horn’s Ravagers (Gor Herd - Shields)",
     "category": "Infantry",
     "price": 750,
-    "image": "wh_pro04_bst_ror_gor_herd_shields"
+    "image": "wh_pro04_bst_ror_gor_herd_shields",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 8,
     "name": "Bestigor Herd",
     "category": "Infantry",
     "price": 1050,
-    "image": "wh_dlc03_bst_bestigor_herd"
+    "image": "wh_dlc03_bst_bestigor_herd",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 9,
     "name": "Khorrok’s Manrippers (Bestigor Herd)",
     "category": "Infantry",
     "price": 1300,
-    "image": "wh_pro04_bst_ror_bestigor_herd"
+    "image": "wh_pro04_bst_ror_bestigor_herd",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 10,
     "name": "Ungor Raiders",
     "category": "Missile Infantry",
     "price": 425,
-    "image": "wh_dlc03_bst_ungor_raiders"
+    "image": "wh_dlc03_bst_ungor_raiders",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 11,
     "name": "Centigors",
     "category": "Cavalry & Chariots",
     "price": 700,
-    "image": "wh_dlc03_bst_centigors"
+    "image": "wh_dlc03_bst_centigors",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 12,
     "name": "Centigors (Great Weapons)",
     "category": "Cavalry & Chariots",
     "price": 900,
-    "image": "wh_dlc03_bst_centigors_great_weapons"
+    "image": "wh_dlc03_bst_centigors_great_weapons",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 13,
     "name": "Razorgor Chariots",
     "category": "Cavalry & Chariots",
     "price": 1000,
-    "image": "wh_dlc03_bst_razorgor_chariot"
+    "image": "wh_dlc03_bst_razorgor_chariot",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 14,
     "name": "Sons of Ghorros (Centigors - Great Weapons)",
     "category": "Cavalry & Chariots",
     "price": 1200,
-    "image": "wh_pro04_bst_ror_centigors_great_weapons"
+    "image": "wh_pro04_bst_ror_centigors_great_weapons",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 15,
     "name": "Centigors (Throwing Axes)",
     "category": "Missile Cavalry & Chariots",
     "price": 800,
-    "image": "wh_dlc03_bst_centigors_throwing_axes"
+    "image": "wh_dlc03_bst_centigors_throwing_axes",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 16,
     "name": "Chaos Warhounds",
     "category": "Monsters & Beasts",
     "price": 400,
-    "image": "wh_dlc03_bst_warhounds"
+    "image": "wh_dlc03_bst_warhounds",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 17,
     "name": "Chaos Warhounds (Poison)",
     "category": "Monsters & Beasts",
     "price": 475,
-    "image": "wh_dlc03_bst_warhounds_poison"
+    "image": "wh_dlc03_bst_warhounds_poison",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 18,
     "name": "Razorgor Herd",
     "category": "Monsters & Beasts",
     "price": 600,
-    "image": "wh_dlc03_bst_razorgor_herd"
+    "image": "wh_dlc03_bst_razorgor_herd",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 19,
     "name": "Harpies",
     "category": "Monsters & Beasts",
     "price": 600,
-    "image": "wh_dlc05_bst_harpies"
+    "image": "wh_dlc05_bst_harpies",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 20,
     "name": "Chaos Spawn",
     "category": "Monsters & Beasts",
     "price": 900,
-    "image": "wh_dlc03_bst_spawn"
+    "image": "wh_dlc03_bst_spawn",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 21,
     "name": "Minotaurs",
     "category": "Monsters & Beasts",
     "price": 1250,
-    "image": "wh_dlc03_bst_minotaurs"
+    "image": "wh_dlc03_bst_minotaurs",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 22,
     "name": "Minotaurs (Shields)",
     "category": "Monsters & Beasts",
     "price": 1250,
-    "image": "wh_dlc03_bst_minotaurs_shield"
+    "image": "wh_dlc03_bst_minotaurs_shield",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 23,
     "name": "Minotaurs (Great Weapons)",
     "category": "Monsters & Beasts",
     "price": 1350,
-    "image": "wh_dlc03_bst_minotaurs_great_weapons"
+    "image": "wh_dlc03_bst_minotaurs_great_weapons",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 24,
     "name": "Giant",
     "category": "Monsters & Beasts",
     "price": 1500,
-    "image": "wh_dlc03_bst_giant"
+    "image": "wh_dlc03_bst_giant",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 25,
     "name": "Cygor",
     "category": "Monsters & Beasts",
     "price": 1600,
-    "image": "wh_dlc03_bst_cygor"
+    "image": "wh_dlc03_bst_cygor",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 26,
     "name": "Butchers of Kalkengard (Minotaurs - Shields)",
     "category": "Monsters & Beasts",
     "price": 1700,
-    "image": "wh_pro04_bst_ror_minotaurs_shield"
+    "image": "wh_pro04_bst_ror_minotaurs_shield",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
     "id": 27,
     "name": "The Eye of Morrslieb (Cygor)",
     "category": "Monsters & Beasts",
     "price": 1950,
-    "image": "wh_pro04_bst_ror_cygor"
+    "image": "wh_pro04_bst_ror_cygor",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle_hero"
   }
 ]

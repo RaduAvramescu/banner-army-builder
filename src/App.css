@@ -1,0 +1,12 @@
+.unit_card {
+  width: 60px;
+  height: 130px;
+}
+
+.unit_card .unit_card_hover {
+  display: none;
+}
+
+.unit_card:hover .unit_card_hover {
+  display: block;
+}

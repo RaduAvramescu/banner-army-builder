@@ -22,6 +22,8 @@ const FactionRoster = ({ selectedFaction }) => {
                 unitCategory={unit.category}
                 unitPrice={unit.price}
                 unitImage={unit.image}
+                unitCategoryIcon={unit.category_icon}
+                unitSemicircleIcon={unit.semicircle_icon}
               />
             ))}
       </Grid>
@@ -38,6 +40,8 @@ const FactionRoster = ({ selectedFaction }) => {
                 unitCategory={unit.category}
                 unitPrice={unit.price}
                 unitImage={unit.image}
+                unitCategoryIcon={unit.category_icon}
+                unitSemicircleIcon={unit.semicircle_icon}
               />
             ))}
       </Grid>
@@ -54,6 +58,8 @@ const FactionRoster = ({ selectedFaction }) => {
                 unitCategory={unit.category}
                 unitPrice={unit.price}
                 unitImage={unit.image}
+                unitCategoryIcon={unit.category_icon}
+                unitSemicircleIcon={unit.semicircle_icon}
               />
             ))}
       </Grid>
@@ -70,6 +76,8 @@ const FactionRoster = ({ selectedFaction }) => {
                 unitCategory={unit.category}
                 unitPrice={unit.price}
                 unitImage={unit.image}
+                unitCategoryIcon={unit.category_icon}
+                unitSemicircleIcon={unit.semicircle_icon}
               />
             ))}
       </Grid>
@@ -86,6 +94,8 @@ const FactionRoster = ({ selectedFaction }) => {
                 unitCategory={unit.category}
                 unitPrice={unit.price}
                 unitImage={unit.image}
+                unitCategoryIcon={unit.category_icon}
+                unitSemicircleIcon={unit.semicircle_icon}
               />
             ))}
       </Grid>
@@ -102,6 +112,8 @@ const FactionRoster = ({ selectedFaction }) => {
                 unitCategory={unit.category}
                 unitPrice={unit.price}
                 unitImage={unit.image}
+                unitCategoryIcon={unit.category_icon}
+                unitSemicircleIcon={unit.semicircle_icon}
               />
             ))}
       </Grid>
@@ -118,6 +130,8 @@ const FactionRoster = ({ selectedFaction }) => {
                 unitCategory={unit.category}
                 unitPrice={unit.price}
                 unitImage={unit.image}
+                unitCategoryIcon={unit.category_icon}
+                unitSemicircleIcon={unit.semicircle_icon}
               />
             ))}
       </Grid>
