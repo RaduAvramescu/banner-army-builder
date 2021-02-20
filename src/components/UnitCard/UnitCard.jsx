@@ -28,10 +28,10 @@ const UnitCard = ({
           <Typography
             style={{
               color: "white",
-              paddingTop: "8px",
+              paddingTop: "5px",
               margin: "-5px",
             }}
-            variant="h5"
+            variant="h6"
           >
             {unitPrice}
           </Typography>
