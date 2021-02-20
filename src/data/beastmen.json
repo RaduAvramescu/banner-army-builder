@@ -3,162 +3,189 @@
     "id": 1,
     "name": "Ungor Spearman Herd",
     "category": "Infantry",
-    "price": 350
+    "price": 350,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 2,
     "name": "Ungor Herd",
     "category": "Infantry",
-    "price": 400
+    "price": 400,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 3,
     "name": "Ungor Spearman Herd (Shields)",
     "category": "Infantry",
-    "price": 400
+    "price": 400,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 4,
     "name": "Gor Herd (Shields)",
     "category": "Infantry",
-    "price": 550
+    "price": 550,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 5,
     "name": "Gor Herd",
     "category": "Infantry",
-    "price": 600
+    "price": 600,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 6,
     "name": "Destroyers of the Drakwald (Ungor spearman Herd-shields)",
     "category": "Infantry",
-    "price": 600
+    "price": 600,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 7,
     "name": "Black-Horn’s Ravagers (Gor Herd-Shields) ",
     "category": "Infantry",
-    "price": 750
+    "price": 750,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 8,
     "name": "Bestigor Herd",
     "category": "Infantry",
-    "price": 1050
+    "price": 1050,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 9,
     "name": "Khorrok’s Manrippers (Bestigor Herd)",
     "category": "Infantry",
-    "price": 1300
+    "price": 1300,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 10,
     "name": "Ungor Raiders",
     "category": "Missile Infantry",
-    "price": 425
+    "price": 425,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 11,
     "name": "Centigors",
     "category": "Cavalry & Chariots",
-    "price": 700
+    "price": 700,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 12,
     "name": "Centigors (Great Weapons)",
     "category": "Cavalry & Chariots",
-    "price": 900
+    "price": 900,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 13,
     "name": "Razorgor Chariots",
     "category": "Cavalry & Chariots",
-    "price": 1000
+    "price": 1000,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 14,
     "name": "Sons of Ghorros (Centigors-great weapons)",
     "category": "Cavalry & Chariots",
-    "price": 1200
+    "price": 1200,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 15,
     "name": "Centigors (Throwing Axes)",
     "category": "Missile Cavalry & Chariots",
-    "price": 800
+    "price": 800,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 16,
     "name": "Chaos Warhounds",
     "category": "Monsters & Beasts",
-    "price": 400
+    "price": 400,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 17,
     "name": "Chaos Warhounds (Poison)",
     "category": "Monsters & Beasts",
-    "price": 475
+    "price": 475,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 18,
     "name": "Razorgor Herd",
     "category": "Monsters & Beasts",
-    "price": 600
+    "price": 600,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 19,
     "name": "Harpies",
     "category": "Monsters & Beasts",
-    "price": 600
+    "price": 600,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 20,
     "name": "Chaos Spawn",
     "category": "Monsters & Beasts",
-    "price": 900
+    "price": 900,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 21,
     "name": "Minotaurs",
     "category": "Monsters & Beasts",
-    "price": 1250
+    "price": 1250,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 22,
     "name": "Minotaurs (Shields)",
     "category": "Monsters & Beasts",
-    "price": 1250
+    "price": 1250,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 23,
     "name": "Minotaurs (Great Weapons)",
     "category": "Monsters & Beasts",
-    "price": 1350
+    "price": 1350,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 24,
     "name": "Giant",
     "category": "Monsters & Beasts",
-    "price": 1500
+    "price": 1500,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 25,
     "name": "Cygor",
     "category": "Monsters & Beasts",
-    "price": 1600
+    "price": 1600,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 26,
     "name": "Butchers of Kalkengard (Minotaurs - Shields)",
     "category": "Monsters & Beasts",
-    "price": 1700
+    "price": 1700,
+    "image": "bst_ch_malagor_0"
   },
   {
     "id": 27,
     "name": "The Eye of Morrslieb (Cygor)",
     "category": "Monsters & Beasts",
-    "price": 1950
+    "price": 1950,
+    "image": "bst_ch_malagor_0"
   }
 ]
