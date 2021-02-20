@@ -28,6 +28,41 @@
     "image": "bst_ch_morghur_0"
   },
   {
+    "id": 4,
+    "name": "Bray-Shaman (Beasts)",
+    "category": "Heroes",
+    "price": 350,
+    "image": "bst_bray_shaman_campaign_01_0"
+  },
+  {
+    "id": 4,
+    "name": "Bray-Shaman (Death)",
+    "category": "Heroes",
+    "price": 350,
+    "image": "bst_bray_shaman_campaign_02_0"
+  },
+  {
+    "id": 4,
+    "name": "Bray-Shaman (Shadows)",
+    "category": "Heroes",
+    "price": 350,
+    "image": "bst_bray_shaman_campaign_04_0"
+  },
+  {
+    "id": 4,
+    "name": "Bray-Shaman (Wild)",
+    "category": "Heroes",
+    "price": 350,
+    "image": "bst_bray_shaman_campaign_03_0"
+  },
+  {
+    "id": 4,
+    "name": "Gorebull",
+    "category": "Heroes",
+    "price": 350,
+    "image": "bst_gorebulls_campaign_03_0"
+  },
+  {
     "id": 1,
     "name": "Ungor Spearmen Herd",
     "category": "Infantry",
