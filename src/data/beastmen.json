@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Malagor the Dark Omen",
     "category": "Lords",
-    "price": 350,
+    "price": 600,
     "image": "bst_ch_malagor_0",
     "category_icon": "wh_dlc03_bst_lore_wild",
     "semicircle_icon": "unit_card_semicircle_hero"
@@ -12,7 +12,7 @@
     "id": 2,
     "name": "Beastlord",
     "category": "Lords",
-    "price": 350,
+    "price": 750,
     "image": "bst_beastlords_campaign_01_0",
     "category_icon": "infantry_axe",
     "semicircle_icon": "unit_card_semicircle_hero"
@@ -21,7 +21,7 @@
     "id": 3,
     "name": "Khazrak the One-Eye",
     "category": "Lords",
-    "price": 350,
+    "price": 950,
     "image": "bst_ch_khazrak_0",
     "category_icon": "infantry_sword",
     "semicircle_icon": "unit_card_semicircle_hero"
@@ -30,7 +30,7 @@
     "id": 4,
     "name": "Morghur the Shadowgave",
     "category": "Lords",
-    "price": 350,
+    "price": 1200,
     "image": "bst_ch_morghur_0",
     "category_icon": "infantry_axe",
     "semicircle_icon": "unit_card_semicircle_hero"
@@ -75,7 +75,7 @@
     "id": 4,
     "name": "Gorebull",
     "category": "Heroes",
-    "price": 350,
+    "price": 1075,
     "image": "bst_gorebulls_campaign_03_0",
     "category_icon": "wh_dlc03_bst_gorebull",
     "semicircle_icon": "unit_card_semicircle_hero"

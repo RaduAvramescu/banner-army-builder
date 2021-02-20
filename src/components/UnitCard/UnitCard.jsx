@@ -1,5 +1,7 @@
 import React from "react";
 
+import { Box, Typography } from "@material-ui/core";
+
 const UnitCard = ({
   unitName,
   unitCategory,
@@ -14,6 +16,27 @@ const UnitCard = ({
       style={{ position: "relative", cursor: "pointer" }}
       title={unitName}
     >
+      <Box style={{ position: "absolute", width: "100%" }}>
+        <Box
+          style={{
+            backgroundColor: "rgba(0, 0, 0, 0.3)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Typography
+            style={{
+              color: "white",
+              paddingTop: "5px",
+              margin: "-5px",
+            }}
+          >
+            {unitPrice}
+          </Typography>
+        </Box>
+      </Box>
+
       <img
         src={require(`../../images/${unitImage}.png`).default}
         alt="Unit Card Image"
