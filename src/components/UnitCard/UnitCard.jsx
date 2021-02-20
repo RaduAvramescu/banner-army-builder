@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Typography } from "@material-ui/core";
+import { Box, Grid, Typography } from "@material-ui/core";
 
 const UnitCard = ({
   unitName,
@@ -16,28 +16,13 @@ const UnitCard = ({
       style={{ position: "relative", cursor: "pointer" }}
       title={unitName}
     >
-      <Box style={{ position: "absolute", width: "100%" }}>
-        <Box
-          style={{
-            backgroundColor: "rgba(0, 0, 0, 0.3)",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <Typography
-            style={{
-              color: "white",
-              paddingTop: "5px",
-              margin: "-5px",
-            }}
-            variant="h6"
-          >
-            {unitPrice}
-          </Typography>
-        </Box>
-      </Box>
-
+      <Typography
+        className="unit_card_top position_absolute"
+        variant="h6"
+        component="p"
+      >
+        {unitPrice}
+      </Typography>
       <img
         src={require(`../../images/${unitImage}.png`).default}
         alt="Unit Card Image"
@@ -45,33 +30,32 @@ const UnitCard = ({
         height="130"
       />
       <img
+        className="unit_card position_absolute"
         src={require(`../../images/unit_card_frame_plain.png`).default}
         alt="Unit Card Frame"
         width="60"
         height="130"
-        style={{ position: "absolute", top: "0px", left: "0px" }}
       ></img>
       <img
+        className="position_absolute"
         src={require(`../../images/${unitSemicircleIcon}.png`).default}
-        alt="Unit Card Category"
+        alt="Unit Card Semicircle Icon"
         width="55"
         height="35"
-        style={{ position: "absolute", bottom: "0px", left: "2px" }}
       />
       <img
+        className="position_absolute"
         src={require(`../../images/${unitCategoryIcon}.png`).default}
-        alt="Unit Card Category"
+        alt="Unit Card Category Icon"
         width="22"
         height="22"
-        style={{ position: "absolute", bottom: "0px", left: "19px" }}
       />
       <img
-        class="unit_card_hover"
+        className="unit_card unit_card_hover position_absolute"
         src={require(`../../images/unit_card_hover.png`).default}
         alt="Unit Card Hover"
         width="60"
         height="130"
-        style={{ position: "absolute", top: "0px", left: "0px" }}
       />
     </div>
   );

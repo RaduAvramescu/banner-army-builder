@@ -1,6 +1,28 @@
 .unit_card {
   width: 60px;
   height: 130px;
+  top: 0px;
+  left: 0px;
+}
+
+.unit_card_top {
+  width: 100%;
+  top: 5px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+.unit_card img[alt$="Icon"] {
+  bottom: 0px;
+  left: 2px;
+}
+
+.unit_card img[alt="Unit Card Category Icon"] {
+  left: 19px;
 }
 
 .unit_card .unit_card_hover {
@@ -9,4 +31,8 @@
 
 .unit_card:hover .unit_card_hover {
   display: block;
+}
+
+.position_absolute {
+  position: absolute;
 }
