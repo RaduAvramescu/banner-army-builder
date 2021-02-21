@@ -5,6 +5,7 @@ import { Box, Grid, Typography } from "@material-ui/core";
 export default class UnitCard extends Component {
   handleClick = () => {
     const {
+      id,
       unitName,
       unitCategory,
       unitPrice,
@@ -25,7 +26,8 @@ export default class UnitCard extends Component {
         unitSemicircleIcon
       );
     else {
-      onRemoveUnit(this.props.id);
+      console.log(typeof unitPrice);
+      onRemoveUnit(id, unitPrice);
     }
   };
 

@@ -13,7 +13,7 @@ import {
 import "./App.css";
 
 class App extends Component {
-  state = { selectedFaction: "Beastmen", units: [] };
+  state = { selectedFaction: "Beastmen", funds: 12400, units: [] };
 
   handleFactionChange = (selectedFaction) => {
     this.setState({ selectedFaction: selectedFaction });
@@ -31,21 +31,23 @@ class App extends Component {
     const newUnit = {
       name: `${unitName}`,
       category: `${unitCategory}`,
-      price: `${unitPrice}`,
+      price: parseInt(`${unitPrice}`),
       image: `${unitImage}`,
       category_icon: `${unitCategoryIcon}`,
       semicircle_icon: `${unitSemicircleIcon}`,
     };
     newUnits.push(newUnit);
     this.setState({ units: newUnits });
+    const newFunds = this.state.funds - unitPrice;
+    this.setState({ funds: newFunds });
   };
 
-  handleRemoveUnit = (id) => {
+  handleRemoveUnit = (id, unitPrice) => {
     const newUnits = [...this.state.units];
-    console.log(id);
     newUnits.splice(id, 1);
-
     this.setState({ units: newUnits });
+    const newFunds = this.state.funds + unitPrice;
+    this.setState({ funds: newFunds });
   };
 
   render() {
@@ -62,6 +64,7 @@ class App extends Component {
           <BuildContainer
             units={this.state.units}
             onRemoveUnit={this.handleRemoveUnit}
+            fundsRemaining={this.state.funds}
           />
         </Container>
         <Footer />
