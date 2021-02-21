@@ -26,7 +26,6 @@ export default class UnitCard extends Component {
         unitSemicircleIcon
       );
     else {
-      console.log(typeof unitPrice);
       onRemoveUnit(id, unitPrice);
     }
   };
