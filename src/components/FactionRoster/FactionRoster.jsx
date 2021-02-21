@@ -20,6 +20,7 @@ export default class FactionRoster extends Component {
               .filter((unit) => unit.category == "Lords")
               .map((unit, i) => (
                 <UnitCard
+                  key={i}
                   unitName={unit.name}
                   unitCategory={unit.category}
                   unitPrice={unit.price}
@@ -27,6 +28,7 @@ export default class FactionRoster extends Component {
                   unitCategoryIcon={unit.category_icon}
                   unitSemicircleIcon={unit.semicircle_icon}
                   onAddUnit={onAddUnit}
+                  addUnit={true}
                 />
               ))}
         </Grid>
@@ -39,6 +41,7 @@ export default class FactionRoster extends Component {
               .filter((unit) => unit.category == "Heroes")
               .map((unit, i) => (
                 <UnitCard
+                  key={i}
                   unitName={unit.name}
                   unitCategory={unit.category}
                   unitPrice={unit.price}
@@ -46,6 +49,7 @@ export default class FactionRoster extends Component {
                   unitCategoryIcon={unit.category_icon}
                   unitSemicircleIcon={unit.semicircle_icon}
                   onAddUnit={onAddUnit}
+                  addUnit={true}
                 />
               ))}
         </Grid>
@@ -58,6 +62,7 @@ export default class FactionRoster extends Component {
               .filter((unit) => unit.category == "Infantry")
               .map((unit, i) => (
                 <UnitCard
+                  key={i}
                   unitName={unit.name}
                   unitCategory={unit.category}
                   unitPrice={unit.price}
@@ -65,6 +70,7 @@ export default class FactionRoster extends Component {
                   unitCategoryIcon={unit.category_icon}
                   unitSemicircleIcon={unit.semicircle_icon}
                   onAddUnit={onAddUnit}
+                  addUnit={true}
                 />
               ))}
         </Grid>
@@ -77,6 +83,7 @@ export default class FactionRoster extends Component {
               .filter((unit) => unit.category == "Missile Infantry")
               .map((unit, i) => (
                 <UnitCard
+                  key={i}
                   unitName={unit.name}
                   unitCategory={unit.category}
                   unitPrice={unit.price}
@@ -84,6 +91,7 @@ export default class FactionRoster extends Component {
                   unitCategoryIcon={unit.category_icon}
                   unitSemicircleIcon={unit.semicircle_icon}
                   onAddUnit={onAddUnit}
+                  addUnit={true}
                 />
               ))}
         </Grid>
@@ -96,6 +104,7 @@ export default class FactionRoster extends Component {
               .filter((unit) => unit.category == "Cavalry & Chariots")
               .map((unit, i) => (
                 <UnitCard
+                  key={i}
                   unitName={unit.name}
                   unitCategory={unit.category}
                   unitPrice={unit.price}
@@ -103,6 +112,7 @@ export default class FactionRoster extends Component {
                   unitCategoryIcon={unit.category_icon}
                   unitSemicircleIcon={unit.semicircle_icon}
                   onAddUnit={onAddUnit}
+                  addUnit={true}
                 />
               ))}
         </Grid>
@@ -115,6 +125,7 @@ export default class FactionRoster extends Component {
               .filter((unit) => unit.category == "Missile Cavalry & Chariots")
               .map((unit, i) => (
                 <UnitCard
+                  key={i}
                   unitName={unit.name}
                   unitCategory={unit.category}
                   unitPrice={unit.price}
@@ -122,6 +133,7 @@ export default class FactionRoster extends Component {
                   unitCategoryIcon={unit.category_icon}
                   unitSemicircleIcon={unit.semicircle_icon}
                   onAddUnit={onAddUnit}
+                  addUnit={true}
                 />
               ))}
         </Grid>
@@ -134,6 +146,7 @@ export default class FactionRoster extends Component {
               .filter((unit) => unit.category == "Monsters & Beasts")
               .map((unit, i) => (
                 <UnitCard
+                  key={i}
                   unitName={unit.name}
                   unitCategory={unit.category}
                   unitPrice={unit.price}
@@ -141,6 +154,7 @@ export default class FactionRoster extends Component {
                   unitCategoryIcon={unit.category_icon}
                   unitSemicircleIcon={unit.semicircle_icon}
                   onAddUnit={onAddUnit}
+                  addUnit={true}
                 />
               ))}
         </Grid>

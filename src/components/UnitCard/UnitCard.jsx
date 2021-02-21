@@ -12,15 +12,21 @@ export default class UnitCard extends Component {
       unitCategoryIcon,
       unitSemicircleIcon,
       onAddUnit,
+      onRemoveUnit,
+      addUnit,
     } = this.props;
-    onAddUnit(
-      unitName,
-      unitCategory,
-      unitPrice,
-      unitImage,
-      unitCategoryIcon,
-      unitSemicircleIcon
-    );
+    if (addUnit)
+      onAddUnit(
+        unitName,
+        unitCategory,
+        unitPrice,
+        unitImage,
+        unitCategoryIcon,
+        unitSemicircleIcon
+      );
+    else {
+      onRemoveUnit(this.props.id);
+    }
   };
 
   render() {

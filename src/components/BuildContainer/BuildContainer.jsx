@@ -14,12 +14,15 @@ export default class BuildContainer extends Component {
         <Grid container justify="center">
           {this.props.units.map((unit, i) => (
             <UnitCard
+              key={i}
+              id={i}
               unitName={unit.name}
               unitCategory={unit.category}
               unitPrice={unit.price}
               unitImage={unit.image}
               unitCategoryIcon={unit.category_icon}
               unitSemicircleIcon={unit.semicircle_icon}
+              onRemoveUnit={this.props.onRemoveUnit}
             />
           ))}
         </Grid>

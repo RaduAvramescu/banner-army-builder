@@ -40,6 +40,14 @@ class App extends Component {
     this.setState({ units: newUnits });
   };
 
+  handleRemoveUnit = (id) => {
+    const newUnits = [...this.state.units];
+    console.log(id);
+    newUnits.splice(id, 1);
+
+    this.setState({ units: newUnits });
+  };
+
   render() {
     return (
       <div className="App">
@@ -51,7 +59,10 @@ class App extends Component {
             selectedFaction={this.state.selectedFaction}
             onAddUnit={this.handleAddUnit}
           />
-          <BuildContainer units={this.state.units} />
+          <BuildContainer
+            units={this.state.units}
+            onRemoveUnit={this.handleRemoveUnit}
+          />
         </Container>
         <Footer />
       </div>
