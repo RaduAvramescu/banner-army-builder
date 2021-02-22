@@ -24,13 +24,16 @@ class App extends Component {
       return alert("You don't have enough funds!");
     }
     const newUnits = [...this.state.units];
-    console.log(this.state.units.find((o) => o.category === "Lords"));
-    if (
-      props.category === "Lords" &&
-      this.state.units.find((o) => o.category === "Lords") === undefined
-    ) {
+    if (props.category === "Lords") {
+      if (this.state.units.find((o) => o.category === "Lords")) {
+        this.setState({ funds: this.state.funds + this.state.units[0].price });
+        newUnits.splice(0, 1);
+      }
       newUnits.unshift(props);
-      this.setState({ funds: this.state.funds - props.price });
+      this.setState((state) => ({
+        ...state,
+        funds: state.funds - props.price,
+      }));
     } else if (props.category !== "Lords") {
       newUnits.push(props);
       this.setState({ funds: this.state.funds - props.price });
