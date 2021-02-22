@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 
-export default function Banner() {
+const Banner = () => {
   return (
     <Box align="center" my="1rem">
       <picture>
@@ -17,4 +17,6 @@ export default function Banner() {
       </picture>
     </Box>
   );
-}
+};
+
+export default Banner;
