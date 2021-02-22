@@ -28,11 +28,14 @@ class App extends Component {
     if (
       props.category === "Lords" &&
       this.state.units.find((o) => o.category === "Lords") === undefined
-    )
+    ) {
       newUnits.unshift(props);
-    else if (props.category !== "Lords") newUnits.push(props);
+      this.setState({ funds: this.state.funds - props.price });
+    } else if (props.category !== "Lords") {
+      newUnits.push(props);
+      this.setState({ funds: this.state.funds - props.price });
+    }
     this.setState({ units: newUnits });
-    this.setState({ funds: this.state.funds - props.price });
   };
 
   handleRemoveUnit = (id, price) => {
