@@ -19,26 +19,27 @@ class App extends Component {
     this.setState({ selectedFaction: selectedFaction });
   };
 
-  handleAddUnit = (
-    unitName,
-    unitCategory,
-    unitPrice,
-    unitImage,
-    unitCategoryIcon,
-    unitSemicircleIcon
-  ) => {
+  handleAddUnit = (props) => {
+    const {
+      name,
+      category,
+      price,
+      image,
+      category_icon,
+      semicircle_icon,
+    } = props;
     const newUnits = [...this.state.units];
     const newUnit = {
-      name: `${unitName}`,
-      category: `${unitCategory}`,
-      price: parseInt(`${unitPrice}`),
-      image: `${unitImage}`,
-      category_icon: `${unitCategoryIcon}`,
-      semicircle_icon: `${unitSemicircleIcon}`,
+      name: `${name}`,
+      category: `${category}`,
+      price: parseInt(`${price}`),
+      image: `${image}`,
+      category_icon: `${category_icon}`,
+      semicircle_icon: `${semicircle_icon}`,
     };
     newUnits.push(newUnit);
     this.setState({ units: newUnits });
-    const newFunds = this.state.funds - unitPrice;
+    const newFunds = this.state.funds - price;
     this.setState({ funds: newFunds });
   };
 

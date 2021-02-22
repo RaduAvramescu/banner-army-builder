@@ -36,7 +36,7 @@
     "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Bray-Shaman (Beasts)",
     "category": "Heroes",
     "price": 350,
@@ -45,7 +45,7 @@
     "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
-    "id": 4,
+    "id": 6,
     "name": "Bray-Shaman (Death)",
     "category": "Heroes",
     "price": 350,
@@ -54,7 +54,7 @@
     "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
-    "id": 4,
+    "id": 7,
     "name": "Bray-Shaman (Shadows)",
     "category": "Heroes",
     "price": 350,
@@ -63,7 +63,7 @@
     "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
-    "id": 4,
+    "id": 8,
     "name": "Bray-Shaman (Wild)",
     "category": "Heroes",
     "price": 350,
@@ -72,7 +72,7 @@
     "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
-    "id": 4,
+    "id": 9,
     "name": "Gorebull",
     "category": "Heroes",
     "price": 1075,
@@ -81,7 +81,7 @@
     "semicircle_icon": "unit_card_semicircle_hero"
   },
   {
-    "id": 1,
+    "id": 10,
     "name": "Ungor Spearmen Herd",
     "category": "Infantry",
     "price": 350,
@@ -90,7 +90,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 2,
+    "id": 11,
     "name": "Ungor Herd",
     "category": "Infantry",
     "price": 400,
@@ -99,7 +99,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 3,
+    "id": 12,
     "name": "Ungor Spearman Herd (Shields)",
     "category": "Infantry",
     "price": 400,
@@ -108,7 +108,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 4,
+    "id": 13,
     "name": "Gor Herd (Shields)",
     "category": "Infantry",
     "price": 550,
@@ -117,7 +117,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 5,
+    "id": 14,
     "name": "Gor Herd",
     "category": "Infantry",
     "price": 600,
@@ -126,7 +126,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 6,
+    "id": 15,
     "name": "Destroyers of the Drakwald (Ungor Spearmen Herd - Shields)",
     "category": "Infantry",
     "price": 600,
@@ -135,7 +135,7 @@
     "semicircle_icon": "unit_card_semicircle_renown"
   },
   {
-    "id": 7,
+    "id": 16,
     "name": "Black-Horn’s Ravagers (Gor Herd - Shields)",
     "category": "Infantry",
     "price": 750,
@@ -144,7 +144,7 @@
     "semicircle_icon": "unit_card_semicircle_renown"
   },
   {
-    "id": 8,
+    "id": 17,
     "name": "Bestigor Herd",
     "category": "Infantry",
     "price": 1050,
@@ -153,7 +153,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 9,
+    "id": 18,
     "name": "Khorrok’s Manrippers (Bestigor Herd)",
     "category": "Infantry",
     "price": 1300,
@@ -162,7 +162,7 @@
     "semicircle_icon": "unit_card_semicircle_renown"
   },
   {
-    "id": 10,
+    "id": 19,
     "name": "Ungor Raiders",
     "category": "Missile Infantry",
     "price": 425,
@@ -171,7 +171,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 11,
+    "id": 20,
     "name": "Centigors",
     "category": "Cavalry & Chariots",
     "price": 700,
@@ -180,7 +180,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 12,
+    "id": 21,
     "name": "Centigors (Great Weapons)",
     "category": "Cavalry & Chariots",
     "price": 900,
@@ -189,7 +189,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 13,
+    "id": 22,
     "name": "Razorgor Chariots",
     "category": "Cavalry & Chariots",
     "price": 1000,
@@ -198,7 +198,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 14,
+    "id": 23,
     "name": "Sons of Ghorros (Centigors - Great Weapons)",
     "category": "Cavalry & Chariots",
     "price": 1200,
@@ -207,7 +207,7 @@
     "semicircle_icon": "unit_card_semicircle_renown"
   },
   {
-    "id": 15,
+    "id": 24,
     "name": "Centigors (Throwing Axes)",
     "category": "Missile Cavalry & Chariots",
     "price": 800,
@@ -216,7 +216,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 16,
+    "id": 25,
     "name": "Chaos Warhounds",
     "category": "Monsters & Beasts",
     "price": 400,
@@ -225,7 +225,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 17,
+    "id": 26,
     "name": "Chaos Warhounds (Poison)",
     "category": "Monsters & Beasts",
     "price": 475,
@@ -234,7 +234,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 18,
+    "id": 27,
     "name": "Razorgor Herd",
     "category": "Monsters & Beasts",
     "price": 600,
@@ -243,7 +243,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 19,
+    "id": 28,
     "name": "Harpies",
     "category": "Monsters & Beasts",
     "price": 600,
@@ -252,7 +252,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 20,
+    "id": 29,
     "name": "Chaos Spawn",
     "category": "Monsters & Beasts",
     "price": 900,
@@ -261,7 +261,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 21,
+    "id": 30,
     "name": "Minotaurs",
     "category": "Monsters & Beasts",
     "price": 1250,
@@ -270,7 +270,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 22,
+    "id": 31,
     "name": "Minotaurs (Shields)",
     "category": "Monsters & Beasts",
     "price": 1250,
@@ -279,7 +279,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 23,
+    "id": 32,
     "name": "Minotaurs (Great Weapons)",
     "category": "Monsters & Beasts",
     "price": 1350,
@@ -288,7 +288,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 24,
+    "id": 33,
     "name": "Giant",
     "category": "Monsters & Beasts",
     "price": 1500,
@@ -297,7 +297,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 25,
+    "id": 34,
     "name": "Cygor",
     "category": "Monsters & Beasts",
     "price": 1600,
@@ -306,7 +306,7 @@
     "semicircle_icon": "unit_card_semicircle"
   },
   {
-    "id": 26,
+    "id": 35,
     "name": "Butchers of Kalkengard (Minotaurs - Shields)",
     "category": "Monsters & Beasts",
     "price": 1700,
@@ -315,7 +315,7 @@
     "semicircle_icon": "unit_card_semicircle_renown"
   },
   {
-    "id": 27,
+    "id": 36,
     "name": "The Eye of Morrslieb (Cygor)",
     "category": "Monsters & Beasts",
     "price": 1950,
