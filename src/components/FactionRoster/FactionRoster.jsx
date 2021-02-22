@@ -22,7 +22,7 @@ const FactionRoster = ({ selectedFaction, onAddUnit }) => {
       {categories && (
         <div>
           {categories.map((category, i) => (
-            <div>
+            <div key={i} id={i}>
               <Typography variant="h3" component="h2" align="center">
                 {categories[i]}
               </Typography>
