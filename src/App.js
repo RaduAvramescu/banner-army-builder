@@ -20,6 +20,9 @@ class App extends Component {
   };
 
   handleAddUnit = (props) => {
+    if (props.price > this.state.funds) {
+      return alert("You don't have enough funds!");
+    }
     const newUnits = [...this.state.units];
     newUnits.push(props);
     this.setState({ units: newUnits });
@@ -43,6 +46,7 @@ class App extends Component {
           <FactionRoster
             selectedFaction={this.state.selectedFaction}
             onAddUnit={this.handleAddUnit}
+            fundsRemaining={this.state.funds}
           />
           <BuildContainer
             units={this.state.units}
