@@ -4,12 +4,11 @@ import { Box, Grid, Typography } from "@material-ui/core";
 
 const UnitCard = (props) => {
   const handleClick = () => {
-    const { id, onAddUnit, onRemoveUnit, addUnit } = props;
+    const { id, onAddUnit, onRemoveUnit, addUnit, unit } = props;
     if (addUnit) {
-      console.log(props);
       onAddUnit(props);
     } else {
-      onRemoveUnit(id, props.price);
+      onRemoveUnit(props.id, props.price);
     }
   };
 

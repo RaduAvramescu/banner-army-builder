@@ -6,128 +6,44 @@ import UnitCard from "../UnitCard/UnitCard";
 
 import { Grid, Typography } from "@material-ui/core";
 
+const categories = [
+  "Lords",
+  "Heroes",
+  "Infantry",
+  "Missile Infantry",
+  "Cavalry & Chariots",
+  "Missile Cavalry & Chariots",
+  "Monsters & Beasts",
+];
+
 const FactionRoster = ({ selectedFaction, onAddUnit }) => {
   return (
     <Grid container justify="center" alignContent="center" direction="column">
-      <Typography variant="h3" component="h2" align="center">
-        Lords
-      </Typography>
-      <Grid container justify="center">
-        {selectedFaction === "Beastmen" &&
-          beastmen
-            .filter((unit) => unit.category === "Lords")
-            .map((unit, i) => (
-              <UnitCard
-                key={i}
-                id={i}
-                onAddUnit={onAddUnit}
-                addUnit={true}
-                {...unit}
-              />
-            ))}
-      </Grid>
-      <Typography variant="h3" component="h2" align="center">
-        Heroes
-      </Typography>
-      <Grid container justify="center">
-        {selectedFaction === "Beastmen" &&
-          beastmen
-            .filter((unit) => unit.category === "Heroes")
-            .map((unit, i) => (
-              <UnitCard
-                key={i}
-                id={i}
-                onAddUnit={onAddUnit}
-                addUnit={true}
-                {...unit}
-              />
-            ))}
-      </Grid>
-      <Typography variant="h3" component="h2" align="center">
-        Infantry
-      </Typography>
-      <Grid container justify="center">
-        {selectedFaction === "Beastmen" &&
-          beastmen
-            .filter((unit) => unit.category === "Infantry")
-            .map((unit, i) => (
-              <UnitCard
-                key={i}
-                id={i}
-                onAddUnit={onAddUnit}
-                addUnit={true}
-                {...unit}
-              />
-            ))}
-      </Grid>
-      <Typography variant="h3" component="h2" align="center">
-        Missile Infantry
-      </Typography>
-      <Grid container justify="center">
-        {selectedFaction === "Beastmen" &&
-          beastmen
-            .filter((unit) => unit.category === "Missile Infantry")
-            .map((unit, i) => (
-              <UnitCard
-                key={i}
-                id={i}
-                onAddUnit={onAddUnit}
-                addUnit={true}
-                {...unit}
-              />
-            ))}
-      </Grid>
-      <Typography variant="h3" component="h2" align="center">
-        Cavalry &amp; Chariots
-      </Typography>
-      <Grid container justify="center">
-        {selectedFaction === "Beastmen" &&
-          beastmen
-            .filter((unit) => unit.category === "Cavalry & Chariots")
-            .map((unit, i) => (
-              <UnitCard
-                key={i}
-                id={i}
-                onAddUnit={onAddUnit}
-                addUnit={true}
-                {...unit}
-              />
-            ))}
-      </Grid>
-      <Typography variant="h3" component="h2" align="center">
-        Missile Cavalry &amp; Chariots
-      </Typography>
-      <Grid container justify="center">
-        {selectedFaction === "Beastmen" &&
-          beastmen
-            .filter((unit) => unit.category === "Missile Cavalry & Chariots")
-            .map((unit, i) => (
-              <UnitCard
-                key={i}
-                id={i}
-                onAddUnit={onAddUnit}
-                addUnit={true}
-                {...unit}
-              />
-            ))}
-      </Grid>
-      <Typography variant="h3" component="h2" align="center">
-        Monsters &amp; Beasts
-      </Typography>
-      <Grid container justify="center">
-        {selectedFaction === "Beastmen" &&
-          beastmen
-            .filter((unit) => unit.category === "Monsters & Beasts")
-            .map((unit, i) => (
-              <UnitCard
-                key={i}
-                id={i}
-                onAddUnit={onAddUnit}
-                addUnit={true}
-                {...unit}
-              />
-            ))}
-      </Grid>
+      {categories && (
+        <div>
+          {categories.map((category, i) => (
+            <div>
+              <Typography variant="h3" component="h2" align="center">
+                {categories[i]}
+              </Typography>
+              <Grid container justify="center">
+                {selectedFaction === "Beastmen" &&
+                  beastmen
+                    .filter((unit) => unit.category === categories[i])
+                    .map((unit, i) => (
+                      <UnitCard
+                        key={i}
+                        id={i}
+                        onAddUnit={onAddUnit}
+                        addUnit={true}
+                        {...unit}
+                      />
+                    ))}
+              </Grid>
+            </div>
+          ))}
+        </div>
+      )}
     </Grid>
   );
 };

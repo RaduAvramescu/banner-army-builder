@@ -20,34 +20,27 @@ class App extends Component {
   };
 
   handleAddUnit = (props) => {
-    const {
-      name,
-      category,
-      price,
-      image,
-      category_icon,
-      semicircle_icon,
-    } = props;
     const newUnits = [...this.state.units];
+    console.log(props);
     const newUnit = {
-      name: `${name}`,
-      category: `${category}`,
-      price: parseInt(`${price}`),
-      image: `${image}`,
-      category_icon: `${category_icon}`,
-      semicircle_icon: `${semicircle_icon}`,
+      name: `${props.name}`,
+      category: `${props.category}`,
+      price: parseInt(`${props.price}`),
+      image: `${props.image}`,
+      category_icon: `${props.category_icon}`,
+      semicircle_icon: `${props.semicircle_icon}`,
     };
     newUnits.push(newUnit);
     this.setState({ units: newUnits });
-    const newFunds = this.state.funds - price;
+    const newFunds = this.state.funds - props.price;
     this.setState({ funds: newFunds });
   };
 
-  handleRemoveUnit = (id, unitPrice) => {
+  handleRemoveUnit = (id, price) => {
     const newUnits = [...this.state.units];
     newUnits.splice(id, 1);
     this.setState({ units: newUnits });
-    const newFunds = this.state.funds + unitPrice;
+    const newFunds = this.state.funds + price;
     this.setState({ funds: newFunds });
   };
 
