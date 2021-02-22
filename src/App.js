@@ -24,8 +24,13 @@ class App extends Component {
       return alert("You don't have enough funds!");
     }
     const newUnits = [...this.state.units];
-    if (props.category === "Lords") newUnits.unshift(props);
-    else newUnits.push(props);
+    console.log(this.state.units.find((o) => o.category === "Lords"));
+    if (
+      props.category === "Lords" &&
+      this.state.units.find((o) => o.category === "Lords") === undefined
+    )
+      newUnits.unshift(props);
+    else if (props.category !== "Lords") newUnits.push(props);
     this.setState({ units: newUnits });
     this.setState({ funds: this.state.funds - props.price });
   };
