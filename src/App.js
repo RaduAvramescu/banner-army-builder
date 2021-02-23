@@ -19,26 +19,40 @@ class App extends Component {
     this.setState({ selectedFaction: selectedFaction });
   };
 
-  handleVerifyDuplicates = (unitid) => {
+  handleVerifyDuplicates = (unitid, validation) => {
     const { units } = this.state;
     let count = 0;
-    count = units.filter((el) => {
-      if (el.unitid === unitid) return count + 1;
-    }).length;
+    if (validation === "max2heroes") {
+      count = units.filter((el) => {
+        if (el.category === "Heroes") return count + 1;
+      }).length;
+    }
+    if (validation === "maxsame")
+      count = units.filter((el) => {
+        if (el.unitid === unitid) return count + 1;
+      }).length;
     return count;
   };
 
   handleUnitCanAdd = (props) => {
-    const { price, category, unitid } = props;
+    const { price, category, category_icon, unitid } = props;
     const { funds, units } = this.state;
-    if (price > funds) {
-      return alert("You don't have enough funds!");
-    }
+    if (price > funds) return alert("You don't have enough funds!");
     if (category === "Lords")
       if (units.find((unit) => unit.category === "Lords"))
         this.handleUnitRemove(0, units[0].price);
-    if (this.handleVerifyDuplicates(unitid) === 5)
+
+    if (category === "Heroes")
+      if (this.handleVerifyDuplicates(unitid, "max2heroes") === 2)
+        return alert("You can't have more than 2 heroes!");
+
+    if (this.handleVerifyDuplicates(unitid, "maxsame") === 5)
       return alert("You can't have more than 5 of a unit!");
+
+    if (category_icon === "monstrous_infantry")
+      if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
+        return alert(`You can't have more than 4 Monstrous Infantry!`);
+
     this.handleUnitAdd(props);
   };
 
