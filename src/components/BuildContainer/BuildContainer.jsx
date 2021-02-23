@@ -15,7 +15,7 @@ const BuildContainer = ({ fundsRemaining, onUnitRemove, units }) => {
       </Typography>
       <Grid container justify="center">
         {units.map((unit, i) => (
-          <UnitCard key={i} id={i} onUnitRemove={onUnitRemove} {...units[i]} />
+          <UnitCard key={i} id={i} onUnitRemove={onUnitRemove} {...unit} />
         ))}
       </Grid>
     </Grid>

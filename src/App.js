@@ -20,20 +20,24 @@ class App extends Component {
   };
 
   handleUnitCanAdd = (props) => {
-    if (props.price > this.state.funds) {
+    const { price, category } = props;
+    const { funds, units } = this.state;
+    console.log(props);
+    if (price > funds) {
       return alert("You don't have enough funds!");
     }
-    if (props.category === "Lords")
-      if (this.state.units.find((unit) => unit.category === "Lords"))
-        setTimeout(() => {
-          this.handleUnitRemove(0, this.state.units[0].price);
-        }, 1);
-    this.handleUnitAdd(props);
+    if (category === "Lords")
+      if (units.find((unit) => unit.category === "Lords"))
+        this.handleUnitRemove(0, units[0].price);
+    setTimeout(() => {
+      this.handleUnitAdd(props);
+    }, 1);
   };
 
   handleUnitAdd = (props) => {
+    const { category, price } = props;
     const newUnits = [...this.state.units];
-    if (props.category === "Lords") newUnits.unshift(props);
+    if (category === "Lords") newUnits.unshift(props);
     else newUnits.push(props);
     this.setState((state) => ({
       ...state,
@@ -41,13 +45,12 @@ class App extends Component {
     }));
     this.setState((state) => ({
       ...state,
-      funds: state.funds - props.price,
+      funds: state.funds - price,
     }));
   };
 
   handleUnitRemove = (id, price) => {
     const newUnits = [...this.state.units];
-    console.log(newUnits);
     newUnits.splice(id, 1);
     this.setState((state) => ({
       ...state,
