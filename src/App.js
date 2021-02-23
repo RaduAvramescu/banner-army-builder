@@ -49,7 +49,7 @@ class App extends Component {
     if (this.handleVerifyDuplicates(unitid, "maxsame") === 5)
       return alert("You can't have more than 5 of a unit!");
 
-    if (category_icon === "monstrous_infantry")
+    if (category_icon.includes("monstrous_infantry"))
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
         return alert(
           `You can't have more than 4 of the same Monstrous Infantry!`
