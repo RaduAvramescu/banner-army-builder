@@ -19,33 +19,44 @@ class App extends Component {
     this.setState({ selectedFaction: selectedFaction });
   };
 
-  handleAddUnit = (props) => {
+  handleUnitCanAdd = (props) => {
     if (props.price > this.state.funds) {
       return alert("You don't have enough funds!");
     }
-    const newUnits = [...this.state.units];
-    if (props.category === "Lords") {
-      if (this.state.units.find((o) => o.category === "Lords")) {
-        this.setState({ funds: this.state.funds + this.state.units[0].price });
-        newUnits.splice(0, 1);
-      }
-      newUnits.unshift(props);
-      this.setState((state) => ({
-        ...state,
-        funds: state.funds - props.price,
-      }));
-    } else if (props.category !== "Lords") {
-      newUnits.push(props);
-      this.setState({ funds: this.state.funds - props.price });
-    }
-    this.setState({ units: newUnits });
+    if (props.category === "Lords")
+      if (this.state.units.find((unit) => unit.category === "Lords"))
+        setTimeout(() => {
+          this.handleUnitRemove(0, this.state.units[0].price);
+        }, 1);
+    this.handleUnitAdd(props);
   };
 
-  handleRemoveUnit = (id, price) => {
+  handleUnitAdd = (props) => {
     const newUnits = [...this.state.units];
+    if (props.category === "Lords") newUnits.unshift(props);
+    else newUnits.push(props);
+    this.setState((state) => ({
+      ...state,
+      units: newUnits,
+    }));
+    this.setState((state) => ({
+      ...state,
+      funds: state.funds - props.price,
+    }));
+  };
+
+  handleUnitRemove = (id, price) => {
+    const newUnits = [...this.state.units];
+    console.log(newUnits);
     newUnits.splice(id, 1);
-    this.setState({ units: newUnits });
-    this.setState({ funds: this.state.funds + price });
+    this.setState((state) => ({
+      ...state,
+      units: newUnits,
+    }));
+    this.setState((state) => ({
+      ...state,
+      funds: state.funds + price,
+    }));
   };
 
   render() {
@@ -57,12 +68,12 @@ class App extends Component {
           <FactionSelector handleFactionChange={this.handleFactionChange} />
           <FactionRoster
             selectedFaction={this.state.selectedFaction}
-            onAddUnit={this.handleAddUnit}
+            onUnitAdd={this.handleUnitCanAdd}
             fundsRemaining={this.state.funds}
           />
           <BuildContainer
             units={this.state.units}
-            onRemoveUnit={this.handleRemoveUnit}
+            onUnitRemove={this.handleUnitRemove}
             fundsRemaining={this.state.funds}
           />
         </Container>

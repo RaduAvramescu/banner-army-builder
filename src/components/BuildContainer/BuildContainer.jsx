@@ -4,7 +4,7 @@ import UnitCard from "../UnitCard/UnitCard";
 
 import { Grid, Typography } from "@material-ui/core";
 
-const BuildContainer = ({ fundsRemaining, onRemoveUnit, units }) => {
+const BuildContainer = ({ fundsRemaining, onUnitRemove, units }) => {
   return (
     <Grid container justify="center" alignContent="center" direction="column">
       <Typography variant="h2" align="center">
@@ -15,7 +15,7 @@ const BuildContainer = ({ fundsRemaining, onRemoveUnit, units }) => {
       </Typography>
       <Grid container justify="center">
         {units.map((unit, i) => (
-          <UnitCard key={i} id={i} onRemoveUnit={onRemoveUnit} {...units[i]} />
+          <UnitCard key={i} id={i} onUnitRemove={onUnitRemove} {...units[i]} />
         ))}
       </Grid>
     </Grid>

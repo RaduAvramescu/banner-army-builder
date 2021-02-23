@@ -16,7 +16,7 @@ const categories = [
   "Monsters & Beasts",
 ];
 
-const FactionRoster = ({ selectedFaction, onAddUnit }) => {
+const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
   return (
     <Grid container justify="center" alignContent="center" direction="column">
       {categories && (
@@ -34,7 +34,7 @@ const FactionRoster = ({ selectedFaction, onAddUnit }) => {
                       <UnitCard
                         key={i}
                         id={i}
-                        onAddUnit={onAddUnit}
+                        onUnitAdd={onUnitAdd}
                         addUnit={true}
                         {...unit}
                       />
