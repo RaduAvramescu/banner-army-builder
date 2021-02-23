@@ -19,8 +19,17 @@ class App extends Component {
     this.setState({ selectedFaction: selectedFaction });
   };
 
+  handleVerifyDuplicates = (unitid) => {
+    const { units } = this.state;
+    let count = 0;
+    count = units.filter((el) => {
+      if (el.unitid === unitid) return count + 1;
+    }).length;
+    return count;
+  };
+
   handleUnitCanAdd = (props) => {
-    const { price, category } = props;
+    const { price, category, unitid } = props;
     const { funds, units } = this.state;
     if (price > funds) {
       return alert("You don't have enough funds!");
@@ -28,6 +37,8 @@ class App extends Component {
     if (category === "Lords")
       if (units.find((unit) => unit.category === "Lords"))
         this.handleUnitRemove(0, units[0].price);
+    if (this.handleVerifyDuplicates(unitid) === 5)
+      return alert("You can't have more than 5 of a unit!");
     this.handleUnitAdd(props);
   };
 
