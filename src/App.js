@@ -35,7 +35,7 @@ class App extends Component {
   };
 
   handleUnitCanAdd = (props) => {
-    const { price, category, category_icon, unitid } = props;
+    const { price, category, category_icon, image, unitid } = props;
     const { funds, units } = this.state;
     if (price > funds) return alert("You don't have enough funds!");
     if (category === "Lords")
@@ -54,6 +54,16 @@ class App extends Component {
         return alert(
           `You can't have more than 4 of the same Monstrous Infantry!`
         );
+
+    if (category_icon.includes("monstrous_infantry"))
+      if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
+        return alert(
+          `You can't have more than 4 of the same Monstrous Infantry!`
+        );
+
+    if (image.includes("ror"))
+      if (this.handleVerifyDuplicates(unitid, "maxsame") === 1)
+        return alert(`You can't have more than 1 of the same RoR!`);
 
     this.handleUnitAdd(props);
   };
