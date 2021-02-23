@@ -51,7 +51,9 @@ class App extends Component {
 
     if (category_icon === "monstrous_infantry")
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
-        return alert(`You can't have more than 4 Monstrous Infantry!`);
+        return alert(
+          `You can't have more than 4 of the same Monstrous Infantry!`
+        );
 
     this.handleUnitAdd(props);
   };
