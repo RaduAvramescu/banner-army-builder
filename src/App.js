@@ -44,6 +44,11 @@ class App extends Component {
         if (el.isSEM) return count + 1;
       }).length;
 
+    if (validation === "missile")
+      count = units.filter((el) => {
+        if (el.is360) return count + 1;
+      }).length;
+
     if (validation === "360")
       count = units.filter((el) => {
         if (el.is360) return count + 1;
@@ -61,6 +66,7 @@ class App extends Component {
       limited_type,
       isSE,
       isSEM,
+      isMissile,
       is360,
     } = props;
     const { funds, units } = this.state;
@@ -92,6 +98,10 @@ class App extends Component {
         return alert(
           "You can't have more than 3 Single Entity Monsters (SEM)!"
         );
+
+    if (isMissile)
+      if (this.handleVerifyDuplicates(unitid, "missile") === 12)
+        return alert("You can't have more than 12 missile units!");
 
     if (is360)
       if (this.handleVerifyDuplicates(unitid, "360") === 6)

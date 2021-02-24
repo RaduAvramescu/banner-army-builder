@@ -177,7 +177,8 @@
     "price": 425,
     "image": "wh_dlc03_bst_ungor_raiders",
     "category_icon": "missile_infantry_bow",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true
   },
   {
     "unitid": 20,
@@ -223,6 +224,7 @@
     "image": "wh_dlc03_bst_centigors_throwing_axes",
     "category_icon": "wh_dlc03_bst_centigor_missile",
     "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true,
     "is360": true
   },
   {
