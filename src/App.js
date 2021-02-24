@@ -27,7 +27,6 @@ class App extends Component {
   handleVerifyDuplicates = (unitid, validation, category) => {
     const { units } = this.state;
     let count = 0;
-
     if (validation === "countHeroes") {
       count = units.filter((el) => {
         if (el.category === "Heroes") return count + 1;
@@ -47,11 +46,14 @@ class App extends Component {
         if (el.category === category) return count + 1;
       }).length;
       return count;
-    } else {
+    } else if (typeof validation === "string") {
       count = units.filter((el) => {
-        if (`${el}.${validation}`.includes(validation)) return count + 1;
+        if (el[validation] === true) return count + 1;
       }).length;
-    }
+    } else
+      count = units.filter((el) => {
+        if (el.limited_type === validation.limited_type) return count + 1;
+      }).length;
 
     return count;
   };
@@ -87,7 +89,7 @@ class App extends Component {
 
     if (limited_type) {
       if (limited_type === "Chariots")
-        if (this.handleVerifyDuplicates(unitid, limited_type) === 4)
+        if (this.handleVerifyDuplicates(unitid, props) === 4)
           return alert(`You can't have more than 4 ${limited_type}!`);
 
       if (this.handleVerifyDuplicates(unitid, "countSame") === 4)
