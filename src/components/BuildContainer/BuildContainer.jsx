@@ -2,7 +2,7 @@ import React from "react";
 
 import UnitCard from "../UnitCard/UnitCard";
 
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Box, Typography } from "@material-ui/core";
 
 const BuildContainer = ({
   fundsRemaining,
@@ -23,12 +23,12 @@ const BuildContainer = ({
       <Typography variant="h3" align="center">
         Funds Left: {fundsRemaining}
       </Typography>
-      <Typography variant="h3" align="center">
-        Model Count:{" "}
-        <Typography variant="h3" align="center" className={getClasses()}>
-          {modelCount}
+      <Box display="flex" justifyContent="center">
+        <Typography variant="h3">Model Count:&nbsp;</Typography>
+        <Typography component="div" variant="h3" className={getClasses()}>
+          <Box display="inline">{modelCount}</Box>
         </Typography>
-      </Typography>
+      </Box>
       <Grid container justify="center">
         {units
           .sort((a, b) => (a.unitid > b.unitid ? 1 : -1))
