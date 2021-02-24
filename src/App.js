@@ -73,8 +73,8 @@ class App extends Component {
       if (this.handleVerifyDuplicates(unitid, "max2heroes") === 2)
         return alert("You can't have more than 2 Heroes!");
 
-    // if (this.handleVerifyDuplicates(unitid, "maxsame") === 5)
-    //   return alert("You can't have more than 5 of a unit!");
+    if (this.handleVerifyDuplicates(unitid, "maxsame") === 5)
+      return alert("You can't have more than 5 of a unit!");
 
     if (limited_type)
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
