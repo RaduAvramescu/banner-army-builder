@@ -51,7 +51,7 @@ class App extends Component {
 
     if (validation === "missile")
       count = units.filter((el) => {
-        if (el.is360) return count + 1;
+        if (el.isMissile) return count + 1;
       }).length;
 
     if (validation === "360")
