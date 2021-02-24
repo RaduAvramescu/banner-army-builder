@@ -39,29 +39,9 @@ class App extends Component {
         if (el.unitid === unitid) return count + 1;
       }).length;
 
-    if (validation === "se")
+    if (validation !== "max2heroes" && validation !== "maxsame")
       count = units.filter((el) => {
-        if (el.isSE) return count + 1;
-      }).length;
-
-    if (validation === "sem")
-      count = units.filter((el) => {
-        if (el.isSEM) return count + 1;
-      }).length;
-
-    if (validation === "missile")
-      count = units.filter((el) => {
-        if (el.isMissile) return count + 1;
-      }).length;
-
-    if (validation === "360")
-      count = units.filter((el) => {
-        if (el.is360) return count + 1;
-      }).length;
-
-    if (validation === "flyer")
-      count = units.filter((el) => {
-        if (el.isFlyer) return count + 1;
+        if (`${el}.${validation}`) return count + 1;
       }).length;
 
     return count;
@@ -93,8 +73,8 @@ class App extends Component {
       if (this.handleVerifyDuplicates(unitid, "max2heroes") === 2)
         return alert("You can't have more than 2 Heroes!");
 
-    if (this.handleVerifyDuplicates(unitid, "maxsame") === 5)
-      return alert("You can't have more than 5 of a unit!");
+    // if (this.handleVerifyDuplicates(unitid, "maxsame") === 5)
+    //   return alert("You can't have more than 5 of a unit!");
 
     if (limited_type)
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
@@ -104,7 +84,7 @@ class App extends Component {
           return alert(`You can't have more than 1 ${name}!`);
 
     if (isSE) {
-      if (this.handleVerifyDuplicates(unitid, "se") === 5)
+      if (this.handleVerifyDuplicates(unitid, "isSE") === 5)
         return alert("You can't have more than 5 Single Entity (SE) units!");
 
       if (category === "Heroes")
@@ -118,23 +98,23 @@ class App extends Component {
     }
 
     if (isSEM)
-      if (this.handleVerifyDuplicates(unitid, "sem") === 3)
+      if (this.handleVerifyDuplicates(unitid, "isSEM") === 3)
         return alert(
           "You can't have more than 3 Single Entity Monsters (SEM)!"
         );
 
     if (isMissile)
-      if (this.handleVerifyDuplicates(unitid, "missile") === 12)
+      if (this.handleVerifyDuplicates(unitid, "isMissile") === 12)
         return alert("You can't have more than 12 missile units!");
 
     if (is360)
-      if (this.handleVerifyDuplicates(unitid, "360") === 6)
+      if (this.handleVerifyDuplicates(unitid, "is360") === 6)
         return alert(
           "You can't have more than 6 units with 360 degree firing arc!"
         );
 
     if (isFlyer)
-      if (this.handleVerifyDuplicates(unitid, "flyer") === 5)
+      if (this.handleVerifyDuplicates(unitid, "isFlyer") === 5)
         return alert("You can't have more than 5 flying units!");
 
     if (category === "Infantry") {
