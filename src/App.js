@@ -59,6 +59,11 @@ class App extends Component {
         if (el.is360) return count + 1;
       }).length;
 
+    if (validation === "flyer")
+      count = units.filter((el) => {
+        if (el.isFlyer) return count + 1;
+      }).length;
+
     return count;
   };
 
@@ -74,6 +79,7 @@ class App extends Component {
       isSEM,
       isMissile,
       is360,
+      isFlyer,
     } = props;
     const { funds, units } = this.state;
 
@@ -126,6 +132,10 @@ class App extends Component {
         return alert(
           "You can't have more than 6 units with 360 degree firing arc!"
         );
+
+    if (isFlyer)
+      if (this.handleVerifyDuplicates(unitid, "flyer") === 5)
+        return alert("You can't have more than 5 flying units!");
 
     if (category === "Infantry") {
       if (price >= 901 && price <= 1100)

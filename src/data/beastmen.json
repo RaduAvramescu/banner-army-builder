@@ -262,7 +262,8 @@
     "price": 600,
     "image": "wh_dlc05_bst_harpies",
     "category_icon": "wh_dlc05_wef_harpies",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "isFlyer": true
   },
   {
     "unitid": 29,
