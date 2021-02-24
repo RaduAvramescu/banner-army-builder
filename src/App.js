@@ -47,10 +47,12 @@ class App extends Component {
         if (el.category === category) return count + 1;
       }).length;
       return count;
-    } else
+    } else {
+      console.log(validation);
       count = units.filter((el) => {
-        if (`${el}.${validation}`) return count + 1;
+        if (`${el}.${validation}` === true) return count + 1;
       }).length;
+    }
 
     return count;
   };
