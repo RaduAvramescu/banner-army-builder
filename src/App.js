@@ -22,28 +22,30 @@ class App extends Component {
   handleVerifyDuplicates = (unitid, validation) => {
     const { units } = this.state;
     let count = 0;
+
     if (validation === "max2heroes") {
       count = units.filter((el) => {
         if (el.category === "Heroes") return count + 1;
       }).length;
     }
+
     if (validation === "maxsame")
       count = units.filter((el) => {
         if (el.unitid === unitid) return count + 1;
       }).length;
+
+    if (validation === "sem")
+      count = units.filter((el) => {
+        if (el.isSEM) return count + 1;
+      }).length;
+
     return count;
   };
 
   handleUnitCanAdd = (props) => {
-    const {
-      unitid,
-      price,
-      category,
-      category_icon,
-      image,
-      limited_type,
-    } = props;
+    const { unitid, price, category, image, limited_type, isSEM } = props;
     const { funds, units } = this.state;
+
     if (price > funds) return alert("You don't have enough funds!");
     if (category === "Lords")
       if (units.find((unit) => unit.category === "Lords"))
@@ -59,6 +61,12 @@ class App extends Component {
     if (limited_type)
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
         return alert(`You can't have more than 4 of the same ${limited_type}!`);
+
+    if (isSEM)
+      if (this.handleVerifyDuplicates(unitid, "sem") === 3)
+        return alert(
+          "You can't have more than 3 Single Entity Monsters (SEM)!"
+        );
 
     if (image.includes("ror"))
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 1)

@@ -298,7 +298,8 @@
     "price": 1500,
     "image": "wh_dlc03_bst_giant",
     "category_icon": "giant",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "isSEM": true
   },
   {
     "unitid": 34,
@@ -307,7 +308,8 @@
     "price": 1600,
     "image": "wh_dlc03_bst_cygor",
     "category_icon": "wh_dlc03_bst_cygor",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "isSEM": true
   },
   {
     "unitid": 35,
@@ -326,6 +328,7 @@
     "price": 1950,
     "image": "wh_pro04_bst_ror_cygor",
     "category_icon": "wh_dlc03_bst_cygor",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "isSEM": true
   }
 ]
