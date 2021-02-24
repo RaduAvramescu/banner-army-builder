@@ -14,9 +14,11 @@ const BuildContainer = ({ fundsRemaining, onUnitRemove, units }) => {
         Funds Left: {fundsRemaining}
       </Typography>
       <Grid container justify="center">
-        {units.map((unit, i) => (
-          <UnitCard key={i} id={i} onUnitRemove={onUnitRemove} {...unit} />
-        ))}
+        {units
+          .sort((a, b) => (a.unitid > b.unitid ? 1 : -1))
+          .map((unit, i) => (
+            <UnitCard key={i} id={i} onUnitRemove={onUnitRemove} {...unit} />
+          ))}
       </Grid>
     </Grid>
   );
