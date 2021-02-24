@@ -118,6 +118,20 @@ class App extends Component {
           "You can't have more than 6 units with 360 degree firing arc!"
         );
 
+    if (category === "Infantry") {
+      if (price >= 901 && price <= 1100)
+        if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
+          return alert(
+            "You can't have more than 4 of an Infantry unit with 901-1100 price!"
+          );
+
+      if (price >= 1101)
+        if (this.handleVerifyDuplicates(unitid, "maxsame") === 3)
+          return alert(
+            "You can't have more than 3 of an Infantry unit with 1101+ price!"
+          );
+    }
+
     if (image.includes("ror"))
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 1)
         return alert("You can't have more than 1 of the same RoR!");
