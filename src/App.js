@@ -25,7 +25,7 @@ class App extends Component {
     }));
   };
 
-  handleVerifyDuplicates = (unitid, validation, category) => {
+  handleVerifyDuplicates = (validation, props) => {
     const { units } = this.state;
     let count = 0;
     if (validation === "countHeroes") {
@@ -37,25 +37,29 @@ class App extends Component {
 
     if (validation === "countSame") {
       count = units.filter((el) => {
-        if (el.unitid === unitid) return count + 1;
+        if (
+          el.unitid === props.unitid ||
+          (el.baseUnit === props.baseUnit && el.hasOwnProperty("baseUnit"))
+        )
+          return count + 1;
       }).length;
       return count;
     }
 
     if (validation === "countCategory") {
       count = units.filter((el) => {
-        if (el.category === category) return count + 1;
+        if (el.category === props.category) return count + 1;
       }).length;
       return count;
     } else if (typeof validation === "string") {
       count = units.filter((el) => {
         if (el[validation] === true) return count + 1;
       }).length;
-    } else
+    } else {
       count = units.filter((el) => {
-        if (el.limited_type === validation.limited_type) return count + 1;
+        if (el.limited_type === props.limited_type) return count + 1;
       }).length;
-
+    }
     return count;
   };
 
@@ -72,6 +76,8 @@ class App extends Component {
       isMissile,
       is360,
       isFlyer,
+      baseUnit,
+      basePrice,
     } = props;
     const { funds, units } = this.state;
 
@@ -82,80 +88,80 @@ class App extends Component {
         this.handleUnitRemove(0, units[0].price);
 
     if (category === "Heroes")
-      if (this.handleVerifyDuplicates(unitid, "countHeroes") === 2)
+      if (this.handleVerifyDuplicates("countHeroes", props) === 2)
         return alert("You can't have more than 2 Heroes!");
 
-    if (this.handleVerifyDuplicates(unitid, "countSame") === 5)
+    if (this.handleVerifyDuplicates("countSame", props) === 5)
       return alert("You can't have more than 5 of the same unit!");
 
     if (limited_type) {
       if (limited_type === "Chariots")
-        if (this.handleVerifyDuplicates(unitid, props) === 4)
+        if (this.handleVerifyDuplicates(props, props) === 4)
           return alert(`You can't have more than 4 ${limited_type}!`);
 
-      if (this.handleVerifyDuplicates(unitid, "countSame") === 4)
+      if (this.handleVerifyDuplicates("countSame", props) === 4)
         return alert(`You can't have more than 4 of the same ${limited_type}!`);
       else if (limited_type === "Restricted")
-        if (this.handleVerifyDuplicates(unitid, "countSame") === 1)
+        if (this.handleVerifyDuplicates("countSame", props) === 1)
           return alert(`You can't have more than 1 ${name}!`);
     }
     if (isSE) {
-      if (this.handleVerifyDuplicates(unitid, "isSE") === 5)
+      if (this.handleVerifyDuplicates("isSE", props) === 5)
         return alert("You can't have more than 5 Single Entity (SE) units!");
 
       if (category === "Heroes")
-        if (this.handleVerifyDuplicates(unitid, "countHeroes") === 2)
+        if (this.handleVerifyDuplicates("countHeroes", props) === 2)
           return alert("You can't have more than 2 Heroes!");
 
-      if (this.handleVerifyDuplicates(unitid, "countSame") === 2)
+      if (this.handleVerifyDuplicates("countSame", props) === 2)
         return alert(
           "You can't have more than 2 of the same Single Entity (SE) units!"
         );
     }
 
     if (isSEM)
-      if (this.handleVerifyDuplicates(unitid, "isSEM") === 3)
+      if (this.handleVerifyDuplicates("isSEM", props) === 3)
         return alert(
           "You can't have more than 3 Single Entity Monsters (SEM)!"
         );
 
     if (isMissile)
-      if (this.handleVerifyDuplicates(unitid, "isMissile") === 12)
+      if (this.handleVerifyDuplicates("isMissile", props) === 12)
         return alert("You can't have more than 12 missile units!");
 
     if (is360)
-      if (this.handleVerifyDuplicates(unitid, "is360") === 6)
+      if (this.handleVerifyDuplicates("is360", props) === 6)
         return alert(
           "You can't have more than 6 units with 360 degree firing arc!"
         );
 
     if (isFlyer)
-      if (this.handleVerifyDuplicates(unitid, "isFlyer") === 5)
+      if (this.handleVerifyDuplicates("isFlyer", props) === 5)
         return alert("You can't have more than 5 flying units!");
 
     if (category === "Infantry") {
       if (price >= 901 && price <= 1100)
-        if (this.handleVerifyDuplicates(unitid, "countSame") === 4)
+        if (this.handleVerifyDuplicates("countSame", props) === 4)
           return alert(
             "You can't have more than 4 of an Infantry unit with 901-1100 price!"
           );
 
       if (price >= 1101)
-        if (this.handleVerifyDuplicates(unitid, "countSame") === 3)
+        if (this.handleVerifyDuplicates("countSame", props) === 3)
           return alert(
             "You can't have more than 3 of an Infantry unit with 1101+ price!"
           );
     }
 
     if (category === "Missile Cavalry & Chariots")
-      if (this.handleVerifyDuplicates(unitid, "countCategory", category) === 6)
+      if (this.handleVerifyDuplicates("countCategory", props) === 6)
         return alert(`You can't have more than 6 ${category}!`);
 
     if (category !== "Infantry" && !isSE) {
       if (price >= 1201)
         if (
           limited_type &&
-          this.handleVerifyDuplicates(unitid, "countSame") === 3
+          this.handleVerifyDuplicates("countSame", props) === 3
         )
           return alert(
             `You can't have more than 3 of the same ${limited_type} with 1201+ price!`
@@ -163,7 +169,7 @@ class App extends Component {
     }
 
     if (image.includes("ror"))
-      if (this.handleVerifyDuplicates(unitid, "countSame") === 1)
+      if (this.handleVerifyDuplicates("countSame", props) === 1)
         return alert("You can't have more than 1 of the same RoR!");
 
     this.handleUnitAdd(props);

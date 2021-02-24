@@ -109,12 +109,13 @@
   },
   {
     "unitid": 12,
-    "name": "Ungor Spearman Herd (Shields)",
+    "name": "Ungor Spearmen Herd (Shields)",
     "category": "Infantry",
     "price": 400,
     "image": "wh_dlc03_bst_ungor_spearmen_shield",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "baseUnit": "Ungor Spearmen Herd - Shields"
   },
   {
     "unitid": 13,
@@ -123,7 +124,8 @@
     "price": 550,
     "image": "wh_dlc03_bst_gor_herd_shields",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "baseUnit": "Gor Herd - Shields"
   },
   {
     "unitid": 14,
@@ -141,7 +143,9 @@
     "price": 600,
     "image": "wh_pro04_bst_ror_ungor_spearmen_shield",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "baseUnit": "Ungor Spearmen Herd - Shields",
+    "basePrice": 400
   },
   {
     "unitid": 16,
@@ -150,7 +154,8 @@
     "price": 750,
     "image": "wh_pro04_bst_ror_gor_herd_shields",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "baseUnit": "Gor Herd - Shields"
   },
   {
     "unitid": 17,
@@ -159,7 +164,8 @@
     "price": 1050,
     "image": "wh_dlc03_bst_bestigor_herd",
     "category_icon": "infantry_axe_great",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "baseUnit": "Bestigor Herd"
   },
   {
     "unitid": 18,
@@ -168,7 +174,8 @@
     "price": 1300,
     "image": "wh_pro04_bst_ror_bestigor_herd",
     "category_icon": "infantry_spear_halberd",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "baseUnit": "Bestigor Herd"
   },
   {
     "unitid": 19,
@@ -198,7 +205,8 @@
     "image": "wh_dlc03_bst_centigors_great_weapons",
     "category_icon": "wh_dlc03_bst_centigor_great_weapon",
     "semicircle_icon": "unit_card_semicircle",
-    "limited_type": "Cavalry"
+    "limited_type": "Cavalry",
+    "baseUnit": "Centigors (Great Weapons)"
   },
   {
     "unitid": 22,
@@ -218,7 +226,8 @@
     "image": "wh_pro04_bst_ror_centigors_great_weapons",
     "category_icon": "wh_dlc03_bst_centigor_great_weapon",
     "semicircle_icon": "unit_card_semicircle_renown",
-    "limited_type": "Cavalry"
+    "limited_type": "Cavalry",
+    "baseUnit": "Centigors (Great Weapons)"
   },
   {
     "unitid": 24,

@@ -18,9 +18,12 @@ const categories = [
 ];
 
 const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
-  let factionRoster;
-  if (selectedFaction === "Beastmen") factionRoster = Beastmen;
-  if (selectedFaction === "Bretonnia") factionRoster = Bretonnia;
+  const factions = {
+    Beastmen,
+    Bretonnia,
+  };
+
+  let factionRoster = factions[selectedFaction];
 
   return (
     <Grid container justify="center" alignContent="center" direction="column">
