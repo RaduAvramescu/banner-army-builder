@@ -24,22 +24,30 @@ class App extends Component {
     }));
   };
 
-  handleVerifyDuplicates = (unitid, validation) => {
+  handleVerifyDuplicates = (unitid, validation, category) => {
     const { units } = this.state;
     let count = 0;
 
-    if (validation === "max2heroes") {
+    if (validation === "countHeroes") {
       count = units.filter((el) => {
         if (el.category === "Heroes") return count + 1;
       }).length;
+      return count;
     }
 
-    if (validation === "maxsame")
+    if (validation === "countSame") {
       count = units.filter((el) => {
         if (el.unitid === unitid) return count + 1;
       }).length;
+      return count;
+    }
 
-    if (validation !== "max2heroes" && validation !== "maxsame")
+    if (validation === "countCategory") {
+      count = units.filter((el) => {
+        if (el.category === category) return count + 1;
+      }).length;
+      return count;
+    } else
       count = units.filter((el) => {
         if (`${el}.${validation}`) return count + 1;
       }).length;
@@ -70,17 +78,17 @@ class App extends Component {
         this.handleUnitRemove(0, units[0].price);
 
     if (category === "Heroes")
-      if (this.handleVerifyDuplicates(unitid, "max2heroes") === 2)
+      if (this.handleVerifyDuplicates(unitid, "countHeroes") === 2)
         return alert("You can't have more than 2 Heroes!");
 
-    if (this.handleVerifyDuplicates(unitid, "maxsame") === 5)
-      return alert("You can't have more than 5 of a unit!");
+    if (this.handleVerifyDuplicates(unitid, "countSame") === 5)
+      return alert("You can't have more than 5 of the same unit!");
 
     if (limited_type)
-      if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
+      if (this.handleVerifyDuplicates(unitid, "countSame") === 4)
         return alert(`You can't have more than 4 of the same ${limited_type}!`);
       else if (limited_type === "Restricted")
-        if (this.handleVerifyDuplicates(unitid, "maxsame") === 1)
+        if (this.handleVerifyDuplicates(unitid, "countSame") === 1)
           return alert(`You can't have more than 1 ${name}!`);
 
     if (isSE) {
@@ -88,10 +96,10 @@ class App extends Component {
         return alert("You can't have more than 5 Single Entity (SE) units!");
 
       if (category === "Heroes")
-        if (this.handleVerifyDuplicates(unitid, "max2heroes") === 2)
+        if (this.handleVerifyDuplicates(unitid, "countHeroes") === 2)
           return alert("You can't have more than 2 Heroes!");
 
-      if (this.handleVerifyDuplicates(unitid, "maxsame") === 2)
+      if (this.handleVerifyDuplicates(unitid, "countSame") === 2)
         return alert(
           "You can't have more than 2 of the same Single Entity (SE) units!"
         );
@@ -119,32 +127,35 @@ class App extends Component {
 
     if (category === "Infantry") {
       if (price >= 901 && price <= 1100)
-        if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
+        if (this.handleVerifyDuplicates(unitid, "countSame") === 4)
           return alert(
             "You can't have more than 4 of an Infantry unit with 901-1100 price!"
           );
 
       if (price >= 1101)
-        if (this.handleVerifyDuplicates(unitid, "maxsame") === 3)
+        if (this.handleVerifyDuplicates(unitid, "countSame") === 3)
           return alert(
             "You can't have more than 3 of an Infantry unit with 1101+ price!"
           );
     }
 
+    if (category === "Missile Cavalry & Chariots")
+      if (this.handleVerifyDuplicates(unitid, "countCategory", category) === 6)
+        return alert(`You can't have more than 6 ${category}!`);
+
     if (category !== "Infantry" && !isSE) {
       if (price >= 1201)
         if (
           limited_type &&
-          this.handleVerifyDuplicates(unitid, "maxsame") === 3
-        ) {
+          this.handleVerifyDuplicates(unitid, "countSame") === 3
+        )
           return alert(
             `You can't have more than 3 of the same ${limited_type} with 1201+ price!`
           );
-        }
     }
 
     if (image.includes("ror"))
-      if (this.handleVerifyDuplicates(unitid, "maxsame") === 1)
+      if (this.handleVerifyDuplicates(unitid, "countSame") === 1)
         return alert("You can't have more than 1 of the same RoR!");
 
     this.handleUnitAdd(props);
