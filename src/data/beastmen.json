@@ -6,7 +6,8 @@
     "price": 600,
     "image": "bst_ch_malagor_0",
     "category_icon": "wh_dlc03_bst_lore_wild",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 2,
@@ -15,7 +16,8 @@
     "price": 750,
     "image": "bst_beastlords_campaign_01_0",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 3,
@@ -24,7 +26,8 @@
     "price": 950,
     "image": "bst_ch_khazrak_0",
     "category_icon": "infantry_sword",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 4,
@@ -33,7 +36,8 @@
     "price": 1200,
     "image": "bst_ch_morghur_0",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 5,
@@ -42,7 +46,8 @@
     "price": 350,
     "image": "bst_bray_shaman_campaign_01_0",
     "category_icon": "wh_dlc03_lore_beasts",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 6,
@@ -51,7 +56,8 @@
     "price": 350,
     "image": "bst_bray_shaman_campaign_02_0",
     "category_icon": "wh_main_lore_death",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 7,
@@ -60,7 +66,8 @@
     "price": 350,
     "image": "bst_bray_shaman_campaign_04_0",
     "category_icon": "wh_dlc05_wef_lore_shadow",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 8,
@@ -69,7 +76,8 @@
     "price": 350,
     "image": "bst_bray_shaman_campaign_03_0",
     "category_icon": "wh_dlc03_bst_lore_wild",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 9,
@@ -78,7 +86,8 @@
     "price": 1075,
     "image": "bst_gorebulls_campaign_03_0",
     "category_icon": "wh_dlc03_bst_gorebull",
-    "semicircle_icon": "unit_card_semicircle_hero"
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   },
   {
     "unitid": 10,
@@ -299,6 +308,7 @@
     "image": "wh_dlc03_bst_giant",
     "category_icon": "giant",
     "semicircle_icon": "unit_card_semicircle",
+    "isSE": true,
     "isSEM": true
   },
   {
@@ -309,6 +319,7 @@
     "image": "wh_dlc03_bst_cygor",
     "category_icon": "wh_dlc03_bst_cygor",
     "semicircle_icon": "unit_card_semicircle",
+    "isSE": true,
     "isSEM": true
   },
   {
@@ -329,6 +340,7 @@
     "image": "wh_pro04_bst_ror_cygor",
     "category_icon": "wh_dlc03_bst_cygor",
     "semicircle_icon": "unit_card_semicircle_renown",
+    "isSE": true,
     "isSEM": true
   }
 ]
