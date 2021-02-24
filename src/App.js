@@ -16,7 +16,12 @@ class App extends Component {
   state = { selectedFaction: "Beastmen", funds: 12400, units: [] };
 
   handleFactionChange = (selectedFaction) => {
-    this.setState({ selectedFaction: selectedFaction });
+    this.setState((state) => ({
+      ...state,
+      selectedFaction: selectedFaction,
+      units: [],
+      funds: 12400,
+    }));
   };
 
   handleVerifyDuplicates = (unitid, validation) => {
