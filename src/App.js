@@ -48,7 +48,6 @@ class App extends Component {
       }).length;
       return count;
     } else {
-      console.log(validation);
       count = units.filter((el) => {
         if (`${el}.${validation}` === true) return count + 1;
       }).length;
@@ -164,11 +163,10 @@ class App extends Component {
   };
 
   handleUnitAdd = (props) => {
-    const { category, price } = props;
+    const { price } = props;
     this.setState((state) => {
       const newUnits = [...state.units];
-      if (category === "Lords") newUnits.unshift(props);
-      else newUnits.push(props);
+      newUnits.push(props);
 
       return {
         ...state,
