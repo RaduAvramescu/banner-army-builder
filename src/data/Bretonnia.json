@@ -1,0 +1,12 @@
+[
+  {
+    "unitid": 1,
+    "name": "Malagor the Dark Omen",
+    "category": "Lords",
+    "price": 600,
+    "image": "bst_ch_malagor_0",
+    "category_icon": "wh_dlc03_bst_lore_wild",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  }
+]
