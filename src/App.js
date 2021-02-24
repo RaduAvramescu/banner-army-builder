@@ -132,6 +132,18 @@ class App extends Component {
           );
     }
 
+    if (category !== "Infantry" && !isSE) {
+      if (price >= 1201)
+        if (
+          limited_type &&
+          this.handleVerifyDuplicates(unitid, "maxsame") === 3
+        ) {
+          return alert(
+            `You can't have more than 3 of the same ${limited_type} with 1201+ price!`
+          );
+        }
+    }
+
     if (image.includes("ror"))
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 1)
         return alert("You can't have more than 1 of the same RoR!");
