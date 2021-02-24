@@ -44,11 +44,25 @@ class App extends Component {
         if (el.isSEM) return count + 1;
       }).length;
 
+    if (validation === "360")
+      count = units.filter((el) => {
+        if (el.is360) return count + 1;
+      }).length;
+
     return count;
   };
 
   handleUnitCanAdd = (props) => {
-    const { unitid, price, category, image, limited_type, isSE, isSEM } = props;
+    const {
+      unitid,
+      price,
+      category,
+      image,
+      limited_type,
+      isSE,
+      isSEM,
+      is360,
+    } = props;
     const { funds, units } = this.state;
 
     if (price > funds) return alert("You don't have enough funds!");
@@ -79,9 +93,15 @@ class App extends Component {
           "You can't have more than 3 Single Entity Monsters (SEM)!"
         );
 
+    if (is360)
+      if (this.handleVerifyDuplicates(unitid, "360") === 6)
+        return alert(
+          "You can't have more than 6 units with 360 degree firing arc!"
+        );
+
     if (image.includes("ror"))
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 1)
-        return alert(`You can't have more than 1 of the same RoR!`);
+        return alert("You can't have more than 1 of the same RoR!");
 
     this.handleUnitAdd(props);
   };

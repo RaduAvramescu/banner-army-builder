@@ -222,7 +222,8 @@
     "price": 800,
     "image": "wh_dlc03_bst_centigors_throwing_axes",
     "category_icon": "wh_dlc03_bst_centigor_missile",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "is360": true
   },
   {
     "unitid": 25,
@@ -231,7 +232,8 @@
     "price": 400,
     "image": "wh_dlc03_bst_warhounds",
     "category_icon": "war_beast",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "is360": true
   },
   {
     "unitid": 26,
