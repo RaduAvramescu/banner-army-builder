@@ -187,7 +187,8 @@
     "price": 700,
     "image": "wh_dlc03_bst_centigors",
     "category_icon": "wh_dlc03_bst_centigor",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "limited_type": "Cavalry"
   },
   {
     "unitid": 21,
@@ -196,7 +197,8 @@
     "price": 900,
     "image": "wh_dlc03_bst_centigors_great_weapons",
     "category_icon": "wh_dlc03_bst_centigor_great_weapon",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "limited_type": "Cavalry"
   },
   {
     "unitid": 22,
@@ -205,7 +207,8 @@
     "price": 1000,
     "image": "wh_dlc03_bst_razorgor_chariot",
     "category_icon": "wh2_dlc15_lion_chariot",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "limited_type": "Chariots"
   },
   {
     "unitid": 23,
@@ -214,7 +217,8 @@
     "price": 1200,
     "image": "wh_pro04_bst_ror_centigors_great_weapons",
     "category_icon": "wh_dlc03_bst_centigor_great_weapon",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "limited_type": "Cavalry"
   },
   {
     "unitid": 24,
@@ -235,7 +239,8 @@
     "image": "wh_dlc03_bst_warhounds",
     "category_icon": "war_beast",
     "semicircle_icon": "unit_card_semicircle",
-    "is360": true
+    "is360": true,
+    "limited_type": "War Beasts"
   },
   {
     "unitid": 26,
@@ -244,7 +249,8 @@
     "price": 475,
     "image": "wh_dlc03_bst_warhounds_poison",
     "category_icon": "war_beast",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "limited_type": "War Beasts"
   },
   {
     "unitid": 27,

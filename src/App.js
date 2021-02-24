@@ -49,7 +49,7 @@ class App extends Component {
       return count;
     } else {
       count = units.filter((el) => {
-        if (`${el}.${validation}` === true) return count + 1;
+        if (`${el}.${validation}`.includes(validation)) return count + 1;
       }).length;
     }
 
@@ -85,13 +85,17 @@ class App extends Component {
     if (this.handleVerifyDuplicates(unitid, "countSame") === 5)
       return alert("You can't have more than 5 of the same unit!");
 
-    if (limited_type)
+    if (limited_type) {
+      if (limited_type === "Chariots")
+        if (this.handleVerifyDuplicates(unitid, limited_type) === 4)
+          return alert(`You can't have more than 4 ${limited_type}!`);
+
       if (this.handleVerifyDuplicates(unitid, "countSame") === 4)
         return alert(`You can't have more than 4 of the same ${limited_type}!`);
       else if (limited_type === "Restricted")
         if (this.handleVerifyDuplicates(unitid, "countSame") === 1)
           return alert(`You can't have more than 1 ${name}!`);
-
+    }
     if (isSE) {
       if (this.handleVerifyDuplicates(unitid, "isSE") === 5)
         return alert("You can't have more than 5 Single Entity (SE) units!");
