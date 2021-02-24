@@ -65,6 +65,7 @@ class App extends Component {
   handleUnitCanAdd = (props) => {
     const {
       unitid,
+      name,
       price,
       category,
       image,
@@ -92,6 +93,9 @@ class App extends Component {
     if (limited_type)
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 4)
         return alert(`You can't have more than 4 of the same ${limited_type}!`);
+      else if (limited_type === "Restricted")
+        if (this.handleVerifyDuplicates(unitid, "maxsame") === 1)
+          return alert(`You can't have more than 1 ${name}!`);
 
     if (isSE) {
       if (this.handleVerifyDuplicates(unitid, "se") === 5)
