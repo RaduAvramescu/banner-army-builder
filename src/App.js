@@ -65,7 +65,6 @@ class App extends Component {
 
   handleUnitCanAdd = (props) => {
     const {
-      unitid,
       name,
       price,
       category,
@@ -76,7 +75,6 @@ class App extends Component {
       isMissile,
       is360,
       isFlyer,
-      baseUnit,
       basePrice,
     } = props;
     const { funds, units } = this.state;
@@ -140,25 +138,24 @@ class App extends Component {
         return alert("You can't have more than 5 flying units!");
 
     if (category === "Infantry") {
-      if (price >= 901 && price <= 1100)
+      if (
+        (!image.includes("ror") && price >= 901 && price <= 1100) ||
+        (basePrice >= 901 && basePrice <= 1100)
+      )
         if (this.handleVerifyDuplicates("countSame", props) === 4)
           return alert(
             "You can't have more than 4 of an Infantry unit with 901-1100 price!"
           );
 
-      if (price >= 1101)
+      if ((!image.includes("ror") && price >= 1101) || basePrice >= 1101)
         if (this.handleVerifyDuplicates("countSame", props) === 3)
           return alert(
             "You can't have more than 3 of an Infantry unit with 1101+ price!"
           );
     }
 
-    if (category === "Missile Cavalry & Chariots")
-      if (this.handleVerifyDuplicates("countCategory", props) === 6)
-        return alert(`You can't have more than 6 ${category}!`);
-
     if (category !== "Infantry" && !isSE) {
-      if (price >= 1201)
+      if ((!image.includes("ror") && price >= 1201) || basePrice >= 1201)
         if (
           limited_type &&
           this.handleVerifyDuplicates("countSame", props) === 3
@@ -167,6 +164,10 @@ class App extends Component {
             `You can't have more than 3 of the same ${limited_type} with 1201+ price!`
           );
     }
+
+    if (category === "Missile Cavalry & Chariots")
+      if (this.handleVerifyDuplicates("countCategory", props) === 6)
+        return alert(`You can't have more than 6 ${category}!`);
 
     if (image.includes("ror"))
       if (this.handleVerifyDuplicates("countSame", props) === 1)

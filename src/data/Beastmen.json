@@ -175,7 +175,8 @@
     "image": "wh_pro04_bst_ror_bestigor_herd",
     "category_icon": "infantry_spear_halberd",
     "semicircle_icon": "unit_card_semicircle_renown",
-    "baseUnit": "Bestigor Herd"
+    "baseUnit": "Bestigor Herd",
+    "basePrice": 1050
   },
   {
     "unitid": 19,
