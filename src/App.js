@@ -23,6 +23,12 @@ class App extends Component {
     const { units } = this.state;
     let count = 0;
 
+    if (validation === "max2heroes") {
+      count = units.filter((el) => {
+        if (el.category === "Heroes") return count + 1;
+      }).length;
+    }
+
     if (validation === "maxsame")
       count = units.filter((el) => {
         if (el.unitid === unitid) return count + 1;
@@ -71,6 +77,10 @@ class App extends Component {
       if (units.find((unit) => unit.category === "Lords"))
         this.handleUnitRemove(0, units[0].price);
 
+    if (category === "Heroes")
+      if (this.handleVerifyDuplicates(unitid, "max2heroes") === 2)
+        return alert("You can't have more than 2 Heroes!");
+
     if (this.handleVerifyDuplicates(unitid, "maxsame") === 5)
       return alert("You can't have more than 5 of a unit!");
 
@@ -82,9 +92,13 @@ class App extends Component {
       if (this.handleVerifyDuplicates(unitid, "se") === 5)
         return alert("You can't have more than 5 Single Entity (SE) units!");
 
+      if (category === "Heroes")
+        if (this.handleVerifyDuplicates(unitid, "max2heroes") === 2)
+          return alert("You can't have more than 2 Heroes!");
+
       if (this.handleVerifyDuplicates(unitid, "maxsame") === 2)
         return alert(
-          "You can't have more than 2 of the same Single Entity (SE)!"
+          "You can't have more than 2 of the same Single Entity (SE) units!"
         );
     }
 
