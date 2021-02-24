@@ -96,7 +96,8 @@
     "price": 350,
     "image": "wh_dlc03_bst_ungor_spearmen",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "baseUnit": "Ungor Spearmen Herd"
   },
   {
     "unitid": 11,
@@ -115,7 +116,8 @@
     "image": "wh_dlc03_bst_ungor_spearmen_shield",
     "category_icon": "infantry_spear",
     "semicircle_icon": "unit_card_semicircle",
-    "baseUnit": "Ungor Spearmen Herd - Shields"
+    "baseUnit": "Ungor Spearmen Herd",
+    "basePrice": 350
   },
   {
     "unitid": 13,
@@ -125,7 +127,7 @@
     "image": "wh_dlc03_bst_gor_herd_shields",
     "category_icon": "infantry_axe",
     "semicircle_icon": "unit_card_semicircle",
-    "baseUnit": "Gor Herd - Shields"
+    "baseUnit": "Gor Herd"
   },
   {
     "unitid": 14,
@@ -134,7 +136,9 @@
     "price": 600,
     "image": "wh_dlc03_bst_gor_herd_dual_weapons",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "baseUnit": "Gor Herd",
+    "basePrice": 550
   },
   {
     "unitid": 15,
@@ -144,8 +148,8 @@
     "image": "wh_pro04_bst_ror_ungor_spearmen_shield",
     "category_icon": "infantry_spear",
     "semicircle_icon": "unit_card_semicircle_renown",
-    "baseUnit": "Ungor Spearmen Herd - Shields",
-    "basePrice": 400
+    "baseUnit": "Ungor Spearmen Herd",
+    "basePrice": 350
   },
   {
     "unitid": 16,

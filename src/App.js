@@ -39,7 +39,9 @@ class App extends Component {
       count = units.filter((el) => {
         if (
           el.unitid === props.unitid ||
-          (el.baseUnit === props.baseUnit && el.hasOwnProperty("baseUnit"))
+          (el.baseUnit === props.baseUnit &&
+            el.hasOwnProperty("baseUnit") &&
+            !props.image.includes("ror"))
         )
           return count + 1;
       }).length;
