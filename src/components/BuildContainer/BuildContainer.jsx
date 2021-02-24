@@ -10,6 +10,11 @@ const BuildContainer = ({
   onUnitRemove,
   units,
 }) => {
+  const getClasses = () => {
+    if (modelCount < 300) return "red";
+    return "green";
+  };
+
   return (
     <Grid container justify="center" alignContent="center" direction="column">
       <Typography variant="h2" align="center">
@@ -19,7 +24,10 @@ const BuildContainer = ({
         Funds Left: {fundsRemaining}
       </Typography>
       <Typography variant="h3" align="center">
-        Model Count: {modelCount}
+        Model Count:{" "}
+        <Typography variant="h3" align="center" className={getClasses()}>
+          {modelCount}
+        </Typography>
       </Typography>
       <Grid container justify="center">
         {units

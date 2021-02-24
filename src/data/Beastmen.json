@@ -309,7 +309,8 @@
     "image": "wh_dlc03_bst_minotaurs_shield",
     "category_icon": "monstrous_infantry",
     "semicircle_icon": "unit_card_semicircle",
-    "limited_type": "Monstrous Infantry"
+    "limited_type": "Monstrous Infantry",
+    "baseUnit": "Minotaurs (Shields)"
   },
   {
     "unitid": 32,
@@ -341,7 +342,8 @@
     "category_icon": "wh_dlc03_bst_cygor",
     "semicircle_icon": "unit_card_semicircle",
     "isSE": true,
-    "isSEM": true
+    "isSEM": true,
+    "baseUnit": "Cygor"
   },
   {
     "unitid": 35,
@@ -351,7 +353,9 @@
     "image": "wh_pro04_bst_ror_minotaurs_shield",
     "category_icon": "monstrous_infantry",
     "semicircle_icon": "unit_card_semicircle_renown",
-    "limited_type": "Monstrous Infantry"
+    "limited_type": "Monstrous Infantry",
+    "baseUnit": "Minotaurs (Shields)",
+    "basePrice": 1250
   },
   {
     "unitid": 36,
@@ -362,6 +366,8 @@
     "category_icon": "wh_dlc03_bst_cygor",
     "semicircle_icon": "unit_card_semicircle_renown",
     "isSE": true,
-    "isSEM": true
+    "isSEM": true,
+    "baseUnit": "Cygor",
+    "basePrice": 1600
   }
 ]
