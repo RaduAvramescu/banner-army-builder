@@ -13,14 +13,15 @@ import {
 import "./App.css";
 
 class App extends Component {
-  state = { selectedFaction: "Beastmen", funds: 12400, units: [] };
+  state = { selectedFaction: "Beastmen", funds: 12400, models: 0, units: [] };
 
   handleFactionChange = (selectedFaction) => {
     this.setState((state) => ({
       ...state,
       selectedFaction: selectedFaction,
-      units: [],
       funds: 12400,
+      models: 0,
+      units: [],
     }));
   };
 
@@ -196,6 +197,7 @@ class App extends Component {
   };
 
   render() {
+    const { selectedFaction, funds, models, units } = this.state;
     return (
       <div className="App">
         <CssBaseline />
@@ -203,14 +205,15 @@ class App extends Component {
           <Banner />
           <FactionSelector handleFactionChange={this.handleFactionChange} />
           <FactionRoster
-            selectedFaction={this.state.selectedFaction}
+            selectedFaction={selectedFaction}
             onUnitAdd={this.handleUnitCanAdd}
-            fundsRemaining={this.state.funds}
+            fundsRemaining={funds}
           />
           <BuildContainer
-            units={this.state.units}
+            units={units}
             onUnitRemove={this.handleUnitRemove}
-            fundsRemaining={this.state.funds}
+            fundsRemaining={funds}
+            modelCount={models}
           />
         </Container>
         <Footer />
