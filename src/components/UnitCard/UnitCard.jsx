@@ -29,35 +29,49 @@ const UnitCard = (props) => {
         {props.price}
       </Typography>
       <img
-        src={require(`../../images/${props.image}.png`).default}
+        src={
+          require(`../../images/unit_card/factions/beastmen/${props.image}.png`)
+            .default
+        }
         alt="Unit Card Image"
         width="60"
         height="130"
       />
       <img
         className="unit_card position_absolute"
-        src={require(`../../images/unit_card_frame_plain.png`).default}
+        src={
+          require(`../../images/unit_card/effects/unit_card_frame_plain.png`)
+            .default
+        }
         alt="Unit Card Frame"
         width="60"
         height="130"
       ></img>
       <img
         className="position_absolute"
-        src={require(`../../images/${props.semicircle_icon}.png`).default}
+        src={
+          require(`../../images/unit_card/semicircle/${props.semicircle_icon}.png`)
+            .default
+        }
         alt="Unit Card Semicircle Icon"
         width="55"
         height="35"
       />
       <img
         className="position_absolute"
-        src={require(`../../images/${props.category_icon}.png`).default}
+        src={
+          require(`../../images/unit_card/category_icon/${props.category_icon}.png`)
+            .default
+        }
         alt="Unit Card Category Icon"
         width="22"
         height="22"
       />
       <img
         className="unit_card unit_card_hover position_absolute"
-        src={require(`../../images/unit_card_hover.png`).default}
+        src={
+          require(`../../images/unit_card/effects/unit_card_hover.png`).default
+        }
         alt="Unit Card Hover"
         width="60"
         height="130"

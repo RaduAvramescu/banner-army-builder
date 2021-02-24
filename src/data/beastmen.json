@@ -258,7 +258,8 @@
     "price": 900,
     "image": "wh_dlc03_bst_spawn",
     "category_icon": "monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "limited_type": "Monstrous Infantry"
   },
   {
     "unitid": 30,
@@ -267,7 +268,8 @@
     "price": 1250,
     "image": "wh_dlc03_bst_minotaurs",
     "category_icon": "monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "limited_type": "Monstrous Infantry"
   },
   {
     "unitid": 31,
@@ -276,7 +278,8 @@
     "price": 1250,
     "image": "wh_dlc03_bst_minotaurs_shield",
     "category_icon": "monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "limited_type": "Monstrous Infantry"
   },
   {
     "unitid": 32,
@@ -284,8 +287,9 @@
     "category": "Monsters & Beasts",
     "price": 1350,
     "image": "wh_dlc03_bst_minotaurs_great_weapons",
-    "category_icon": "wh_dlc03_minotaurs_great_weapon_monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle"
+    "category_icon": "wh_dlc03_minotaurs_great_weapon",
+    "semicircle_icon": "unit_card_semicircle",
+    "limited_type": "Monstrous Infantry"
   },
   {
     "unitid": 33,
@@ -302,7 +306,7 @@
     "category": "Monsters & Beasts",
     "price": 1600,
     "image": "wh_dlc03_bst_cygor",
-    "category_icon": "wh_dlc03_bst_cygor_category",
+    "category_icon": "wh_dlc03_bst_cygor",
     "semicircle_icon": "unit_card_semicircle"
   },
   {
@@ -312,7 +316,8 @@
     "price": 1700,
     "image": "wh_pro04_bst_ror_minotaurs_shield",
     "category_icon": "monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "limited_type": "Monstrous Infantry"
   },
   {
     "unitid": 36,
@@ -320,7 +325,7 @@
     "category": "Monsters & Beasts",
     "price": 1950,
     "image": "wh_pro04_bst_ror_cygor",
-    "category_icon": "wh_dlc03_bst_cygor_category",
+    "category_icon": "wh_dlc03_bst_cygor",
     "semicircle_icon": "unit_card_semicircle_renown"
   }
 ]
