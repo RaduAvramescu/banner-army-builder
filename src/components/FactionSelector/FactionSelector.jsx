@@ -10,12 +10,12 @@ const FactionSelector = ({ handleFactionChange }) => {
       <FormControl margin="normal">
         <InputLabel htmlFor="faction-select">Faction</InputLabel>
         <NativeSelect
-          defaultValue="Beastmen"
+          defaultValue={0}
           onChange={(e) => handleFactionChange(e.target.value)}
           inputProps={{ id: "faction-select" }}
         >
           {factions.map((faction, i) => (
-            <option key={i} value={faction.name}>
+            <option key={i} value={i}>
               {faction.name}
             </option>
           ))}

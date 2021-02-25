@@ -1,0 +1,13 @@
+[
+  {
+    "unitid": 1,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  }
+]

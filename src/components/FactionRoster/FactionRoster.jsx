@@ -1,7 +1,8 @@
 import React from "react";
 
-import Beastmen from "../../data/Beastmen.json";
-import Bretonnia from "../../data/Bretonnia.json";
+import Beastmen from "../../data/beastmen.json";
+import Bretonnia from "../../data/bretonnia.json";
+import DarkElves from "../../data/dark_elves.json";
 
 import UnitCard from "../UnitCard/UnitCard";
 
@@ -18,11 +19,7 @@ const categories = [
 ];
 
 const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
-  const factions = {
-    Beastmen,
-    Bretonnia,
-  };
-
+  const factions = [Beastmen, Bretonnia, DarkElves];
   let factionRoster = factions[selectedFaction];
 
   return (
@@ -36,6 +33,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
               </Typography>
               <Grid container justify="center">
                 {selectedFaction &&
+                  factionRoster &&
                   factionRoster
                     .filter((unit) => unit.category === categories[i])
                     .map((unit, i) => (
@@ -44,6 +42,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
                         id={i}
                         onUnitAdd={onUnitAdd}
                         addUnit={true}
+                        selectedFaction={selectedFaction}
                         {...unit}
                       />
                     ))}

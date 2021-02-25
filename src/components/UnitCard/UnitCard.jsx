@@ -30,7 +30,7 @@ const UnitCard = (props) => {
       </Typography>
       <img
         src={
-          require(`../../images/unit_card/factions/beastmen/${props.image}.png`)
+          require(`../../images/unit_card/factions/${props.selectedFaction}/${props.image}.png`)
             .default
         }
         alt="Unit Card Image"
