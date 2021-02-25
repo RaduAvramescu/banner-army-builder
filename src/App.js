@@ -68,6 +68,15 @@ class App extends Component {
       return count;
     }
 
+    if (validation === "isSpecial") {
+      count = units.filter((el) => {
+        if (el.hasOwnProperty("isSpecial") && el.isSpecial === props.isSpecial)
+          if (el.name === props.limiter || props.name === props.limiter)
+            return count + 1;
+      }).length;
+      return count;
+    }
+
     if (validation === "SEMCost") {
       count = units.filter((el) => {
         if (el.price >= 1800) return count + 1;
@@ -101,10 +110,14 @@ class App extends Component {
       isMissile,
       is360,
       isFlyer,
+      isSpecial,
       hasBreath,
       hasDrain,
     } = props;
     const { funds, units } = this.state;
+
+    if (units.length === 20)
+      return alert("You cannot have more than 20 units!");
 
     if (category !== "Lords" && !units[0])
       return alert("You have to pick a Lord first!");
@@ -176,6 +189,12 @@ class App extends Component {
     if (isFlyer)
       if (this.handleVerifyDuplicates("isFlyer", props) === 5)
         return alert("You can't have more than 5 flying units!");
+
+    if (isSpecial)
+      if (this.handleVerifyDuplicates("isSpecial", props) === 1)
+        return alert(
+          `Your faction has a special rule regarding ${props.limiter} that does not allow this!`
+        );
 
     if (hasBreath)
       if (this.handleVerifyDuplicates("hasBreath", props) === 2)

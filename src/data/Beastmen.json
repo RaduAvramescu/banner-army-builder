@@ -323,7 +323,9 @@
     "image": "wh_dlc03_bst_spawn",
     "category_icon": "monstrous_infantry",
     "semicircle_icon": "unit_card_semicircle",
-    "limited_type": "Monstrous Infantry"
+    "limited_type": "Monstrous Infantry",
+    "isSpecial": true,
+    "limiter": "Chaos Spawn"
   },
   {
     "unitid": 30,
