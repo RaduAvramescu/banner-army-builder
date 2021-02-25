@@ -251,6 +251,7 @@
     "image": "wh2_main_def_dreadspears",
     "category_icon": "infantry_spear",
     "semicircle_icon": "unit_card_semicircle",
+    "baseUnit": "Dreadspears",
     "variantUnit": "Bleakswords"
   },
   {
