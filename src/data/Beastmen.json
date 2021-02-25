@@ -159,7 +159,7 @@
     "image": "wh_pro04_bst_ror_gor_herd_shields",
     "category_icon": "infantry_axe",
     "semicircle_icon": "unit_card_semicircle_renown",
-    "baseUnit": "Gor Herd - Shields"
+    "baseUnit": "Gor Herd"
   },
   {
     "unitid": 17,
