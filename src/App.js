@@ -286,10 +286,6 @@ class App extends Component {
         <NavBar />
         <Divider
           variant="fullWidth"
-          style={{ height: "1px", backgroundColor: "#060606" }}
-        />
-        <Divider
-          variant="fullWidth"
           style={{ height: "2px", backgroundColor: "#898b8d" }}
         />
         <Container maxWidth="lg">
