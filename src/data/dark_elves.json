@@ -142,5 +142,270 @@
     "category_icon": "infantry_sword",
     "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
+  },
+  {
+    "unitid": 14,
+    "name": "Sorceress (Beasts)",
+    "category": "Heroes",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_sorceress_campaign_04_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 15,
+    "name": "Sorceress (Death)",
+    "category": "Heroes",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_sorceress_campaign_01_0",
+    "category_icon": "wh_main_lore_death",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 16,
+    "name": "Sorceress (Dark)",
+    "category": "Heroes",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_sorceress_campaign_01_0",
+    "category_icon": "wh2_main_lore_dark",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 17,
+    "name": "Sorceress (Fire)",
+    "category": "Heroes",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_sorceress_campaign_02_0",
+    "category_icon": "wh_main_lore_fire",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 18,
+    "name": "Sorceress (Shadow)",
+    "category": "Heroes",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_sorceress_campaign_03_0",
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 19,
+    "name": "Death Hag",
+    "category": "Heroes",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_death_hag_campaign_01_0",
+    "category_icon": "wh2_main_def_dignitary",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 20,
+    "name": "Master",
+    "category": "Heroes",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_master_campaign_02_0",
+    "category_icon": "wh2_dlc14_def_champion",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 21,
+    "name": "Khainite Assassin",
+    "category": "Heroes",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_assassin_campaign_01_0",
+    "category_icon": "wh2_main_def_spy",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 22,
+    "name": "Bleakswords",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_bleakswords",
+    "category_icon": "infantry_sword",
+    "semicircle_icon": "unit_card_semicircle"
+  },
+  {
+    "unitid": 23,
+    "name": "Dreadspears",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_dreadspears",
+    "category_icon": "infantry_spear",
+    "semicircle_icon": "unit_card_semicircle"
+  },
+  {
+    "unitid": 24,
+    "name": "Black Ark Corsairs",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_black_ark_corsairs",
+    "category_icon": "wh2_main_infantry_dual_swords",
+    "semicircle_icon": "unit_card_semicircle"
+  },
+  {
+    "unitid": 25,
+    "name": "The Hellebronai (Dreadspears)",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_dlc10_def_dreadspears_ror",
+    "category_icon": "infantry_spear",
+    "semicircle_icon": "unit_card_semicircle_renown"
+  },
+  {
+    "unitid": 26,
+    "name": "Witch Elves",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_dlc10_def_dreadspears_ror",
+    "category_icon": "wh2_main_def_infantry_dual_daggers",
+    "semicircle_icon": "unit_card_semicircle"
+  },
+  {
+    "unitid": 27,
+    "name": "Witch Elves",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_dlc10_def_witch_elves_ror",
+    "category_icon": "wh2_main_def_infantry_dual_daggers",
+    "semicircle_icon": "unit_card_semicircle_renown"
+  },
+  {
+    "unitid": 28,
+    "name": "Sisters of Slaughter",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_dlc10_def_inf_sisters_of_slaughter",
+    "category_icon": "wh2_dlc09_tmb_whip_infantry",
+    "semicircle_icon": "unit_card_semicircle"
+  },
+  {
+    "unitid": 29,
+    "name": "Har Ganeth Executioners",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_har_ganeth_executioners",
+    "category_icon": "infantry_sword_great",
+    "semicircle_icon": "unit_card_semicircle"
+  },
+  {
+    "unitid": 30,
+    "name": "Black Guard of Naggarond",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_black_guard",
+    "category_icon": "infantry_spear_halberd",
+    "semicircle_icon": "unit_card_semicircle"
+  },
+  {
+    "unitid": 30,
+    "name": "Blades of the Blood Queen (Executioners)",
+    "category": "Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_black_guard",
+    "category_icon": "infantry_sword_great",
+    "semicircle_icon": "unit_card_semicircle_renown"
+  },
+  {
+    "unitid": 31,
+    "name": "Darkshards",
+    "category": "Missile Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_darkshards",
+    "category_icon": "missile_infantry_bow",
+    "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true
+  },
+  {
+    "unitid": 32,
+    "name": "Darkshards (Shields)",
+    "category": "Missile Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_darkshards_shields",
+    "category_icon": "missile_infantry_bow",
+    "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true
+  },
+  {
+    "unitid": 33,
+    "name": "Black Ark Corsairs (Handbows)",
+    "category": "Missile Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_black_ark_corsairs_handbows",
+    "category_icon": "wh2_main_def_missile_infantry_handbow",
+    "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true
+  },
+  {
+    "unitid": 34,
+    "name": "The Bolt-fiends (Darkshards - Shields)",
+    "category": "Missile Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_dlc10_def_darkshards_shields_ror",
+    "category_icon": "missile_infantry_bow",
+    "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true
+  },
+  {
+    "unitid": 35,
+    "name": "Shades",
+    "category": "Missile Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_shades",
+    "category_icon": "wh2_main_def_missile_infantry_bow_shades",
+    "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true
+  },
+  {
+    "unitid": 36,
+    "name": "Shades (Dual Weapons)",
+    "category": "Missile Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_shades_dual_weapons",
+    "category_icon": "wh2_main_def_missile_infantry_bow_shades_dual_weapons",
+    "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true
+  },
+  {
+    "unitid": 37,
+    "name": "Shades (Greatswords)",
+    "category": "Missile Infantry",
+    "price": 100,
+    "modelCount": 1,
+    "image": "wh2_main_def_shades_great_weapons",
+    "category_icon": "wh2_main_def_missile_infantry_bow_shades_great_weapons",
+    "semicircle_icon": "unit_card_semicircle",
+    "isMissile": true
   }
 ]
