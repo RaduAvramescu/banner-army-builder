@@ -106,6 +106,9 @@ class App extends Component {
     } = props;
     const { funds, units } = this.state;
 
+    if (category !== "Lords" && !units[0])
+      return alert("You have to pick a lord first!");
+
     if (price > funds) return alert("You don't have enough funds!");
 
     if (category === "Lords")
