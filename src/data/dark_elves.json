@@ -9,5 +9,137 @@
     "category_icon": "wh_dlc03_lore_beasts",
     "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
+  },
+  {
+    "unitid": 2,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 3,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 4,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 5,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 6,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 7,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 8,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 9,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 10,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 11,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 12,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
+  },
+  {
+    "unitid": 13,
+    "name": "Supreme Sorceress (Beasts)",
+    "category": "Lords",
+    "price": 100,
+    "modelCount": 1,
+    "image": "def_supreme_sorceress_campaign_01_0",
+    "category_icon": "wh_dlc03_lore_beasts",
+    "semicircle_icon": "unit_card_semicircle_hero",
+    "isSE": true
   }
 ]
