@@ -131,7 +131,10 @@ class App extends Component {
       if (category === "Heroes") {
         if (this.handleVerifyDuplicates("countCategory", props) === 2)
           return alert("You can't have more than 2 Heroes!");
-        if (this.handleVerifyDuplicates("countNamed", props) === 1)
+        if (
+          props.hasOwnProperty("isNamed") &&
+          this.handleVerifyDuplicates("countNamed", props) === 1
+        )
           return alert(
             "You can't have more than 1 of the same named character!"
           );
