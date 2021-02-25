@@ -376,6 +376,7 @@
     "category_icon": "wh2_main_def_missile_infantry_handbow",
     "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
+    "is360": true,
     "variantUnit": "Black Ark Corsairs"
   },
   {
