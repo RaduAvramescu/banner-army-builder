@@ -13,7 +13,7 @@ import { useTheme } from "@material-ui/core/styles";
 export default function NavBar() {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
 
   const handleDrawer = () => {
     setOpen(true);
