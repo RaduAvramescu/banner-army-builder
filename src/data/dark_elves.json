@@ -534,7 +534,7 @@
     "category": "Missile Cavalry & Chariots",
     "price": 900,
     "modelCount": 18,
-    "image": "wh2_dlc10_def_raven_heralds",
+    "image": "wh2_dlc10_def_raven_heralds_ror",
     "category_icon": "missile_cavalry_bow",
     "semicircle_icon": "unit_card_semicircle_renown",
     "isFlyer": true,
