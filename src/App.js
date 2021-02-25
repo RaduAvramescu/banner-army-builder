@@ -28,12 +28,6 @@ class App extends Component {
   handleVerifyDuplicates = (validation, props) => {
     const { units } = this.state;
     let count = 0;
-    if (validation === "countHeroes") {
-      count = units.filter((el) => {
-        if (el.category === "Heroes") return count + 1;
-      }).length;
-      return count;
-    }
 
     if (validation === "countSame") {
       count = units.filter((el) => {
@@ -87,10 +81,6 @@ class App extends Component {
       if (units.find((unit) => unit.category === "Lords"))
         this.handleUnitRemove(0, units[0].price);
 
-    if (category === "Heroes")
-      if (this.handleVerifyDuplicates("countHeroes", props) === 2)
-        return alert("You can't have more than 2 Heroes!");
-
     if (this.handleVerifyDuplicates("countSame", props) === 5)
       return alert("You can't have more than 5 of the same unit!");
 
@@ -106,12 +96,12 @@ class App extends Component {
           return alert(`You can't have more than 1 ${name}!`);
     }
     if (isSE) {
+      if (category === "Heroes")
+        if (this.handleVerifyDuplicates("countCategory", props) === 2)
+          return alert("You can't have more than 2 Heroes!");
+
       if (this.handleVerifyDuplicates("isSE", props) === 5)
         return alert("You can't have more than 5 Single Entity (SE) units!");
-
-      if (category === "Heroes")
-        if (this.handleVerifyDuplicates("countHeroes", props) === 2)
-          return alert("You can't have more than 2 Heroes!");
 
       if (this.handleVerifyDuplicates("countSame", props) === 2)
         return alert(
