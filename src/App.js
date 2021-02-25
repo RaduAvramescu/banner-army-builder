@@ -29,16 +29,34 @@ class App extends Component {
     const { units } = this.state;
     let count = 0;
 
-    if (validation === "countSame" || validation === "countROR") {
+    if (validation === "countSame") {
       count = units.filter((el) => {
-        if (validation === "countROR" && el.unitid === props.unitid)
-          return count + 1;
-        else if (validation === "countSame")
+        if (validation === "countSame")
           if (
             el.unitid === props.unitid ||
             (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
           )
             return count + 1;
+      }).length;
+      return count;
+    }
+
+    if (validation === "countROR") {
+      count = units.filter((el) => {
+        if (el.unitid === props.unitid) return count + 1;
+        if (validation === "countSame")
+          if (
+            el.unitid === props.unitid ||
+            (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
+          )
+            return count + 1;
+      }).length;
+      return count;
+    }
+
+    if (validation === "countNamed") {
+      count = units.filter((el) => {
+        if (el.name === props.name) return count + 1;
       }).length;
       return count;
     }
@@ -108,10 +126,16 @@ class App extends Component {
         if (this.handleVerifyDuplicates("countSame", props) === 1)
           return alert(`You can't have more than 1 ${name}!`);
     }
+
     if (isSE) {
-      if (category === "Heroes")
+      if (category === "Heroes") {
         if (this.handleVerifyDuplicates("countCategory", props) === 2)
           return alert("You can't have more than 2 Heroes!");
+        if (this.handleVerifyDuplicates("countNamed", props) === 1)
+          return alert(
+            "You can't have more than 1 of the same named character!"
+          );
+      }
 
       if (this.handleVerifyDuplicates("isSE", props) === 5)
         return alert("You can't have more than 5 Single Entity (SE) units!");
@@ -132,6 +156,7 @@ class App extends Component {
           "You can't have more than 2 Single Entity Monsters (SEM) that cost over 1800!"
         );
     }
+
     if (isMissile)
       if (this.handleVerifyDuplicates("isMissile", props) === 12)
         return alert("You can't have more than 12 missile units!");
