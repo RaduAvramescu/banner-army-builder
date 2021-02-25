@@ -73,6 +73,7 @@ class App extends Component {
     const {
       name,
       price,
+      modelCount,
       category,
       image,
       limited_type,
@@ -91,7 +92,7 @@ class App extends Component {
 
     if (category === "Lords")
       if (units.find((unit) => unit.category === "Lords"))
-        this.handleUnitRemove(0, units[0].price);
+        this.handleUnitRemove(0, units[0].price, units[0].modelCount);
 
     if (this.handleVerifyDuplicates("countSame", props) === 5)
       return alert("You can't have more than 5 of the same unit!");
@@ -193,7 +194,7 @@ class App extends Component {
   };
 
   handleUnitAdd = (props) => {
-    const { price } = props;
+    const { price, modelCount } = props;
     this.setState((state) => {
       const newUnits = [...state.units];
       newUnits.push(props);
@@ -202,11 +203,12 @@ class App extends Component {
         ...state,
         units: newUnits,
         funds: state.funds - price,
+        models: state.models + modelCount,
       };
     });
   };
 
-  handleUnitRemove = (id, price) => {
+  handleUnitRemove = (id, price, modelCount) => {
     this.setState((state) => {
       const newUnits = [...state.units];
       newUnits.splice(id, 1);
@@ -215,6 +217,7 @@ class App extends Component {
         ...state,
         units: newUnits,
         funds: state.funds + price,
+        models: state.models - modelCount,
       };
     });
   };

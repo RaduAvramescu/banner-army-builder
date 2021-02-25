@@ -9,8 +9,8 @@ const UnitCard = (props) => {
       const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
       onUnitAdd(newProps);
     } else {
-      const { id, price, onUnitRemove } = props;
-      onUnitRemove(id, price);
+      const { id, price, modelCount, onUnitRemove } = props;
+      onUnitRemove(id, price, modelCount);
     }
   };
 
