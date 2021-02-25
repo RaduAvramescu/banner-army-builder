@@ -23,6 +23,15 @@ let theme = createMuiTheme({
         },
       },
     },
+    MuiButton: {
+      root: {
+        "&:hover": {
+          transition: "opacity 0.3s ease-out",
+          backgroundColor: "inherit",
+          opacity: 0.4,
+        },
+      },
+    },
   },
   palette: {
     background: { default: "#fff" },
