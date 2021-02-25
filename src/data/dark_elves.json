@@ -271,7 +271,9 @@
     "modelCount": 90,
     "image": "wh2_dlc10_def_dreadspears_ror",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "baseUnit": "Dreadspears",
+    "basePrice": 450
   },
   {
     "unitid": 26,
@@ -281,7 +283,8 @@
     "modelCount": 75,
     "image": "wh2_main_def_witch_elves",
     "category_icon": "wh2_main_def_infantry_dual_daggers",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "baseUnit": "Witch Elves"
   },
   {
     "unitid": 27,
@@ -291,7 +294,9 @@
     "modelCount": 75,
     "image": "wh2_dlc10_def_witch_elves_ror",
     "category_icon": "wh2_main_def_infantry_dual_daggers",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "baseUnit": "Witch Elves",
+    "basePrice": 800
   },
   {
     "unitid": 28,
@@ -311,7 +316,8 @@
     "modelCount": 75,
     "image": "wh2_main_def_har_ganeth_executioners",
     "category_icon": "infantry_sword_great",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "baseUnit": "Har Ganeth Executioners"
   },
   {
     "unitid": 30,
@@ -331,7 +337,9 @@
     "modelCount": 75,
     "image": "wh2_dlc10_def_har_ganeth_executioners_ror",
     "category_icon": "infantry_sword_great",
-    "semicircle_icon": "unit_card_semicircle_renown"
+    "semicircle_icon": "unit_card_semicircle_renown",
+    "baseUnit": "Har Ganeth Executioners",
+    "basePrice": 1200
   },
   {
     "unitid": 31,
@@ -356,7 +364,7 @@
     "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "baseUnit": "Darkshards",
-    "basePrice": 100
+    "basePrice": 550
   },
   {
     "unitid": 33,
@@ -379,7 +387,9 @@
     "image": "wh2_dlc10_def_darkshards_shields_ror",
     "category_icon": "missile_infantry_bow",
     "semicircle_icon": "unit_card_semicircle",
-    "isMissile": true
+    "isMissile": true,
+    "baseUnit": "Darkshards",
+    "basePrice": 550
   },
   {
     "unitid": 35,
@@ -440,7 +450,7 @@
     "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Cavalry",
     "baseUnit": "Dark Riders",
-    "basePrice": 100
+    "basePrice": 450
   },
   {
     "unitid": 40,
@@ -462,7 +472,8 @@
     "image": "wh2_dlc10_def_cav_doomfire_warlocks",
     "category_icon": "wh2_dlc10_magic_cav",
     "semicircle_icon": "unit_card_semicircle",
-    "limited_type": "Cavalry"
+    "limited_type": "Cavalry",
+    "baseUnit": "Doomfire Warlocks"
   },
   {
     "unitid": 42,
@@ -473,7 +484,8 @@
     "image": "wh2_main_def_cold_one_dread_knights",
     "category_icon": "wh2_main_cold_one",
     "semicircle_icon": "unit_card_semicircle",
-    "limited_type": "Cavalry"
+    "limited_type": "Cavalry",
+    "baseUnit": "Cold One Dread Knights"
   },
   {
     "unitid": 43,
@@ -484,7 +496,9 @@
     "image": "wh2_dlc10_def_cav_doomfire_warlocks_ror",
     "category_icon": "wh2_dlc10_magic_cav",
     "semicircle_icon": "unit_card_semicircle_renown",
-    "limited_type": "Cavalry"
+    "limited_type": "Cavalry",
+    "baseUnit": "Doomfire Warlocks",
+    "basePrice": 1200
   },
   {
     "unitid": 44,
@@ -495,7 +509,9 @@
     "image": "wh2_dlc10_def_cold_one_dread_knights_ror",
     "category_icon": "wh2_main_cold_one",
     "semicircle_icon": "unit_card_semicircle",
-    "limited_type": "Cavalry"
+    "limited_type": "Cavalry",
+    "baseUnit": "Cold One Dread Knights",
+    "basePrice": 1300
   },
   {
     "unitid": 45,
@@ -523,7 +539,7 @@
     "isMissile": true,
     "limited_type": "Cavalry",
     "baseUnit": "Dark Riders (Repeater Crossbow)",
-    "basePrice": 100
+    "basePrice": 650
   },
   {
     "unitid": 47,
@@ -536,7 +552,8 @@
     "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "is360": true,
-    "limited_type": "Chariots"
+    "limited_type": "Chariots",
+    "baseUnit": "Scourgerunner Chariots"
   },
   {
     "unitid": 48,
@@ -562,7 +579,9 @@
     "semicircle_icon": "unit_card_semicircle_renown",
     "isMissile": true,
     "is360": true,
-    "limited_type": "Chariots"
+    "limited_type": "Chariots",
+    "baseUnit": "Scourgerunner Chariots",
+    "basePrice": 950
   },
   {
     "unitid": 50,
@@ -574,7 +593,8 @@
     "category_icon": "wh_dlc05_wef_harpies",
     "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
-    "isFlyer": true
+    "isFlyer": true,
+    "baseUnit": "Harpies"
   },
   {
     "unitid": 51,
@@ -600,7 +620,9 @@
     "category_icon": "wh_dlc05_wef_harpies",
     "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "War Beasts",
-    "isFlyer": true
+    "isFlyer": true,
+    "baseUnit": "Harpies",
+    "basePrice": 600
   },
   {
     "unitid": 53,
@@ -613,7 +635,8 @@
     "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isSE": true,
-    "isSEM": true
+    "isSEM": true,
+    "baseUnit": "War Hydra"
   },
   {
     "unitid": 54,
@@ -639,7 +662,9 @@
     "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "War Beasts",
     "isSE": true,
-    "isSEM": true
+    "isSEM": true,
+    "baseUnit": "War Hydra",
+    "basePrice": 1650
   },
   {
     "unitid": 56,
@@ -666,7 +691,8 @@
     "limited_type": "War Beasts",
     "isMissile": true,
     "isSE": true,
-    "isSEM": true
+    "isSEM": true,
+    "baseUnit": "Bloodwrack Medusa"
   },
   {
     "unitid": 58,
@@ -680,7 +706,9 @@
     "limited_type": "War Beasts",
     "isMissile": true,
     "isSE": true,
-    "isSEM": true
+    "isSEM": true,
+    "baseUnit": "Bloodwrack Medusa",
+    "basePrice": 1300
   },
   {
     "unitid": 59,
