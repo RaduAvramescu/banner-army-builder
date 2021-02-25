@@ -44,7 +44,9 @@ const Footer = () => (
             <Box fontWeight="fontWeightBold">Enticity</Box>
           </a>
         </Typography>
-        <Typography component="div">, BobTresh</Typography>
+        <Typography component="div">
+          <Box fontWeight="fontWeightBold">, BobTresh</Box>
+        </Typography>
       </Box>
       <Box display="flex" justifyContent="center">
         <Typography>2020-2021</Typography>
