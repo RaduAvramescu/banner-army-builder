@@ -210,7 +210,7 @@ class App extends Component {
       if (this.handleVerifyDuplicates("variantUnit", props) === 8)
         return alert("You can't have more than 8 units of a unit variant!");
 
-    if (category === "Infantry") {
+    if (category === "Infantry" || category === "Missile Infantry") {
       if (
         (!image.includes("ror") && price >= 901 && price <= 1100) ||
         (basePrice >= 901 && basePrice <= 1100)
