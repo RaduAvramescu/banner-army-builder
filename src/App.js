@@ -31,20 +31,9 @@ class App extends Component {
 
     if (validation === "countSame") {
       count = units.filter((el) => {
-        console.log(props);
         if (el.unitid === props.unitid) return count + 1;
 
-        if (
-          !props.image.includes("ror") &&
-          el.hasOwnProperty("baseUnit") &&
-          el.baseUnit === props.baseUnit
-        )
-          return count + 1;
-        else if (
-          props.image.includes("ror") &&
-          el.hasOwnProperty("baseUnit") &&
-          el.baseUnit === props.baseUnit
-        )
+        if (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
           return count + 1;
       }).length;
       return count;
