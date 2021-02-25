@@ -76,12 +76,14 @@ class App extends Component {
       category,
       image,
       limited_type,
+      basePrice,
       isSE,
       isSEM,
       isMissile,
       is360,
       isFlyer,
-      basePrice,
+      hasBreath,
+      hasDrain,
     } = props;
     const { funds, units } = this.state;
 
@@ -142,6 +144,14 @@ class App extends Component {
     if (isFlyer)
       if (this.handleVerifyDuplicates("isFlyer", props) === 5)
         return alert("You can't have more than 5 flying units!");
+
+    if (hasBreath)
+      if (this.handleVerifyDuplicates("hasBreath", props) === 2)
+        return alert("You can't have more than 2 units with breath attacks!");
+
+    if (hasDrain)
+      if (this.handleVerifyDuplicates("hasDrain", props) === 1)
+        return alert("You can't have more than 1 unit with a HP drain effect!");
 
     if (category === "Infantry") {
       if (
