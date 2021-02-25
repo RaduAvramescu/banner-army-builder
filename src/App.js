@@ -50,6 +50,13 @@ class App extends Component {
       return count;
     }
 
+    if (validation === "SEMCost") {
+      count = units.filter((el) => {
+        if (el.price >= 1800) return count + 1;
+      }).length;
+      return count;
+    }
+
     if (typeof validation === "string") {
       count = units.filter((el) => {
         if (el[validation] === props[validation]) return count + 1;
@@ -112,12 +119,16 @@ class App extends Component {
         );
     }
 
-    if (isSEM)
+    if (isSEM) {
       if (this.handleVerifyDuplicates("isSEM", props) === 3)
         return alert(
           "You can't have more than 3 Single Entity Monsters (SEM)!"
         );
-
+      if (price >= 1800 && this.handleVerifyDuplicates("SEMCost", props) === 2)
+        return alert(
+          "You can't have more than 2 Single Entity Monsters (SEM) that cost over 1800!"
+        );
+    }
     if (isMissile)
       if (this.handleVerifyDuplicates("isMissile", props) === 12)
         return alert("You can't have more than 12 missile units!");
