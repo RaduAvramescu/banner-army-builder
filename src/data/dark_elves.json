@@ -508,7 +508,7 @@
     "modelCount": 36,
     "image": "wh2_dlc10_def_cold_one_dread_knights_ror",
     "category_icon": "wh2_main_cold_one",
-    "semicircle_icon": "unit_card_semicircle",
+    "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "Cavalry",
     "baseUnit": "Cold One Dread Knights",
     "basePrice": 1300
@@ -636,6 +636,7 @@
     "limited_type": "War Beasts",
     "isSE": true,
     "isSEM": true,
+    "hasBreath": true,
     "baseUnit": "War Hydra"
   },
   {
@@ -663,6 +664,7 @@
     "limited_type": "War Beasts",
     "isSE": true,
     "isSEM": true,
+    "hasBreath": true,
     "baseUnit": "War Hydra",
     "basePrice": 1650
   },
@@ -677,7 +679,8 @@
     "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isSE": true,
-    "isSEM": true
+    "isSEM": true,
+    "hasBreath": true
   },
   {
     "unitid": 57,
