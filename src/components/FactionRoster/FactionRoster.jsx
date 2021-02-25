@@ -16,6 +16,8 @@ const categories = [
   "Cavalry & Chariots",
   "Missile Cavalry & Chariots",
   "Monsters & Beasts",
+  "Missile Monsters & Beasts",
+  "Artillery & War Machines",
 ];
 
 const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
