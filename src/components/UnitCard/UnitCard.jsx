@@ -30,8 +30,7 @@ const UnitCard = (props) => {
       </Typography>
       <img
         src={
-          require(`../../images/unit_card/factions/${props.selectedFaction}/${props.image}.png`)
-            .default
+          require(`../../images/unit_card/card_icon/${props.image}.png`).default
         }
         alt="Unit Card Image"
         width="60"
@@ -50,7 +49,7 @@ const UnitCard = (props) => {
       <img
         className="position_absolute"
         src={
-          require(`../../images/unit_card/semicircle/${props.semicircle_icon}.png`)
+          require(`../../images/unit_card/semicircle_icon/${props.semicircle_icon}.png`)
             .default
         }
         alt="Unit Card Semicircle Icon"

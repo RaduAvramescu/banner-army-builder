@@ -42,7 +42,6 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
                         id={i}
                         onUnitAdd={onUnitAdd}
                         addUnit={true}
-                        selectedFaction={selectedFaction}
                         {...unit}
                       />
                     ))}
