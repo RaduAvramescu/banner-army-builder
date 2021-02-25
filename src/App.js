@@ -31,11 +31,19 @@ class App extends Component {
 
     if (validation === "countSame") {
       count = units.filter((el) => {
+        console.log(props);
+        if (el.unitid === props.unitid) return count + 1;
+
         if (
-          el.unitid === props.unitid ||
-          (el.baseUnit === props.baseUnit &&
-            el.hasOwnProperty("baseUnit") &&
-            !props.image.includes("ror"))
+          !props.image.includes("ror") &&
+          el.hasOwnProperty("baseUnit") &&
+          el.baseUnit === props.baseUnit
+        )
+          return count + 1;
+        else if (
+          props.image.includes("ror") &&
+          el.hasOwnProperty("baseUnit") &&
+          el.baseUnit === props.baseUnit
         )
           return count + 1;
       }).length;
@@ -47,9 +55,11 @@ class App extends Component {
         if (el.category === props.category) return count + 1;
       }).length;
       return count;
-    } else if (typeof validation === "string") {
+    }
+
+    if (typeof validation === "string") {
       count = units.filter((el) => {
-        if (el[validation] === true) return count + 1;
+        if (el[validation] === props[validation]) return count + 1;
       }).length;
     } else {
       count = units.filter((el) => {
