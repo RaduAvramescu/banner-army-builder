@@ -63,7 +63,7 @@ export default function NavBar() {
                     <Box
                       className="headerText"
                       fontWeight="fontWeightBold"
-                      letterSpacing={2}
+                      letterSpacing={4}
                       align="center"
                     >
                       BANNER RULES
