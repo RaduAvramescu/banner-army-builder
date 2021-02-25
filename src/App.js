@@ -29,12 +29,16 @@ class App extends Component {
     const { units } = this.state;
     let count = 0;
 
-    if (validation === "countSame") {
+    if (validation === "countSame" || validation === "countROR") {
       count = units.filter((el) => {
-        if (el.unitid === props.unitid) return count + 1;
-
-        if (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
+        if (validation === "countROR" && el.unitid === props.unitid)
           return count + 1;
+        else if (validation === "countSame")
+          if (
+            el.unitid === props.unitid ||
+            (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
+          )
+            return count + 1;
       }).length;
       return count;
     }
@@ -161,7 +165,7 @@ class App extends Component {
         return alert(`You can't have more than 6 ${category}!`);
 
     if (image.includes("ror"))
-      if (this.handleVerifyDuplicates("countSame", props) === 1)
+      if (this.handleVerifyDuplicates("countROR", props) === 1)
         return alert("You can't have more than 1 of the same RoR!");
 
     this.handleUnitAdd(props);
