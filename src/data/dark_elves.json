@@ -274,7 +274,8 @@
     "category_icon": "infantry_spear",
     "semicircle_icon": "unit_card_semicircle_renown",
     "baseUnit": "Dreadspears",
-    "basePrice": 450
+    "basePrice": 450,
+    "variantUnit": "Bleakswords"
   },
   {
     "unitid": 26,
