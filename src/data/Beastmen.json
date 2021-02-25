@@ -107,7 +107,8 @@
     "image": "wh_dlc03_bst_ungor_spearmen",
     "category_icon": "infantry_spear",
     "semicircle_icon": "unit_card_semicircle",
-    "baseUnit": "Ungor Spearmen Herd"
+    "baseUnit": "Ungor Spearmen Herd",
+    "variantUnit": "Ungor Herd"
   },
   {
     "unitid": 11,
@@ -117,7 +118,8 @@
     "modelCount": 120,
     "image": "wh_dlc03_bst_ungor_herd_shield",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle"
+    "semicircle_icon": "unit_card_semicircle",
+    "variantUnit": "Ungor Herd"
   },
   {
     "unitid": 12,
@@ -129,7 +131,8 @@
     "category_icon": "infantry_spear",
     "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Ungor Spearmen Herd",
-    "basePrice": 350
+    "basePrice": 350,
+    "variantUnit": "Ungor Herd"
   },
   {
     "unitid": 13,

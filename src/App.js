@@ -113,6 +113,7 @@ class App extends Component {
       isSpecial,
       hasBreath,
       hasDrain,
+      variantUnit,
     } = props;
     const { funds, units } = this.state;
 
@@ -203,6 +204,10 @@ class App extends Component {
     if (hasDrain)
       if (this.handleVerifyDuplicates("hasDrain", props) === 1)
         return alert("You can't have more than 1 unit with a HP drain effect!");
+
+    if (variantUnit)
+      if (this.handleVerifyDuplicates("variantUnit", props) === 8)
+        return alert("You can't have more than 8 units of a unit variant!");
 
     if (category === "Infantry") {
       if (
