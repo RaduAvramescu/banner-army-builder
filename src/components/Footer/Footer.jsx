@@ -20,7 +20,7 @@ const Footer = () => (
         </Typography>
       </Box>
       <Box display="flex" justifyContent="center">
-        <Typography>Assisted by:&nbsp;</Typography>
+        <Typography>Ideated by:&nbsp;</Typography>
         <Typography component="div">
           <a
             className="footerLink"
@@ -32,7 +32,9 @@ const Footer = () => (
             <Box fontWeight="fontWeightBold">Samurai Warrior</Box>
           </a>
         </Typography>
-        <Typography>,&nbsp;</Typography>
+      </Box>
+      <Box display="flex" justifyContent="center">
+        <Typography>Assisted by:&nbsp;</Typography>
         <Typography component="div">
           <a
             className="footerLink"
