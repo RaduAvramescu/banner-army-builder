@@ -3,6 +3,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Container from "@material-ui/core/Container";
 import Divider from "@material-ui/core/Divider";
 import {
+  NavBar,
   Banner,
   FactionSelector,
   FactionRoster,
@@ -282,6 +283,15 @@ class App extends Component {
     return (
       <div className="App">
         <CssBaseline />
+        <NavBar />
+        <Divider
+          variant="fullWidth"
+          style={{ height: "1px", backgroundColor: "#060606" }}
+        />
+        <Divider
+          variant="fullWidth"
+          style={{ height: "2px", backgroundColor: "#898b8d" }}
+        />
         <Container maxWidth="lg">
           <Banner />
           <FactionSelector handleFactionChange={this.handleFactionChange} />

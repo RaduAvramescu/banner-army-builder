@@ -24,6 +24,10 @@ let theme = createMuiTheme({
       },
     },
   },
+  palette: {
+    background: { default: "#fff" },
+    secondary: { main: "#000" },
+  },
   typography: {
     fontFamily: ['"Caslon Antique"', "serif"].join(","),
   },
