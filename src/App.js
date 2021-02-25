@@ -217,13 +217,13 @@ class App extends Component {
       )
         if (this.handleVerifyDuplicates("countSame", props) === 4)
           return alert(
-            "You can't have more than 4 of an Infantry unit with 901-1100 price!"
+            `You can't have more than 4 of an ${category} unit with 901-1100 price!`
           );
 
       if ((!image.includes("ror") && price >= 1101) || basePrice >= 1101)
         if (this.handleVerifyDuplicates("countSame", props) === 3)
           return alert(
-            "You can't have more than 3 of an Infantry unit with 1101+ price!"
+            `You can't have more than 3 of an ${category} unit with 1101+ price!`
           );
     }
 
