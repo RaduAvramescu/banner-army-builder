@@ -228,7 +228,8 @@
     "image": "def_assassin_campaign_01_0",
     "category_icon": "wh2_main_def_spy",
     "semicircle_icon": "unit_card_semicircle_hero",
-    "isSE": true
+    "isSE": true,
+    "is360": true
   },
   {
     "unitid": 22,
