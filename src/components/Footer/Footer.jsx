@@ -20,6 +20,33 @@ const Footer = () => (
         </Typography>
       </Box>
       <Box display="flex" justifyContent="center">
+        <Typography>Assisted by:&nbsp;</Typography>
+        <Typography component="div">
+          <a
+            className="footerLink"
+            target="_blank"
+            href="https://www.youtube.com/channel/UCJtXRY14oOxhvDmTY2Mm1Mg"
+            aria-label="Samurai Warrior"
+            rel="noreferrer"
+          >
+            <Box fontWeight="fontWeightBold">Samurai Warrior</Box>
+          </a>
+        </Typography>
+        <Typography>,&nbsp;</Typography>
+        <Typography component="div">
+          <a
+            className="footerLink"
+            target="_blank"
+            href="https://www.youtube.com/channel/UCMSo43ocZdraDR6k-7adD1A"
+            aria-label="Samurai Warrior"
+            rel="noreferrer"
+          >
+            <Box fontWeight="fontWeightBold">Enticity</Box>
+          </a>
+        </Typography>
+        <Typography component="div">, BobTresh</Typography>
+      </Box>
+      <Box display="flex" justifyContent="center">
         <Typography>2020-2021</Typography>
       </Box>
     </Box>
