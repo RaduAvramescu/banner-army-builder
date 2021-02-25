@@ -304,7 +304,8 @@
     "image": "wh_dlc03_bst_minotaurs",
     "category_icon": "monstrous_infantry",
     "semicircle_icon": "unit_card_semicircle",
-    "limited_type": "Monstrous Infantry"
+    "limited_type": "Monstrous Infantry",
+    "baseUnit": "Minotaurs"
   },
   {
     "unitid": 31,
@@ -315,7 +316,8 @@
     "category_icon": "monstrous_infantry",
     "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Monstrous Infantry",
-    "baseUnit": "Minotaurs (Shields)"
+    "baseUnit": "Minotaurs",
+    "basePrice": 1250
   },
   {
     "unitid": 32,
@@ -359,7 +361,7 @@
     "category_icon": "monstrous_infantry",
     "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "Monstrous Infantry",
-    "baseUnit": "Minotaurs (Shields)",
+    "baseUnit": "Minotaurs",
     "basePrice": 1250
   },
   {
