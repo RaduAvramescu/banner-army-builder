@@ -290,12 +290,14 @@ class App extends Component {
         />
         <Container maxWidth="lg">
           <Banner />
+          <Divider variant="fullWidth" style={{ backgroundColor: "#898b8d" }} />
           <FactionSelector handleFactionChange={this.handleFactionChange} />
           <FactionRoster
             selectedFaction={selectedFaction}
             onUnitAdd={this.handleUnitCanAdd}
             fundsRemaining={funds}
           />
+          <Divider variant="fullWidth" style={{ backgroundColor: "#898b8d" }} />
           <BuildContainer
             units={units}
             onUnitRemove={this.handleUnitRemove}
@@ -303,6 +305,10 @@ class App extends Component {
             modelCount={models}
           />
         </Container>
+        <Divider
+          variant="fullWidth"
+          style={{ height: "2px", backgroundColor: "#898b8d" }}
+        />
         <Footer />
       </div>
     );
