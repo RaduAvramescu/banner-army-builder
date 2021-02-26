@@ -118,17 +118,19 @@ class App extends Component {
     } = props;
     const { funds, units } = this.state;
 
-    if (units.length === 20)
-      return alert("You cannot have more than 20 units!");
-
     if (category !== "Lords" && !units[0])
       return alert("You have to pick a Lord first!");
 
-    if (price > funds) return alert("You don't have enough funds!");
-
     if (category === "Lords")
-      if (units.find((unit) => unit.category === "Lords"))
+      if (units.find((unit) => unit.category === "Lords")) {
         this.handleUnitRemove(0, units[0].price, units[0].modelCount);
+        return this.handleUnitAdd(props);
+      }
+
+    if (units.length === 20)
+      return alert("You cannot have more than 20 units!");
+
+    if (price > funds) return alert("You don't have enough funds!");
 
     if (this.handleVerifyDuplicates("countSame", props) === 5)
       return alert("You can't have more than 5 of the same unit!");

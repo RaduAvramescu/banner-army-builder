@@ -10,9 +10,14 @@ const BuildContainer = ({
   onUnitRemove,
   units,
 }) => {
-  const getClasses = () => {
-    if (modelCount < 300) return "red";
-    return "green";
+  const getClasses = (type) => {
+    if (type === "funds")
+      if (fundsRemaining >= 1000) return "green";
+      else return "yellow";
+
+    if (type === "model")
+      if (modelCount < 300) return "red";
+      else return "green";
   };
 
   return (
@@ -21,12 +26,25 @@ const BuildContainer = ({
         <Typography variant="h2" align="center">
           Build
         </Typography>
-        <Typography variant="h3" align="center">
-          Funds Left: {fundsRemaining}
-        </Typography>
+        <Box display="flex" justifyContent="center">
+          <Typography variant="h3" align="center">
+            Funds Left:&nbsp;
+          </Typography>
+          <Typography
+            component="div"
+            variant="h3"
+            className={getClasses("funds")}
+          >
+            <Box display="inline">{fundsRemaining}</Box>
+          </Typography>
+        </Box>
         <Box display="flex" justifyContent="center">
           <Typography variant="h3">Model Count:&nbsp;</Typography>
-          <Typography component="div" variant="h3" className={getClasses()}>
+          <Typography
+            component="div"
+            variant="h3"
+            className={getClasses("model")}
+          >
             <Box display="inline">{modelCount}</Box>
           </Typography>
         </Box>
