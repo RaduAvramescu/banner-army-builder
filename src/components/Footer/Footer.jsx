@@ -40,10 +40,22 @@ const Footer = () => (
             className="footerLink"
             target="_blank"
             href="https://www.youtube.com/channel/UCMSo43ocZdraDR6k-7adD1A"
-            aria-label="Samurai Warrior"
+            aria-label="Enticity"
             rel="noreferrer"
           >
             <Box fontWeight="fontWeightBold">Enticity</Box>
+          </a>
+        </Typography>
+        <Typography>,&nbsp;</Typography>
+        <Typography>
+          <a
+            className="footerLink"
+            target="_blank"
+            href="https://twwstats.com"
+            aria-label="TWW Stats"
+            rel="noreferrer"
+          >
+            <Box fontWeight="fontWeightBold">TWW Stats</Box>
           </a>
         </Typography>
         <Typography component="div">

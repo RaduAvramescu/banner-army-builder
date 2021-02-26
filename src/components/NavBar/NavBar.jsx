@@ -36,6 +36,17 @@ export default function NavBar() {
                   <Typography>BANNER RULES</Typography>
                 </Button>
               </Box>
+              <Box mx="1rem">
+                <Button
+                  color="inherit"
+                  target="_blank"
+                  href="https://twwstats.com"
+                  aria-label="TWW Stats"
+                  rel="noreferrer"
+                >
+                  <Typography>TWW STATS</Typography>
+                </Button>
+              </Box>
             </Drawer>
             <Toolbar>
               <IconButton
@@ -51,7 +62,7 @@ export default function NavBar() {
         ) : (
           <Box display="flex" justifyContent="center">
             <Toolbar>
-              <Box mx="3rem">
+              <Box mx="1.5rem">
                 <Button
                   color="inherit"
                   target="_blank"
@@ -67,6 +78,26 @@ export default function NavBar() {
                       align="center"
                     >
                       BANNER RULES
+                    </Box>
+                  </Typography>
+                </Button>
+              </Box>
+              <Box mx="1.5rem">
+                <Button
+                  color="inherit"
+                  target="_blank"
+                  href="https://twwstats.com"
+                  aria-label="TWW Stats"
+                  rel="noreferrer"
+                >
+                  <Typography variant="h4">
+                    <Box
+                      className="headerText"
+                      fontWeight="fontWeightBold"
+                      letterSpacing={4}
+                      align="center"
+                    >
+                      TWW STATS
                     </Box>
                   </Typography>
                 </Button>
