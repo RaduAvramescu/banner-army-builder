@@ -282,7 +282,6 @@
     "image": "wh_dlc03_bst_warhounds",
     "category_icon": "war_beast",
     "semicircle_icon": "unit_card_semicircle",
-    "is360": true,
     "limited_type": "War Beasts"
   },
   {
