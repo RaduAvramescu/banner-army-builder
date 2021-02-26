@@ -284,20 +284,17 @@ class App extends Component {
       <div className="App">
         <CssBaseline />
         <NavBar />
-        <Divider
-          variant="fullWidth"
-          style={{ height: "2px", backgroundColor: "#898b8d" }}
-        />
+        <Divider style={{ height: "2px" }} />
         <Container maxWidth="lg">
           <Banner />
-          <Divider variant="fullWidth" style={{ backgroundColor: "#898b8d" }} />
+          <Divider light />
           <FactionSelector handleFactionChange={this.handleFactionChange} />
           <FactionRoster
             selectedFaction={selectedFaction}
             onUnitAdd={this.handleUnitCanAdd}
             fundsRemaining={funds}
           />
-          <Divider variant="fullWidth" style={{ backgroundColor: "#898b8d" }} />
+          <Divider light />
           <BuildContainer
             units={units}
             onUnitRemove={this.handleUnitRemove}
@@ -305,10 +302,7 @@ class App extends Component {
             modelCount={models}
           />
         </Container>
-        <Divider
-          variant="fullWidth"
-          style={{ height: "2px", backgroundColor: "#898b8d" }}
-        />
+        <Divider style={{ height: "2px" }} />
         <Footer />
       </div>
     );
