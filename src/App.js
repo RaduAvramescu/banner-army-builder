@@ -289,9 +289,9 @@ class App extends Component {
         <Divider style={{ height: "2px" }} />
         <Container maxWidth="lg">
           <Banner />
+          <FactionSelector handleFactionChange={this.handleFactionChange} />
           <Divider light />
           <main>
-            <FactionSelector handleFactionChange={this.handleFactionChange} />
             <FactionRoster
               selectedFaction={selectedFaction}
               onUnitAdd={this.handleUnitCanAdd}

@@ -23,9 +23,11 @@ const BuildContainer = ({
   return (
     <Box my="1rem">
       <Grid container justify="center" alignContent="center" direction="column">
-        <Typography variant="h2" align="center">
-          Build
-        </Typography>
+        <Box mb="1rem" letterSpacing={5}>
+          <Typography variant="h2" align="center">
+            BUILD
+          </Typography>
+        </Box>
         <Box display="flex" justifyContent="center">
           <Typography variant="h3" align="center">
             Funds Left:&nbsp;

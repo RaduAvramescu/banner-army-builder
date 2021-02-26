@@ -26,6 +26,11 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
 
   return (
     <Box my="1rem">
+      <Box letterSpacing={5}>
+        <Typography variant="h2" align="center">
+          ROSTER
+        </Typography>
+      </Box>
       <Grid container justify="center" alignContent="center" direction="column">
         {categories && (
           <div>
