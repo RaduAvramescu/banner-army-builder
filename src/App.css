@@ -44,3 +44,8 @@
 .green {
   color: green;
 }
+
+.imgResponsive {
+  max-width: 100%;
+  height: auto;
+}

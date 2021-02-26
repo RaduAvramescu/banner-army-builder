@@ -7,7 +7,7 @@ import { Grid, FormControl, NativeSelect, InputLabel } from "@material-ui/core";
 const FactionSelector = ({ handleFactionChange }) => {
   return (
     <Grid container justify="center">
-      <FormControl margin="normal">
+      <FormControl>
         <InputLabel htmlFor="faction-select">Faction</InputLabel>
         <NativeSelect
           defaultValue={0}
