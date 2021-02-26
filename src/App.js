@@ -288,19 +288,21 @@ class App extends Component {
         <Container maxWidth="lg">
           <Banner />
           <Divider light />
-          <FactionSelector handleFactionChange={this.handleFactionChange} />
-          <FactionRoster
-            selectedFaction={selectedFaction}
-            onUnitAdd={this.handleUnitCanAdd}
-            fundsRemaining={funds}
-          />
-          <Divider light />
-          <BuildContainer
-            units={units}
-            onUnitRemove={this.handleUnitRemove}
-            fundsRemaining={funds}
-            modelCount={models}
-          />
+          <main>
+            <FactionSelector handleFactionChange={this.handleFactionChange} />
+            <FactionRoster
+              selectedFaction={selectedFaction}
+              onUnitAdd={this.handleUnitCanAdd}
+              fundsRemaining={funds}
+            />
+            <Divider light />
+            <BuildContainer
+              units={units}
+              onUnitRemove={this.handleUnitRemove}
+              fundsRemaining={funds}
+              modelCount={models}
+            />
+          </main>
         </Container>
         <Divider style={{ height: "2px" }} />
         <Footer />
