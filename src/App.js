@@ -26,18 +26,6 @@ class App extends Component {
     }));
   };
 
-  handleSortBuild = () => {
-    this.setState((state) => {
-      const newUnits = [...state.units].sort((a, b) =>
-        a.unitid > b.unitid ? 1 : -1
-      );
-      return {
-        ...state,
-        units: newUnits,
-      };
-    });
-  };
-
   handleVerifyDuplicates = (validation, props) => {
     const { units } = this.state;
     let count = 0;
@@ -127,6 +115,7 @@ class App extends Component {
       hasBreath,
       hasDrain,
       variantUnit,
+      mounts,
     } = props;
     const { funds, units } = this.state;
 
@@ -135,11 +124,13 @@ class App extends Component {
 
     if (price > funds) return alert("You don't have enough funds!");
 
-    if (category === "Lords")
-      if (units.find((unit) => unit.category === "Lords")) {
+    if (category === "Lords") {
+      if (units.find((unit) => unit.category === "Lords"))
         this.handleUnitRemove(0, units[0].price, units[0].modelCount);
-        return this.handleUnitAdd(props);
-      }
+
+      if (mount) return this.handleUnitAdd(props, mount);
+      else return this.handleUnitAdd(props);
+    }
 
     if (units.length === 20)
       return alert("You cannot have more than 20 units!");
@@ -261,15 +252,32 @@ class App extends Component {
         return alert("You can't have more than 1 of the same RoR!");
 
     this.handleUnitAdd(props);
-    this.handleSortBuild();
   };
 
-  handleUnitAdd = (props) => {
+  handleUnitAdd = (props, mount) => {
     this.setState((state) => {
-      const { price, modelCount } = props;
+      const { ...newProps } = props;
       const newUnits = [...state.units];
 
-      newUnits.push(props);
+      if (mount) {
+        newProps.price += mount.price;
+        if (mount.hasOwnProperty("isSEM")) newProps.isSEM = true;
+
+        if (mount.hasOwnProperty("isFlyer")) newProps.isFlyer = true;
+
+        if (mount.hasOwnProperty("hasBreath")) newProps.hasBreath = true;
+
+        if (mount.hasOwnProperty("hasDrain")) newProps.hasDrain = true;
+
+        if (mount.hasOwnProperty("isSpecial")) newProps.isSpecial = true;
+      }
+
+      const { price, modelCount } = newProps;
+
+      console.log(newProps);
+
+      newUnits.push(newProps);
+      newUnits.sort((a, b) => (a.unitid > b.unitid ? 1 : -1));
 
       return {
         ...state,

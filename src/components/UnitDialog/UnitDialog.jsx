@@ -9,24 +9,19 @@ import PersonIcon from "@material-ui/icons/Person";
 import Typography from "@material-ui/core/Typography";
 
 function SimpleDialog(props) {
-  const { onClose, selectedValue, open } = props;
-
-  const handleClose = () => {
-    onClose(selectedValue);
-  };
+  const { onClose, open } = props;
 
   const handleListItemClick = (value) => {
     onClose(value);
   };
 
   return (
-    <Dialog
-      onClose={handleClose}
-      aria-labelledby="simple-dialog-title"
-      open={open}
-    >
+    <Dialog onClose={onClose} aria-labelledby="simple-dialog-title" open={open}>
       <DialogTitle id="simple-dialog-title">Select a mount.</DialogTitle>
       <List>
+        <ListItem button onClick={() => handleListItemClick(null)}>
+          <ListItemText primary="None" />
+        </ListItem>
         {props.hasOwnProperty("mounts") &&
           props.mounts.map((el, i) => (
             <ListItem button onClick={() => handleListItemClick(el)} key={i}>
