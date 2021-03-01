@@ -7,7 +7,6 @@
     "unit_size": 1,
     "unit_card": "def_supreme_sorceress_campaign_01_0",
     "category_icon": "wh_dlc03_lore_beasts",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -18,7 +17,6 @@
     "unit_size": 1,
     "unit_card": "def_supreme_sorceress_campaign_04_0",
     "category_icon": "wh2_main_lore_dark",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -29,7 +27,6 @@
     "unit_size": 1,
     "unit_card": "def_supreme_sorceress_campaign_02_0",
     "category_icon": "wh_main_lore_death",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -40,7 +37,6 @@
     "unit_size": 1,
     "unit_card": "def_supreme_sorceress_campaign_03_0",
     "category_icon": "wh_main_lore_fire",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -51,7 +47,6 @@
     "unit_size": 1,
     "unit_card": "def_supreme_sorceress_campaign_05_0",
     "category_icon": "wh_dlc05_wef_lore_shadow",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -62,7 +57,6 @@
     "unit_size": 1,
     "unit_card": "def_beastmaster_campaign_03_0",
     "category_icon": "wh2_dlc14_lord_spear_whip",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -73,7 +67,6 @@
     "unit_size": 1,
     "unit_card": "def_morathi_0",
     "category_icon": "wh2_main_lore_dark",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -84,7 +77,6 @@
     "unit_size": 1,
     "unit_card": "def_dreadlord_campaign_02_0",
     "category_icon": "infantry_sword",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -95,7 +87,6 @@
     "unit_size": 1,
     "unit_card": "def_dreadlord_female_campaign_03_0",
     "category_icon": "infantry_sword",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -106,7 +97,6 @@
     "unit_size": 1,
     "unit_card": "def_cha_lokhir_0",
     "category_icon": "infantry_sword",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -117,7 +107,6 @@
     "unit_size": 1,
     "unit_card": "def_crone_0",
     "category_icon": "infantry_sword",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -128,7 +117,6 @@
     "unit_size": 1,
     "unit_card": "def_malekith_0",
     "category_icon": "wh2_main_lore_dark",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true,
     "mounts": [
       {
@@ -153,10 +141,7 @@
         "hasBreath": true
       }
     ],
-    "spells": [
-      { "name": "Soul Stealer", "multiplayer_cost": 300 },
-      { "name": "Spirit Leech", "multiplayer_cost": 100 }
-    ]
+    "spells": [{ "name": "Soul Stealer" }, { "name": "Spirit Leech" }]
   },
   {
     "unitid": 13,
@@ -166,95 +151,86 @@
     "unit_size": 1,
     "unit_card": "def_malus_0",
     "category_icon": "infantry_sword",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 14,
     "name": "Sorceress (Beasts)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 300,
     "unit_size": 1,
     "unit_card": "def_sorceress_campaign_04_0",
     "category_icon": "wh_dlc03_lore_beasts",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 15,
     "name": "Sorceress (Death)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 300,
     "unit_size": 1,
     "unit_card": "def_sorceress_campaign_01_0",
     "category_icon": "wh_main_lore_death",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 16,
     "name": "Sorceress (Dark)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 300,
     "unit_size": 1,
     "unit_card": "def_sorceress_campaign_01_0",
     "category_icon": "wh2_main_lore_dark",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 17,
     "name": "Sorceress (Fire)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 300,
     "unit_size": 1,
     "unit_card": "def_sorceress_campaign_02_0",
     "category_icon": "wh_main_lore_fire",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 18,
     "name": "Sorceress (Shadow)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 300,
     "unit_size": 1,
     "unit_card": "def_sorceress_campaign_03_0",
     "category_icon": "wh_dlc05_wef_lore_shadow",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 19,
     "name": "Death Hag",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 600,
     "unit_size": 1,
     "unit_card": "def_death_hag_campaign_01_0",
     "category_icon": "wh2_main_def_dignitary",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 20,
     "name": "Master",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 700,
     "unit_size": 1,
     "unit_card": "def_master_campaign_02_0",
     "category_icon": "wh2_dlc14_def_champion",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 21,
     "name": "Khainite Assassin",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 700,
     "unit_size": 1,
     "unit_card": "def_assassin_campaign_01_0",
     "category_icon": "wh2_main_def_spy",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true,
     "is360": true
   },
@@ -266,7 +242,6 @@
     "unit_size": 90,
     "unit_card": "wh2_main_def_bleakswords",
     "category_icon": "infantry_sword",
-    "semicircle_icon": "unit_card_semicircle",
     "variantUnit": "Bleakswords"
   },
   {
@@ -277,7 +252,6 @@
     "unit_size": 90,
     "unit_card": "wh2_main_def_dreadspears",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Dreadspears",
     "variantUnit": "Bleakswords"
   },
@@ -289,7 +263,6 @@
     "unit_size": 75,
     "unit_card": "wh2_main_def_black_ark_corsairs",
     "category_icon": "wh2_main_infantry_dual_swords",
-    "semicircle_icon": "unit_card_semicircle",
     "variantUnit": "Black Ark Corsairs"
   },
   {
@@ -300,10 +273,10 @@
     "unit_size": 90,
     "unit_card": "wh2_dlc10_def_dreadspears_ror",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "baseUnit": "Dreadspears",
     "basePrice": 450,
-    "variantUnit": "Bleakswords"
+    "variantUnit": "Bleakswords",
+    "ror": true
   },
   {
     "unitid": 26,
@@ -313,7 +286,6 @@
     "unit_size": 75,
     "unit_card": "wh2_main_def_witch_elves",
     "category_icon": "wh2_main_def_infantry_dual_daggers",
-    "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Witch Elves"
   },
   {
@@ -324,9 +296,9 @@
     "unit_size": 75,
     "unit_card": "wh2_dlc10_def_witch_elves_ror",
     "category_icon": "wh2_main_def_infantry_dual_daggers",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "baseUnit": "Witch Elves",
-    "basePrice": 800
+    "basePrice": 800,
+    "ror": true
   },
   {
     "unitid": 28,
@@ -335,8 +307,7 @@
     "multiplayer_cost": 1100,
     "unit_size": 75,
     "unit_card": "wh2_dlc10_def_inf_sisters_of_slaughter",
-    "category_icon": "wh2_dlc09_tmb_whip_infantry",
-    "semicircle_icon": "unit_card_semicircle"
+    "category_icon": "wh2_dlc09_tmb_whip_infantry"
   },
   {
     "unitid": 29,
@@ -346,7 +317,6 @@
     "unit_size": 75,
     "unit_card": "wh2_main_def_har_ganeth_executioners",
     "category_icon": "infantry_sword_great",
-    "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Har Ganeth Executioners"
   },
   {
@@ -356,8 +326,7 @@
     "multiplayer_cost": 1300,
     "unit_size": 75,
     "unit_card": "wh2_main_def_black_guard",
-    "category_icon": "infantry_spear_halberd",
-    "semicircle_icon": "unit_card_semicircle"
+    "category_icon": "infantry_spear_halberd"
   },
   {
     "unitid": 30,
@@ -367,9 +336,9 @@
     "unit_size": 75,
     "unit_card": "wh2_dlc10_def_har_ganeth_executioners_ror",
     "category_icon": "infantry_sword_great",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "baseUnit": "Har Ganeth Executioners",
-    "basePrice": 1200
+    "basePrice": 1200,
+    "ror": true
   },
   {
     "unitid": 31,
@@ -379,7 +348,6 @@
     "unit_size": 68,
     "unit_card": "wh2_main_def_darkshards",
     "category_icon": "missile_infantry_bow",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "baseUnit": "Darkshards"
   },
@@ -391,7 +359,6 @@
     "unit_size": 68,
     "unit_card": "wh2_main_def_darkshards_shields",
     "category_icon": "missile_infantry_bow",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "baseUnit": "Darkshards",
     "basePrice": 550
@@ -404,7 +371,6 @@
     "unit_size": 75,
     "unit_card": "wh2_main_def_black_ark_corsairs_handbows",
     "category_icon": "wh2_main_def_missile_infantry_handbow",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "is360": true,
     "variantUnit": "Black Ark Corsairs"
@@ -417,10 +383,10 @@
     "unit_size": 68,
     "unit_card": "wh2_dlc10_def_darkshards_shields_ror",
     "category_icon": "missile_infantry_bow",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "baseUnit": "Darkshards",
-    "basePrice": 550
+    "basePrice": 550,
+    "ror": true
   },
   {
     "unitid": 35,
@@ -430,7 +396,6 @@
     "unit_size": 60,
     "unit_card": "wh2_main_def_shades",
     "category_icon": "wh2_main_def_missile_infantry_bow_shades",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "variantUnit": "Shades"
   },
@@ -442,7 +407,6 @@
     "unit_size": 60,
     "unit_card": "wh2_main_def_shades_dual_weapons",
     "category_icon": "wh2_main_def_missile_infantry_bow_shades_dual_weapons",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "variantUnit": "Shades"
   },
@@ -454,7 +418,6 @@
     "unit_size": 60,
     "unit_card": "wh2_main_def_shades_great_weapons",
     "category_icon": "wh2_main_def_missile_infantry_bow_shades_great_weapons",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "variantUnit": "Shades"
   },
@@ -466,7 +429,6 @@
     "unit_size": 45,
     "unit_card": "wh2_main_def_dark_riders",
     "category_icon": "shock_cavalry",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Cavalry",
     "baseUnit": "Dark Riders"
   },
@@ -478,7 +440,6 @@
     "unit_size": 45,
     "unit_card": "wh2_main_def_dark_riders_shield",
     "category_icon": "shock_cavalry",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Cavalry",
     "baseUnit": "Dark Riders",
     "basePrice": 450
@@ -491,7 +452,6 @@
     "unit_size": 36,
     "unit_card": "wh2_main_def_cold_one_knights",
     "category_icon": "wh2_main_cold_one_spear",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Cavalry"
   },
   {
@@ -502,7 +462,6 @@
     "unit_size": 45,
     "unit_card": "wh2_dlc10_def_cav_doomfire_warlocks",
     "category_icon": "wh2_dlc10_magic_cav",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Cavalry",
     "baseUnit": "Doomfire Warlocks"
   },
@@ -514,7 +473,6 @@
     "unit_size": 36,
     "unit_card": "wh2_main_def_cold_one_dread_knights",
     "category_icon": "wh2_main_cold_one",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Cavalry",
     "baseUnit": "Cold One Dread Knights"
   },
@@ -526,10 +484,10 @@
     "unit_size": 45,
     "unit_card": "wh2_dlc10_def_cav_doomfire_warlocks_ror",
     "category_icon": "wh2_dlc10_magic_cav",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "Cavalry",
     "baseUnit": "Doomfire Warlocks",
-    "basePrice": 1200
+    "basePrice": 1200,
+    "ror": true
   },
   {
     "unitid": 44,
@@ -539,10 +497,10 @@
     "unit_size": 36,
     "unit_card": "wh2_dlc10_def_cold_one_dread_knights_ror",
     "category_icon": "wh2_main_cold_one",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "Cavalry",
     "baseUnit": "Cold One Dread Knights",
-    "basePrice": 1300
+    "basePrice": 1300,
+    "ror": true
   },
   {
     "unitid": 45,
@@ -552,7 +510,6 @@
     "unit_size": 45,
     "unit_card": "wh2_main_def_dark_riders_crossbow",
     "category_icon": "missile_cavalry_bow",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "limited_type": "Cavalry",
     "baseUnit": "Dark Riders (Repeater Crossbow)"
@@ -565,12 +522,12 @@
     "unit_size": 18,
     "unit_card": "wh2_dlc10_def_raven_heralds_ror",
     "category_icon": "missile_cavalry_bow",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "isFlyer": true,
     "isMissile": true,
     "limited_type": "Cavalry",
     "baseUnit": "Dark Riders (Repeater Crossbow)",
-    "basePrice": 650
+    "basePrice": 650,
+    "ror": true
   },
   {
     "unitid": 47,
@@ -580,7 +537,6 @@
     "unit_size": 3,
     "unit_card": "wh2_dlc14_def_cav_scourgerunner_chariot",
     "category_icon": "missile_chariot",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "is360": true,
     "limited_type": "Chariots",
@@ -594,7 +550,6 @@
     "unit_size": 3,
     "unit_card": "wh2_main_def_cold_one_chariot",
     "category_icon": "missile_chariot",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "is360": true,
     "limited_type": "Chariots"
@@ -607,12 +562,12 @@
     "unit_size": 3,
     "unit_card": "wh2_dlc14_def_cav_scourgerunner_chariot_ror",
     "category_icon": "missile_chariot",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "isMissile": true,
     "is360": true,
     "limited_type": "Chariots",
     "baseUnit": "Scourgerunner Chariots",
-    "basePrice": 950
+    "basePrice": 950,
+    "ror": true
   },
   {
     "unitid": 50,
@@ -622,7 +577,6 @@
     "unit_size": 45,
     "unit_card": "wh2_main_def_harpies",
     "category_icon": "wh_dlc05_wef_harpies",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isFlyer": true,
     "baseUnit": "Harpies"
@@ -635,7 +589,6 @@
     "unit_size": 1,
     "unit_card": "wh2_dlc10_def_mon_feral_manticore",
     "category_icon": "dragon",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isSE": true,
     "isSEM": true,
@@ -649,11 +602,11 @@
     "unit_size": 45,
     "unit_card": "wh2_dlc14_def_inf_harpies_ror",
     "category_icon": "wh_dlc05_wef_harpies",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "War Beasts",
     "isFlyer": true,
     "baseUnit": "Harpies",
-    "basePrice": 600
+    "basePrice": 600,
+    "ror": true
   },
   {
     "unitid": 53,
@@ -663,7 +616,6 @@
     "unit_size": 1,
     "unit_card": "wh2_main_def_war_hydra",
     "category_icon": "wh2_main_def_mon_war_hydra",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isSE": true,
     "isSEM": true,
@@ -678,7 +630,6 @@
     "unit_size": 1,
     "unit_card": "wh2_dlc10_def_kharibdyss",
     "category_icon": "wh2_main_def_mon_war_hydra",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isSE": true,
     "isSEM": true
@@ -691,13 +642,13 @@
     "unit_size": 1,
     "unit_card": "wh2_dlc10_def_war_hydra_ror",
     "category_icon": "wh2_main_def_mon_war_hydra",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "War Beasts",
     "isSE": true,
     "isSEM": true,
     "hasBreath": true,
     "baseUnit": "War Hydra",
-    "basePrice": 1650
+    "basePrice": 1650,
+    "ror": true
   },
   {
     "unitid": 56,
@@ -707,7 +658,6 @@
     "unit_size": 1,
     "unit_card": "wh2_main_def_black_dragon",
     "category_icon": "dragon",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isSE": true,
     "isSEM": true,
@@ -721,7 +671,6 @@
     "unit_size": 1,
     "unit_card": "wh2_dlc14_def_mon_bloodwrack_medusa",
     "category_icon": "wh2_dlc14_def_medusa",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isMissile": true,
     "isSE": true,
@@ -736,13 +685,13 @@
     "unit_size": 1,
     "unit_card": "wh2_dlc14_def_mon_bloodwrack_medusa_ror",
     "category_icon": "wh2_dlc14_def_medusa",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "War Beasts",
     "isMissile": true,
     "isSE": true,
     "isSEM": true,
     "baseUnit": "Bloodwrack Medusa",
-    "basePrice": 1300
+    "basePrice": 1300,
+    "ror": true
   },
   {
     "unitid": 59,
@@ -752,7 +701,6 @@
     "unit_size": 3,
     "unit_card": "wh2_main_def_reaper_bolt_thrower",
     "category_icon": "wh_dlc06_dwf_bolt_thrower",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Artillery",
     "isMissile": true
   },
@@ -764,7 +712,6 @@
     "unit_size": 1,
     "unit_card": "wh2_dlc14_def_veh_bloodwrack_shrine",
     "category_icon": "magic_chariot",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Chariots",
     "isMissile": true,
     "isSE": true,

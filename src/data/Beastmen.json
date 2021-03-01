@@ -7,7 +7,6 @@
     "unit_size": 1,
     "unit_card": "bst_ch_malagor_0",
     "category_icon": "wh_dlc03_bst_lore_wild",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -18,7 +17,6 @@
     "unit_size": 1,
     "unit_card": "bst_beastlords_campaign_01_0",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -29,7 +27,6 @@
     "unit_size": 1,
     "unit_card": "bst_ch_khazrak_0",
     "category_icon": "infantry_sword",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -40,62 +37,56 @@
     "unit_size": 1,
     "unit_card": "bst_ch_morghur_0",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 5,
     "name": "Bray-Shaman (Beasts)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 350,
     "unit_size": 1,
     "unit_card": "bst_bray_shaman_campaign_01_0",
     "category_icon": "wh_dlc03_lore_beasts",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 6,
     "name": "Bray-Shaman (Death)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 350,
     "unit_size": 1,
     "unit_card": "bst_bray_shaman_campaign_02_0",
     "category_icon": "wh_main_lore_death",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 7,
     "name": "Bray-Shaman (Shadows)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 350,
     "unit_size": 1,
     "unit_card": "bst_bray_shaman_campaign_04_0",
     "category_icon": "wh_dlc05_wef_lore_shadow",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 8,
     "name": "Bray-Shaman (Wild)",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 350,
     "unit_size": 1,
     "unit_card": "bst_bray_shaman_campaign_03_0",
     "category_icon": "wh_dlc03_bst_lore_wild",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
     "unitid": 9,
     "name": "Gorebull",
-    "caste": "Heroes",
+    "caste": "Hero",
     "multiplayer_cost": 1075,
     "unit_size": 1,
     "unit_card": "bst_gorebulls_campaign_03_0",
     "category_icon": "wh_dlc03_bst_gorebull",
-    "semicircle_icon": "unit_card_semicircle_hero",
     "isSE": true
   },
   {
@@ -106,7 +97,6 @@
     "unit_size": 120,
     "unit_card": "wh_dlc03_bst_ungor_spearmen",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Ungor Spearmen Herd",
     "variantUnit": "Ungor Herd"
   },
@@ -118,7 +108,6 @@
     "unit_size": 120,
     "unit_card": "wh_dlc03_bst_ungor_herd_shield",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle",
     "variantUnit": "Ungor Herd"
   },
   {
@@ -129,7 +118,6 @@
     "unit_size": 120,
     "unit_card": "wh_dlc03_bst_ungor_spearmen_shield",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Ungor Spearmen Herd",
     "basePrice": 350,
     "variantUnit": "Ungor Herd"
@@ -142,7 +130,6 @@
     "unit_size": 90,
     "unit_card": "wh_dlc03_bst_gor_herd_shields",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Gor Herd"
   },
   {
@@ -153,7 +140,6 @@
     "unit_size": 90,
     "unit_card": "wh_dlc03_bst_gor_herd_dual_weapons",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Gor Herd",
     "basePrice": 550
   },
@@ -165,10 +151,10 @@
     "unit_size": 120,
     "unit_card": "wh_pro04_bst_ror_ungor_spearmen_shield",
     "category_icon": "infantry_spear",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "baseUnit": "Ungor Spearmen Herd",
     "basePrice": 350,
-    "variantUnit": "Ungor Herd"
+    "variantUnit": "Ungor Herd",
+    "ror": true
   },
   {
     "unitid": 16,
@@ -178,8 +164,8 @@
     "unit_size": 90,
     "unit_card": "wh_pro04_bst_ror_gor_herd_shields",
     "category_icon": "infantry_axe",
-    "semicircle_icon": "unit_card_semicircle_renown",
-    "baseUnit": "Gor Herd"
+    "baseUnit": "Gor Herd",
+    "ror": true
   },
   {
     "unitid": 17,
@@ -189,7 +175,6 @@
     "unit_size": 75,
     "unit_card": "wh_dlc03_bst_bestigor_herd",
     "category_icon": "infantry_axe_great",
-    "semicircle_icon": "unit_card_semicircle",
     "baseUnit": "Bestigor Herd"
   },
   {
@@ -200,9 +185,9 @@
     "unit_size": 75,
     "unit_card": "wh_pro04_bst_ror_bestigor_herd",
     "category_icon": "infantry_spear_halberd",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "baseUnit": "Bestigor Herd",
-    "basePrice": 1050
+    "basePrice": 1050,
+    "ror": true
   },
   {
     "unitid": 19,
@@ -212,7 +197,6 @@
     "unit_size": 90,
     "unit_card": "wh_dlc03_bst_ungor_raiders",
     "category_icon": "missile_infantry_bow",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true
   },
   {
@@ -223,7 +207,6 @@
     "unit_size": 45,
     "unit_card": "wh_dlc03_bst_centigors",
     "category_icon": "wh_dlc03_bst_centigor",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Cavalry"
   },
   {
@@ -234,7 +217,6 @@
     "unit_size": 45,
     "unit_card": "wh_dlc03_bst_centigors_great_weapons",
     "category_icon": "wh_dlc03_bst_centigor_great_weapon",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Cavalry",
     "baseUnit": "Centigors (Great Weapons)"
   },
@@ -246,7 +228,6 @@
     "unit_size": 3,
     "unit_card": "wh_dlc03_bst_razorgor_chariot",
     "category_icon": "wh2_dlc15_lion_chariot",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Chariots"
   },
   {
@@ -257,9 +238,9 @@
     "unit_size": 45,
     "unit_card": "wh_pro04_bst_ror_centigors_great_weapons",
     "category_icon": "wh_dlc03_bst_centigor_great_weapon",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "Cavalry",
-    "baseUnit": "Centigors (Great Weapons)"
+    "baseUnit": "Centigors (Great Weapons)",
+    "ror": true
   },
   {
     "unitid": 24,
@@ -269,7 +250,6 @@
     "unit_size": 45,
     "unit_card": "wh_dlc03_bst_centigors_throwing_axes",
     "category_icon": "wh_dlc03_bst_centigor_missile",
-    "semicircle_icon": "unit_card_semicircle",
     "isMissile": true,
     "is360": true,
     "limited_type": "Cavalry"
@@ -282,7 +262,6 @@
     "unit_size": 60,
     "unit_card": "wh_dlc03_bst_warhounds",
     "category_icon": "war_beast",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts"
   },
   {
@@ -293,7 +272,6 @@
     "unit_size": 60,
     "unit_card": "wh_dlc03_bst_warhounds_poison",
     "category_icon": "war_beast",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts"
   },
   {
@@ -303,8 +281,7 @@
     "multiplayer_cost": 600,
     "unit_size": 24,
     "unit_card": "wh_dlc03_bst_razorgor_herd",
-    "category_icon": "wh_dlc03_bst_razorgor",
-    "semicircle_icon": "unit_card_semicircle"
+    "category_icon": "wh_dlc03_bst_razorgor"
   },
   {
     "unitid": 28,
@@ -314,7 +291,6 @@
     "unit_size": 45,
     "unit_card": "wh_dlc05_bst_harpies",
     "category_icon": "wh_dlc05_wef_harpies",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "War Beasts",
     "isFlyer": true
   },
@@ -326,7 +302,6 @@
     "unit_size": 12,
     "unit_card": "wh_dlc03_bst_spawn",
     "category_icon": "monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Monstrous Infantry"
   },
   {
@@ -337,7 +312,6 @@
     "unit_size": 12,
     "unit_card": "wh_dlc03_bst_minotaurs",
     "category_icon": "monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Monstrous Infantry",
     "baseUnit": "Minotaurs"
   },
@@ -349,7 +323,6 @@
     "unit_size": 12,
     "unit_card": "wh_dlc03_bst_minotaurs_shield",
     "category_icon": "monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Monstrous Infantry",
     "baseUnit": "Minotaurs",
     "basePrice": 1250
@@ -362,7 +335,6 @@
     "unit_size": 12,
     "unit_card": "wh_dlc03_bst_minotaurs_great_weapons",
     "category_icon": "wh_dlc03_minotaurs_great_weapon",
-    "semicircle_icon": "unit_card_semicircle",
     "limited_type": "Monstrous Infantry"
   },
   {
@@ -373,7 +345,6 @@
     "unit_size": 1,
     "unit_card": "wh_dlc03_bst_giant",
     "category_icon": "giant",
-    "semicircle_icon": "unit_card_semicircle",
     "isSE": true,
     "isSEM": true
   },
@@ -385,7 +356,6 @@
     "unit_size": 1,
     "unit_card": "wh_dlc03_bst_cygor",
     "category_icon": "wh_dlc03_bst_cygor",
-    "semicircle_icon": "unit_card_semicircle",
     "isSE": true,
     "isSEM": true,
     "baseUnit": "Cygor"
@@ -398,10 +368,10 @@
     "unit_size": 12,
     "unit_card": "wh_pro04_bst_ror_minotaurs_shield",
     "category_icon": "monstrous_infantry",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "limited_type": "Monstrous Infantry",
     "baseUnit": "Minotaurs",
-    "basePrice": 1250
+    "basePrice": 1250,
+    "ror": true
   },
   {
     "unitid": 36,
@@ -411,10 +381,10 @@
     "unit_size": 1,
     "unit_card": "wh_pro04_bst_ror_cygor",
     "category_icon": "wh_dlc03_bst_cygor",
-    "semicircle_icon": "unit_card_semicircle_renown",
     "isSE": true,
     "isSEM": true,
     "baseUnit": "Cygor",
-    "basePrice": 1600
+    "basePrice": 1600,
+    "ror": true
   }
 ]

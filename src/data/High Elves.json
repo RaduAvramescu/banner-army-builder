@@ -1,0 +1,1587 @@
+[
+  {
+    "name": "Alarielle the Radiant",
+    "caste": "Lords",
+    "multiplayer_cost": 600,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_life",
+    "unit_card": "wh_main_emp_karl_franz",
+    "abilities": [
+      { "name": "Boon of Isha" },
+      { "name": "Martial Prowess" },
+      { "name": "Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Shield of Saphery" },
+      { "name": "Arcane Unforging" },
+      { "name": "Tempest" },
+      { "name": "Life Bloom" },
+      { "name": "Earth Blood" },
+      { "name": "Shield of Thorns" },
+      { "name": "Banishment" },
+      { "name": "Pha's Protection" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Barded Ithilmar Steed",
+        "price": 250,
+        "icon_name": "mount_barded_ithilmar_steed"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      }
+    ]
+  },
+  {
+    "name": "Alith Anar",
+    "caste": "Lords",
+    "multiplayer_cost": 1100,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "hef_alith_anar_0",
+    "abilities": [
+      { "name": "Mislead" },
+      { "name": "Darken the Skies" },
+      { "name": "Martial Prowess" },
+      { "name": "Slippery" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Alastar the White Lion on White Lion Chariot",
+    "caste": "Lords",
+    "multiplayer_cost": 1650,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_lion_chariot",
+    "unit_card": "wh2_main_hef_prince",
+    "abilities": [
+      { "name": "Martial Prowess" },
+      { "name": "Foe-Seeker" },
+      { "name": "Heroic Killing Blow" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "White Lion Chariot",
+        "price": 0,
+        "icon_name": "mount_white_lion_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": -250,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Sun Dragon",
+        "price": 400,
+        "icon_name": "mount_sun_dragon"
+      },
+      {
+        "mount_name": "Star Dragon",
+        "price": 1100,
+        "icon_name": "mount_star_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (Beasts)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_dlc03_lore_beasts",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Transformation of Kadon" },
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Pann's Impenetrable Pelt" },
+      { "name": "The Amber Spear" },
+      { "name": "The Curse of Anraheir" },
+      { "name": "Wyssan's Wildform" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (Death)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_death",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (Fire)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (Heavens)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_heavens",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Roiling Skies" },
+      { "name": "Chain Lightning" },
+      { "name": "Comet of Casandora" },
+      { "name": "Curse of the Midnight Wind" },
+      { "name": "Harmonic Convergence" },
+      { "name": "Urannon's Thunderbolt" },
+      { "name": "Wind Blast" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (High)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_high",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Shield of Saphery" },
+      { "name": "Apotheosis" },
+      { "name": "Arcane Unforging" },
+      { "name": "Fiery Convocation" },
+      { "name": "Hand of Glory" },
+      { "name": "Soul Quench" },
+      { "name": "Tempest" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (Life)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_life",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Life Bloom" },
+      { "name": "Awakening of the Wood" },
+      { "name": "Earth Blood" },
+      { "name": "Flesh to Stone" },
+      { "name": "Regrowth" },
+      { "name": "Shield of Thorns" },
+      { "name": "The Dwellers Below" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (Light)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_light",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Exorcism" },
+      { "name": "Banishment" },
+      { "name": "Birona's Timewarp" },
+      { "name": "Light of Battle" },
+      { "name": "Net of Amyntok" },
+      { "name": "Pha's Protection" },
+      { "name": "Shem's Burning Gaze" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (Metal)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_metal",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Metalshifting" },
+      { "name": "Final Transmutation" },
+      { "name": "Gehenna's Golden Hounds" },
+      { "name": "Glittering Robe" },
+      { "name": "Plague of Rust" },
+      { "name": "Searing Doom" },
+      { "name": "Transmutation of Lead" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Archmage (Shadows)",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "unit_card": "placeholder",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
+    "spells": [
+      { "name": "Smoke & Mirrors" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Okkam's Mindrazor" },
+      { "name": "Pit of Shades" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "The Withering" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1750,
+        "icon_name": "mount_moon_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Eltharion the Grim",
+    "caste": "Lords",
+    "multiplayer_cost": 1100,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "hef_eltharion_0",
+    "abilities": [
+      { "name": "Mistwalkers' Barrage" },
+      { "name": "Grim Discipline" }
+    ],
+    "spells": [
+      { "name": "Shield of Saphery" },
+      { "name": "Apotheosis" },
+      { "name": "Arcane Unforging" },
+      { "name": "Fiery Convocation" },
+      { "name": "Hand of Glory" },
+      { "name": "Soul Quench" },
+      { "name": "Tempest" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Barded Ithilmar Steed",
+        "price": 250,
+        "icon_name": "mount_barded_ithilmar_steed"
+      },
+      {
+        "mount_name": "Stormwing",
+        "price": 950,
+        "icon_name": "mount_hef_griffon"
+      }
+    ]
+  },
+  {
+    "name": "Imrik",
+    "caste": "Lords",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh2_dlc15_hef_imrik",
+    "abilities": [
+      { "name": "Dragonhorn" },
+      { "name": "Lord of Dragons" },
+      { "name": "Martial Mastery" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Mautererius",
+        "price": 250,
+        "icon_name": "mount_barded_ithilmar_steed"
+      },
+      {
+        "mount_name": "Minaithnir",
+        "price": 1550,
+        "icon_name": "mount_star_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Prince on Griffon",
+    "caste": "Lords",
+    "multiplayer_cost": 1550,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_griffon_knights",
+    "unit_card": "wh2_main_hef_prince",
+    "abilities": [
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Stand Your Ground!" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Griffon", "price": 0, "icon_name": "mount_hef_griffon" },
+      {
+        "mount_name": "Barded Ithilmar Steed",
+        "price": -450,
+        "icon_name": "mount_barded_ithilmar_steed"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": -150,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Sun Dragon",
+        "price": 350,
+        "icon_name": "mount_sun_dragon"
+      },
+      {
+        "mount_name": "Star Dragon",
+        "price": 1050,
+        "icon_name": "mount_star_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Princess on Griffon",
+    "caste": "Lords",
+    "multiplayer_cost": 1550,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_griffon_knights",
+    "unit_card": "wh2_main_hef_princess",
+    "abilities": [
+      { "name": "Volley of High Arrows" },
+      { "name": "Loose!" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Griffon", "price": 0, "icon_name": "mount_hef_griffon" },
+      {
+        "mount_name": "Elven Steed",
+        "price": -500,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": -150,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 650,
+        "icon_name": "mount_moon_dragon"
+      },
+      {
+        "mount_name": "Star Dragon",
+        "price": 1050,
+        "icon_name": "mount_star_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Teclis on Arcane Phoenix",
+    "caste": "Lords",
+    "multiplayer_cost": 2200,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_high",
+    "unit_card": "wh2_main_hef_teclis",
+    "abilities": [
+      { "name": "Greater Arcane Conduit" },
+      { "name": "Potion of Charoi" },
+      { "name": "Bound Fiery Convocation" },
+      { "name": "Attuned to Magic" }
+    ],
+    "spells": [
+      { "name": "Shield of Saphery" },
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Regrowth" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "Kindleflame" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Chain Lightning" },
+      { "name": "Net of Amyntok" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Arcane Phoenix",
+        "price": 0,
+        "icon_name": "mount_arcane_phoenix"
+      },
+      {
+        "mount_name": "Barded Ithilmar Steed",
+        "price": -1500,
+        "icon_name": "mount_barded_ithilmar_steed"
+      }
+    ]
+  },
+  {
+    "name": "Alastar the White Lion",
+    "caste": "Lords",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh2_main_hef_prince",
+    "abilities": [
+      { "name": "Martial Prowess" },
+      { "name": "Foe-Seeker" },
+      { "name": "Heroic Killing Blow" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "White Lion Chariot",
+        "price": 650,
+        "icon_name": "mount_white_lion_chariot"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 400,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Sun Dragon",
+        "price": 1050,
+        "icon_name": "mount_sun_dragon"
+      },
+      {
+        "mount_name": "Star Dragon",
+        "price": 1750,
+        "icon_name": "mount_star_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Prince",
+    "caste": "Lords",
+    "multiplayer_cost": 850,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh2_main_hef_prince",
+    "abilities": [
+      { "name": "Martial Prowess" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Stand Your Ground!" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Griffon",
+        "price": 700,
+        "icon_name": "mount_hef_griffon"
+      },
+      {
+        "mount_name": "Barded Ithilmar Steed",
+        "price": 250,
+        "icon_name": "mount_barded_ithilmar_steed"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Sun Dragon",
+        "price": 1050,
+        "icon_name": "mount_sun_dragon"
+      },
+      {
+        "mount_name": "Star Dragon",
+        "price": 1750,
+        "icon_name": "mount_star_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Princess",
+    "caste": "Lords",
+    "multiplayer_cost": 850,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh2_main_hef_princess",
+    "abilities": [
+      { "name": "Volley of High Arrows" },
+      { "name": "Loose!" },
+      { "name": "Martial Prowess" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Griffon",
+        "price": 700,
+        "icon_name": "mount_hef_griffon"
+      },
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 550,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Moon Dragon",
+        "price": 1350,
+        "icon_name": "mount_moon_dragon"
+      },
+      {
+        "mount_name": "Star Dragon",
+        "price": 1750,
+        "icon_name": "mount_star_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Teclis",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_high",
+    "unit_card": "wh2_main_hef_teclis",
+    "abilities": [
+      { "name": "Greater Arcane Conduit" },
+      { "name": "Potion of Charoi" },
+      { "name": "Bound Fiery Convocation" },
+      { "name": "Martial Prowess" }
+    ],
+    "spells": [
+      { "name": "Shield of Saphery" },
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Regrowth" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "Kindleflame" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Chain Lightning" },
+      { "name": "Net of Amyntok" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Arcane Phoenix",
+        "price": 1750,
+        "icon_name": "mount_arcane_phoenix"
+      },
+      {
+        "mount_name": "Barded Ithilmar Steed",
+        "price": 250,
+        "icon_name": "mount_barded_ithilmar_steed"
+      }
+    ]
+  },
+  {
+    "name": "Tyrion",
+    "caste": "Lords",
+    "multiplayer_cost": 1400,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh2_main_hef_tyrion",
+    "abilities": [
+      { "name": "Feint & Riposte" },
+      { "name": "Martial Mastery" },
+      { "name": "Foe-Seeker" },
+      { "name": "Stand Your Ground!" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Malhandhir",
+        "price": 300,
+        "icon_name": "mount_barded_ithilmar_steed"
+      }
+    ]
+  },
+  {
+    "name": "Handmaiden of the Everqueen",
+    "caste": "Hero",
+    "multiplayer_cost": 750,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc10_hef_handmaiden",
+    "unit_card": "wh_main_emp_karl_franz",
+    "abilities": [
+      { "name": "Quicksilver Shot" },
+      { "name": "Martial Prowess" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Barded Ithilmar Steed",
+        "price": 250,
+        "icon_name": "mount_barded_ithilmar_steed"
+      }
+    ]
+  },
+  {
+    "name": "Mage (Heavens)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_heavens",
+    "unit_card": "wh2_main_hef_mage_life",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Roiling Skies" },
+      { "name": "Chain Lightning" },
+      { "name": "Comet of Casandora" },
+      { "name": "Curse of the Midnight Wind" },
+      { "name": "Harmonic Convergence" },
+      { "name": "Urannon's Thunderbolt" },
+      { "name": "Wind Blast" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Mage (Shadows)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "unit_card": "wh2_main_hef_mage_life",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Smoke & Mirrors" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Okkam's Mindrazor" },
+      { "name": "Pit of Shades" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "The Withering" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Hand of the Shadow Crown",
+    "caste": "Hero",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc10_hef_hand_of_the_shadowking",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Loose!" },
+      { "name": "Martial Prowess" },
+      { "name": "Slippery" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Mage (Beasts)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_dlc03_lore_beasts",
+    "unit_card": "wh2_dlc15_hef_mage_beasts",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Transformation of Kadon" },
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Pann's Impenetrable Pelt" },
+      { "name": "The Amber Spear" },
+      { "name": "The Curse of Anraheir" },
+      { "name": "Wyssan's Wildform" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Mage (Death)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_death",
+    "unit_card": "wh2_dlc15_hef_mage_death",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Mage (Fire)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "wh2_dlc15_hef_mage_fire",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      },
+      {
+        "mount_name": "Sun Dragon",
+        "price": 1550,
+        "icon_name": "mount_sun_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Mage (Metal)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_metal",
+    "unit_card": "wh2_dlc15_hef_mage_metal",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Metalshifting" },
+      { "name": "Final Transmutation" },
+      { "name": "Gehenna's Golden Hounds" },
+      { "name": "Glittering Robe" },
+      { "name": "Plague of Rust" },
+      { "name": "Searing Doom" },
+      { "name": "Transmutation of Lead" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Loremaster of Hoeth",
+    "caste": "Hero",
+    "multiplayer_cost": 800,
+    "unit_size": 1,
+    "category_icon": "wh2_main_hef_loremaster",
+    "unit_card": "wh2_main_hef_lothern_sea_helm",
+    "abilities": [
+      { "name": "Martial Prowess" },
+      { "name": "Foe-Seeker" },
+      { "name": "Evasion" }
+    ],
+    "spells": [
+      { "name": "Wyssan's Wildform" },
+      { "name": "Earth Blood" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Spirit Leech" },
+      { "name": "Harmonic Convergence" },
+      { "name": "Shem's Burning Gaze" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Mage (High)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_high",
+    "unit_card": "wh2_main_hef_mage_high",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Shield of Saphery" },
+      { "name": "Apotheosis" },
+      { "name": "Arcane Unforging" },
+      { "name": "Fiery Convocation" },
+      { "name": "Hand of Glory" },
+      { "name": "Soul Quench" },
+      { "name": "Tempest" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Mage (Life)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_life",
+    "unit_card": "wh2_main_hef_mage_life",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Life Bloom" },
+      { "name": "Awakening of the Wood" },
+      { "name": "Earth Blood" },
+      { "name": "Flesh to Stone" },
+      { "name": "Regrowth" },
+      { "name": "Shield of Thorns" },
+      { "name": "The Dwellers Below" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Mage (Light)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_light",
+    "unit_card": "wh2_main_hef_mage_light",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "spells": [
+      { "name": "Exorcism" },
+      { "name": "Banishment" },
+      { "name": "Birona's Timewarp" },
+      { "name": "Light of Battle" },
+      { "name": "Net of Amyntok" },
+      { "name": "Pha's Protection" },
+      { "name": "Shem's Burning Gaze" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Elven Steed",
+        "price": 200,
+        "icon_name": "mount_elven_steed"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 500,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Noble",
+    "caste": "Hero",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "wh2_main_hef_champion",
+    "unit_card": "wh2_main_hef_noble",
+    "abilities": [
+      { "name": "Martial Prowess" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Barded Ithilmar Steed",
+        "price": 250,
+        "icon_name": "mount_barded_ithilmar_steed"
+      },
+      {
+        "mount_name": "Great Eagle",
+        "price": 500,
+        "icon_name": "mount_great_eagle"
+      },
+      {
+        "mount_name": "Ithilmar Chariot",
+        "price": 600,
+        "icon_name": "mount_ithilmar_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Keepers of the Flame (Phoenix Guard)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1650,
+    "unit_size": 75,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh2_dlc10_hef_phoenix_guard_ror",
+    "abilities": [{ "name": "Martial Mastery" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Scions of Mathlann (Spearmen)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_dlc10_hef_spearmen_ror",
+    "abilities": [
+      { "name": "Martial Prowess" },
+      { "name": "Aura of Protection" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Puremane Company (White Lions of Chrace)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh2_dlc10_hef_white_lions_of_chrace_ror",
+    "abilities": [{ "name": "Guardian" }, { "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Rangers",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 90,
+    "category_icon": "wh2_main_infantry_dual_swords",
+    "unit_card": "wh2_dlc15_hef_inf_rangers",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Silverin Guard",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_dlc15_hef_inf_silverin_guard",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Gate Guard",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 68,
+    "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
+    "unit_card": "wh2_main_hef_inf_gate_guard",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Phoenix Guard",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1400,
+    "unit_size": 75,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh2_main_hef_phoenix_guard",
+    "abilities": [{ "name": "Martial Mastery" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Spearmen",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 500,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_main_hef_spearmen",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Swordmasters of Hoeth",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1250,
+    "unit_size": 75,
+    "category_icon": "infantry_sword_great",
+    "unit_card": "wh2_main_hef_swordmasters_of_hoeth",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "White Lions of Chrace",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh2_main_hef_white_lions_of_chrace",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Everqueen's Court Guards (Sisters of Avelorn)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 1400,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc10_hef_inf_sisters_of_avelorn_ror",
+    "abilities": [
+      { "name": "Banner of Avelorn" },
+      { "name": "Martial Prowess" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Shadow Warriors",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc10_hef_inf_shadow_warriors",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Sisters of Avelorn",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc10_hef_inf_sisters_of_avelorn",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Grey (Shadow Warriors)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 1150,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc10_hef_inf_shadow_warriors_ror",
+    "abilities": [{ "name": "Martial Prowess" }, { "name": "Loec's Shroud" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Storm Riders (Lothern Sea Guard)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 68,
+    "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
+    "unit_card": "wh2_dlc10_hef_lothern_sea_guard_ror",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Talons of Tor Caleda (Archers \u2013 Light Armour)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc15_hef_inf_archers_ror_0",
+    "abilities": [{ "name": "Martial Mastery" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Archers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 475,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_main_hef_archers",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Archers (Light Armour)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 525,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_main_hef_archers_light_armour",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Lothern Sea Guard",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 650,
+    "unit_size": 68,
+    "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
+    "unit_card": "wh2_main_hef_lothern_sea_guard",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Lothern Sea Guard (Shields)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 68,
+    "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
+    "unit_card": "wh2_main_hef_lothern_sea_guard_shields",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Fireborn (Dragon Princes)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1850,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_dlc10_hef_cav_dragon_princes_ror",
+    "abilities": [{ "name": "Martial Mastery" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Dragon Princes",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1400,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_main_hef_cav_dragon_princes",
+    "abilities": [{ "name": "Martial Mastery" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ellyrian Reavers",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 550,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_main_hef_ellyrian_reavers",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Silver Helms",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 900,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_main_hef_silver_helms",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Silver Helms (Shields)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1000,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_main_hef_silver_helms_shield",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Heralds of the Wind (Ellyrian Reavers - Bows)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 900,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_bow",
+    "unit_card": "wh2_dlc10_hef_ellyrian_reavers_bow_ror",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ellyrian Reaver Archers",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 700,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_bow",
+    "unit_card": "wh2_main_hef_ellyrian_reavers_bow",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Lion Chariots of Chrace",
+    "caste": "Chariot",
+    "multiplayer_cost": 1300,
+    "unit_size": 3,
+    "category_icon": "wh2_dlc15_lion_chariot",
+    "unit_card": "wh2_dlc15_hef_veh_lion_chariot",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ithilmar Chariots",
+    "caste": "Chariot",
+    "multiplayer_cost": 1100,
+    "unit_size": 3,
+    "category_icon": "chariot",
+    "unit_card": "wh2_main_hef_cav_ithilmar_tiranoc_chariot",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Tiranoc Chariots",
+    "caste": "Chariot",
+    "multiplayer_cost": 900,
+    "unit_size": 3,
+    "category_icon": "missile_chariot",
+    "unit_card": "wh2_main_hef_cav_tiranoc_chariot",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "War Lions of Chrace",
+    "caste": "War Beast",
+    "multiplayer_cost": 825,
+    "unit_size": 18,
+    "category_icon": "war_beast",
+    "unit_card": "wh2_dlc15_hef_mon_war_lions",
+    "battle_mounts": null
+  },
+  {
+    "name": "Rahagra's Pride (War Lions of Chrace)",
+    "caste": "War Beast",
+    "multiplayer_cost": 1050,
+    "unit_size": 18,
+    "category_icon": "war_beast",
+    "unit_card": "wh2_dlc15_hef_mon_war_lions_ror",
+    "abilities": [{ "name": "Mighty Roar" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Arcane Phoenix",
+    "caste": "Monster",
+    "multiplayer_cost": 1850,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_arcane_phoenix",
+    "unit_card": "wh2_dlc15_hef_mon_arcane_phoenix",
+    "abilities": [
+      { "name": "Emberstorm" },
+      { "name": "Fiery Rebirth" },
+      { "name": "Attuned to Magic" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Omen of Asuryan (Arcane Phoenix)",
+    "caste": "Monster",
+    "multiplayer_cost": 2350,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_arcane_phoenix",
+    "unit_card": "wh2_dlc15_hef_mon_arcane_phoenix_ror",
+    "abilities": [
+      { "name": "Emberstorm" },
+      { "name": "Fiery Rebirth" },
+      { "name": "Omen of Hope" },
+      { "name": "Attuned to Magic" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Great Eagle",
+    "caste": "Monster",
+    "multiplayer_cost": 800,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_great_eagle",
+    "unit_card": "wh2_main_hef_mon_great_eagle",
+    "battle_mounts": null
+  },
+  {
+    "name": "Moon Dragon",
+    "caste": "Monster",
+    "multiplayer_cost": 2000,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh2_main_hef_mon_moon_dragon",
+    "abilities": [{ "name": "Moon Dragon's Breath" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Flamespyre Phoenix",
+    "caste": "Monster",
+    "multiplayer_cost": 1350,
+    "unit_size": 1,
+    "category_icon": "wh2_main_hef_phoenix_fire",
+    "unit_card": "wh2_main_hef_mon_phoenix_flamespyre",
+    "abilities": [
+      { "name": "Wake of Fire" },
+      { "name": "Attuned to Magic" },
+      { "name": "Rebirth" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Frostheart Phoenix",
+    "caste": "Monster",
+    "multiplayer_cost": 1650,
+    "unit_size": 1,
+    "category_icon": "wh2_main_hef_phoenix_frost",
+    "unit_card": "wh2_main_hef_mon_phoenix_frostheart",
+    "abilities": [{ "name": "Attuned to Magic" }, { "name": "Blizzard Aura" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Star Dragon",
+    "caste": "Monster",
+    "multiplayer_cost": 2400,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh2_main_hef_star_dragon",
+    "abilities": [{ "name": "Star Dragon's Breath" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Sun Dragon",
+    "caste": "Monster",
+    "multiplayer_cost": 1700,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh2_main_hef_mon_sun_dragon",
+    "abilities": [{ "name": "Sun Dragon's Breath" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Eagle Claw Bolt Throwers",
+    "caste": "War Machine",
+    "multiplayer_cost": 700,
+    "unit_size": 3,
+    "category_icon": "wh_dlc06_dwf_bolt_thrower",
+    "unit_card": "wh2_main_hef_art_eagle_claw_bolt_thrower",
+    "abilities": [{ "name": "Martial Prowess" }],
+    "battle_mounts": null
+  }
+]

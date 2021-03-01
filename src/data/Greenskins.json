@@ -1,0 +1,884 @@
+[
+  {
+    "name": "Grom the Paunch",
+    "caste": "Lords",
+    "multiplayer_cost": 1500,
+    "unit_size": 1,
+    "category_icon": "chariot",
+    "unit_card": "grn_grom_the_paunch_0",
+    "abilities": [
+      { "name": "Da Great 'Un Iz 'Ere!" },
+      { "name": "Language of Da Boyz" },
+      { "name": "Regeneration" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Goblin Great Shaman on Arachnarok Spider (Catchweb Spidershrine)",
+    "caste": "Lords",
+    "multiplayer_cost": 2050,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_lil_waaagh",
+    "unit_card": "wh_main_grn_goblin_great_shaman",
+    "abilities": [
+      { "name": "Don't Even Try It" },
+      { "name": "Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Sneaky Stealin'" },
+      { "name": "Curse of Da Bad Moon" },
+      { "name": "Gork'll Fix It" },
+      { "name": "Itchy Nuisance" },
+      { "name": "Night Shroud" },
+      { "name": "Sneaky Stabbin'" },
+      { "name": "Vindictive Glare" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Arachnarok Spider (Catchweb Spidershrine)",
+        "price": 0,
+        "icon_name": "mount_arachnarok_spider"
+      },
+      {
+        "mount_name": "Giant Wolf",
+        "price": -1400,
+        "icon_name": "mount_giant_wolf"
+      }
+    ]
+  },
+  {
+    "name": "Night Goblin Warboss",
+    "caste": "Lords",
+    "multiplayer_cost": 550,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_dlc06_grn_night_goblin_warboss",
+    "abilities": [
+      { "name": "Da Boss' Loons" },
+      { "name": "Fermented Fungi" },
+      { "name": "Get Back 'Ere!" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Great Cave Squig",
+        "price": 450,
+        "icon_name": "mount_great_cave_squig"
+      }
+    ]
+  },
+  {
+    "name": "Skarsnik",
+    "caste": "Lords",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh_dlc06_grn_skarsnik",
+    "abilities": [
+      { "name": "Fermented Fungi" },
+      { "name": "Spite of Da Bad Moon" },
+      { "name": "Tricksy Traps" },
+      { "name": "Get Back 'Ere!" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Wurrzag",
+    "caste": "Lords",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_big_waaagh",
+    "unit_card": "wh_dlc06_grn_wurrzag",
+    "abilities": [
+      { "name": "'Effagee' of da Git" },
+      { "name": "Warpaint of Wurrzag" },
+      { "name": "Wurrzag's Revenge" },
+      { "name": "Get Back 'Ere!" },
+      { "name": "Frenzy" }
+    ],
+    "spells": [
+      { "name": "Power of da Waaagh!" },
+      { "name": "Brain Bursta" },
+      { "name": "'Eadbutt" },
+      { "name": "'Ere We Go" },
+      { "name": "Fists of Gork" },
+      { "name": "Foot of Gork" },
+      { "name": "Gaze of Mork" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Spleenrippa",
+        "price": 300,
+        "icon_name": "mount_war_boar"
+      }
+    ]
+  },
+  {
+    "name": "Azhag the Slaughterer",
+    "caste": "Lords",
+    "multiplayer_cost": 950,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_death",
+    "unit_card": "wh_main_grn_azhag",
+    "abilities": [{ "name": "Foe-Seeker" }, { "name": "Get on Wiv it!" }],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Skullmuncha",
+        "price": 800,
+        "icon_name": "mount_skullmuncha"
+      }
+    ]
+  },
+  {
+    "name": "Goblin Great Shaman",
+    "caste": "Lords",
+    "multiplayer_cost": 450,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_lil_waaagh",
+    "unit_card": "wh_main_grn_goblin_great_shaman",
+    "abilities": [
+      { "name": "Don't Even Try It" },
+      { "name": "Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Sneaky Stealin'" },
+      { "name": "Curse of Da Bad Moon" },
+      { "name": "Gork'll Fix It" },
+      { "name": "Itchy Nuisance" },
+      { "name": "Night Shroud" },
+      { "name": "Sneaky Stabbin'" },
+      { "name": "Vindictive Glare" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Arachnarok Spider (Catchweb Spidershrine)",
+        "price": 1600,
+        "icon_name": "mount_arachnarok_spider"
+      },
+      {
+        "mount_name": "Giant Wolf",
+        "price": 200,
+        "icon_name": "mount_giant_wolf"
+      }
+    ]
+  },
+  {
+    "name": "Grimgor Ironhide",
+    "caste": "Lords",
+    "multiplayer_cost": 1400,
+    "unit_size": 1,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_grn_grimgor",
+    "abilities": [
+      { "name": "You're Next!" },
+      { "name": "Best of Da Best" },
+      { "name": "Get Back 'Ere!" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Orc Warboss",
+    "caste": "Lords",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_grn_orc_war_boss",
+    "abilities": [{ "name": "Smash 'Em Faster" }, { "name": "Foe-Seeker" }],
+    "battle_mounts": [
+      { "mount_name": "Wyvern", "price": 650, "icon_name": "mount_wyvern" },
+      { "mount_name": "Warboar", "price": 300, "icon_name": "mount_war_boar" }
+    ]
+  },
+  {
+    "name": "Giant River Troll Hag",
+    "caste": "Hero",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_death",
+    "unit_card": "grn_river_troll_hag_0",
+    "abilities": [
+      { "name": "Mither" },
+      { "name": "Swamp Breath" },
+      { "name": "Overwhelming Odour" },
+      { "name": "Regeneration" }
+    ],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Black Orc Big Boss",
+    "caste": "Hero",
+    "multiplayer_cost": 825,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_black_orc_big_boss",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Rabble-Rouse" },
+      { "name": "Get Back 'Ere!" },
+      { "name": "Heroic Killing Blow" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warboar", "price": 300, "icon_name": "mount_war_boar" }
+    ]
+  },
+  {
+    "name": "Goblin Big Boss",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_main_grn_spy",
+    "unit_card": "wh_main_grn_goblin_boss",
+    "abilities": [
+      { "name": "They Needs Stabbin\u2019" },
+      { "name": "Slippery" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Giant Wolf",
+        "price": 150,
+        "icon_name": "mount_giant_wolf"
+      },
+      {
+        "mount_name": "Giant Spider",
+        "price": 250,
+        "icon_name": "mount_giant_spider"
+      }
+    ]
+  },
+  {
+    "name": "Night Goblin Shaman",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_lil_waaagh",
+    "unit_card": "wh_main_grn_night_goblin_shaman",
+    "abilities": [{ "name": "Mad Cap Mushrooms" }],
+    "spells": [
+      { "name": "Sneaky Stealin'" },
+      { "name": "Curse of Da Bad Moon" },
+      { "name": "Gork'll Fix It" },
+      { "name": "Itchy Nuisance" },
+      { "name": "Night Shroud" },
+      { "name": "Sneaky Stabbin'" },
+      { "name": "Vindictive Glare" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Orc Shaman",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_big_waaagh",
+    "unit_card": "wh_main_grn_orc_shaman",
+    "abilities": [{ "name": "Evasion" }],
+    "spells": [
+      { "name": "Power of da Waaagh!" },
+      { "name": "Brain Bursta" },
+      { "name": "'Eadbutt" },
+      { "name": "'Ere We Go" },
+      { "name": "Fists of Gork" },
+      { "name": "Foot of Gork" },
+      { "name": "Gaze of Mork" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warboar", "price": 300, "icon_name": "mount_war_boar" }
+    ]
+  },
+  {
+    "name": "Da Eight Peak Loonies (Night Goblin - Fanatics)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 120,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_dlc06_grn_da_eight_peaks_loonies",
+    "abilities": [{ "name": "The Loons of Eight Peaks" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Da Warlord's Boyz (Night Goblins)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 120,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_dlc06_grn_da_warlords_boyz",
+    "battle_mounts": null
+  },
+  {
+    "name": "Krimson Killerz (Black Orcs)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1450,
+    "unit_size": 60,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_dlc06_grn_krimson_killerz",
+    "battle_mounts": null
+  },
+  {
+    "name": "Nasty Skulkers",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 500,
+    "unit_size": 120,
+    "category_icon": "wh_dlc06_grn_nasty_skulker",
+    "unit_card": "wh_dlc06_grn_nasty_skulkers",
+    "abilities": [{ "name": "Smoke Bomb" }, { "name": "Opportunist Murderer" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Soopa-Squig!",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 425,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_soopa_squig",
+    "unit_card": "wh_dlc06_grn_squig_herd",
+    "abilities": [{ "name": "Exploding Unit" }, { "name": "Squigs Go Boom" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Squig Herd",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 500,
+    "unit_size": 30,
+    "category_icon": "wh_dlc06_grn_squig",
+    "unit_card": "wh_dlc06_grn_squig_herd",
+    "abilities": [{ "name": "Squigs Go Wild" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Spider Hatchlings",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 150,
+    "unit_size": 45,
+    "category_icon": "grn_arachnarok",
+    "unit_card": "wh_dlc06_grn_spider_hatchling",
+    "battle_mounts": null
+  },
+  {
+    "name": "Black Orcs",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1150,
+    "unit_size": 60,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_grn_black_orc",
+    "battle_mounts": null
+  },
+  {
+    "name": "Goblins",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 300,
+    "unit_size": 120,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh_main_grn_goblins_spear",
+    "battle_mounts": null
+  },
+  {
+    "name": "Night Goblins (Fanatics)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 500,
+    "unit_size": 120,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_grn_night_goblins_sword",
+    "abilities": [{ "name": "Spinning Loons" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Night Goblins",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 400,
+    "unit_size": 120,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_grn_night_goblins_sword",
+    "battle_mounts": null
+  },
+  {
+    "name": "Orc Big 'Uns",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 75,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_grn_orc_boyz_big_uns",
+    "battle_mounts": null
+  },
+  {
+    "name": "Orc Boyz",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 450,
+    "unit_size": 90,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_grn_orc_boyz_sword",
+    "battle_mounts": null
+  },
+  {
+    "name": "Savage Orc Big 'Uns",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 75,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_grn_savage_orc_boyz_big_uns",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Savage Orcs",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 90,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_grn_savage_orc_boyz_sword",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Da Rusty Arrers (Night Goblin Archers)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 90,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_dlc06_grn_da_rusty_arrers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Goblin Archers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 375,
+    "unit_size": 90,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_main_grn_goblins_bow",
+    "battle_mounts": null
+  },
+  {
+    "name": "Night Goblin Archers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 475,
+    "unit_size": 90,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_main_grn_night_goblins_bow",
+    "battle_mounts": null
+  },
+  {
+    "name": "Night Goblin Archers (Fanatics)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 575,
+    "unit_size": 90,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_main_grn_night_goblins_bow",
+    "abilities": [{ "name": "Spinning Loons" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Orc Arrer Boyz",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 500,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_main_grn_orc_boyz_bow",
+    "battle_mounts": null
+  },
+  {
+    "name": "Savage Orc Arrer Boyz",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_main_grn_savage_orc_boyz_bow",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Armoured Squig Hoppers",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 650,
+    "unit_size": 45,
+    "category_icon": "wh_dlc06_grn_squig_cavalry",
+    "unit_card": "wh_dlc06_grn_squig_hoppers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Broken Tusks Mob (Orc Boar Boy Big 'Uns)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1300,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry_boar",
+    "unit_card": "wh_dlc06_grn_broken_tusks_mob",
+    "battle_mounts": null
+  },
+  {
+    "name": "Durkit's Squigs (Night Goblin Squig Hoppers)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 750,
+    "unit_size": 45,
+    "category_icon": "wh_dlc06_grn_squig_cavalry",
+    "unit_card": "wh_dlc06_grn_durkits_squigs",
+    "battle_mounts": null
+  },
+  {
+    "name": "Moon-howlers (Goblin Wolf Riders)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 425,
+    "unit_size": 60,
+    "category_icon": "cavalry_wolf",
+    "unit_card": "wh_dlc06_grn_moon_howlers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Night Goblin Squig Hoppers",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 650,
+    "unit_size": 45,
+    "category_icon": "wh_dlc06_grn_squig_cavalry",
+    "unit_card": "wh_dlc06_grn_squig_hoppers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Forest Goblin Spider Riders",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 400,
+    "unit_size": 45,
+    "category_icon": "cavalry_spider",
+    "unit_card": "wh_main_grn_goblin_spider_rider_spear",
+    "battle_mounts": null
+  },
+  {
+    "name": "Goblin Wolf Riders",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 300,
+    "unit_size": 60,
+    "category_icon": "cavalry_wolf",
+    "unit_card": "wh_main_grn_goblin_wolf_rider_spear",
+    "battle_mounts": null
+  },
+  {
+    "name": "Orc Boar Boy Big 'Uns",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 950,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry_boar",
+    "unit_card": "wh_main_grn_boar_boyz_big_uns",
+    "battle_mounts": null
+  },
+  {
+    "name": "Orc Boar Boyz",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 650,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry_boar",
+    "unit_card": "wh_main_grn_boar_boyz",
+    "battle_mounts": null
+  },
+  {
+    "name": "Savage Orc Boar Boy Big 'Uns",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1100,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry_boar",
+    "unit_card": "wh_main_grn_savage_orc_boar_boyz_big_uns",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Savage Orc Boar Boyz",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 750,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry_boar",
+    "unit_card": "wh_main_grn_savage_orc_boar_boyz",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Lava Spider Rider Archers",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 450,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_bow_spider",
+    "unit_card": "wh2_dlc15_grn_cav_forest_goblin_spider_riders_waaagh_0",
+    "battle_mounts": null
+  },
+  {
+    "name": "Deff Creepers (Forest Goblin Spider Rider Archers)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 600,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_bow_spider",
+    "unit_card": "wh_dlc06_grn_deff_creepers",
+    "abilities": [{ "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Mogrubb's Mangy Marauders (Goblin Wolf Archers)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 600,
+    "unit_size": 60,
+    "category_icon": "missile_cavalry_bow_wolf",
+    "unit_card": "wh_dlc06_grn_mogrubbs_marauders",
+    "battle_mounts": null
+  },
+  {
+    "name": "Forest Goblin Spider Rider Archers",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 450,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_bow_spider",
+    "unit_card": "wh_main_grn_goblin_spider_rider_bow",
+    "battle_mounts": null
+  },
+  {
+    "name": "Goblin Wolf Rider Archers",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 375,
+    "unit_size": 60,
+    "category_icon": "missile_cavalry_bow_wolf",
+    "unit_card": "wh_main_grn_goblin_wolf_rider_bow",
+    "battle_mounts": null
+  },
+  {
+    "name": "Snotling Pump Wagons",
+    "caste": "Chariot",
+    "multiplayer_cost": 500,
+    "unit_size": 3,
+    "category_icon": "wh2_dlc15_snotling_pump_wagons",
+    "unit_card": "wh2_dlc15_grn_veh_snotling_pump_wagon",
+    "abilities": [{ "name": "Pump Harder Ladz!" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Snotling Pump Wagons (Flappas)",
+    "caste": "Chariot",
+    "multiplayer_cost": 650,
+    "unit_size": 3,
+    "category_icon": "wh2_dlc15_snotling_pump_wagons_flappas",
+    "unit_card": "wh2_dlc15_grn_veh_snotling_pump_wagon_flappas",
+    "abilities": [{ "name": "Pump Harder Ladz!" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Snotling Pump Wagons (Spiky Rollers)",
+    "caste": "Chariot",
+    "multiplayer_cost": 900,
+    "unit_size": 3,
+    "category_icon": "wh2_dlc15_snotling_pump_wagons_spiky_rolla",
+    "unit_card": "wh2_dlc15_grn_veh_snotling_pump_wagon_roller",
+    "abilities": [{ "name": "Pump Harder Ladz!" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Logey Bogey\u2019s Spore \u2018Splodaz (Snotling Pump Wagons)",
+    "caste": "Chariot",
+    "multiplayer_cost": 700,
+    "unit_size": 3,
+    "category_icon": "wh2_dlc15_snotling_pump_wagons",
+    "unit_card": "wh2_dlc15_grn_veh_snotling_pump_wagon_ror",
+    "abilities": [
+      { "name": "Giant Explodin' Spores" },
+      { "name": "Pump Harder Ladz!" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Teef Robbers (Goblin Wolf Chariots)",
+    "caste": "Chariot",
+    "multiplayer_cost": 650,
+    "unit_size": 6,
+    "category_icon": "missile_chariot",
+    "unit_card": "wh_dlc06_grn_teef_robbers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Goblin Wolf Chariots",
+    "caste": "Chariot",
+    "multiplayer_cost": 500,
+    "unit_size": 6,
+    "category_icon": "missile_chariot",
+    "unit_card": "wh_main_grn_goblin_wolf_chariot",
+    "battle_mounts": null
+  },
+  {
+    "name": "Orc Boar Chariots",
+    "caste": "Chariot",
+    "multiplayer_cost": 950,
+    "unit_size": 3,
+    "category_icon": "chariot",
+    "unit_card": "wh_main_grn_boar_chariot",
+    "battle_mounts": null
+  },
+  {
+    "name": "River Trolls",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh2_dlc15_grn_mon_river_trolls",
+    "abilities": [{ "name": "Overwhelming Odour" }, { "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Da Swamp Fings (River Trolls)",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1200,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh2_dlc15_grn_mon_river_trolls_ror",
+    "abilities": [{ "name": "Overwhelming Odour" }, { "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Stone Trolls",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh2_dlc15_grn_mon_stone_trolls",
+    "abilities": [{ "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Trolls",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_main_grn_trolls",
+    "abilities": [{ "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Hydra",
+    "caste": "Monster",
+    "multiplayer_cost": 1650,
+    "unit_size": 1,
+    "category_icon": "wh2_main_def_mon_war_hydra",
+    "unit_card": "wh2_main_def_war_hydra",
+    "abilities": [
+      { "name": "Fiery Breath" },
+      { "name": "Another Takes its Place" },
+      { "name": "Regeneration" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Rogue Idol",
+    "caste": "Monster",
+    "multiplayer_cost": 2300,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_idol_of_gork",
+    "unit_card": "wh2_dlc15_grn_mon_rogue_idol",
+    "abilities": [
+      { "name": "Rubble & Ruin I" },
+      { "name": "Rubble & Ruin I" },
+      { "name": "Rubble & Ruin II" },
+      { "name": "Rubble & Ruin II" },
+      { "name": "Rubble & Ruin III" },
+      { "name": "Rubble & Ruin III" },
+      { "name": "Spirit of Gork (or Mork)" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Da Big Un (Rogue Idol)",
+    "caste": "Monster",
+    "multiplayer_cost": 2800,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc15_idol_of_gork",
+    "unit_card": "wh2_dlc15_grn_mon_rogue_idol_ror",
+    "abilities": [
+      { "name": "Rock Bottom" },
+      { "name": "Rubble & Ruin I" },
+      { "name": "Rubble & Ruin I" },
+      { "name": "Rubble & Ruin II" },
+      { "name": "Rubble & Ruin II" },
+      { "name": "Rubble & Ruin III" },
+      { "name": "Rubble & Ruin III" },
+      { "name": "Spirit of Gork (or Mork)" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Wyvern",
+    "caste": "Monster",
+    "multiplayer_cost": 1500,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh2_dlc15_grn_mon_wyvern_waaagh",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Arachnarok Queen (Arachnarok Spider)",
+    "caste": "Monster",
+    "multiplayer_cost": 2400,
+    "unit_size": 1,
+    "category_icon": "grn_arachnarok",
+    "unit_card": "wh_dlc06_grn_venom_queen",
+    "abilities": [{ "name": "Maternal Instinct" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Lava Arachnarok Spider",
+    "caste": "Monster",
+    "multiplayer_cost": 2400,
+    "unit_size": 1,
+    "category_icon": "grn_arachnarok",
+    "unit_card": "wh2_dlc15_grn_mon_arachnarok_spider_waaagh_0",
+    "abilities": [{ "name": "Arachneruption" }, { "name": "Thermal Thorax" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Arachnarok Spider",
+    "caste": "Monster",
+    "multiplayer_cost": 1900,
+    "unit_size": 1,
+    "category_icon": "grn_arachnarok",
+    "unit_card": "wh_main_grn_arachnarok_spider",
+    "battle_mounts": null
+  },
+  {
+    "name": "Giant",
+    "caste": "Monster",
+    "multiplayer_cost": 1500,
+    "unit_size": 1,
+    "category_icon": "giant",
+    "unit_card": "wh_main_grn_giant",
+    "battle_mounts": null
+  },
+  {
+    "name": "Hammer of Gork (Goblin Rock Lobbers)",
+    "caste": "War Machine",
+    "multiplayer_cost": 800,
+    "unit_size": 3,
+    "category_icon": "catapult",
+    "unit_card": "wh_dlc06_grn_hammer_of_gork",
+    "battle_mounts": null
+  },
+  {
+    "name": "Doom Diver Catapults",
+    "caste": "War Machine",
+    "multiplayer_cost": 1000,
+    "unit_size": 3,
+    "category_icon": "grn_doomdiver",
+    "unit_card": "wh_main_grn_doom_diver",
+    "battle_mounts": null
+  },
+  {
+    "name": "Goblin Rock Lobbers",
+    "caste": "War Machine",
+    "multiplayer_cost": 600,
+    "unit_size": 3,
+    "category_icon": "catapult",
+    "unit_card": "wh_main_grn_goblin_rock_lobber",
+    "battle_mounts": null
+  }
+]

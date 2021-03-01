@@ -1,0 +1,619 @@
+[
+  {
+    "name": "Azrik the Maze Keeper",
+    "caste": "Lords",
+    "multiplayer_cost": 1650,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_metal",
+    "unit_card": "a_character_placeholder",
+    "abilities": [{ "name": "Fight or Die!" }],
+    "spells": [
+      { "name": "Metalshifting" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Soulblight" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "Final Transmutation" },
+      { "name": "Gehenna's Golden Hounds" },
+      { "name": "Searing Doom" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Skin Wolf Werekin",
+    "caste": "Lords",
+    "multiplayer_cost": 1150,
+    "unit_size": 1,
+    "category_icon": "wh_dlc08_nor_skin_wolf_werekin",
+    "unit_card": "a_character_placeholder",
+    "abilities": [
+      { "name": "Ruinous Flesh" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Frenzy" },
+      { "name": "Regeneration" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Throgg",
+    "caste": "Lords",
+    "multiplayer_cost": 1600,
+    "unit_size": 1,
+    "category_icon": "infantry_hammer_great",
+    "unit_card": "a_character_placeholder",
+    "abilities": [
+      { "name": "Copious Vomit" },
+      { "name": "Fight or Die!" },
+      { "name": "Foe-Seeker" },
+      { "name": "Regeneration" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Wulfrik the Wanderer",
+    "caste": "Lords",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "a_character_placeholder",
+    "abilities": [
+      { "name": "Hunter of Champions" },
+      { "name": "Fight or Die!" },
+      { "name": "Seafang" },
+      { "name": "Rage" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Norscan Warhorse",
+        "price": 200,
+        "icon_name": "mount_warhorse"
+      },
+      {
+        "mount_name": "Marauder Chariot",
+        "price": 400,
+        "icon_name": "mount_chaos_chariot"
+      },
+      {
+        "mount_name": "War Mammoth",
+        "price": 1300,
+        "icon_name": "mount_mammoth"
+      }
+    ]
+  },
+  {
+    "name": "Marauder Chieftain",
+    "caste": "Lords",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_chs_chieftan",
+    "abilities": [
+      { "name": "Fight or Die!" },
+      { "name": "Rage" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Norscan Warhorse",
+        "price": 200,
+        "icon_name": "mount_warhorse"
+      },
+      {
+        "mount_name": "Marauder Chariot",
+        "price": 400,
+        "icon_name": "mount_chaos_chariot"
+      },
+      {
+        "mount_name": "War Mammoth",
+        "price": 1500,
+        "icon_name": "mount_mammoth"
+      }
+    ]
+  },
+  {
+    "name": "Fimir Balefiend (Fire)",
+    "caste": "Hero",
+    "multiplayer_cost": 550,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "a_character_placeholder",
+    "abilities": [
+      { "name": "From the Mist" },
+      { "name": "Arcane Conduit" },
+      { "name": "Evasion" }
+    ],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Fimir Balefiend (Shadows)",
+    "caste": "Hero",
+    "multiplayer_cost": 550,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "unit_card": "a_character_placeholder",
+    "abilities": [
+      { "name": "From the Mist" },
+      { "name": "Arcane Conduit" },
+      { "name": "Evasion" }
+    ],
+    "spells": [
+      { "name": "Smoke & Mirrors" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Okkam's Mindrazor" },
+      { "name": "Pit of Shades" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "The Withering" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Kihar the Tormentor",
+    "caste": "Hero",
+    "multiplayer_cost": 2100,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "a_character_placeholder",
+    "abilities": [
+      { "name": "Dark Fire of Chaos" },
+      { "name": "Arcane Conduit" },
+      { "name": "Regeneration" }
+    ],
+    "spells": [
+      { "name": "Pit of Shades" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "Kindleflame" },
+      { "name": "Fireball" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Plague of Rust" },
+      { "name": "Transmutation of Lead" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Shaman-Sorcerer (Death)",
+    "caste": "Hero",
+    "multiplayer_cost": 275,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_death",
+    "unit_card": "a_character_placeholder",
+    "abilities": [{ "name": "Rage" }],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Norscan Warhorse",
+        "price": 200,
+        "icon_name": "mount_warhorse"
+      },
+      {
+        "mount_name": "Marauder Chariot",
+        "price": 500,
+        "icon_name": "mount_chaos_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Shaman-Sorcerer (Fire)",
+    "caste": "Hero",
+    "multiplayer_cost": 275,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "a_character_placeholder",
+    "abilities": [{ "name": "Rage" }],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Norscan Warhorse",
+        "price": 200,
+        "icon_name": "mount_warhorse"
+      },
+      {
+        "mount_name": "Marauder Chariot",
+        "price": 500,
+        "icon_name": "mount_chaos_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Shaman-Sorcerer (Metal)",
+    "caste": "Hero",
+    "multiplayer_cost": 275,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_metal",
+    "unit_card": "a_character_placeholder",
+    "abilities": [{ "name": "Rage" }],
+    "spells": [
+      { "name": "Metalshifting" },
+      { "name": "Final Transmutation" },
+      { "name": "Gehenna's Golden Hounds" },
+      { "name": "Glittering Robe" },
+      { "name": "Plague of Rust" },
+      { "name": "Searing Doom" },
+      { "name": "Transmutation of Lead" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Norscan Warhorse",
+        "price": 200,
+        "icon_name": "mount_warhorse"
+      },
+      {
+        "mount_name": "Marauder Chariot",
+        "price": 500,
+        "icon_name": "mount_chaos_chariot"
+      }
+    ]
+  },
+  {
+    "name": "Marauder Berserkers",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_dual",
+    "unit_card": "wh_dlc08_nor_marauder_berserkers",
+    "abilities": [{ "name": "Berserk" }, { "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Champions",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1000,
+    "unit_size": 75,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_dlc08_nor_marauder_champions",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Champions (Great Weapons)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_dlc08_nor_marauder_champions_great_weapons",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Spearmen",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 450,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh_dlc08_nor_marauder_spearmen",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Skin Wolves",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 950,
+    "unit_size": 18,
+    "category_icon": "wh_dlc08_nor_skin_wolves",
+    "unit_card": "wh_dlc08_nor_skin_wolves",
+    "abilities": [{ "name": "Frenzy" }, { "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Skin Wolves (Armoured)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 18,
+    "category_icon": "wh_dlc08_nor_skin_wolves",
+    "unit_card": "wh_dlc08_nor_skin_wolves_armoured",
+    "abilities": [{ "name": "Frenzy" }, { "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauders",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 400,
+    "unit_size": 90,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_chs_marauder",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauders (Great Weapons)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 500,
+    "unit_size": 90,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_chs_marauder_great_weapons",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Icehorn Marauders (Marauders)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 90,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_pro04_nor_ror_marauder",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Brutes of the Hound (Marauder Berserkers)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1050,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_dual",
+    "unit_card": "wh_pro04_nor_ror_marauder_berserkers",
+    "abilities": [{ "name": "Berserk" }, { "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Maws of Savagery (Skin Wolves - Armoured)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1450,
+    "unit_size": 18,
+    "category_icon": "wh_dlc08_nor_skin_wolves",
+    "unit_card": "wh_pro04_nor_ror_skin_wolves_armoured",
+    "abilities": [{ "name": "Frenzy" }, { "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Hunters",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 68,
+    "category_icon": "wh_dlc06_dwf_throwing_axe",
+    "unit_card": "wh_dlc08_nor_marauder_hunters",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Hunters (Javelins)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 68,
+    "category_icon": "wh2_main_missile_infantry_javelin",
+    "unit_card": "wh_dlc08_nor_marauder_hunters_javelin",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Horsemen",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 525,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_javelin",
+    "unit_card": "wh_main_chs_marauder_horsemen",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Horsemasters",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 750,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_javelin",
+    "unit_card": "wh_dlc06_chs_marauder_horsemasters",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Horsemen (Throwing Axes)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 625,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_axe",
+    "unit_card": "wh_main_chs_marauder_horsemen_throwing_axe",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Ice Wolves Chariots",
+    "caste": "Chariot",
+    "multiplayer_cost": 900,
+    "unit_size": 3,
+    "category_icon": "chariot",
+    "unit_card": "wh_dlc08_nor_marauder_ice_wolves_chariot",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Norscan Ice Wolves",
+    "caste": "War Beast",
+    "multiplayer_cost": 650,
+    "unit_size": 36,
+    "category_icon": "war_beast",
+    "unit_card": "wh_dlc08_nor_ice_wolves",
+    "battle_mounts": null
+  },
+  {
+    "name": "Norscan Warhounds",
+    "caste": "War Beast",
+    "multiplayer_cost": 400,
+    "unit_size": 60,
+    "category_icon": "war_beast",
+    "unit_card": "wh_dlc08_nor_warhounds",
+    "battle_mounts": null
+  },
+  {
+    "name": "Beasts of Tashnar (Norscan Warhounds)",
+    "caste": "War Beast",
+    "multiplayer_cost": 650,
+    "unit_size": 60,
+    "category_icon": "war_beast",
+    "unit_card": "wh_pro04_nor_ror_chaos_warwolves",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Fimir Warriors",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1300,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_dlc08_nor_fimir_warriors",
+    "abilities": [{ "name": "From the Mist" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Fimir Warriors (Great Weapons)",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1450,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_dlc08_nor_fimir_warriors_great_weapons",
+    "abilities": [{ "name": "From the Mist" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Norscan Ice Trolls",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 950,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_dlc08_nor_ice_trolls",
+    "abilities": [{ "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Norscan Trolls",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_main_chs_trolls",
+    "abilities": [{ "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Mist Stalkers (Fimir Warriors)",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1600,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_pro04_nor_ror_fimir_warriors",
+    "abilities": [{ "name": "From the Mist" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Manticore",
+    "caste": "Monster",
+    "multiplayer_cost": 800,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh_dlc03_bst_feral_manticore",
+    "battle_mounts": null
+  },
+  {
+    "name": "Frost-Wyrm",
+    "caste": "Monster",
+    "multiplayer_cost": 1700,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh_dlc08_nor_frost_wyrm",
+    "abilities": [{ "name": "Frost Breath" }, { "name": "The Chilling Aura" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Norscan Giant",
+    "caste": "Monster",
+    "multiplayer_cost": 1500,
+    "unit_size": 1,
+    "category_icon": "giant",
+    "unit_card": "wh_dlc08_nor_giant",
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Mammoth",
+    "caste": "Monster",
+    "multiplayer_cost": 1600,
+    "unit_size": 1,
+    "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
+    "unit_card": "wh_dlc08_nor_war_mammoth_feral",
+    "battle_mounts": null
+  },
+  {
+    "name": "War Mammoth",
+    "caste": "Monster",
+    "multiplayer_cost": 2100,
+    "unit_size": 1,
+    "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
+    "unit_card": "wh_dlc08_nor_war_mammoth_howdah",
+    "battle_mounts": null
+  },
+  {
+    "name": "War Mammoth (Warshrine)",
+    "caste": "Monster",
+    "multiplayer_cost": 2100,
+    "unit_size": 1,
+    "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
+    "unit_card": "wh_dlc08_nor_war_mammoth_warshrine",
+    "abilities": [
+      { "name": "Giver of Glory" },
+      { "name": "Favour of the Ruinous Powers" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Great Mawherd of Bloodfjord (Feral Mammoth)",
+    "caste": "Monster",
+    "multiplayer_cost": 2000,
+    "unit_size": 4,
+    "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
+    "unit_card": "wh_dlc08_nor_war_mammoth_feral_god",
+    "abilities": [{ "name": "Enrage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Soulcrusher (War Mammoth)",
+    "caste": "Monster",
+    "multiplayer_cost": 2500,
+    "unit_size": 1,
+    "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
+    "unit_card": "wh_pro04_nor_ror_chaos_war_mammoth_howdah",
+    "abilities": [{ "name": "Enrage" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Ice-Forged Legion",
+    "caste": "War Machine",
+    "multiplayer_cost": 3200,
+    "unit_size": 3,
+    "category_icon": "cannon",
+    "unit_card": "wh_dlc08_nor_art_hellcannon_god",
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Chariots",
+    "caste": "Generic",
+    "multiplayer_cost": 750,
+    "unit_size": 3,
+    "category_icon": "chariot",
+    "unit_card": "wh_main_chs_chariot",
+    "abilities": [{ "name": "Rage" }],
+    "battle_mounts": null
+  }
+]

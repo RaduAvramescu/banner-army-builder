@@ -1,0 +1,1096 @@
+[
+  {
+    "name": "Red Crested Skink Chief",
+    "caste": "Lords",
+    "multiplayer_cost": 650,
+    "unit_size": 1,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Focus Instincts" },
+      { "name": "Warrior's Crest" },
+      { "name": "Foe-Seeker" },
+      { "name": "Frenzy" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Horned One",
+        "price": 400,
+        "icon_name": "mount_horned_one"
+      },
+      {
+        "mount_name": "Ripperdactyl",
+        "price": 500,
+        "icon_name": "mount_ripperdactyl"
+      },
+      {
+        "mount_name": "Ancient Stegadon",
+        "price": 1550,
+        "icon_name": "mount_ancient_stegadon"
+      }
+    ]
+  },
+  {
+    "name": "Tehenhauin",
+    "caste": "Lords",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Focus Instincts" },
+      { "name": "Arcane Conduit" },
+      { "name": "Stand Your Ground!" },
+      { "name": "Frenzy" }
+    ],
+    "spells": [
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Pann's Impenetrable Pelt" },
+      { "name": "The Amber Spear" },
+      { "name": "The Curse of Anraheir" },
+      { "name": "Transformation of Kadon" },
+      { "name": "Wyssan's Wildform" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Horned One",
+        "price": 300,
+        "icon_name": "mount_horned_one"
+      },
+      {
+        "mount_name": "Ripperdactyl",
+        "price": 500,
+        "icon_name": "mount_ripperdactyl"
+      },
+      {
+        "mount_name": "Ancient Stegadon (Engine of the Gods)",
+        "price": 1200,
+        "icon_name": "mount_stegadon_engine_gods"
+      }
+    ]
+  },
+  {
+    "name": "Tiktaq'to",
+    "caste": "Lords",
+    "multiplayer_cost": 900,
+    "unit_size": 1,
+    "category_icon": "cavalry_flying",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Drop Sphere of Tepok" },
+      { "name": "Focus Instincts" },
+      { "name": "Master of the Skies" },
+      { "name": "Deadly Onslaught" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Gor-Rok",
+    "caste": "Lords",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_infantry_mace",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Rok of Itza" },
+      { "name": "To the Death" },
+      { "name": "Cold-Blooded" },
+      { "name": "Stand Your Ground!" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Kroxigor Ancient",
+    "caste": "Lords",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Miasma of Despair" },
+      { "name": "Monstrous Strength" },
+      { "name": "Cold-Blooded" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Nakai the Wanderer",
+    "caste": "Lords",
+    "multiplayer_cost": 1650,
+    "unit_size": 1,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Miasma of Despair" },
+      { "name": "Primal Roar" },
+      { "name": "Cold-Blooded" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Slann Mage-Priest (Fire)",
+    "caste": "Lords",
+    "multiplayer_cost": 650,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Shield of the Old Ones" },
+      { "name": "Greater Arcane Conduit" },
+      { "name": "Banishment" }
+    ],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Slann Mage-Priest (Life)",
+    "caste": "Lords",
+    "multiplayer_cost": 650,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_life",
+    "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Shield of the Old Ones" },
+      { "name": "Greater Arcane Conduit" },
+      { "name": "Banishment" }
+    ],
+    "spells": [
+      { "name": "Life Bloom" },
+      { "name": "Awakening of the Wood" },
+      { "name": "Earth Blood" },
+      { "name": "Flesh to Stone" },
+      { "name": "Regrowth" },
+      { "name": "Shield of Thorns" },
+      { "name": "The Dwellers Below" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Kroq-Gar",
+    "caste": "Lords",
+    "multiplayer_cost": 1100,
+    "unit_size": 1,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_main_lzd_cha_kroq_gar",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Swiftness of Itzl" },
+      { "name": "Sacred Spawning of Xhotl" },
+      { "name": "Deadly Onslaught" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Grymloq", "price": 1000, "icon_name": "mount_grymloq" },
+      { "mount_name": "Cold One", "price": 300, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Horned One",
+        "price": 400,
+        "icon_name": "mount_horned_one"
+      }
+    ]
+  },
+  {
+    "name": "Lord Mazdamundi",
+    "caste": "Lords",
+    "multiplayer_cost": 650,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_high",
+    "unit_card": "wh2_main_lzd_cha_lord_mazdamundi",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Shield of the Old Ones" },
+      { "name": "Greater Arcane Conduit" },
+      { "name": "The Ruination of Cities" },
+      { "name": "Banishment" }
+    ],
+    "spells": [
+      { "name": "Apotheosis" },
+      { "name": "Arcane Unforging" },
+      { "name": "Roiling Skies" },
+      { "name": "Comet of Casandora" },
+      { "name": "Curse of the Midnight Wind" },
+      { "name": "Harmonic Convergence" },
+      { "name": "Net of Amyntok" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Zlaaq",
+        "price": 1150,
+        "icon_name": "mount_ancient_stegadon"
+      }
+    ]
+  },
+  {
+    "name": "Saurus Oldblood",
+    "caste": "Lords",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_infantry_mace",
+    "unit_card": "wh2_main_lzd_cha_saurus_old_blood",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Foe-Seeker" },
+      { "name": "Stand Your Ground!" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Cold One", "price": 300, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Carnosaur",
+        "price": 1000,
+        "icon_name": "mount_carnosaur"
+      }
+    ]
+  },
+  {
+    "name": "Slann Mage-Priest (Heavens)",
+    "caste": "Lords",
+    "multiplayer_cost": 650,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_heavens",
+    "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Shield of the Old Ones" },
+      { "name": "Greater Arcane Conduit" },
+      { "name": "Banishment" }
+    ],
+    "spells": [
+      { "name": "Roiling Skies" },
+      { "name": "Chain Lightning" },
+      { "name": "Comet of Casandora" },
+      { "name": "Curse of the Midnight Wind" },
+      { "name": "Harmonic Convergence" },
+      { "name": "Urannon's Thunderbolt" },
+      { "name": "Wind Blast" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Slann Mage-Priest (High)",
+    "caste": "Lords",
+    "multiplayer_cost": 650,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_high",
+    "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Shield of the Old Ones" },
+      { "name": "Greater Arcane Conduit" },
+      { "name": "Banishment" }
+    ],
+    "spells": [
+      { "name": "Shield of Saphery" },
+      { "name": "Apotheosis" },
+      { "name": "Arcane Unforging" },
+      { "name": "Fiery Convocation" },
+      { "name": "Hand of Glory" },
+      { "name": "Soul Quench" },
+      { "name": "Tempest" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Slann Mage-Priest (Light)",
+    "caste": "Lords",
+    "multiplayer_cost": 650,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_light",
+    "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Shield of the Old Ones" },
+      { "name": "Greater Arcane Conduit" },
+      { "name": "Banishment" }
+    ],
+    "spells": [
+      { "name": "Exorcism" },
+      { "name": "Banishment" },
+      { "name": "Birona's Timewarp" },
+      { "name": "Light of Battle" },
+      { "name": "Net of Amyntok" },
+      { "name": "Pha's Protection" },
+      { "name": "Shem's Burning Gaze" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Skink Priest (Beasts) on Ancient Stegadon (Engine of the Gods)",
+    "caste": "Hero",
+    "multiplayer_cost": 2200,
+    "unit_size": 1,
+    "category_icon": "wh_dlc03_lore_beasts",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Burning Alignment" },
+      { "name": "Arcane Configuration" },
+      { "name": "Portent of Warding" },
+      { "name": "Cold-Blooded" }
+    ],
+    "spells": [
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Pann's Impenetrable Pelt" },
+      { "name": "The Amber Spear" },
+      { "name": "The Curse of Anraheir" },
+      { "name": "Transformation of Kadon" },
+      { "name": "Wyssan's Wildform" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Ancient Stegadon (Engine of the Gods)",
+        "price": 0,
+        "icon_name": "mount_stegadon_engine_gods"
+      },
+      {
+        "mount_name": "Terradon",
+        "price": -1500,
+        "icon_name": "mount_terradon"
+      },
+      {
+        "mount_name": "Stegadon",
+        "price": -400,
+        "icon_name": "mount_stegadon"
+      },
+      {
+        "mount_name": "Ancient Stegadon",
+        "price": -100,
+        "icon_name": "mount_ancient_stegadon"
+      }
+    ]
+  },
+  {
+    "name": "Skink Priest (Heavens) on Ancient Stegadon (Engine of the Gods)",
+    "caste": "Hero",
+    "multiplayer_cost": 2200,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_heavens",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Burning Alignment" },
+      { "name": "Arcane Configuration" },
+      { "name": "Portent of Warding" },
+      { "name": "Cold-Blooded" }
+    ],
+    "spells": [
+      { "name": "Roiling Skies" },
+      { "name": "Chain Lightning" },
+      { "name": "Comet of Casandora" },
+      { "name": "Curse of the Midnight Wind" },
+      { "name": "Harmonic Convergence" },
+      { "name": "Urannon's Thunderbolt" },
+      { "name": "Wind Blast" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Ancient Stegadon (Engine of the Gods)",
+        "price": 0,
+        "icon_name": "mount_stegadon_engine_gods"
+      },
+      {
+        "mount_name": "Terradon",
+        "price": -1500,
+        "icon_name": "mount_terradon"
+      },
+      {
+        "mount_name": "Stegadon",
+        "price": -400,
+        "icon_name": "mount_stegadon"
+      },
+      {
+        "mount_name": "Ancient Stegadon",
+        "price": -100,
+        "icon_name": "mount_ancient_stegadon"
+      }
+    ]
+  },
+  {
+    "name": "Lord Kroak",
+    "caste": "Hero",
+    "multiplayer_cost": 1450,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc12_magic_lore_generic",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Supreme Shield of the Old Ones" },
+      { "name": "Cold-Blooded" },
+      { "name": "Greater Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Deliverance of Itza I" },
+      { "name": "Deliverance of Itza II" },
+      { "name": "Deliverance of Itza III" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Saurus Scar-Veteran",
+    "caste": "Hero",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_champion",
+    "unit_card": "wh2_main_lzd_saurus_scar_veteran",
+    "abilities": [
+      { "name": "Cold-Blooded" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Cold One", "price": 300, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Carnosaur",
+        "price": 1200,
+        "icon_name": "mount_carnosaur"
+      }
+    ]
+  },
+  {
+    "name": "Skink Chief",
+    "caste": "Hero",
+    "multiplayer_cost": 350,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_spy",
+    "unit_card": "wh2_main_lzd_cha_skink_chief",
+    "abilities": [{ "name": "Cold-Blooded" }, { "name": "Slippery" }],
+    "battle_mounts": [
+      { "mount_name": "Terradon", "price": 450, "icon_name": "mount_terradon" },
+      {
+        "mount_name": "Stegadon",
+        "price": 1450,
+        "icon_name": "mount_stegadon"
+      },
+      {
+        "mount_name": "Ancient Stegadon",
+        "price": 1750,
+        "icon_name": "mount_ancient_stegadon"
+      }
+    ]
+  },
+  {
+    "name": "Skink Priest (Beasts)",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_dlc03_lore_beasts",
+    "unit_card": "wh2_main_lzd_cha_skink_priest",
+    "abilities": [{ "name": "Cold-Blooded" }],
+    "spells": [
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Pann's Impenetrable Pelt" },
+      { "name": "The Amber Spear" },
+      { "name": "The Curse of Anraheir" },
+      { "name": "Transformation of Kadon" },
+      { "name": "Wyssan's Wildform" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Ancient Stegadon (Engine of the Gods)",
+        "price": 1950,
+        "icon_name": "mount_stegadon_engine_gods"
+      },
+      { "mount_name": "Terradon", "price": 450, "icon_name": "mount_terradon" },
+      {
+        "mount_name": "Stegadon",
+        "price": 1550,
+        "icon_name": "mount_stegadon"
+      },
+      {
+        "mount_name": "Ancient Stegadon",
+        "price": 1850,
+        "icon_name": "mount_ancient_stegadon"
+      }
+    ]
+  },
+  {
+    "name": "Skink Priest (Heavens)",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_heavens",
+    "unit_card": "wh2_main_lzd_cha_skink_priest",
+    "abilities": [{ "name": "Cold-Blooded" }],
+    "spells": [
+      { "name": "Roiling Skies" },
+      { "name": "Chain Lightning" },
+      { "name": "Comet of Casandora" },
+      { "name": "Curse of the Midnight Wind" },
+      { "name": "Harmonic Convergence" },
+      { "name": "Urannon's Thunderbolt" },
+      { "name": "Wind Blast" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Ancient Stegadon (Engine of the Gods)",
+        "price": 1950,
+        "icon_name": "mount_stegadon_engine_gods"
+      },
+      { "mount_name": "Terradon", "price": 450, "icon_name": "mount_terradon" },
+      {
+        "mount_name": "Stegadon",
+        "price": 1550,
+        "icon_name": "mount_stegadon"
+      },
+      {
+        "mount_name": "Ancient Stegadon",
+        "price": 1850,
+        "icon_name": "mount_ancient_stegadon"
+      }
+    ]
+  },
+  {
+    "name": "Legion of Chaqua (Saurus Spears)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 75,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_dlc12_lzd_inf_saurus_spearmen_shields_ror",
+    "abilities": [
+      { "name": "Shield of Chaqua" },
+      { "name": "Primal Instincts" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Red Crested Skinks",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 90,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh2_dlc12_lzd_inf_red_crested_skinks",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Cohort of Sotek (Red Crested Skinks)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 90,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh2_dlc12_lzd_inf_red_crested_skinks_ror",
+    "abilities": [{ "name": "Refuse to Die" }, { "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Star Chamber Guardians (Temple Guard)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1550,
+    "unit_size": 75,
+    "category_icon": "wh2_main_lzd_infantry_halberd",
+    "unit_card": "wh2_dlc12_lzd_inf_temple_guards_ror",
+    "abilities": [{ "name": "Guardian" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Saurus Spears",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 75,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_main_lzd_inf_saurus_spearmen",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Saurus Spears (Shields)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 75,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_main_lzd_inf_saurus_spearmen_shields",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Saurus Spears (Shields)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 75,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_main_lzd_inf_saurus_spearmen_shields_blesssed",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Saurus Warriors",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 75,
+    "category_icon": "wh2_main_lzd_infantry_mace",
+    "unit_card": "wh2_main_lzd_inf_saurus_warriors",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Saurus Warriors (Shields)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 75,
+    "category_icon": "wh2_main_lzd_infantry_mace",
+    "unit_card": "wh2_main_lzd_inf_saurus_warriors_shields",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Saurus Warriors (Shields)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 75,
+    "category_icon": "wh2_main_lzd_infantry_mace",
+    "unit_card": "wh2_main_lzd_inf_saurus_warriors_shields_blessed",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Skink Cohort",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 300,
+    "unit_size": 120,
+    "category_icon": "infantry_cudgel",
+    "unit_card": "wh2_main_lzd_inf_skink_cohort",
+    "battle_mounts": null
+  },
+  {
+    "name": "Temple Guards",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1200,
+    "unit_size": 75,
+    "category_icon": "wh2_main_lzd_infantry_halberd",
+    "unit_card": "wh2_main_lzd_inf_temple_guards",
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Temple Guards",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1300,
+    "unit_size": 75,
+    "category_icon": "wh2_main_lzd_infantry_halberd",
+    "unit_card": "wh2_main_lzd_inf_temple_guards_blessed",
+    "battle_mounts": null
+  },
+  {
+    "name": "Salamander Hunting Pack",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 950,
+    "unit_size": 24,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_dlc12_lzd_mon_salamander_hunting_pack",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Umbral Tide (Salamander Hunting Pack)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 1200,
+    "unit_size": 24,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_dlc12_lzd_mon_salamander_hunting_pack_ror",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Razordon Hunting Pack",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 24,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_dlc13_lzd_razordon",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Amaxon Barbs (Razordon Hunting Pack)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 1200,
+    "unit_size": 24,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_dlc13_lzd_razordon_ror",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Chameleon Skinks",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 68,
+    "category_icon": "wh2_main_lzd_missile_infantry_blowpipe",
+    "unit_card": "wh2_main_lzd_inf_chameleon_skinks",
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Chameleon Skinks",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 68,
+    "category_icon": "wh2_main_lzd_missile_infantry_blowpipe",
+    "unit_card": "wh2_main_lzd_inf_chameleon_skinks_blessed",
+    "battle_mounts": null
+  },
+  {
+    "name": "Skink Cohort (Javelins)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 400,
+    "unit_size": 120,
+    "category_icon": "wh2_main_missile_infantry_javelin",
+    "unit_card": "wh2_main_lzd_inf_skink_cohort_javelins",
+    "battle_mounts": null
+  },
+  {
+    "name": "Skink Skirmishers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 400,
+    "unit_size": 90,
+    "category_icon": "wh2_main_lzd_missile_infantry_blowpipe",
+    "unit_card": "wh2_main_lzd_inf_skink_skirmishers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Skink Skirmishers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 500,
+    "unit_size": 90,
+    "category_icon": "wh2_main_lzd_missile_infantry_blowpipe",
+    "unit_card": "wh2_main_lzd_inf_skink_skirmishers_blessed",
+    "battle_mounts": null
+  },
+  {
+    "name": "Pok-Hopak Cohort (Cold One Spear-Riders)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1300,
+    "unit_size": 36,
+    "category_icon": "wh2_main_cold_one_spear",
+    "unit_card": "wh2_dlc12_lzd_cav_cold_one_spearriders_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Cold One Spear-Riders",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1000,
+    "unit_size": 36,
+    "category_icon": "wh2_main_cold_one_spear",
+    "unit_card": "wh2_main_lzd_cav_cold_one_spearriders",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Cold One Spear-Riders",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1100,
+    "unit_size": 36,
+    "category_icon": "wh2_main_cold_one_spear",
+    "unit_card": "wh2_main_lzd_cav_cold_one_spearriders_blessed",
+    "battle_mounts": null
+  },
+  {
+    "name": "Cold One Riders",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 850,
+    "unit_size": 36,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_main_lzd_cav_cold_one_riders",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Cold Ones",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 450,
+    "unit_size": 24,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_main_lzd_cav_cold_ones_feral",
+    "battle_mounts": null
+  },
+  {
+    "name": "Horned Ones",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1500,
+    "unit_size": 36,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_main_lzd_cav_horned_ones",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Horned Ones",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1600,
+    "unit_size": 36,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_main_lzd_cav_horned_ones_blessed",
+    "battle_mounts": null
+  },
+  {
+    "name": "Sacred Kroxigor",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1250,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh2_dlc13_lzd_sacred_kroxigors",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Cohort of Huatl (Sacred Kroxigors)",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1600,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh2_dlc13_lzd_sacred_kroxigors_ror",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Kroxigors",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1000,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh2_main_lzd_mon_kroxigors",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Kroxigors",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh2_main_lzd_mon_kroxigors_blessed",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ripperdactyl Riders",
+    "caste": "Monstrous Cavalry",
+    "multiplayer_cost": 1200,
+    "unit_size": 8,
+    "category_icon": "wh2_main_lzd_terradon",
+    "unit_card": "wh2_dlc12_lzd_cav_ripperdactyl_riders",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Colossadon Hunters (Ripperdactyl Riders)",
+    "caste": "Monstrous Cavalry",
+    "multiplayer_cost": 1500,
+    "unit_size": 8,
+    "category_icon": "wh2_main_lzd_terradon",
+    "unit_card": "wh2_dlc12_lzd_cav_ripperdactyl_riders_ror",
+    "abilities": [{ "name": "Toad Rage" }, { "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Pahaux Sentinels (Terradon Riders)",
+    "caste": "Monster",
+    "multiplayer_cost": 800,
+    "unit_size": 8,
+    "category_icon": "wh2_main_lzd_terradon",
+    "unit_card": "wh2_dlc12_lzd_mon_terradon_ror",
+    "abilities": [{ "name": "Drop Rocks of Sundering" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ancient Salamander",
+    "caste": "Monster",
+    "multiplayer_cost": 1250,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_missile",
+    "unit_card": "wh2_dlc12_lzd_mon_ancient_salamander",
+    "abilities": [{ "name": "Primal Instincts" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ancient Stegadon (Engine of the Gods)",
+    "caste": "Monster",
+    "multiplayer_cost": 2050,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_support",
+    "unit_card": "wh2_dlc12_lzd_mon_ancient_stegadon_engine_gpds",
+    "abilities": [
+      { "name": "Burning Alignment" },
+      { "name": "Arcane Configuration" },
+      { "name": "Portent of Warding" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Thunderous One (Ancient Stegadon)",
+    "caste": "Monster",
+    "multiplayer_cost": 2400,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_missile",
+    "unit_card": "wh2_dlc12_lzd_mon_ancient_stegadon_ror",
+    "abilities": [{ "name": "Judgement of the Uxmac" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Bastiladon (Ark of Sotek)",
+    "caste": "Monster",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_support",
+    "unit_card": "wh2_dlc12_lzd_mon_bastiladon_ark_of_sotek",
+    "abilities": [{ "name": "Ark of Sotek" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Dread Saurian",
+    "caste": "Monster",
+    "multiplayer_cost": 2300,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur",
+    "unit_card": "wh2_dlc13_lzd_feral_dread_saurian",
+    "battle_mounts": null
+  },
+  {
+    "name": "Dread Saurian",
+    "caste": "Monster",
+    "multiplayer_cost": 3100,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur",
+    "unit_card": "wh2_dlc13_lzd_dread_saurian",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Shredder of Lustria (Dread Saurian)",
+    "caste": "Monster",
+    "multiplayer_cost": 3700,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur",
+    "unit_card": "wh2_dlc13_lzd_dread_saurian_ror",
+    "abilities": [{ "name": "Dread Aversion" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Terradon Riders",
+    "caste": "Monster",
+    "multiplayer_cost": 600,
+    "unit_size": 8,
+    "category_icon": "wh2_main_lzd_terradon",
+    "unit_card": "wh2_main_lzd_mon_terradon",
+    "abilities": [{ "name": "Drop Rocks" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Terradon Riders (Fireleech Bolas)",
+    "caste": "Monster",
+    "multiplayer_cost": 750,
+    "unit_size": 8,
+    "category_icon": "wh2_main_lzd_terradon",
+    "unit_card": "wh2_main_lzd_mon_terradon_fireleech",
+    "abilities": [{ "name": "Drop Rocks" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Terradon Riders (Fireleech Bolas)",
+    "caste": "Monster",
+    "multiplayer_cost": 850,
+    "unit_size": 8,
+    "category_icon": "wh2_main_lzd_terradon",
+    "unit_card": "wh2_main_lzd_mon_terradon_fireleech_blessed",
+    "abilities": [{ "name": "Drop Rocks" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ancient Stegadon",
+    "caste": "Monster",
+    "multiplayer_cost": 1950,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_missile",
+    "unit_card": "wh2_main_lzd_mon_ancient_stegadon",
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Bastiladon",
+    "caste": "Monster",
+    "multiplayer_cost": 650,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur",
+    "unit_card": "wh2_main_lzd_mon_bastiladon_feral",
+    "battle_mounts": null
+  },
+  {
+    "name": "Bastiladon (Revivification Crystal)",
+    "caste": "Monster",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_support",
+    "unit_card": "wh2_main_lzd_mon_bastiladon_healing_platform",
+    "abilities": [{ "name": "Revivification Crystal" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Bastiladon (Solar Engine)",
+    "caste": "Monster",
+    "multiplayer_cost": 1100,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_missile",
+    "unit_card": "wh2_main_lzd_mon_bastiladon_solar",
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Bastiladon (Solar Engine)",
+    "caste": "Monster",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_missile",
+    "unit_card": "wh2_main_lzd_mon_bastiladon_solar_blessed",
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Carnosaur",
+    "caste": "Monster",
+    "multiplayer_cost": 1600,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur",
+    "unit_card": "wh2_main_lzd_mon_carnosaur",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Carnosaur",
+    "caste": "Monster",
+    "multiplayer_cost": 1700,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur",
+    "unit_card": "wh2_main_lzd_mon_carnosaur_blessed",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Feral Stegadon",
+    "caste": "Monster",
+    "multiplayer_cost": 1100,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur",
+    "unit_card": "wh2_main_lzd_mon_stegadon_feral",
+    "battle_mounts": null
+  },
+  {
+    "name": "Stegadon",
+    "caste": "Monster",
+    "multiplayer_cost": 1600,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_missile",
+    "unit_card": "wh2_main_lzd_mon_stegadon",
+    "battle_mounts": null
+  },
+  {
+    "name": "Blessed Stegadon",
+    "caste": "Monster",
+    "multiplayer_cost": 1600,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lzd_dinosaur_missile",
+    "unit_card": "wh2_main_lzd_mon_stegadon_blessed",
+    "battle_mounts": null
+  }
+]

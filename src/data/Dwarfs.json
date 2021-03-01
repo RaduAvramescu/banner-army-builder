@@ -1,0 +1,500 @@
+[
+  {
+    "name": "Felix",
+    "caste": "Hero",
+    "multiplayer_cost": 800,
+    "unit_size": 1,
+    "category_icon": "wh2_pro08_cha_felix",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Helping Hand" },
+      { "name": "Blood Oath" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Gotrek",
+    "caste": "Hero",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "wh2_pro08_cha_gotrek",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Gotrek's Doom" },
+      { "name": "Heroic Fortitude" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Deathblow" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Belegar Ironhammer",
+    "caste": "Lords",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "infantry_hammer_great",
+    "unit_card": "wh_dlc06_dwf_belegar",
+    "abilities": [
+      { "name": "Mighty Oath Stone" },
+      { "name": "Revenge Incarnate" },
+      { "name": "Rally!" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Runelord",
+    "caste": "Lords",
+    "multiplayer_cost": 850,
+    "unit_size": 1,
+    "category_icon": "wh_main_dwf_runesmith",
+    "unit_card": "wh_dlc06_dwf_runelord",
+    "abilities": [
+      { "name": "Master Rune of Negation" },
+      { "name": "Master Rune of Oath & Steel" },
+      { "name": "Master Rune of Wrath & Ruin" },
+      { "name": "Rune of Hearth & Home" },
+      { "name": "Forgefire" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Anvil of Doom",
+        "price": 400,
+        "icon_name": "mount_anvil_of_doom"
+      }
+    ]
+  },
+  {
+    "name": "Thorgrim Grudgebearer",
+    "caste": "Lords",
+    "multiplayer_cost": 1500,
+    "unit_size": 1,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_dwf_king_thorgrim",
+    "abilities": [
+      { "name": "Oath of Vengeance" },
+      { "name": "Foe-Seeker" },
+      { "name": "Stand Your Ground!" },
+      { "name": "High King" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Lord",
+    "caste": "Lords",
+    "multiplayer_cost": 900,
+    "unit_size": 1,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_dwf_lord",
+    "abilities": [{ "name": "Foe-Seeker" }, { "name": "Stand Your Ground!" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ungrim Ironfist",
+    "caste": "Lords",
+    "multiplayer_cost": 1250,
+    "unit_size": 1,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_dwf_ungrim",
+    "abilities": [
+      { "name": "Red Ruin" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Deathblow" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Grombrindal - The White Dwarf",
+    "caste": "Lords",
+    "multiplayer_cost": 1500,
+    "unit_size": 1,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_pro01_dwf_grombrinal",
+    "abilities": [
+      { "name": "Foe-Seeker" },
+      { "name": "Flash Bomb" },
+      { "name": "Grombrindal Has No Fear" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Master Engineer",
+    "caste": "Hero",
+    "multiplayer_cost": 600,
+    "unit_size": 1,
+    "category_icon": "wh_main_dwf_master_engineer",
+    "unit_card": "wh_main_dwf_master_engineer",
+    "abilities": [
+      { "name": "Ballistics Calibration" },
+      { "name": "Extra Powder" },
+      { "name": "Entrenchment" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Runesmith",
+    "caste": "Hero",
+    "multiplayer_cost": 550,
+    "unit_size": 1,
+    "category_icon": "wh_main_dwf_runesmith",
+    "unit_card": "wh_main_dwf_rune_smith",
+    "abilities": [
+      { "name": "Forgefire" },
+      { "name": "Rune of Negation" },
+      { "name": "Rune of Oath & Steel" },
+      { "name": "Rune of Wrath & Ruin" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Thane",
+    "caste": "Hero",
+    "multiplayer_cost": 500,
+    "unit_size": 1,
+    "category_icon": "wh_main_dwf_champion",
+    "unit_card": "wh_main_dwf_thane",
+    "abilities": [{ "name": "Deadly Onslaught" }, { "name": "Foe-Seeker" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Giant Slayers",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1200,
+    "unit_size": 60,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh2_dlc10_dwf_giant_slayers",
+    "abilities": [{ "name": "Deathblow" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Dragonback Slayers (Slayers)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1200,
+    "unit_size": 60,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_dlc06_dwf_dragonback_slayers",
+    "abilities": [
+      { "name": "Power of the Dragonback" },
+      { "name": "Deathblow" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Ekrund Miners (Miners - Blasting Charges)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 75,
+    "category_icon": "infantry_pickaxe",
+    "unit_card": "wh_dlc06_dwf_ekrund_miners",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Norgrimlings Ironbreakers (Ironbreakers)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1600,
+    "unit_size": 90,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_dlc06_dwf_norgrimlings_ironbreakers",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Grumbling Guard (Longbeards - Great Weapons)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1000,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_dlc06_dwf_old_grumblers",
+    "abilities": [{ "name": "The Old Grumblers" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Peak Gate Guard (Hammerers)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1450,
+    "unit_size": 75,
+    "category_icon": "infantry_hammer_great",
+    "unit_card": "wh_dlc06_dwf_peak_gate_guard",
+    "battle_mounts": null
+  },
+  {
+    "name": "Warriors of Dragonfire Pass (Dwarf Warriors)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 75,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_dlc06_dwf_warriors_dragonfire_pass",
+    "battle_mounts": null
+  },
+  {
+    "name": "Dwarf Warriors",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 450,
+    "unit_size": 75,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_dwf_warriors",
+    "battle_mounts": null
+  },
+  {
+    "name": "Dwarf Warriors (Great Weapons)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 500,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_dwf_warriors_great_weapons",
+    "battle_mounts": null
+  },
+  {
+    "name": "Hammerers",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 75,
+    "category_icon": "infantry_hammer_great",
+    "unit_card": "wh_main_dwf_hammerers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Ironbreakers",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1200,
+    "unit_size": 75,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_dwf_ironbreakers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Longbeards",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 75,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_dwf_longbeards",
+    "battle_mounts": null
+  },
+  {
+    "name": "Longbeards (Great Weapons)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_dwf_longbeards_great_weapons",
+    "battle_mounts": null
+  },
+  {
+    "name": "Miners",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 325,
+    "unit_size": 75,
+    "category_icon": "infantry_pickaxe",
+    "unit_card": "wh_main_dwf_miners",
+    "battle_mounts": null
+  },
+  {
+    "name": "Miners (Blasting Charges)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 425,
+    "unit_size": 75,
+    "category_icon": "infantry_pickaxe",
+    "unit_card": "wh_main_dwf_miners_blasting_charges",
+    "battle_mounts": null
+  },
+  {
+    "name": "Slayers",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 60,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_dwf_slayers",
+    "abilities": [{ "name": "Deathblow" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Bugman's Rangers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_dlc06_dwf_rangers_bugmans",
+    "abilities": [{ "name": "Liquid Fortification" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Skolder Guard (Irondrakes)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 1050,
+    "unit_size": 21,
+    "category_icon": "dwf_irondrakes",
+    "unit_card": "wh_dlc06_dwf_norgrimlings_irondrakes",
+    "battle_mounts": null
+  },
+  {
+    "name": "Rangers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 525,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_dlc06_dwf_rangers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Rangers (Great Weapons)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 650,
+    "unit_size": 60,
+    "category_icon": "wh_dlc06_dwf_throwing_axe",
+    "unit_card": "wh_dlc06_dwf_rangers_great_axe",
+    "battle_mounts": null
+  },
+  {
+    "name": "Ulthar's Raiders (Rangers - Great Weapons)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 60,
+    "category_icon": "wh_dlc06_dwf_throwing_axe",
+    "unit_card": "wh_dlc06_dwf_ulthars_raiders",
+    "abilities": [{ "name": "Marked by Ulthar" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Irondrakes",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 21,
+    "category_icon": "dwf_irondrakes",
+    "unit_card": "wh_main_dwf_irondrakes",
+    "battle_mounts": null
+  },
+  {
+    "name": "Irondrakes (Trollhammer Torpedo)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 21,
+    "category_icon": "dwf_irondrakes_torpedo",
+    "unit_card": "wh_main_dwf_irondrakes_troll_hammer",
+    "battle_mounts": null
+  },
+  {
+    "name": "Quarrellers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_main_dwf_quarrellers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Quarrellers (Great Weapons)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_main_dwf_quarrellers_great_weapons",
+    "battle_mounts": null
+  },
+  {
+    "name": "Thunderers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 60,
+    "category_icon": "missile_infantry_rifle",
+    "unit_card": "wh_main_dwf_thunderers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Bolt Throwers",
+    "caste": "War Machine",
+    "multiplayer_cost": 550,
+    "unit_size": 3,
+    "category_icon": "wh_dlc06_dwf_bolt_thrower",
+    "unit_card": "wh_dlc06_dwf_bolt_thrower",
+    "battle_mounts": null
+  },
+  {
+    "name": "Gob-Lobbers (Grudge Throwers)",
+    "caste": "War Machine",
+    "multiplayer_cost": 900,
+    "unit_size": 3,
+    "category_icon": "catapult",
+    "unit_card": "wh_dlc06_dwf_gob_lobber",
+    "battle_mounts": null
+  },
+  {
+    "name": "Skyhammer (Gyrobomber)",
+    "caste": "War Machine",
+    "multiplayer_cost": 1400,
+    "unit_size": 1,
+    "category_icon": "dwf_gyrocopter",
+    "unit_card": "wh_dlc06_dwf_skyhammer",
+    "abilities": [{ "name": "Skyhammer Bomb" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Cannons",
+    "caste": "War Machine",
+    "multiplayer_cost": 800,
+    "unit_size": 3,
+    "category_icon": "cannon",
+    "unit_card": "wh_main_dwf_cannon",
+    "battle_mounts": null
+  },
+  {
+    "name": "Flame Cannons",
+    "caste": "War Machine",
+    "multiplayer_cost": 1300,
+    "unit_size": 3,
+    "category_icon": "flame_cannon",
+    "unit_card": "wh_main_dwf_flame_cannon",
+    "battle_mounts": null
+  },
+  {
+    "name": "Grudge Throwers",
+    "caste": "War Machine",
+    "multiplayer_cost": 700,
+    "unit_size": 3,
+    "category_icon": "catapult",
+    "unit_card": "wh_main_dwf_grudge_thrower",
+    "battle_mounts": null
+  },
+  {
+    "name": "Organ Guns",
+    "caste": "War Machine",
+    "multiplayer_cost": 1100,
+    "unit_size": 3,
+    "category_icon": "field_gun",
+    "unit_card": "wh_main_dwf_organ_gun",
+    "battle_mounts": null
+  },
+  {
+    "name": "Gyrobomber",
+    "caste": "War Machine",
+    "multiplayer_cost": 1150,
+    "unit_size": 1,
+    "category_icon": "dwf_gyrocopter",
+    "unit_card": "wh_main_dwf_gyrobomber",
+    "abilities": [{ "name": "Gyrobomber Bomb" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Gyrocopter",
+    "caste": "War Machine",
+    "multiplayer_cost": 700,
+    "unit_size": 3,
+    "category_icon": "dwf_gyrocopter",
+    "unit_card": "wh_main_dwf_gyrocopter",
+    "abilities": [{ "name": "Gyrocopter Bomb" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Gyrocopter (Brimstone Gun)",
+    "caste": "War Machine",
+    "multiplayer_cost": 800,
+    "unit_size": 3,
+    "category_icon": "dwf_gyrocopter",
+    "unit_card": "wh_main_dwf_gyrocopter_brimstone",
+    "abilities": [{ "name": "Gyrocopter Bomb" }],
+    "battle_mounts": null
+  }
+]

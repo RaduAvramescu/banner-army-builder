@@ -1,0 +1,991 @@
+[
+  {
+    "name": "Felix",
+    "caste": "Hero",
+    "multiplayer_cost": 800,
+    "unit_size": 1,
+    "category_icon": "wh2_pro08_cha_felix",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Helping Hand" },
+      { "name": "Blood Oath" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Gotrek",
+    "caste": "Hero",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "wh2_pro08_cha_gotrek",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Gotrek's Doom" },
+      { "name": "Heroic Fortitude" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Deathblow" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Huntsman General",
+    "caste": "Lords",
+    "multiplayer_cost": 750,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Arrow of Aqshy" },
+      { "name": "Hail of Fire" },
+      { "name": "Oil Flask" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Markus Wulfhart",
+    "caste": "Lords",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "placeholder",
+    "abilities": [
+      { "name": "Hunter's Snare" },
+      { "name": "Focused Shot" },
+      { "name": "Fleet-Footed" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Boris Todbringer",
+    "caste": "Lords",
+    "multiplayer_cost": 850,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_dlc03_emp_boris_todbringer",
+    "abilities": [
+      { "name": "Crush the Weak" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Hold the Line!" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 500,
+        "icon_name": "mount_imperial_pegasus"
+      },
+      {
+        "mount_name": "Imperial Griffon",
+        "price": 750,
+        "icon_name": "mount_imperial_griffon"
+      }
+    ]
+  },
+  {
+    "name": "Arch Lector",
+    "caste": "Lords",
+    "multiplayer_cost": 550,
+    "unit_size": 1,
+    "category_icon": "infantry_hammer_great",
+    "unit_card": "wh_dlc04_emp_arch_lector",
+    "abilities": [
+      { "name": "Divine Power" },
+      { "name": "Grand Hammer of Sigmar" },
+      { "name": "Grand Shield of Faith" },
+      { "name": "Grand Soulfire" },
+      { "name": "Benediction" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "Volkmar the Grim",
+    "caste": "Lords",
+    "multiplayer_cost": 750,
+    "unit_size": 1,
+    "category_icon": "infantry_hammer_great",
+    "unit_card": "wh_dlc04_emp_volkmar",
+    "abilities": [
+      { "name": "Divine Power" },
+      { "name": "Grand Hammer of Sigmar" },
+      { "name": "Grand Shield of Faith" },
+      { "name": "Grand Soulfire" },
+      { "name": "Benediction" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "War Altar of Sigmar",
+        "price": 800,
+        "icon_name": "mount_war_altar_of_sigmar"
+      },
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "Balthasar Gelt",
+    "caste": "Lords",
+    "multiplayer_cost": 350,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_metal",
+    "unit_card": "wh_main_emp_balthasar",
+    "abilities": [{ "name": "Arcane Conduit" }, { "name": "Evasion" }],
+    "spells": [
+      { "name": "Metalshifting" },
+      { "name": "Final Transmutation" },
+      { "name": "Gehenna's Golden Hounds" },
+      { "name": "Glittering Robe" },
+      { "name": "Plague of Rust" },
+      { "name": "Searing Doom" },
+      { "name": "Transmutation of Lead" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Quicksilver",
+        "price": 400,
+        "icon_name": "mount_imperial_pegasus"
+      },
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "General of the Empire",
+    "caste": "Lords",
+    "multiplayer_cost": 600,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_emp_general",
+    "abilities": [
+      { "name": "Foe-Seeker" },
+      { "name": "Stand Your Ground!" },
+      { "name": "Hold the Line!" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 550,
+        "icon_name": "mount_imperial_pegasus"
+      },
+      {
+        "mount_name": "Imperial Griffon",
+        "price": 800,
+        "icon_name": "mount_imperial_griffon"
+      },
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" }
+    ]
+  },
+  {
+    "name": "Karl Franz",
+    "caste": "Lords",
+    "multiplayer_cost": 1100,
+    "unit_size": 1,
+    "category_icon": "infantry_hammer_great",
+    "unit_card": "wh_main_emp_karl_franz",
+    "abilities": [
+      { "name": "Foe-Seeker" },
+      { "name": "Stand Your Ground!" },
+      { "name": "Hold the Line!" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Deathclaw",
+        "price": 800,
+        "icon_name": "mount_deathclaw"
+      },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 550,
+        "icon_name": "mount_imperial_pegasus"
+      },
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "Amethyst Wizard",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_death",
+    "unit_card": "placeholder",
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 400,
+        "icon_name": "mount_imperial_pegasus"
+      },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "Amber Wizard",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_dlc03_lore_beasts",
+    "unit_card": "wh_dlc03_emp_wizard_beasts",
+    "spells": [
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Pann's Impenetrable Pelt" },
+      { "name": "The Amber Spear" },
+      { "name": "The Curse of Anraheir" },
+      { "name": "Transformation of Kadon" },
+      { "name": "Wyssan's Wildform" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      },
+      {
+        "mount_name": "Imperial Griffon",
+        "price": 1050,
+        "icon_name": "mount_imperial_griffon"
+      },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 400,
+        "icon_name": "mount_imperial_pegasus"
+      }
+    ]
+  },
+  {
+    "name": "Jade Wizard",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_life",
+    "unit_card": "wh_dlc05_emp_wizard_life",
+    "spells": [
+      { "name": "Life Bloom" },
+      { "name": "Awakening of the Wood" },
+      { "name": "Earth Blood" },
+      { "name": "Flesh to Stone" },
+      { "name": "Regrowth" },
+      { "name": "Shield of Thorns" },
+      { "name": "The Dwellers Below" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 400,
+        "icon_name": "mount_imperial_pegasus"
+      }
+    ]
+  },
+  {
+    "name": "Grey Wizard",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "unit_card": "wh_dlc05_emp_wizard_shadows",
+    "spells": [
+      { "name": "Smoke & Mirrors" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Okkam's Mindrazor" },
+      { "name": "Pit of Shades" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "The Withering" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 400,
+        "icon_name": "mount_imperial_pegasus"
+      }
+    ]
+  },
+  {
+    "name": "Empire Captain",
+    "caste": "Hero",
+    "multiplayer_cost": 350,
+    "unit_size": 1,
+    "category_icon": "wh_main_emp_champion",
+    "unit_card": "wh_main_emp_captain",
+    "abilities": [{ "name": "Foe-Seeker" }, { "name": "Hold the Line!" }],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 475,
+        "icon_name": "mount_imperial_pegasus"
+      }
+    ]
+  },
+  {
+    "name": "Warrior Priest",
+    "caste": "Hero",
+    "multiplayer_cost": 350,
+    "unit_size": 1,
+    "category_icon": "wh_main_emp_dignitary",
+    "unit_card": "wh_main_emp_warrior_priest",
+    "abilities": [
+      { "name": "Divine Power" },
+      { "name": "Benediction" },
+      { "name": "Hammer of Sigmar" },
+      { "name": "Shield of Faith" },
+      { "name": "Soulfire" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "Witch Hunter",
+    "caste": "Hero",
+    "multiplayer_cost": 600,
+    "unit_size": 1,
+    "category_icon": "wh_main_emp_spy",
+    "unit_card": "wh_main_emp_witch_hunter",
+    "abilities": [{ "name": "Accusation" }, { "name": "Slippery" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Bright Wizard",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "wh_main_emp_wizard_fire",
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 400,
+        "icon_name": "mount_imperial_pegasus"
+      },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "Celestial Wizard",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_heavens",
+    "unit_card": "wh_main_emp_wizard_heavens",
+    "spells": [
+      { "name": "Roiling Skies" },
+      { "name": "Chain Lightning" },
+      { "name": "Comet of Casandora" },
+      { "name": "Curse of the Midnight Wind" },
+      { "name": "Harmonic Convergence" },
+      { "name": "Urannon's Thunderbolt" },
+      { "name": "Wind Blast" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 400,
+        "icon_name": "mount_imperial_pegasus"
+      },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "Light Wizard",
+    "caste": "Hero",
+    "multiplayer_cost": 250,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_light",
+    "unit_card": "wh_main_emp_wizard_light",
+    "spells": [
+      { "name": "Exorcism" },
+      { "name": "Banishment" },
+      { "name": "Birona's Timewarp" },
+      { "name": "Light of Battle" },
+      { "name": "Net of Amyntok" },
+      { "name": "Pha's Protection" },
+      { "name": "Shem's Burning Gaze" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
+      {
+        "mount_name": "Imperial Pegasus",
+        "price": 400,
+        "icon_name": "mount_imperial_pegasus"
+      },
+      {
+        "mount_name": "Barded Warhorse",
+        "price": 250,
+        "icon_name": "mount_barded_warhorse"
+      }
+    ]
+  },
+  {
+    "name": "Carroburg Greatswords (Greatswords)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1100,
+    "unit_size": 90,
+    "category_icon": "infantry_sword_great",
+    "unit_card": "wh2_dlc13_emp_greatswords_ror",
+    "abilities": [{ "name": "Bathed in Blood" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Nordland Mariners (Halberdiers)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 90,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh2_dlc13_emp_halberdiers_ror",
+    "abilities": [{ "name": "Rowdy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Eldred's Guard (Spearmen - Shields)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_dlc13_emp_spearmen_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Swords of Ulric (Swordsmen)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 90,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh2_dlc13_emp_swordsmen_ror",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Flagellants",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 90,
+    "category_icon": "wh_dlc04_flagellant",
+    "unit_card": "wh_dlc04_emp_flagellants",
+    "abilities": [{ "name": "Strength of the Penitent" }, { "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Sigmar's Sons (Swordsmen)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 90,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_dlc04_emp_sigmars_sons",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Tattersouls (Flagellants)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 875,
+    "unit_size": 120,
+    "category_icon": "wh_dlc04_flagellant",
+    "unit_card": "wh_dlc04_emp_tattersouls",
+    "abilities": [{ "name": "Strength of the Penitent" }, { "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Greatswords",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 90,
+    "category_icon": "infantry_sword_great",
+    "unit_card": "wh_main_emp_greatswords",
+    "battle_mounts": null
+  },
+  {
+    "name": "Halberdiers",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 90,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh_main_emp_halberd",
+    "battle_mounts": null
+  },
+  {
+    "name": "Spearmen",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 325,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh_main_emp_spearmen",
+    "battle_mounts": null
+  },
+  {
+    "name": "Spearmen (Shields)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 375,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh_main_emp_spearmen_shield",
+    "battle_mounts": null
+  },
+  {
+    "name": "Swordsmen",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 400,
+    "unit_size": 90,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_emp_swordsmen",
+    "battle_mounts": null
+  },
+  {
+    "name": "Archers",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 350,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc13_emp_archers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Deathjacks (Archers)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc13_emp_archers_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Stir River Patrol (Crossbowmen)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 675,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc13_emp_crossbowmen_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Gunderman's Surefires (Handgunners)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_rifle",
+    "unit_card": "wh2_dlc13_emp_handgunners_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Huntsmen",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 650,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc13_emp_huntsmen",
+    "battle_mounts": null
+  },
+  {
+    "name": "The White Wolves (Huntsmen)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_dlc13_emp_huntsmen_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Free Company Militia",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 450,
+    "unit_size": 90,
+    "category_icon": "missile_infantry_rifle",
+    "unit_card": "wh_dlc04_emp_free_company_militia",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Silver Bullets (Handgunners)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_rifle",
+    "unit_card": "wh_dlc04_emp_silver_bullets",
+    "battle_mounts": null
+  },
+  {
+    "name": "Stirland's Revenge (Free Company Militia)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 90,
+    "category_icon": "missile_infantry_rifle",
+    "unit_card": "wh_dlc04_emp_stirlands_revenge",
+    "battle_mounts": null
+  },
+  {
+    "name": "Crossbowmen",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 475,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh_main_emp_crossbowmen",
+    "battle_mounts": null
+  },
+  {
+    "name": "Handgunners",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_rifle",
+    "unit_card": "wh_main_emp_handgunners",
+    "battle_mounts": null
+  },
+  {
+    "name": "Knights of the Everlasting Light (Empire Knights)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1000,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_dlc13_emp_empire_knights_everlasting_light_ror",
+    "abilities": [{ "name": "Blinding Radiance" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Knights of Morr (Empire Knights)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1100,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_dlc13_emp_empire_knights_morr_ror",
+    "abilities": [{ "name": "Grim Resolve" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Stubborn Bulls (Empire Knights - Greatswords)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1000,
+    "unit_size": 45,
+    "category_icon": "cavalry",
+    "unit_card": "wh2_dlc13_emp_empire_knights_ostland_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Knights of the Blazing Sun",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1200,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh_dlc04_emp_knights_blazing_sun",
+    "battle_mounts": null
+  },
+  {
+    "name": "Zintler's Reiksguard (Reiksguard)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1350,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh_dlc04_emp_zintlers",
+    "battle_mounts": null
+  },
+  {
+    "name": "Empire Knights",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 850,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh_main_emp_empire_knights",
+    "battle_mounts": null
+  },
+  {
+    "name": "Reiksguard",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1150,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh_main_emp_reiksguard",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Bordermen (Outriders - Grenade Launcher)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 1000,
+    "unit_size": 36,
+    "category_icon": "missile_cavalry_rifle",
+    "unit_card": "wh2_dlc13_emp_outriders_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Noble Sons Abroad (Pistoliers)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 700,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_rifle",
+    "unit_card": "wh2_dlc13_emp_pistoliers_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Outriders",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 700,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_rifle",
+    "unit_card": "wh_main_emp_outriders",
+    "battle_mounts": null
+  },
+  {
+    "name": "Outriders (Grenade Launcher)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 800,
+    "unit_size": 36,
+    "category_icon": "missile_cavalry_rifle",
+    "unit_card": "wh_main_emp_outriders_grenade_launcher",
+    "battle_mounts": null
+  },
+  {
+    "name": "Pistoliers",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 500,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_rifle",
+    "unit_card": "wh_main_emp_pistoliers_brace_pistols",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Emperor's Wrath (Steam Tank)",
+    "caste": "Chariot",
+    "multiplayer_cost": 2400,
+    "unit_size": 1,
+    "category_icon": "emp_steam_tank",
+    "unit_card": "wh2_dlc13_emp_steam_tank_ror",
+    "abilities": [{ "name": "Emergency Vent" }, { "name": "Kaboom!" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "War Wagons",
+    "caste": "Chariot",
+    "multiplayer_cost": 850,
+    "unit_size": 3,
+    "category_icon": "missile_chariot",
+    "unit_card": "wh2_dlc13_emp_war_wagon",
+    "battle_mounts": null
+  },
+  {
+    "name": "War Wagons (Mortars)",
+    "caste": "Chariot",
+    "multiplayer_cost": 950,
+    "unit_size": 3,
+    "category_icon": "missile_chariot",
+    "unit_card": "wh2_dlc13_emp_war_wagon_mortar",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Black Lions (War Wagons - Helblasters)",
+    "caste": "Chariot",
+    "multiplayer_cost": 1900,
+    "unit_size": 3,
+    "category_icon": "missile_chariot",
+    "unit_card": "wh2_dlc13_emp_war_wagon_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Templehof Luminark (Luminark of Hysh)",
+    "caste": "Chariot",
+    "multiplayer_cost": 1900,
+    "unit_size": 1,
+    "category_icon": "magic_chariot",
+    "unit_card": "wh_dlc04_emp_templehof_luminark",
+    "abilities": [
+      { "name": "Net of Amyntok" },
+      { "name": "Locus of Hysh" },
+      { "name": "Aura of Protection" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Luminark of Hysh",
+    "caste": "Chariot",
+    "multiplayer_cost": 1700,
+    "unit_size": 1,
+    "category_icon": "magic_chariot",
+    "unit_card": "wh_main_emp_luminark",
+    "abilities": [
+      { "name": "Locus of Hysh" },
+      { "name": "Aura of Protection" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Steam Tank",
+    "caste": "Chariot",
+    "multiplayer_cost": 2200,
+    "unit_size": 1,
+    "category_icon": "emp_steam_tank",
+    "unit_card": "wh_main_emp_steamtank",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Royal Altdorf Gryphites (Demigryph Knights)",
+    "caste": "Monstrous Cavalry",
+    "multiplayer_cost": 1850,
+    "unit_size": 24,
+    "category_icon": "wh2_dlc15_griffon_knights",
+    "unit_card": "wh_dlc04_emp_royal_gryphites",
+    "battle_mounts": null
+  },
+  {
+    "name": "Demigryph Knights",
+    "caste": "Monstrous Cavalry",
+    "multiplayer_cost": 1400,
+    "unit_size": 24,
+    "category_icon": "wh2_dlc15_griffon_knights",
+    "unit_card": "wh_main_emp_demigryph_knights",
+    "battle_mounts": null
+  },
+  {
+    "name": "Demigryph Knights (Halberds)",
+    "caste": "Monstrous Cavalry",
+    "multiplayer_cost": 1500,
+    "unit_size": 24,
+    "category_icon": "wh2_dlc15_griffon_knights",
+    "unit_card": "wh_main_emp_demigryph_knights_halberd",
+    "battle_mounts": null
+  },
+  {
+    "name": "Sootson's Guns (Mortars)",
+    "caste": "War Machine",
+    "multiplayer_cost": 800,
+    "unit_size": 3,
+    "category_icon": "cannon",
+    "unit_card": "wh2_dlc13_emp_mortar_ror",
+    "battle_mounts": null
+  },
+  {
+    "name": "Hammer of the Witches (Great Cannons)",
+    "caste": "War Machine",
+    "multiplayer_cost": 1100,
+    "unit_size": 3,
+    "category_icon": "cannon",
+    "unit_card": "wh_dlc04_emp_hammer_witches",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Sunmaker (Helstorm Rocket Battery)",
+    "caste": "War Machine",
+    "multiplayer_cost": 1800,
+    "unit_size": 3,
+    "category_icon": "emp_rocket_battery",
+    "unit_card": "wh_dlc04_emp_sunmaker",
+    "battle_mounts": null
+  },
+  {
+    "name": "Great Cannons",
+    "caste": "War Machine",
+    "multiplayer_cost": 800,
+    "unit_size": 3,
+    "category_icon": "cannon",
+    "unit_card": "wh_main_emp_cannon",
+    "battle_mounts": null
+  },
+  {
+    "name": "Helblaster Volley Guns",
+    "caste": "War Machine",
+    "multiplayer_cost": 1050,
+    "unit_size": 3,
+    "category_icon": "field_gun",
+    "unit_card": "wh_main_emp_helblaster_volley_gun",
+    "battle_mounts": null
+  },
+  {
+    "name": "Helstorm Rocket Battery",
+    "caste": "War Machine",
+    "multiplayer_cost": 1050,
+    "unit_size": 3,
+    "category_icon": "emp_rocket_battery",
+    "unit_card": "wh_main_emp_helstorm_rocket",
+    "battle_mounts": null
+  },
+  {
+    "name": "Mortars",
+    "caste": "War Machine",
+    "multiplayer_cost": 650,
+    "unit_size": 3,
+    "category_icon": "cannon",
+    "unit_card": "wh_main_emp_mortar",
+    "battle_mounts": null
+  }
+]

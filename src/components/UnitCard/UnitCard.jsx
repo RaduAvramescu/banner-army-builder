@@ -6,11 +6,12 @@ import UnitDialog from "../UnitDialog/UnitDialog";
 const UnitCard = (props) => {
   const [open, setOpen] = React.useState(false);
 
-  const handleClose = (value) => {
+  const handleClose = (mount, spell) => {
     const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
     setOpen(false);
-    if (value.hasOwnProperty("name")) onUnitAdd(newProps, value);
-    else onUnitAdd(newProps);
+    console.log(mount);
+    console.log(spell);
+    onUnitAdd(newProps, mount, spell);
   };
 
   const handleClick = () => {
@@ -26,6 +27,12 @@ const UnitCard = (props) => {
     }
   };
 
+  let semicircle_icon;
+
+  if (props.caste === "Lords" || props.caste === "Heroes")
+    semicircle_icon = "unit_card_semicircle_hero";
+  else if (props.ror === true) semicircle_icon = "unit_card_semicircle_renown";
+  else semicircle_icon = "unit_card_semicircle";
   return (
     <React.Fragment>
       <div
@@ -60,10 +67,11 @@ const UnitCard = (props) => {
           width="60"
           height="130"
         ></img>
+
         <img
           className="position_absolute"
           src={
-            require(`../../images/unit_card/semicircle_icon/${props.semicircle_icon}.png`)
+            require(`../../images/unit_card/semicircle_icon/${semicircle_icon}.png`)
               .default
           }
           alt="Unit Card Semicircle Icon"

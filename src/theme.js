@@ -23,6 +23,19 @@ let theme = createMuiTheme({
         },
       },
     },
+    MuiListItem: {
+      root: {
+        "&:hover": {
+          backgroundColor: "orange",
+        },
+        "&$selected": {
+          backgroundColor: "orange",
+          "&:hover": {
+            backgroundColor: "orange",
+          },
+        },
+      },
+    },
     MuiButton: {
       root: {
         "&:hover": {

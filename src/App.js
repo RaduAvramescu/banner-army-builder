@@ -26,11 +26,11 @@ class App extends Component {
     }));
   };
 
-  handleUnitCanAdd = (props, mount) => {
+  handleUnitCanAdd = (props, mount, spell) => {
     const { funds, units } = this.state;
     let { ...newProps } = props;
 
-    if (mount) newProps = this.handleUpdateUnit(newProps, mount);
+    if (mount) newProps = this.handleUpdateUnit(newProps, mount, spell);
 
     const {
       name,
@@ -79,7 +79,7 @@ class App extends Component {
     }
 
     if (isSE) {
-      if (caste === "Heroes") {
+      if (caste === "Hero") {
         if (this.handleVerifyDuplicates("countCategory", newProps) === 2)
           return alert("You can't have more than 2 Heroes!");
         if (
@@ -155,7 +155,7 @@ class App extends Component {
       )
         if (this.handleVerifyDuplicates("countSame", newProps) === 4)
           return alert(
-            `You can't have more than 4 of an ${caste} unit with 901-1100 multiplayer_cost!`
+            `You can't have more than 4 of an ${caste} unit with 901-1100 price!`
           );
 
       if (
@@ -164,7 +164,7 @@ class App extends Component {
       )
         if (this.handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
-            `You can't have more than 3 of an ${caste} unit with 1101+ multiplayer_cost!`
+            `You can't have more than 3 of an ${caste} unit with 1101+ price!`
           );
     }
 
@@ -178,7 +178,7 @@ class App extends Component {
           this.handleVerifyDuplicates("countSame", newProps) === 3
         )
           return alert(
-            `You can't have more than 3 of the same ${limited_type} with 1201+ multiplayer_cost!`
+            `You can't have more than 3 of the same ${limited_type} with 1201+ price!`
           );
     }
 
@@ -193,11 +193,12 @@ class App extends Component {
     this.handleUnitAdd(newProps);
   };
 
-  handleUpdateUnit = (props, mount) => {
+  handleUpdateUnit = (props, mount, spell) => {
     const { ...newProps } = props;
 
     if (mount) {
-      newProps.multiplayer_cost += mount.multiplayer_cost;
+      if (mount.hasOwnProperty("multiplayer_cost"))
+        newProps.multiplayer_cost += mount.multiplayer_cost;
       const unitProperties = [
         "isSEM",
         "isFlyer",

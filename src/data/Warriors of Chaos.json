@@ -1,0 +1,797 @@
+[
+  {
+    "name": "Chaos Lord on Manticore",
+    "caste": "Lords",
+    "multiplayer_cost": 1400,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh_main_chs_lord",
+    "abilities": [
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Stand or Die!" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Manticore", "price": 0, "icon_name": "mount_manticore" },
+      {
+        "mount_name": "Chaos Dragon",
+        "price": 900,
+        "icon_name": "mount_chaos_dragon"
+      },
+      {
+        "mount_name": "Chaos Steed",
+        "price": -300,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": -250,
+        "icon_name": "mount_barded_chaos_steed"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Sorcerer Lord (Death)",
+    "caste": "Lords",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_death",
+    "unit_card": "wh_dlc01_chs_sorcerer_lord",
+    "abilities": [{ "name": "Arcane Conduit" }, { "name": "Evasion" }],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Chaos Dragon",
+        "price": 1400,
+        "icon_name": "mount_chaos_dragon"
+      },
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 500,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Sorcerer Lord (Fire)",
+    "caste": "Lords",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "wh_dlc01_chs_sorcerer_lord",
+    "abilities": [{ "name": "Arcane Conduit" }, { "name": "Evasion" }],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Chaos Dragon",
+        "price": 1400,
+        "icon_name": "mount_chaos_dragon"
+      },
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 500,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Sorcerer Lord (Metal)",
+    "caste": "Lords",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_metal",
+    "unit_card": "wh_dlc01_chs_sorcerer_lord",
+    "abilities": [{ "name": "Arcane Conduit" }, { "name": "Evasion" }],
+    "spells": [
+      { "name": "Metalshifting" },
+      { "name": "Final Transmutation" },
+      { "name": "Gehenna's Golden Hounds" },
+      { "name": "Glittering Robe" },
+      { "name": "Plague of Rust" },
+      { "name": "Searing Doom" },
+      { "name": "Transmutation of Lead" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Chaos Dragon",
+        "price": 1400,
+        "icon_name": "mount_chaos_dragon"
+      },
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 500,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Sorcerer Lord (Shadows)",
+    "caste": "Lords",
+    "multiplayer_cost": 700,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "unit_card": "wh_dlc01_chs_sorcerer_lord",
+    "abilities": [{ "name": "Arcane Conduit" }, { "name": "Evasion" }],
+    "spells": [
+      { "name": "Smoke & Mirrors" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Okkam's Mindrazor" },
+      { "name": "Pit of Shades" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "The Withering" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 500,
+        "icon_name": "mount_manticore"
+      },
+      {
+        "mount_name": "Chaos Dragon",
+        "price": 1400,
+        "icon_name": "mount_chaos_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Kholek Suneater",
+    "caste": "Lords",
+    "multiplayer_cost": 2200,
+    "unit_size": 1,
+    "category_icon": "chs_shaggoth",
+    "unit_card": "wh_dlc01_chs_kholek",
+    "abilities": [
+      { "name": "Foe-Seeker" },
+      { "name": "Stand or Die!" },
+      { "name": "Lord of the Storm" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Prince Sigvald the Magnificent",
+    "caste": "Lords",
+    "multiplayer_cost": 1000,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_dlc01_chs_sigvald",
+    "abilities": [
+      { "name": "Heroic Killing Blow" },
+      { "name": "Stand or Die!" },
+      { "name": "Slippery" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Archaon the Everchosen",
+    "caste": "Lords",
+    "multiplayer_cost": 1450,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "wh_main_chs_archaon",
+    "abilities": [
+      { "name": "Foe-Seeker" },
+      { "name": "Stand or Die!" },
+      { "name": "Frenzy" }
+    ],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Dorghar", "price": 400, "icon_name": "mount_dorghar" }
+    ]
+  },
+  {
+    "name": "Chaos Lord",
+    "caste": "Lords",
+    "multiplayer_cost": 900,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_chs_lord",
+    "abilities": [
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" },
+      { "name": "Stand or Die!" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Manticore",
+        "price": 500,
+        "icon_name": "mount_manticore"
+      },
+      {
+        "mount_name": "Chaos Dragon",
+        "price": 1400,
+        "icon_name": "mount_chaos_dragon"
+      },
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      }
+    ]
+  },
+  {
+    "name": "Sarthorael the Everwatcher",
+    "caste": "Lords",
+    "multiplayer_cost": 1650,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_metal",
+    "unit_card": "wh_main_chs_lord_of_change",
+    "abilities": [{ "name": "Arcane Conduit" }, { "name": "Stand or Die!" }],
+    "spells": [
+      { "name": "Metalshifting" },
+      { "name": "Final Transmutation" },
+      { "name": "Gehenna's Golden Hounds" },
+      { "name": "Glittering Robe" },
+      { "name": "Plague of Rust" },
+      { "name": "Searing Doom" },
+      { "name": "Transmutation of Lead" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Sorcerer (Shadows)",
+    "caste": "Hero",
+    "multiplayer_cost": 400,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "unit_card": "wh_main_chs_sorcerer",
+    "abilities": [{ "name": "Evasion" }],
+    "spells": [
+      { "name": "Smoke & Mirrors" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Okkam's Mindrazor" },
+      { "name": "Pit of Shades" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "The Withering" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 800,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
+    "name": "Exalted Hero on Manticore",
+    "caste": "Hero",
+    "multiplayer_cost": 1100,
+    "unit_size": 1,
+    "category_icon": "wh_main_chs_champion",
+    "unit_card": "wh_main_chs_exalted_hero",
+    "abilities": [{ "name": "Deadly Onslaught" }, { "name": "Foe-Seeker" }],
+    "battle_mounts": [
+      { "mount_name": "Manticore", "price": 0, "icon_name": "mount_manticore" },
+      {
+        "mount_name": "Chaos Steed",
+        "price": -300,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": -250,
+        "icon_name": "mount_barded_chaos_steed"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Sorcerer (Death)",
+    "caste": "Hero",
+    "multiplayer_cost": 400,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_death",
+    "unit_card": "wh_main_chs_sorcerer",
+    "abilities": [{ "name": "Evasion" }],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 800,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Sorcerer (Fire)",
+    "caste": "Hero",
+    "multiplayer_cost": 400,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "wh_main_chs_sorcerer",
+    "abilities": [{ "name": "Evasion" }],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 800,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Sorcerer (Metal)",
+    "caste": "Hero",
+    "multiplayer_cost": 400,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_metal",
+    "unit_card": "wh_main_chs_sorcerer",
+    "abilities": [{ "name": "Evasion" }],
+    "spells": [
+      { "name": "Metalshifting" },
+      { "name": "Final Transmutation" },
+      { "name": "Gehenna's Golden Hounds" },
+      { "name": "Glittering Robe" },
+      { "name": "Plague of Rust" },
+      { "name": "Searing Doom" },
+      { "name": "Transmutation of Lead" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 800,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
+    "name": "Exalted Hero",
+    "caste": "Hero",
+    "multiplayer_cost": 600,
+    "unit_size": 1,
+    "category_icon": "wh_main_chs_champion",
+    "unit_card": "wh_main_chs_exalted_hero",
+    "abilities": [{ "name": "Deadly Onslaught" }, { "name": "Foe-Seeker" }],
+    "battle_mounts": [
+      {
+        "mount_name": "Manticore",
+        "price": 500,
+        "icon_name": "mount_manticore"
+      },
+      {
+        "mount_name": "Chaos Steed",
+        "price": 200,
+        "icon_name": "mount_chaos_steed"
+      },
+      {
+        "mount_name": "Barded Chaos Steed",
+        "price": 250,
+        "icon_name": "mount_barded_chaos_steed"
+      }
+    ]
+  },
+  {
+    "name": "Chaos Warriors (Great Weapons)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 75,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_dlc01_chs_warriors_great_weapons",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chosen (Halberds)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1400,
+    "unit_size": 60,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh_dlc01_chs_chosen_halberd",
+    "battle_mounts": null
+  },
+  {
+    "name": "Forsaken",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 60,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_dlc01_chs_forsaken",
+    "abilities": [{ "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Aspiring Champions",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 12,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_dlc06_chs_aspiring_champions",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Marauders",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 375,
+    "unit_size": 90,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_chs_marauder",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Marauders (Great Weapons)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 475,
+    "unit_size": 90,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_chs_marauder_great_weapons",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Warriors",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 75,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_chs_warriors",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Warriors (Halberds)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 850,
+    "unit_size": 75,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh_main_chs_warriors_halberd",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chosen",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1250,
+    "unit_size": 60,
+    "category_icon": "infantry_axe",
+    "unit_card": "wh_main_chs_chosen",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chosen (Great Weapons)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1450,
+    "unit_size": 60,
+    "category_icon": "infantry_axe_great",
+    "unit_card": "wh_main_chs_chosen_great_weapons",
+    "battle_mounts": null
+  },
+  {
+    "name": "Mirror Guard (Chaos Warriors)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 950,
+    "unit_size": 75,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_pro04_chs_ror_warriors",
+    "battle_mounts": null
+  },
+  {
+    "name": "The Daemonspew (Forsaken)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1000,
+    "unit_size": 60,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_pro04_chs_ror_forsaken",
+    "abilities": [{ "name": "Swarm of Flies" }, { "name": "Frenzy" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Knights",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1400,
+    "unit_size": 45,
+    "category_icon": "cavalry",
+    "unit_card": "wh_main_chs_knights",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Knights (Lances)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1500,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh_main_chs_knights_lance",
+    "battle_mounts": null
+  },
+  {
+    "name": "Swords of Chaos (Chaos Knights)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1800,
+    "unit_size": 18,
+    "category_icon": "cavalry",
+    "unit_card": "wh_pro04_chs_ror_knights",
+    "abilities": [{ "name": "Guardian" }, { "name": "Apocalyptic Charge" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Horsemasters",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 750,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_javelin",
+    "unit_card": "wh_dlc06_chs_marauder_horsemasters",
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Horsemen",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 500,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_javelin",
+    "unit_card": "wh_main_chs_marauder_horsemen",
+    "battle_mounts": null
+  },
+  {
+    "name": "Marauder Horsemen (Throwing Axes)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 600,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_axe",
+    "unit_card": "wh_main_chs_marauder_horsemen_throwing_axe",
+    "battle_mounts": null
+  },
+  {
+    "name": "Gorebeast Chariots",
+    "caste": "Chariot",
+    "multiplayer_cost": 1200,
+    "unit_size": 3,
+    "category_icon": "wh2_dlc15_lion_chariot",
+    "unit_card": "wh_dlc01_chs_gorebeast_chariot",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Chariots",
+    "caste": "Chariot",
+    "multiplayer_cost": 750,
+    "unit_size": 3,
+    "category_icon": "chariot",
+    "unit_card": "wh_main_chs_chariot",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Warhounds",
+    "caste": "War Beast",
+    "multiplayer_cost": 400,
+    "unit_size": 60,
+    "category_icon": "war_beast",
+    "unit_card": "wh_main_chs_warhounds",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Warhounds (Poison)",
+    "caste": "War Beast",
+    "multiplayer_cost": 475,
+    "unit_size": 60,
+    "category_icon": "war_beast",
+    "unit_card": "wh_main_chs_warhounds_poison",
+    "battle_mounts": null
+  },
+  {
+    "name": "Dragon Ogres",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1650,
+    "unit_size": 12,
+    "category_icon": "chs_shaggoth",
+    "unit_card": "wh_dlc01_chs_dragon_ogre",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Trolls (Armoured)",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 950,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_dlc01_chs_trolls_mace",
+    "abilities": [{ "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Spawn",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 900,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_main_chs_spawn",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Trolls",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_main_chs_trolls",
+    "abilities": [{ "name": "Regeneration" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Wyrd Spawn (Chaos Spawn)",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 1250,
+    "unit_size": 12,
+    "category_icon": "monstrous_infantry",
+    "unit_card": "wh_pro04_chs_ror_spawn",
+    "battle_mounts": null
+  },
+  {
+    "name": "Summoners of Rage (Dragon Ogres)",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 2000,
+    "unit_size": 12,
+    "category_icon": "chs_shaggoth",
+    "unit_card": "wh_pro04_chs_ror_dragon_ogre",
+    "abilities": [{ "name": "Chain Lightning" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "Dragon Ogre Shaggoth",
+    "caste": "Monster",
+    "multiplayer_cost": 2000,
+    "unit_size": 1,
+    "category_icon": "chs_shaggoth",
+    "unit_card": "wh_dlc01_chs_dragon_ogre_shaggoth",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Feral Manticore",
+    "caste": "Monster",
+    "multiplayer_cost": 800,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh_dlc03_bst_feral_manticore",
+    "battle_mounts": null
+  },
+  {
+    "name": "Chaos Giant",
+    "caste": "Monster",
+    "multiplayer_cost": 1500,
+    "unit_size": 1,
+    "category_icon": "giant",
+    "unit_card": "wh_main_chs_giant",
+    "battle_mounts": null
+  },
+  {
+    "name": "Hellcannon",
+    "caste": "War Machine",
+    "multiplayer_cost": 1200,
+    "unit_size": 1,
+    "category_icon": "cannon",
+    "unit_card": "wh_main_chs_hellcannon",
+    "abilities": [{ "name": "Blooood!" }, { "name": "Boom!" }],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Soul of Damnation (Hellcannon)",
+    "caste": "War Machine",
+    "multiplayer_cost": 1550,
+    "unit_size": 1,
+    "category_icon": "cannon",
+    "unit_card": "wh_pro04_chs_ror_hellcannon",
+    "abilities": [
+      { "name": "Blooood!" },
+      { "name": "Boom!" },
+      { "name": "Soul Devourer" }
+    ],
+    "battle_mounts": null
+  }
+]
