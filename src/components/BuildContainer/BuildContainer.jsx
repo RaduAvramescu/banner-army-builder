@@ -4,19 +4,14 @@ import UnitCard from "../UnitCard/UnitCard";
 
 import { Grid, Box, Typography } from "@material-ui/core";
 
-const BuildContainer = ({
-  fundsRemaining,
-  modelCount,
-  onUnitRemove,
-  units,
-}) => {
+const BuildContainer = ({ fundsRemaining, unit_size, onUnitRemove, units }) => {
   const getClasses = (type) => {
     if (type === "funds")
       if (fundsRemaining >= 1000) return "green";
       else return "yellow";
 
     if (type === "model")
-      if (modelCount < 300) return "red";
+      if (unit_size < 300) return "red";
       else return "green";
   };
 
@@ -47,7 +42,7 @@ const BuildContainer = ({
             variant="h3"
             className={getClasses("model")}
           >
-            <Box display="inline">{modelCount}</Box>
+            <Box display="inline">{unit_size}</Box>
           </Typography>
         </Box>
         <Grid container justify="center">

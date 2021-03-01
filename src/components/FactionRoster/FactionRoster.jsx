@@ -34,7 +34,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
       <Grid container justify="center" alignContent="center" direction="column">
         {categories && (
           <div>
-            {categories.map((category, i) => (
+            {categories.map((caste, i) => (
               <div key={i} id={i}>
                 <Box my="1rem">
                   <Typography variant="h3" component="h2" align="center">
@@ -44,7 +44,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
                     {selectedFaction &&
                       factionRoster &&
                       factionRoster
-                        .filter((unit) => unit.category === categories[i])
+                        .filter((unit) => unit.caste === categories[i])
                         .map((unit, i) => (
                           <UnitCard
                             key={i}

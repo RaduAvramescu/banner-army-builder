@@ -21,8 +21,8 @@ const UnitCard = (props) => {
         setOpen(true);
       } else onUnitAdd(newProps);
     } else {
-      const { id, price, modelCount, onUnitRemove } = props;
-      onUnitRemove(id, price, modelCount);
+      const { id, multiplayer_cost, unit_size, onUnitRemove } = props;
+      onUnitRemove(id, multiplayer_cost, unit_size);
     }
   };
 
@@ -39,11 +39,11 @@ const UnitCard = (props) => {
           variant="h6"
           component="p"
         >
-          {props.price}
+          {props.multiplayer_cost}
         </Typography>
         <img
           src={
-            require(`../../images/unit_card/card_icon/${props.image}.png`)
+            require(`../../images/unit_card/card_icon/${props.unit_card}.png`)
               .default
           }
           alt="Unit Card Image"
@@ -76,7 +76,7 @@ const UnitCard = (props) => {
             require(`../../images/unit_card/category_icon/${props.category_icon}.png`)
               .default
           }
-          alt="Unit Card Category Icon"
+          alt="Unit Card caste Icon"
           width="22"
           height="22"
         />

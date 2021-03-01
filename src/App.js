@@ -34,9 +34,9 @@ class App extends Component {
 
     const {
       name,
-      price,
-      category,
-      image,
+      multiplayer_cost,
+      caste,
+      unit_card,
       limited_type,
       basePrice,
       isSE,
@@ -50,14 +50,14 @@ class App extends Component {
       variantUnit,
     } = newProps;
 
-    if (category !== "Lords" && !units[0])
+    if (caste !== "Lords" && !units[0])
       return alert("You have to pick a Lord first!");
 
-    if (price > funds) return alert("You don't have enough funds!");
+    if (multiplayer_cost > funds) return alert("You don't have enough funds!");
 
-    if (category === "Lords") {
-      if (units.find((unit) => unit.category === "Lords"))
-        this.handleUnitRemove(0, units[0].price, units[0].modelCount);
+    if (caste === "Lords") {
+      if (units.find((unit) => unit.caste === "Lords"))
+        this.handleUnitRemove(0, units[0].multiplayer_cost, units[0].unit_size);
     }
 
     if (units.length === 20)
@@ -79,7 +79,7 @@ class App extends Component {
     }
 
     if (isSE) {
-      if (category === "Heroes") {
+      if (caste === "Heroes") {
         if (this.handleVerifyDuplicates("countCategory", newProps) === 2)
           return alert("You can't have more than 2 Heroes!");
         if (
@@ -106,7 +106,7 @@ class App extends Component {
           "You can't have more than 3 Single Entity Monsters (SEM)!"
         );
       if (
-        price >= 1800 &&
+        multiplayer_cost >= 1800 &&
         this.handleVerifyDuplicates("SEMCost", newProps) === 2
       )
         return alert(
@@ -146,39 +146,47 @@ class App extends Component {
       if (this.handleVerifyDuplicates("variantUnit", newProps) === 8)
         return alert("You can't have more than 8 units of a unit variant!");
 
-    if (category === "Infantry" || category === "Missile Infantry") {
+    if (caste === "Infantry" || caste === "Missile Infantry") {
       if (
-        (!image.includes("ror") && price >= 901 && price <= 1100) ||
+        (!unit_card.includes("ror") &&
+          multiplayer_cost >= 901 &&
+          multiplayer_cost <= 1100) ||
         (basePrice >= 901 && basePrice <= 1100)
       )
         if (this.handleVerifyDuplicates("countSame", newProps) === 4)
           return alert(
-            `You can't have more than 4 of an ${category} unit with 901-1100 price!`
+            `You can't have more than 4 of an ${caste} unit with 901-1100 multiplayer_cost!`
           );
 
-      if ((!image.includes("ror") && price >= 1101) || basePrice >= 1101)
+      if (
+        (!unit_card.includes("ror") && multiplayer_cost >= 1101) ||
+        basePrice >= 1101
+      )
         if (this.handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
-            `You can't have more than 3 of an ${category} unit with 1101+ price!`
+            `You can't have more than 3 of an ${caste} unit with 1101+ multiplayer_cost!`
           );
     }
 
-    if (category !== "Infantry" && !isSE) {
-      if ((!image.includes("ror") && price >= 1201) || basePrice >= 1201)
+    if (caste !== "Infantry" && !isSE) {
+      if (
+        (!unit_card.includes("ror") && multiplayer_cost >= 1201) ||
+        basePrice >= 1201
+      )
         if (
           limited_type &&
           this.handleVerifyDuplicates("countSame", newProps) === 3
         )
           return alert(
-            `You can't have more than 3 of the same ${limited_type} with 1201+ price!`
+            `You can't have more than 3 of the same ${limited_type} with 1201+ multiplayer_cost!`
           );
     }
 
-    if (category === "Missile Cavalry & Chariots")
+    if (caste === "Missile Cavalry & Chariots")
       if (this.handleVerifyDuplicates("countCategory", newProps) === 6)
-        return alert(`You can't have more than 6 ${category}!`);
+        return alert(`You can't have more than 6 ${caste}!`);
 
-    if (image.includes("ror"))
+    if (unit_card.includes("ror"))
       if (this.handleVerifyDuplicates("countROR", newProps) === 1)
         return alert("You can't have more than 1 of the same RoR!");
 
@@ -189,7 +197,7 @@ class App extends Component {
     const { ...newProps } = props;
 
     if (mount) {
-      newProps.price += mount.price;
+      newProps.multiplayer_cost += mount.multiplayer_cost;
       const unitProperties = [
         "isSEM",
         "isFlyer",
@@ -209,7 +217,7 @@ class App extends Component {
     this.setState((state) => {
       const newUnits = [...state.units];
 
-      const { price, modelCount } = props;
+      const { multiplayer_cost, unit_size } = props;
 
       newUnits.push(props);
       newUnits.sort((a, b) => (a.unitid > b.unitid ? 1 : -1));
@@ -217,13 +225,13 @@ class App extends Component {
       return {
         ...state,
         units: newUnits,
-        funds: state.funds - price,
-        models: state.models + modelCount,
+        funds: state.funds - multiplayer_cost,
+        models: state.models + unit_size,
       };
     });
   };
 
-  handleUnitRemove = (id, price, modelCount) => {
+  handleUnitRemove = (id, multiplayer_cost, unit_size) => {
     this.setState((state) => {
       const newUnits = [...state.units];
       newUnits.splice(id, 1);
@@ -231,8 +239,8 @@ class App extends Component {
       return {
         ...state,
         units: newUnits,
-        funds: state.funds + price,
-        models: state.models - modelCount,
+        funds: state.funds + multiplayer_cost,
+        models: state.models - unit_size,
       };
     });
   };
@@ -275,7 +283,7 @@ class App extends Component {
 
     if (validation === "countCategory") {
       count = units.filter((el) => {
-        if (el.category === props.category) return count + 1;
+        if (el.caste === props.caste) return count + 1;
       }).length;
       return count;
     }
@@ -291,7 +299,7 @@ class App extends Component {
 
     if (validation === "SEMCost") {
       count = units.filter((el) => {
-        if (el.price >= 1800) return count + 1;
+        if (el.multiplayer_cost >= 1800) return count + 1;
       }).length;
       return count;
     }
@@ -331,7 +339,7 @@ class App extends Component {
               units={units}
               onUnitRemove={this.handleUnitRemove}
               fundsRemaining={funds}
-              modelCount={models}
+              unit_size={models}
             />
           </main>
         </Container>
