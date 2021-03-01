@@ -71,10 +71,6 @@ function SimpleDialog(props) {
         </AppBar>
         <TabPanel value={value} index={0}>
           <List>
-            <ListItem button onClick={() => handleListItemClick(null)}>
-              <ListItemAvatar></ListItemAvatar>
-              <ListItemText primary="None" />
-            </ListItem>
             {props.hasOwnProperty("mounts") &&
               props.mounts.map((el, i) => (
                 <ListItem
@@ -100,10 +96,6 @@ function SimpleDialog(props) {
         </TabPanel>
         <TabPanel value={value} index={1}>
           <List>
-            <ListItem button onClick={() => handleListItemClick(null)}>
-              <ListItemAvatar></ListItemAvatar>
-              <ListItemText primary="None" />
-            </ListItem>
             {props.hasOwnProperty("spells") &&
               props.spells.map((el, i) => (
                 <ListItem
@@ -119,10 +111,6 @@ function SimpleDialog(props) {
         </TabPanel>
         <TabPanel value={value} index={2}>
           <List>
-            <ListItem button onClick={() => handleListItemClick(null)}>
-              <ListItemAvatar></ListItemAvatar>
-              <ListItemText primary="None" />
-            </ListItem>
             {props.hasOwnProperty("abilities") &&
               props.abilities.map((el, i) => (
                 <ListItem

@@ -26,96 +26,6 @@ class App extends Component {
     }));
   };
 
-  handleUpdateUnit = (props, mount) => {
-    const { ...newProps } = props;
-
-    if (mount) {
-      newProps.price += mount.price;
-      if (mount.hasOwnProperty("isSEM")) newProps.isSEM = true;
-
-      if (mount.hasOwnProperty("isFlyer")) newProps.isFlyer = true;
-
-      if (mount.hasOwnProperty("hasBreath")) newProps.hasBreath = true;
-
-      if (mount.hasOwnProperty("hasDrain")) newProps.hasDrain = true;
-
-      if (mount.hasOwnProperty("isSpecial")) newProps.isSpecial = true;
-    }
-
-    return newProps;
-  };
-
-  handleVerifyDuplicates = (validation, props) => {
-    const { units } = this.state;
-    let count = 0;
-
-    if (validation === "countSame") {
-      count = units.filter((el) => {
-        if (validation === "countSame")
-          if (
-            el.unitid === props.unitid ||
-            (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
-          )
-            return count + 1;
-      }).length;
-      return count;
-    }
-
-    if (validation === "countROR") {
-      count = units.filter((el) => {
-        if (el.unitid === props.unitid) return count + 1;
-        if (validation === "countSame")
-          if (
-            el.unitid === props.unitid ||
-            (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
-          )
-            return count + 1;
-      }).length;
-      return count;
-    }
-
-    if (validation === "countNamed") {
-      count = units.filter((el) => {
-        if (el.name === props.name) return count + 1;
-      }).length;
-      return count;
-    }
-
-    if (validation === "countCategory") {
-      count = units.filter((el) => {
-        if (el.category === props.category) return count + 1;
-      }).length;
-      return count;
-    }
-
-    if (validation === "isSpecial") {
-      count = units.filter((el) => {
-        if (el.hasOwnProperty("isSpecial") && el.isSpecial === props.isSpecial)
-          if (el.name === props.limiter || props.name === props.limiter)
-            return count + 1;
-      }).length;
-      return count;
-    }
-
-    if (validation === "SEMCost") {
-      count = units.filter((el) => {
-        if (el.price >= 1800) return count + 1;
-      }).length;
-      return count;
-    }
-
-    if (typeof validation === "string") {
-      count = units.filter((el) => {
-        if (el[validation] === props[validation]) return count + 1;
-      }).length;
-    } else {
-      count = units.filter((el) => {
-        if (el.limited_type === props.limited_type) return count + 1;
-      }).length;
-    }
-    return count;
-  };
-
   handleUnitCanAdd = (props, mount) => {
     const { funds, units } = this.state;
     let { ...newProps } = props;
@@ -275,6 +185,26 @@ class App extends Component {
     this.handleUnitAdd(newProps);
   };
 
+  handleUpdateUnit = (props, mount) => {
+    const { ...newProps } = props;
+
+    if (mount) {
+      newProps.price += mount.price;
+      const unitProperties = [
+        "isSEM",
+        "isFlyer",
+        "hasBreath",
+        "hasDrain",
+        "isSpecial",
+      ];
+      unitProperties.forEach((property) => {
+        if (mount.hasOwnProperty(property)) newProps[property] = true;
+      });
+    }
+
+    return newProps;
+  };
+
   handleUnitAdd = (props) => {
     this.setState((state) => {
       const newUnits = [...state.units];
@@ -307,8 +237,80 @@ class App extends Component {
     });
   };
 
+  handleVerifyDuplicates = (validation, props) => {
+    const { units } = this.state;
+    let count = 0;
+
+    if (validation === "countSame") {
+      count = units.filter((el) => {
+        if (validation === "countSame")
+          if (
+            el.unitid === props.unitid ||
+            (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
+          )
+            return count + 1;
+      }).length;
+      return count;
+    }
+
+    if (validation === "countROR") {
+      count = units.filter((el) => {
+        if (el.unitid === props.unitid) return count + 1;
+        if (validation === "countSame")
+          if (
+            el.unitid === props.unitid ||
+            (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
+          )
+            return count + 1;
+      }).length;
+      return count;
+    }
+
+    if (validation === "countNamed") {
+      count = units.filter((el) => {
+        if (el.name === props.name) return count + 1;
+      }).length;
+      return count;
+    }
+
+    if (validation === "countCategory") {
+      count = units.filter((el) => {
+        if (el.category === props.category) return count + 1;
+      }).length;
+      return count;
+    }
+
+    if (validation === "isSpecial") {
+      count = units.filter((el) => {
+        if (el.hasOwnProperty("isSpecial") && el.isSpecial === props.isSpecial)
+          if (el.name === props.limiter || props.name === props.limiter)
+            return count + 1;
+      }).length;
+      return count;
+    }
+
+    if (validation === "SEMCost") {
+      count = units.filter((el) => {
+        if (el.price >= 1800) return count + 1;
+      }).length;
+      return count;
+    }
+
+    if (typeof validation === "string") {
+      count = units.filter((el) => {
+        if (el[validation] === props[validation]) return count + 1;
+      }).length;
+    } else {
+      count = units.filter((el) => {
+        if (el.limited_type === props.limited_type) return count + 1;
+      }).length;
+    }
+    return count;
+  };
+
   render() {
     const { selectedFaction, funds, models, units } = this.state;
+
     return (
       <div className="App">
         <CssBaseline />
