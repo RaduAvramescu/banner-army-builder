@@ -28,7 +28,6 @@ class App extends Component {
 
   handleSortBuild = () => {
     this.setState((state) => {
-      // let newUnits = [...state.units];
       const newUnits = [...state.units].sort((a, b) =>
         a.unitid > b.unitid ? 1 : -1
       );
@@ -39,11 +38,7 @@ class App extends Component {
     });
   };
 
-  handleModifyMount = (mount, props) => {
-    // console.log(mount);
-    // console.log(props);
-    // console.log(this.state.units);
-  };
+  handleModifyMount = (mount, props) => {};
 
   handleVerifyDuplicates = (validation, props) => {
     const { units } = this.state;

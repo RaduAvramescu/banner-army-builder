@@ -5,12 +5,10 @@ import UnitDialog from "../UnitDialog/UnitDialog";
 
 const UnitCard = (props) => {
   const [open, setOpen] = React.useState(false);
-  const [selectedValue, setSelectedValue] = React.useState(props);
   const { onModifyMount } = props;
 
   const handleClose = (value) => {
     setOpen(false);
-    setSelectedValue(value);
     onModifyMount(value, props);
   };
 
@@ -96,12 +94,7 @@ const UnitCard = (props) => {
         width="60"
         height="130"
       />
-      <UnitDialog
-        selectedValue={selectedValue}
-        open={open}
-        onClose={handleClose}
-        {...props}
-      />
+      <UnitDialog open={open} onClose={handleClose} {...props} />
     </div>
   );
 };
