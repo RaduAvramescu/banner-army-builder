@@ -133,22 +133,23 @@
     "mounts": [
       {
         "name": "Cold One",
-        "price": 500,
+        "price": 350,
         "image": "wh2_main_lzd_cav_cold_one_riders",
         "isSEM": true
       },
       {
         "name": "Cold One Chariot",
-        "price": 200,
+        "price": 500,
         "image": "wh2_main_def_cold_one_chariot",
         "isSEM": true,
         "limited_type": "Chariots"
       },
       {
         "name": "Seraphon",
-        "price": 200,
+        "price": 1300,
         "image": "wh2_main_def_black_dragon",
         "isSEM": true,
+        "isFlyer": true,
         "hasBreath": true
       }
     ]
