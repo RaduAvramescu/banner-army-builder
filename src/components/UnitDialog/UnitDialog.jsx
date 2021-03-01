@@ -69,6 +69,7 @@ function SimpleDialog(props) {
 
   const handleClose = () => {
     onClose(mount, spell);
+    setSelectedMount();
     setMount({});
     setSpell({});
   };
