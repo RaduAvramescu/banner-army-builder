@@ -1,12 +1,24 @@
 import React from "react";
 
 import { Box, Grid, Typography } from "@material-ui/core";
+import UnitDialog from "../UnitDialog/UnitDialog";
 
 const UnitCard = (props) => {
+  const [open, setOpen] = React.useState(false);
+  const [selectedValue, setSelectedValue] = React.useState(props);
+
+  const handleClose = (value) => {
+    setOpen(false);
+    setSelectedValue(value);
+  };
+
   const handleClick = () => {
     const { addUnit } = props;
     if (addUnit) {
       const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
+      if (props.hasOwnProperty("mounts") && !open) {
+        setOpen(true);
+      }
       onUnitAdd(newProps);
     } else {
       const { id, price, modelCount, onUnitRemove } = props;
@@ -74,6 +86,12 @@ const UnitCard = (props) => {
         alt="Unit Card Hover"
         width="60"
         height="130"
+      />
+      <UnitDialog
+        selectedValue={selectedValue}
+        open={open}
+        onClose={handleClose}
+        {...props}
       />
     </div>
   );

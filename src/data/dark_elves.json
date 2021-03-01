@@ -129,7 +129,30 @@
     "image": "def_malekith_0",
     "category_icon": "wh2_main_lore_dark",
     "semicircle_icon": "unit_card_semicircle_hero",
-    "isSE": true
+    "isSE": true,
+    "mounts": [
+      {
+        "name": "Cold One",
+        "price": 500,
+        "image": "wh2_main_lzd_cav_cold_one_riders",
+        "isSEM": true
+      },
+      {
+        "name": "Cold One Chariot",
+        "price": 200,
+        "image": "wh2_main_def_cold_one_chariot",
+        "isSEM": true,
+        "limited_type": "Chariots"
+      },
+      {
+        "name": "Seraphon",
+        "price": 200,
+        "image": "wh2_main_def_black_dragon",
+        "isSEM": true,
+        "limited_type": "Chariots",
+        "hasBreath": true
+      }
+    ]
   },
   {
     "unitid": 13,
