@@ -61,6 +61,9 @@ const Footer = () => (
         <Typography component="div">
           <Box fontWeight="fontWeightBold">, BobTresh</Box>
         </Typography>
+        <Typography component="div">
+          <Box fontWeight="fontWeightBold">, Achilles</Box>
+        </Typography>
       </Box>
       <Box display="flex" justifyContent="center">
         <Typography>2020-2021</Typography>
