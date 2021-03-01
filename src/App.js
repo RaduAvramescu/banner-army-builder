@@ -26,6 +26,25 @@ class App extends Component {
     }));
   };
 
+  handleSortBuild = () => {
+    this.setState((state) => {
+      // let newUnits = [...state.units];
+      const newUnits = [...state.units].sort((a, b) =>
+        a.unitid > b.unitid ? 1 : -1
+      );
+      return {
+        ...state,
+        units: newUnits,
+      };
+    });
+  };
+
+  handleModifyMount = (mount, props) => {
+    // console.log(mount);
+    // console.log(props);
+    // console.log(this.state.units);
+  };
+
   handleVerifyDuplicates = (validation, props) => {
     const { units } = this.state;
     let count = 0;
@@ -249,6 +268,7 @@ class App extends Component {
         return alert("You can't have more than 1 of the same RoR!");
 
     this.handleUnitAdd(props);
+    this.handleSortBuild();
   };
 
   handleUnitAdd = (props) => {
@@ -296,6 +316,7 @@ class App extends Component {
               selectedFaction={selectedFaction}
               onUnitAdd={this.handleUnitCanAdd}
               fundsRemaining={funds}
+              onModifyMount={this.handleModifyMount}
             />
             <Divider light />
             <BuildContainer

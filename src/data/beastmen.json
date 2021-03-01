@@ -167,7 +167,8 @@
     "category_icon": "infantry_spear",
     "semicircle_icon": "unit_card_semicircle_renown",
     "baseUnit": "Ungor Spearmen Herd",
-    "basePrice": 350
+    "basePrice": 350,
+    "variantUnit": "Ungor Herd"
   },
   {
     "unitid": 16,

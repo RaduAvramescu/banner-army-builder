@@ -149,7 +149,6 @@
         "price": 200,
         "image": "wh2_main_def_black_dragon",
         "isSEM": true,
-        "limited_type": "Chariots",
         "hasBreath": true
       }
     ]

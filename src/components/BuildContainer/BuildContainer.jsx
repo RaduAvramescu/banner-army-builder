@@ -51,11 +51,9 @@ const BuildContainer = ({
           </Typography>
         </Box>
         <Grid container justify="center">
-          {units
-            .sort((a, b) => (a.unitid > b.unitid ? 1 : -1))
-            .map((unit, i) => (
-              <UnitCard key={i} id={i} onUnitRemove={onUnitRemove} {...unit} />
-            ))}
+          {units.map((unit, i) => (
+            <UnitCard key={i} id={i} onUnitRemove={onUnitRemove} {...unit} />
+          ))}
         </Grid>
       </Grid>
     </Box>
