@@ -5,28 +5,20 @@ import UnitDialog from "../UnitDialog/UnitDialog";
 
 const UnitCard = (props) => {
   const [open, setOpen] = React.useState(false);
-  const { onModifyMount } = props;
 
   const handleClose = (value) => {
+    const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
     setOpen(false);
-    onModifyMount(value, props);
+    onUnitAdd(newProps);
   };
 
   const handleClick = () => {
     const { addUnit } = props;
     if (addUnit) {
-      const {
-        id,
-        onUnitRemove,
-        addUnit,
-        onUnitAdd,
-        onModifyMount,
-        ...newProps
-      } = props;
+      const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
       if (props.hasOwnProperty("mounts") && !open) {
         setOpen(true);
-      }
-      onUnitAdd(newProps);
+      } else onUnitAdd(newProps);
     } else {
       const { id, price, modelCount, onUnitRemove } = props;
       onUnitRemove(id, price, modelCount);

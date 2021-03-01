@@ -20,7 +20,7 @@ const categories = [
   "Artillery & War Machines",
 ];
 
-const FactionRoster = ({ selectedFaction, onUnitAdd, onModifyMount }) => {
+const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
   const factions = [Beastmen, Bretonnia, DarkElves];
   let factionRoster = factions[selectedFaction];
 
@@ -51,7 +51,6 @@ const FactionRoster = ({ selectedFaction, onUnitAdd, onModifyMount }) => {
                             id={i}
                             onUnitAdd={onUnitAdd}
                             addUnit={true}
-                            onModifyMount={onModifyMount}
                             {...unit}
                           />
                         ))}

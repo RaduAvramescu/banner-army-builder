@@ -38,8 +38,6 @@ class App extends Component {
     });
   };
 
-  handleModifyMount = (mount, props) => {};
-
   handleVerifyDuplicates = (validation, props) => {
     const { units } = this.state;
     let count = 0;
@@ -111,7 +109,7 @@ class App extends Component {
     return count;
   };
 
-  handleUnitCanAdd = (props) => {
+  handleUnitCanAdd = (props, mount) => {
     const {
       name,
       price,
@@ -267,9 +265,10 @@ class App extends Component {
   };
 
   handleUnitAdd = (props) => {
-    const { price, modelCount } = props;
     this.setState((state) => {
+      const { price, modelCount } = props;
       const newUnits = [...state.units];
+
       newUnits.push(props);
 
       return {
@@ -311,7 +310,6 @@ class App extends Component {
               selectedFaction={selectedFaction}
               onUnitAdd={this.handleUnitCanAdd}
               fundsRemaining={funds}
-              onModifyMount={this.handleModifyMount}
             />
             <Divider light />
             <BuildContainer
