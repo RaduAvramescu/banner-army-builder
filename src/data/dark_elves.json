@@ -152,6 +152,10 @@
         "isFlyer": true,
         "hasBreath": true
       }
+    ],
+    "spells": [
+      { "name": "Soul Stealer", "price": 300 },
+      { "name": "Spirit Leech", "price": 100 }
     ]
   },
   {
