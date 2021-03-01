@@ -9,7 +9,8 @@ const UnitCard = (props) => {
   const handleClose = (value) => {
     const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
     setOpen(false);
-    onUnitAdd(newProps, value);
+    if (value.hasOwnProperty("name")) onUnitAdd(newProps, value);
+    else onUnitAdd(newProps);
   };
 
   const handleClick = () => {
