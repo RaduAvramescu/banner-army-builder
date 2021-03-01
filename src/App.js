@@ -26,6 +26,25 @@ class App extends Component {
     }));
   };
 
+  handleUpdateUnit = (props, mount) => {
+    const { ...newProps } = props;
+
+    if (mount) {
+      newProps.price += mount.price;
+      if (mount.hasOwnProperty("isSEM")) newProps.isSEM = true;
+
+      if (mount.hasOwnProperty("isFlyer")) newProps.isFlyer = true;
+
+      if (mount.hasOwnProperty("hasBreath")) newProps.hasBreath = true;
+
+      if (mount.hasOwnProperty("hasDrain")) newProps.hasDrain = true;
+
+      if (mount.hasOwnProperty("isSpecial")) newProps.isSpecial = true;
+    }
+
+    return newProps;
+  };
+
   handleVerifyDuplicates = (validation, props) => {
     const { units } = this.state;
     let count = 0;
@@ -98,10 +117,14 @@ class App extends Component {
   };
 
   handleUnitCanAdd = (props, mount) => {
+    const { funds, units } = this.state;
+    let { ...newProps } = props;
+
+    if (mount) newProps = this.handleUpdateUnit(newProps, mount);
+
     const {
       name,
       price,
-      modelCount,
       category,
       image,
       limited_type,
@@ -115,9 +138,7 @@ class App extends Component {
       hasBreath,
       hasDrain,
       variantUnit,
-      mounts,
-    } = props;
-    const { funds, units } = this.state;
+    } = newProps;
 
     if (category !== "Lords" && !units[0])
       return alert("You have to pick a Lord first!");
@@ -127,92 +148,92 @@ class App extends Component {
     if (category === "Lords") {
       if (units.find((unit) => unit.category === "Lords"))
         this.handleUnitRemove(0, units[0].price, units[0].modelCount);
-
-      if (mount) return this.handleUnitAdd(props, mount);
-      else return this.handleUnitAdd(props);
     }
 
     if (units.length === 20)
       return alert("You cannot have more than 20 units!");
 
-    if (this.handleVerifyDuplicates("countSame", props) === 5)
+    if (this.handleVerifyDuplicates("countSame", newProps) === 5)
       return alert("You can't have more than 5 of the same unit!");
 
     if (limited_type) {
       if (limited_type === "Chariots")
-        if (this.handleVerifyDuplicates(props, props) === 4)
+        if (this.handleVerifyDuplicates(newProps, newProps) === 4)
           return alert(`You can't have more than 4 ${limited_type}!`);
 
-      if (this.handleVerifyDuplicates("countSame", props) === 4)
+      if (this.handleVerifyDuplicates("countSame", newProps) === 4)
         return alert(`You can't have more than 4 of the same ${limited_type}!`);
       else if (limited_type === "Restricted")
-        if (this.handleVerifyDuplicates("countSame", props) === 1)
+        if (this.handleVerifyDuplicates("countSame", newProps) === 1)
           return alert(`You can't have more than 1 ${name}!`);
     }
 
     if (isSE) {
       if (category === "Heroes") {
-        if (this.handleVerifyDuplicates("countCategory", props) === 2)
+        if (this.handleVerifyDuplicates("countCategory", newProps) === 2)
           return alert("You can't have more than 2 Heroes!");
         if (
-          props.hasOwnProperty("isNamed") &&
-          this.handleVerifyDuplicates("countNamed", props) === 1
+          newProps.hasOwnProperty("isNamed") &&
+          this.handleVerifyDuplicates("countNamed", newProps) === 1
         )
           return alert(
             "You can't have more than 1 of the same named character!"
           );
       }
 
-      if (this.handleVerifyDuplicates("isSE", props) === 5)
+      if (this.handleVerifyDuplicates("isSE", newProps) === 5)
         return alert("You can't have more than 5 Single Entity (SE) units!");
 
-      if (this.handleVerifyDuplicates("countSame", props) === 2)
+      if (this.handleVerifyDuplicates("countSame", newProps) === 2)
         return alert(
           "You can't have more than 2 of the same Single Entity (SE) units!"
         );
     }
 
     if (isSEM) {
-      if (this.handleVerifyDuplicates("isSEM", props) === 3)
+      if (this.handleVerifyDuplicates("isSEM", newProps) === 3)
         return alert(
           "You can't have more than 3 Single Entity Monsters (SEM)!"
         );
-      if (price >= 1800 && this.handleVerifyDuplicates("SEMCost", props) === 2)
+      if (
+        price >= 1800 &&
+        this.handleVerifyDuplicates("SEMCost", newProps) === 2
+      )
         return alert(
           "You can't have more than 2 Single Entity Monsters (SEM) that cost over 1800!"
         );
     }
 
     if (isMissile)
-      if (this.handleVerifyDuplicates("isMissile", props) === 12)
+      if (this.handleVerifyDuplicates("isMissile", newProps) === 12)
         return alert("You can't have more than 12 missile units!");
 
     if (is360)
-      if (this.handleVerifyDuplicates("is360", props) === 6)
+      if (this.handleVerifyDuplicates("is360", newProps) === 6)
         return alert(
           "You can't have more than 6 units with 360 degree firing arc!"
         );
 
     if (isFlyer)
-      if (this.handleVerifyDuplicates("isFlyer", props) === 5)
+      if (this.handleVerifyDuplicates("isFlyer", newProps) === 5)
         return alert("You can't have more than 5 flying units!");
 
     if (isSpecial)
-      if (this.handleVerifyDuplicates("isSpecial", props) === 1)
+      if (this.handleVerifyDuplicates("isSpecial", newProps) === 1)
         return alert(
-          `Your faction has a special rule regarding ${props.limiter} that does not allow this!`
+          `Your faction has a special rule regarding ${newProps.limiter} that does not allow this!`
         );
 
     if (hasBreath)
-      if (this.handleVerifyDuplicates("hasBreath", props) === 2)
+      if (this.handleVerifyDuplicates("hasBreath", newProps) === 2)
         return alert("You can't have more than 2 units with breath attacks!");
 
     if (hasDrain)
-      if (this.handleVerifyDuplicates("hasDrain", props) === 1)
+      if (this.handleVerifyDuplicates("hasDrain", newProps) === 1)
         return alert("You can't have more than 1 unit with a HP drain effect!");
 
     if (variantUnit)
-      if (this.handleVerifyDuplicates("variantUnit", props) === 8)
+      if (this.handleVerifyDuplicates("variantUnit", newProps) === 8)
         return alert("You can't have more than 8 units of a unit variant!");
 
     if (category === "Infantry" || category === "Missile Infantry") {
@@ -220,13 +241,13 @@ class App extends Component {
         (!image.includes("ror") && price >= 901 && price <= 1100) ||
         (basePrice >= 901 && basePrice <= 1100)
       )
-        if (this.handleVerifyDuplicates("countSame", props) === 4)
+        if (this.handleVerifyDuplicates("countSame", newProps) === 4)
           return alert(
             `You can't have more than 4 of an ${category} unit with 901-1100 price!`
           );
 
       if ((!image.includes("ror") && price >= 1101) || basePrice >= 1101)
-        if (this.handleVerifyDuplicates("countSame", props) === 3)
+        if (this.handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
             `You can't have more than 3 of an ${category} unit with 1101+ price!`
           );
@@ -236,7 +257,7 @@ class App extends Component {
       if ((!image.includes("ror") && price >= 1201) || basePrice >= 1201)
         if (
           limited_type &&
-          this.handleVerifyDuplicates("countSame", props) === 3
+          this.handleVerifyDuplicates("countSame", newProps) === 3
         )
           return alert(
             `You can't have more than 3 of the same ${limited_type} with 1201+ price!`
@@ -244,39 +265,23 @@ class App extends Component {
     }
 
     if (category === "Missile Cavalry & Chariots")
-      if (this.handleVerifyDuplicates("countCategory", props) === 6)
+      if (this.handleVerifyDuplicates("countCategory", newProps) === 6)
         return alert(`You can't have more than 6 ${category}!`);
 
     if (image.includes("ror"))
-      if (this.handleVerifyDuplicates("countROR", props) === 1)
+      if (this.handleVerifyDuplicates("countROR", newProps) === 1)
         return alert("You can't have more than 1 of the same RoR!");
 
-    this.handleUnitAdd(props);
+    this.handleUnitAdd(newProps);
   };
 
-  handleUnitAdd = (props, mount) => {
+  handleUnitAdd = (props) => {
     this.setState((state) => {
-      const { ...newProps } = props;
       const newUnits = [...state.units];
 
-      if (mount) {
-        newProps.price += mount.price;
-        if (mount.hasOwnProperty("isSEM")) newProps.isSEM = true;
+      const { price, modelCount } = props;
 
-        if (mount.hasOwnProperty("isFlyer")) newProps.isFlyer = true;
-
-        if (mount.hasOwnProperty("hasBreath")) newProps.hasBreath = true;
-
-        if (mount.hasOwnProperty("hasDrain")) newProps.hasDrain = true;
-
-        if (mount.hasOwnProperty("isSpecial")) newProps.isSpecial = true;
-      }
-
-      const { price, modelCount } = newProps;
-
-      console.log(newProps);
-
-      newUnits.push(newProps);
+      newUnits.push(props);
       newUnits.sort((a, b) => (a.unitid > b.unitid ? 1 : -1));
 
       return {
