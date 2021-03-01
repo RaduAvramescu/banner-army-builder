@@ -82,8 +82,7 @@ function SimpleDialog(props) {
                     <Avatar
                       alt={el.name}
                       src={
-                        require(`../../images/unit_card/card_icon/${el.image}.png`)
-                          .default
+                        require(`../../images/mounts/${el.image}.png`).default
                       }
                     >
                       <PersonIcon />
