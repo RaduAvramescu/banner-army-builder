@@ -47,7 +47,7 @@ const Footer = () => (
           </a>
         </Typography>
         <Typography>,&nbsp;</Typography>
-        <Typography>
+        <Typography component="div">
           <a
             className="footerLink"
             target="_blank"
