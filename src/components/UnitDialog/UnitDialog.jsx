@@ -66,8 +66,8 @@ function SimpleDialog(props) {
     }
 
     if (type === "spell") {
-      let newSpells = spell;
-      let selectedSpells = selectedSpell;
+      let newSpells = [...spell];
+      let selectedSpells = [...selectedSpell];
 
       if (!newSpells.find((el) => el.name === value.name)) {
         newSpells.push(value);
