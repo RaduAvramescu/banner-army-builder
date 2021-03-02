@@ -243,12 +243,11 @@ class App extends Component {
 
     if (validation === "countSame") {
       count = units.filter((el) => {
-        if (validation === "countSame")
-          if (
-            el.unitid === props.unitid ||
-            (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
-          )
-            return count + 1;
+        if (
+          el.unitid === props.unitid ||
+          (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
+        )
+          return count + 1;
       }).length;
       return count;
     }
