@@ -34,7 +34,6 @@ class App extends Component {
       name,
       multiplayer_cost,
       caste,
-      unit_card,
       limited_type,
       basePrice,
       isSE,
@@ -83,7 +82,7 @@ class App extends Component {
           return alert("You can't have more than 2 Heroes!");
         if (
           newProps.hasOwnProperty("isNamed") &&
-          this.handleVerifyDuplicates("countNamed", newProps) === 1
+          this.handleVerifyDuplicates("countSame", newProps) === 1
         )
           return alert(
             "You can't have more than 1 of the same named character!"
@@ -248,13 +247,6 @@ class App extends Component {
           (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
         )
           return count + 1;
-      }).length;
-      return count;
-    }
-
-    if (validation === "countNamed") {
-      count = units.filter((el) => {
-        if (el.name === props.name) return count + 1;
       }).length;
       return count;
     }
