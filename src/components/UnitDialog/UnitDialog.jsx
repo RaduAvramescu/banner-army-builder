@@ -50,7 +50,7 @@ function SimpleDialog(props) {
   const [spell, setSpell] = React.useState([]);
   const [selectedMount, setSelectedMount] = React.useState({});
   const [selectedSpell, setSelectedSpell] = React.useState([]);
-  const { onClose, open } = props;
+  const { onClose, open, mounts, spells } = props;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -113,8 +113,8 @@ function SimpleDialog(props) {
       </AppBar>
       <TabPanel value={value} index={0}>
         <List>
-          {props.hasOwnProperty("mounts") &&
-            props.mounts.map((el, i) => (
+          {
+            mounts?.map((el, i) => (
               <ListItem
                 button
                 selected={selectedMount === i}
@@ -138,8 +138,8 @@ function SimpleDialog(props) {
       </TabPanel>
       <TabPanel value={value} index={1}>
         <List>
-          {props.hasOwnProperty("spells") &&
-            props.spells.map((el, i) => (
+          {
+            spells?.map((el, i) => (
               <ListItem
                 button
                 selected={selectedSpell.includes(i)}
