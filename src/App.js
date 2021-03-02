@@ -206,9 +206,8 @@ class App extends Component {
 
   handleUnitAdd = (props) => {
     this.setState((state) => {
-      const newUnits = [...state.units];
-
       const { multiplayer_cost, unit_size } = props;
+      const newUnits = [...state.units];
 
       newUnits.push(props);
       newUnits.sort((a, b) => (a.unitid > b.unitid ? 1 : -1));
