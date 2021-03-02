@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Container from "@material-ui/core/Container";
-import Divider from "@material-ui/core/Divider";
+import { CssBaseline, Container, Divider } from "@material-ui/core";
 import {
   NavBar,
   Banner,

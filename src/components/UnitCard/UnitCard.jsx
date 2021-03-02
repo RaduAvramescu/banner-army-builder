@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Grid, Typography } from "@material-ui/core";
+import Typography from "@material-ui/core/Typography";
 import UnitDialog from "../UnitDialog/UnitDialog";
 
 const UnitCard = (props) => {

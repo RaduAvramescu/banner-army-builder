@@ -16,7 +16,6 @@ import VampireCounts from "../../data/Vampire Counts.json";
 import WarriorsOfChaos from "../../data/Warriors of Chaos.json";
 import WoodElves from "../../data/Wood Elves.json";
 import UnitCard from "../UnitCard/UnitCard";
-
 import { Box, Grid, Typography } from "@material-ui/core";
 
 const categories = [
