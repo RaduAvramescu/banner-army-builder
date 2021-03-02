@@ -47,8 +47,9 @@ function a11yProps(index) {
 function SimpleDialog(props) {
   const [value, setValue] = React.useState(0);
   const [mount, setMount] = React.useState({});
-  const [spell, setSpell] = React.useState({});
-  const [selectedMount, setSelectedMount] = React.useState();
+  const [spell, setSpell] = React.useState([]);
+  const [selectedMount, setSelectedMount] = React.useState({});
+  const [selectedSpell, setSelectedSpell] = React.useState([]);
   const { onClose, open } = props;
 
   const handleChange = (event, newValue) => {
@@ -64,14 +65,33 @@ function SimpleDialog(props) {
       else setMount(value);
     }
 
-    if (type === "spell") setSpell(value);
+    if (type === "spell") {
+      let newSpells = spell;
+      let selectedSpells = selectedSpell;
+
+      if (!newSpells.find((el) => el.name === value.name)) {
+        newSpells.push(value);
+        selectedSpells.push(index);
+      } else {
+        newSpells = newSpells.filter((el) => {
+          if (el !== value) return el;
+        });
+        selectedSpells = selectedSpells.filter((el) => {
+          return el !== index;
+        });
+      }
+
+      setSelectedSpell(selectedSpells);
+      setSpell(newSpells);
+    }
   };
 
   const handleClose = () => {
     onClose(mount, spell);
-    setSelectedMount();
+    setSelectedSpell([]);
+    setSelectedMount({});
     setMount({});
-    setSpell({});
+    setSpell([]);
   };
 
   return (
@@ -81,7 +101,12 @@ function SimpleDialog(props) {
       open={open}
     >
       <AppBar position="static" color="transparent">
-        <Tabs value={value} onChange={handleChange} aria-label="Lord/Hero Tabs">
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="Lord/Hero Tabs"
+          variant="fullWidth"
+        >
           <Tab label="Mounts" {...a11yProps(0)} />
           <Tab label="Spells" {...a11yProps(1)} />
         </Tabs>
@@ -117,6 +142,7 @@ function SimpleDialog(props) {
             props.spells.map((el, i) => (
               <ListItem
                 button
+                selected={selectedSpell.includes(i)}
                 onClick={() => handleListItemClick(el, "spell", i)}
                 key={i}
               >

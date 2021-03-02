@@ -184,7 +184,12 @@ class App extends Component {
   };
 
   handleUpdateUnit = (props, mount, spell) => {
-    const { ...newProps } = props;
+    let { ...newProps } = props;
+
+    if (spell)
+      newProps.spells = newProps.spells.filter((el) => {
+        if (el.name == spell.name) return el;
+      });
 
     if (mount) {
       if (mount.hasOwnProperty("multiplayer_cost"))
