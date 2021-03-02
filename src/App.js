@@ -46,6 +46,7 @@ class App extends Component {
       hasBreath,
       hasDrain,
       variantUnit,
+      ror,
     } = newProps;
 
     if (caste !== "Lords" && !units[0])
@@ -146,9 +147,7 @@ class App extends Component {
 
     if (caste === "Infantry" || caste === "Missile Infantry") {
       if (
-        (!unit_card.includes("ror") &&
-          multiplayer_cost >= 901 &&
-          multiplayer_cost <= 1100) ||
+        (!ror && multiplayer_cost >= 901 && multiplayer_cost <= 1100) ||
         (basePrice >= 901 && basePrice <= 1100)
       )
         if (this.handleVerifyDuplicates("countSame", newProps) === 4)
@@ -156,10 +155,7 @@ class App extends Component {
             `You can't have more than 4 of an ${caste} unit with 901-1100 price!`
           );
 
-      if (
-        (!unit_card.includes("ror") && multiplayer_cost >= 1101) ||
-        basePrice >= 1101
-      )
+      if ((!ror && multiplayer_cost >= 1101) || basePrice >= 1101)
         if (this.handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
             `You can't have more than 3 of an ${caste} unit with 1101+ price!`
@@ -167,10 +163,7 @@ class App extends Component {
     }
 
     if (caste !== "Infantry" && !isSE) {
-      if (
-        (!unit_card.includes("ror") && multiplayer_cost >= 1201) ||
-        basePrice >= 1201
-      )
+      if ((!ror && multiplayer_cost >= 1201) || basePrice >= 1201)
         if (
           limited_type &&
           this.handleVerifyDuplicates("countSame", newProps) === 3
@@ -184,8 +177,8 @@ class App extends Component {
       if (this.handleVerifyDuplicates("countCategory", newProps) === 6)
         return alert(`You can't have more than 6 ${caste}!`);
 
-    if (unit_card.includes("ror"))
-      if (this.handleVerifyDuplicates("countROR", newProps) === 1)
+    if (ror)
+      if (this.handleVerifyDuplicates("countSame", newProps) === 1)
         return alert("You can't have more than 1 of the same RoR!");
 
     this.handleUnitAdd(newProps);
@@ -250,19 +243,6 @@ class App extends Component {
 
     if (validation === "countSame") {
       count = units.filter((el) => {
-        if (validation === "countSame")
-          if (
-            el.unitid === props.unitid ||
-            (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
-          )
-            return count + 1;
-      }).length;
-      return count;
-    }
-
-    if (validation === "countROR") {
-      count = units.filter((el) => {
-        if (el.unitid === props.unitid) return count + 1;
         if (validation === "countSame")
           if (
             el.unitid === props.unitid ||
