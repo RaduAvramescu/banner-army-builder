@@ -1,29 +1,33 @@
 [
   {
     "id": 0,
-    "name": "Beastmen"
+    "name": "Beastmen",
+    "value": "Beastmen"
   },
   {
     "id": 1,
-    "name": "Bretonnia"
+    "name": "Bretonnia",
+    "value": "Bretonnia"
   },
   {
     "id": 2,
-    "name": "Dark Elves"
+    "name": "Dark Elves",
+    "value": "DarkElves"
   },
   {
     "id": 4,
-    "name": "Dwarfs"
+    "name": "Dwarfs",
+    "value": "Dwarfs"
   },
-  { "id": 5, "name": "The Empire" },
-  { "id": 6, "name": "Greenskins" },
-  { "id": 7, "name": "High Elves" },
-  { "id": 8, "name": "Lizardmen" },
-  { "id": 9, "name": "Norsca" },
-  { "id": 10, "name": "Skaven" },
-  { "id": 11, "name": "Tomb Kings" },
-  { "id": 12, "name": "Vampire Coast" },
-  { "id": 13, "name": "Vampire Counts" },
-  { "id": 14, "name": "Warriors of Chaos" },
-  { "id": 15, "name": "Wood Elves" }
+  { "id": 5, "name": "The Empire", "value": "TheEmpire" },
+  { "id": 6, "name": "Greenskins", "value": "Greenskins" },
+  { "id": 7, "name": "High Elves", "value": "Beastmen" },
+  { "id": 8, "name": "Lizardmen", "value": "Lizardmen" },
+  { "id": 9, "name": "Norsca", "value": "Norsca" },
+  { "id": 10, "name": "Skaven", "value": "Skaven" },
+  { "id": 11, "name": "Tomb Kings", "value": "TombKings" },
+  { "id": 12, "name": "Vampire Coast", "value": "VampireCoast" },
+  { "id": 13, "name": "Vampire Counts", "value": "VampireCounts" },
+  { "id": 14, "name": "Warriors of Chaos", "value": "WarriorsOfChaos" },
+  { "id": 15, "name": "Wood Elves", "value": "WoodElves" }
 ]

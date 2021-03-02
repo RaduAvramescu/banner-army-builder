@@ -9,8 +9,6 @@ const UnitCard = (props) => {
   const handleClose = (mount, spell) => {
     const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
     setOpen(false);
-    console.log(mount);
-    console.log(spell);
     onUnitAdd(newProps, mount, spell);
   };
 

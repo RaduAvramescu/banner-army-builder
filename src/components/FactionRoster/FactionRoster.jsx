@@ -4,39 +4,7 @@ import { Box, Grid, Typography, CircularProgress } from "@material-ui/core";
 import categories from "../../data/categories.json";
 import UnitCard from "../UnitCard/UnitCard";
 
-import Beastmen from "../../data/Beastmen.json";
-import Bretonnia from "../../data/Bretonnia.json";
-import DarkElves from "../../data/Dark Elves.json";
-import Dwarfs from "../../data/Dwarfs.json";
-import Empire from "../../data/The Empire.json";
-import Greenskins from "../../data/Greenskins.json";
-import HighElves from "../../data/High Elves.json";
-import Lizardmen from "../../data/Lizardmen.json";
-import Norsca from "../../data/Norsca.json";
-import Skaven from "../../data/Skaven.json";
-import TombKings from "../../data/Tomb Kings.json";
-import VampireCoast from "../../data/Vampire Coast.json";
-import VampireCounts from "../../data/Vampire Counts.json";
-import WarriorsOfChaos from "../../data/Warriors of Chaos.json";
-import WoodElves from "../../data/Wood Elves.json";
-
-const factions = [
-  Beastmen,
-  Bretonnia,
-  DarkElves,
-  Dwarfs,
-  Empire,
-  Greenskins,
-  HighElves,
-  Lizardmen,
-  Norsca,
-  Skaven,
-  TombKings,
-  VampireCoast,
-  VampireCounts,
-  WarriorsOfChaos,
-  WoodElves,
-];
+import * as factions from "../../data/factionImports";
 
 const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
   let factionRoster = factions[selectedFaction];

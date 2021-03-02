@@ -12,7 +12,7 @@ import {
 import "./App.css";
 
 class App extends Component {
-  state = { selectedFaction: "0", funds: 12400, models: 0, units: [] };
+  state = { selectedFaction: "Beastmen", funds: 12400, models: 0, units: [] };
 
   handleFactionChange = (selectedFaction) => {
     this.setState((state) => ({
