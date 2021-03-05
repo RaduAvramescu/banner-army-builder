@@ -50,6 +50,7 @@ const UnitCard = (props) => {
           alt="Unit Card Image"
           width="60"
           height="130"
+          loading="lazy"
         />
         <img
           className="unit_card position_absolute"
@@ -57,6 +58,7 @@ const UnitCard = (props) => {
           alt="Unit Card Frame"
           width="60"
           height="130"
+          loading="lazy"
         ></img>
 
         <img
@@ -66,6 +68,7 @@ const UnitCard = (props) => {
           alt="Unit Card Semicircle Icon"
           width="55"
           height="35"
+          loading="lazy"
         />
         <img
           className="position_absolute"
@@ -74,6 +77,7 @@ const UnitCard = (props) => {
           alt="Unit Card caste Icon"
           width="22"
           height="22"
+          loading="lazy"
         />
         <img
           className="unit_card unit_card_hover position_absolute"
@@ -82,6 +86,7 @@ const UnitCard = (props) => {
           alt="Unit Card Hover"
           width="60"
           height="130"
+          loading="lazy"
         />
       </div>
       <UnitDialog open={open} onClose={handleClose} {...props} />
