@@ -124,9 +124,7 @@ function SimpleDialog(props) {
                 <ListItemAvatar>
                   <Avatar
                     alt={el.name}
-                    src={
-                      require(`../../images/mounts/${el.unit_card}.png`).default
-                    }
+                    src={`images/mounts/${el.unit_card}.png`}
                   >
                     <PersonIcon />
                   </Avatar>

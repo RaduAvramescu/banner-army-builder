@@ -6,11 +6,11 @@ const Banner = () => {
   return (
     <Box align="center" my="1rem">
       <picture>
-        <source type="image/webp" srcSet="images/logo_wh2.webp" />
-        <source type="image/jpeg" srcSet="images/logo_wh2.jpg" />
+        <source type="image/webp" srcSet="images/banner/logo_wh2.webp" />
+        <source type="image/jpeg" srcSet="images/banner/logo_wh2.jpg" />
         <img
           className="imgResponsive"
-          src="images/logo_wh2.jpg"
+          src="images/banner/logo_wh2.jpg"
           alt="Banner Army Builder Banner"
           width="903"
           height="382"

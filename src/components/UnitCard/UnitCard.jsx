@@ -46,21 +46,14 @@ const UnitCard = (props) => {
         >
           {props.multiplayer_cost}
         </Typography>
-        <img
-          src={
-            require(`../../images/unit_card/card_icon/${props.unit_card}.png`)
-              .default
-          }
+        <img src={`images/unit_card/card_icon/${props.unit_card}.png`}
           alt="Unit Card Image"
           width="60"
           height="130"
         />
         <img
           className="unit_card position_absolute"
-          src={
-            require(`../../images/unit_card/effects/unit_card_frame_plain.png`)
-              .default
-          }
+          src={`images/unit_card/effects/unit_card_frame_plain.png`}
           alt="Unit Card Frame"
           width="60"
           height="130"
@@ -69,9 +62,7 @@ const UnitCard = (props) => {
         <img
           className="position_absolute"
           src={
-            require(`../../images/unit_card/semicircle_icon/${semicircle_icon}.png`)
-              .default
-          }
+            `images/unit_card/semicircle_icon/${semicircle_icon}.png`}
           alt="Unit Card Semicircle Icon"
           width="55"
           height="35"
@@ -79,9 +70,7 @@ const UnitCard = (props) => {
         <img
           className="position_absolute"
           src={
-            require(`../../images/unit_card/category_icon/${props.category_icon}.png`)
-              .default
-          }
+            `images/unit_card/category_icon/${props.category_icon}.png`}
           alt="Unit Card caste Icon"
           width="22"
           height="22"
@@ -89,9 +78,7 @@ const UnitCard = (props) => {
         <img
           className="unit_card unit_card_hover position_absolute"
           src={
-            require(`../../images/unit_card/effects/unit_card_hover.png`)
-              .default
-          }
+            `images/unit_card/effects/unit_card_hover.png`}
           alt="Unit Card Hover"
           width="60"
           height="130"
