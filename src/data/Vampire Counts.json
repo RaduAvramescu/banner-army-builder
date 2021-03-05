@@ -1,11 +1,13 @@
 [
   {
     "name": "Blood Dragon Vampire Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1050,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Heart Piercing" },
       { "name": "Honour or Death" },
@@ -43,11 +45,13 @@
   },
   {
     "name": "Lahmian Vampire Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Lightning Reflexes" },
       { "name": "Seduction" },
@@ -84,11 +88,13 @@
   },
   {
     "name": "Necrarch Vampire Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 750,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Dark Protection" },
       { "name": "Arcane Conduit" },
@@ -127,11 +133,13 @@
   },
   {
     "name": "Strigoi Vampire Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1200,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Claws of Mourkain" },
       { "name": "Ghoul King of Ushoran" },
@@ -159,11 +167,13 @@
   },
   {
     "name": "Von Carstein Vampire Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Storm of the Night" },
       { "name": "Undeath Resurgent" },
@@ -200,11 +210,13 @@
   },
   {
     "name": "Heinrich Kemmler on Barded Nightmare",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 650,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_main_vmp_heinrich",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Undeath Resurgent" },
       { "name": "Master of the Dead" },
@@ -231,11 +243,13 @@
   },
   {
     "name": "Helman Ghorst",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_dlc04_vmp_helman",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Magical Animus" },
       { "name": "Master of the Dead" },
@@ -262,11 +276,13 @@
   },
   {
     "name": "Master Necromancer on Corpse Cart",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_main_vmp_master_necromancer",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Vigour Mortis" },
       { "name": "Magical Animus" },
@@ -314,11 +330,13 @@
   },
   {
     "name": "Strigoi Ghoul King",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_dlc04_vmp_strigoi",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Blood Lust" },
       { "name": "The Hunger" },
@@ -345,11 +363,13 @@
   },
   {
     "name": "Vlad von Carstein",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1200,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_dlc04_vmp_vlad",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Master of Beguilement" },
       { "name": "Aura of Dark Grandeur" },
@@ -371,11 +391,13 @@
   },
   {
     "name": "The Red Duke",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1150,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_dlc05_vmp_the_red_duke",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "El Syf" },
       { "name": "Foe-Seeker" },
@@ -413,11 +435,13 @@
   },
   {
     "name": "Heinrich Kemmler",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_main_vmp_heinrich",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Undeath Resurgent" },
       { "name": "Master of the Dead" },
@@ -444,11 +468,13 @@
   },
   {
     "name": "Mannfred von Carstein",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_main_vmp_mannfred",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Master of the Black Arts" },
       { "name": "The Hunger" },
@@ -491,11 +517,13 @@
   },
   {
     "name": "Master Necromancer",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 350,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_main_vmp_master_necromancer",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Magical Animus" },
       { "name": "Master of the Dead" },
@@ -541,11 +569,13 @@
   },
   {
     "name": "Vampire Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 900,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_main_vmp_vampire_lord",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Undeath Resurgent" },
       { "name": "The Hunger" },
@@ -581,11 +611,13 @@
   },
   {
     "name": "Isabella von Carstein",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_pro02_vmp_isabella",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Master of Beguilement" },
       { "name": "Red Fury" },
@@ -622,6 +654,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_main_vmp_necromancer",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Vigour Mortis" },
       { "name": "Master of the Dead" },
@@ -664,6 +698,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "wh_main_vmp_vampire",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Dark Benediction" },
       { "name": "Immortal Will" },
@@ -700,6 +736,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_vmp_spy",
     "unit_card": "wh_main_vmp_banshee",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Slippery" },
       { "name": "Crumbling" },
@@ -714,6 +752,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "wh_main_vmp_necromancer",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Master of the Dead" },
       { "name": "Crumbling" },
@@ -758,6 +798,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_death",
     "unit_card": "wh_main_vmp_vampire",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Dark Benediction" },
       { "name": "Immortal Will" },
@@ -794,6 +836,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_vmp_champion",
     "unit_card": "wh_main_vmp_wight_king",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Foe-Seeker" },
       { "name": "Heroic Killing Blow" },
@@ -820,6 +864,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_vmp_champion",
     "unit_card": "wh_pro03_vmp_cha_krell",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Deadly Onslaught" },
       { "name": "Foe-Seeker" },
@@ -835,6 +881,8 @@
     "unit_size": 90,
     "category_icon": "infantry_cudgel",
     "unit_card": "wh_dlc04_vmp_feasters",
+    "ror": true,
+    "category": "Cudgel Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -845,6 +893,8 @@
     "unit_size": 120,
     "category_icon": "infantry_sword",
     "unit_card": "wh_dlc04_vmp_stalkers",
+    "ror": true,
+    "category": "Sword Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -855,6 +905,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh_dlc04_vmp_sternsmen",
+    "ror": true,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Regeneration" },
       { "name": "Crumbling" },
@@ -869,6 +921,8 @@
     "unit_size": 150,
     "category_icon": "infantry_sword",
     "unit_card": "wh_dlc04_vmp_tithe",
+    "ror": true,
+    "category": "Sword Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -879,6 +933,8 @@
     "unit_size": 45,
     "category_icon": "vmp_infantry_scythe",
     "unit_card": "wh_main_vmp_cairn_wraith",
+    "ror": false,
+    "category": "Scythe Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -889,6 +945,8 @@
     "unit_size": 90,
     "category_icon": "infantry_cudgel",
     "unit_card": "wh_main_vmp_crypt_ghoul",
+    "ror": false,
+    "category": "Cudgel Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -899,6 +957,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh_main_vmp_grave_guard",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -909,6 +969,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword_great",
     "unit_card": "wh_main_vmp_grave_guard_great_weapons",
+    "ror": false,
+    "category": "Greatsword Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -919,6 +981,8 @@
     "unit_size": 120,
     "category_icon": "infantry_sword",
     "unit_card": "wh_main_vmp_skeleton_warrior_sword",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -929,6 +993,8 @@
     "unit_size": 120,
     "category_icon": "infantry_spear",
     "unit_card": "wh_main_vmp_skeleton_warrior_spear",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -939,6 +1005,8 @@
     "unit_size": 120,
     "category_icon": "infantry_sword",
     "unit_card": "wh_main_vmp_zombies",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -949,6 +1017,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc11_vmp_crossbowmen",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -958,6 +1029,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh2_dlc11_vmp_handgunners",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -967,6 +1041,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_dlc02_vmp_blood_knights",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [
       { "name": "The Flag of Blood Keep" },
       { "name": "Frenzy" },
@@ -982,6 +1058,8 @@
     "unit_size": 45,
     "category_icon": "vmp_cavalry_scythe",
     "unit_card": "wh_dlc04_vmp_chillgheists",
+    "ror": true,
+    "category": "Cavalry",
     "abilities": [
       { "name": "The Chilling Aura" },
       { "name": "Crumbling" },
@@ -996,6 +1074,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_dlc04_vmp_vereks_reavers",
+    "ror": true,
+    "category": "Shock Cavalry",
     "abilities": [
       { "name": "Regeneration" },
       { "name": "Crumbling" },
@@ -1010,6 +1090,8 @@
     "unit_size": 45,
     "category_icon": "cavalry",
     "unit_card": "wh_main_vmp_black_knights",
+    "ror": false,
+    "category": "Cavalry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -1020,6 +1102,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_main_vmp_black_knights_barded_lance",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -1030,6 +1114,8 @@
     "unit_size": 45,
     "category_icon": "vmp_cavalry_scythe",
     "unit_card": "wh_main_vmp_hexwraiths",
+    "ror": false,
+    "category": "Cavalry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -1040,6 +1126,8 @@
     "unit_size": 1,
     "category_icon": "magic_chariot",
     "unit_card": "wh_dlc04_vmp_claw_of_nagash",
+    "ror": true,
+    "category": "Magic Chariot",
     "abilities": [
       { "name": "Blasphemous Tome" },
       { "name": "The Chilling Aura" },
@@ -1058,6 +1146,8 @@
     "unit_size": 1,
     "category_icon": "magic_chariot",
     "unit_card": "wh_dlc04_vmp_corpse_cart",
+    "ror": false,
+    "category": "Magic Chariot",
     "abilities": [
       { "name": "Vigour Mortis" },
       { "name": "Regeneration" },
@@ -1073,6 +1163,8 @@
     "unit_size": 1,
     "category_icon": "magic_chariot",
     "unit_card": "wh_dlc04_vmp_corpse_cart_balefire",
+    "ror": false,
+    "category": "Magic Chariot",
     "abilities": [
       { "name": "Balefire" },
       { "name": "Vigour Mortis" },
@@ -1089,6 +1181,8 @@
     "unit_size": 1,
     "category_icon": "magic_chariot",
     "unit_card": "wh_dlc04_vmp_corpse_cart_lodestone",
+    "ror": false,
+    "category": "Magic Chariot",
     "abilities": [
       { "name": "Unholy Lodestone" },
       { "name": "Vigour Mortis" },
@@ -1105,6 +1199,8 @@
     "unit_size": 1,
     "category_icon": "magic_chariot",
     "unit_card": "wh_dlc04_vmp_mortis_engine",
+    "ror": false,
+    "category": "Magic Chariot",
     "abilities": [
       { "name": "Blasphemous Tome" },
       { "name": "The Reliquary Binding" },
@@ -1122,6 +1218,8 @@
     "unit_size": 1,
     "category_icon": "magic_chariot",
     "unit_card": "wh_main_vmp_black_coach",
+    "ror": false,
+    "category": "Magic Chariot",
     "abilities": [
       { "name": "Black Nimbus" },
       { "name": "Black Scythes" },
@@ -1138,6 +1236,8 @@
     "unit_size": 60,
     "category_icon": "war_beast",
     "unit_card": "wh_dlc04_vmp_direpack",
+    "ror": true,
+    "category": "War Beasts",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -1148,6 +1248,8 @@
     "unit_size": 60,
     "category_icon": "war_beast",
     "unit_card": "wh_main_vmp_dire_wolves",
+    "ror": false,
+    "category": "War Beasts",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -1158,6 +1260,8 @@
     "unit_size": 45,
     "category_icon": "vmp_fell_bats",
     "unit_card": "wh_main_vmp_fell_bats",
+    "ror": false,
+    "category": "Flying War Beasts",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -1168,6 +1272,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_dlc04_vmp_devils_swartzhafen",
+    "ror": true,
+    "category": "Flying Monstrous Infantry",
     "abilities": [
       { "name": "Frenzy" },
       { "name": "Crumbling" },
@@ -1182,6 +1288,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_main_vmp_crypt_horrors",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [
       { "name": "Regeneration" },
       { "name": "Crumbling" },
@@ -1196,6 +1304,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_main_vmp_vargheists",
+    "ror": false,
+    "category": "Flying Monstrous Infantry",
     "abilities": [
       { "name": "Frenzy" },
       { "name": "Crumbling" },
@@ -1210,6 +1320,8 @@
     "unit_size": 1,
     "category_icon": "dragon",
     "unit_card": "wh_main_vmp_terrorgheist",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [
       { "name": "Death Shriek" },
       { "name": "Regeneration" },
@@ -1225,6 +1337,8 @@
     "unit_size": 1,
     "category_icon": "vmp_varghulf",
     "unit_card": "wh_main_vmp_varghulf",
+    "ror": false,
+    "category": "Monster",
     "abilities": [
       { "name": "Regeneration" },
       { "name": "Crumbling" },

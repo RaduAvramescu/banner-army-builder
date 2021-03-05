@@ -1,11 +1,13 @@
 [
   {
     "name": "Red Crested Skink Chief",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 650,
     "unit_size": 1,
     "category_icon": "infantry_axe_great",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [
       { "name": "Focus Instincts" },
       { "name": "Warrior's Crest" },
@@ -32,11 +34,13 @@
   },
   {
     "name": "Tehenhauin",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Focus Instincts" },
       { "name": "Arcane Conduit" },
@@ -72,11 +76,13 @@
   },
   {
     "name": "Tiktaq'to",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 900,
     "unit_size": 1,
     "category_icon": "cavalry_flying",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Flying Cavalry",
     "abilities": [
       { "name": "Drop Sphere of Tepok" },
       { "name": "Focus Instincts" },
@@ -87,11 +93,13 @@
   },
   {
     "name": "Gor-Rok",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1200,
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_infantry_mace",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Mace Infantry",
     "abilities": [
       { "name": "Rok of Itza" },
       { "name": "To the Death" },
@@ -102,11 +110,13 @@
   },
   {
     "name": "Kroxigor Ancient",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1200,
     "unit_size": 1,
     "category_icon": "monstrous_infantry",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [
       { "name": "Miasma of Despair" },
       { "name": "Monstrous Strength" },
@@ -116,11 +126,13 @@
   },
   {
     "name": "Nakai the Wanderer",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1650,
     "unit_size": 1,
     "category_icon": "monstrous_infantry",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [
       { "name": "Miasma of Despair" },
       { "name": "Primal Roar" },
@@ -130,11 +142,13 @@
   },
   {
     "name": "Slann Mage-Priest (Fire)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 650,
     "unit_size": 1,
     "category_icon": "wh_main_lore_fire",
     "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Shield of the Old Ones" },
@@ -154,11 +168,13 @@
   },
   {
     "name": "Slann Mage-Priest (Life)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 650,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
     "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Shield of the Old Ones" },
@@ -178,11 +194,13 @@
   },
   {
     "name": "Kroq-Gar",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1100,
     "unit_size": 1,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_main_lzd_cha_kroq_gar",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Swiftness of Itzl" },
@@ -201,11 +219,13 @@
   },
   {
     "name": "Lord Mazdamundi",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 650,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_high",
     "unit_card": "wh2_main_lzd_cha_lord_mazdamundi",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Shield of the Old Ones" },
@@ -232,11 +252,13 @@
   },
   {
     "name": "Saurus Oldblood",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_infantry_mace",
     "unit_card": "wh2_main_lzd_cha_saurus_old_blood",
+    "ror": false,
+    "category": "Mace Infantry",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Foe-Seeker" },
@@ -253,11 +275,13 @@
   },
   {
     "name": "Slann Mage-Priest (Heavens)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 650,
     "unit_size": 1,
     "category_icon": "wh_main_lore_heavens",
     "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Shield of the Old Ones" },
@@ -277,11 +301,13 @@
   },
   {
     "name": "Slann Mage-Priest (High)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 650,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_high",
     "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Shield of the Old Ones" },
@@ -301,11 +327,13 @@
   },
   {
     "name": "Slann Mage-Priest (Light)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 650,
     "unit_size": 1,
     "category_icon": "wh_main_lore_light",
     "unit_card": "wh2_main_lzd_cha_slann_mage_priest",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Shield of the Old Ones" },
@@ -330,6 +358,9 @@
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "is_missile": true,
     "abilities": [
       { "name": "Burning Alignment" },
       { "name": "Arcane Configuration" },
@@ -375,6 +406,9 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_heavens",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "is_missile": true,
     "abilities": [
       { "name": "Burning Alignment" },
       { "name": "Arcane Configuration" },
@@ -420,6 +454,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc12_magic_lore_generic",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Supreme Shield of the Old Ones" },
       { "name": "Cold-Blooded" },
@@ -439,6 +475,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_champion",
     "unit_card": "wh2_main_lzd_saurus_scar_veteran",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Cold-Blooded" },
       { "name": "Deadly Onslaught" },
@@ -460,6 +498,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_spy",
     "unit_card": "wh2_main_lzd_cha_skink_chief",
+    "ror": false,
+    "category": "Missile Specialist",
+    "is_missile": true,
     "abilities": [{ "name": "Cold-Blooded" }, { "name": "Slippery" }],
     "battle_mounts": [
       { "mount_name": "Terradon", "price": 450, "icon_name": "mount_terradon" },
@@ -482,6 +523,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
     "unit_card": "wh2_main_lzd_cha_skink_priest",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Cold-Blooded" }],
     "spells": [
       { "name": "Wild Heart" },
@@ -518,6 +561,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_heavens",
     "unit_card": "wh2_main_lzd_cha_skink_priest",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Cold-Blooded" }],
     "spells": [
       { "name": "Roiling Skies" },
@@ -554,6 +599,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_dlc12_lzd_inf_saurus_spearmen_shields_ror",
+    "ror": true,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "Shield of Chaqua" },
       { "name": "Primal Instincts" }
@@ -567,6 +614,8 @@
     "unit_size": 90,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh2_dlc12_lzd_inf_red_crested_skinks",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -577,6 +626,8 @@
     "unit_size": 90,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh2_dlc12_lzd_inf_red_crested_skinks_ror",
+    "ror": true,
+    "category": "Great Axe Infantry",
     "abilities": [{ "name": "Refuse to Die" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -587,6 +638,8 @@
     "unit_size": 75,
     "category_icon": "wh2_main_lzd_infantry_halberd",
     "unit_card": "wh2_dlc12_lzd_inf_temple_guards_ror",
+    "ror": true,
+    "category": "Halberd Infantry",
     "abilities": [{ "name": "Guardian" }],
     "battle_mounts": null
   },
@@ -597,6 +650,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_main_lzd_inf_saurus_spearmen",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -607,6 +662,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_main_lzd_inf_saurus_spearmen_shields",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -617,6 +674,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_main_lzd_inf_saurus_spearmen_shields_blesssed",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -627,6 +686,8 @@
     "unit_size": 75,
     "category_icon": "wh2_main_lzd_infantry_mace",
     "unit_card": "wh2_main_lzd_inf_saurus_warriors",
+    "ror": false,
+    "category": "Mace Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -637,6 +698,8 @@
     "unit_size": 75,
     "category_icon": "wh2_main_lzd_infantry_mace",
     "unit_card": "wh2_main_lzd_inf_saurus_warriors_shields",
+    "ror": false,
+    "category": "Mace Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -647,6 +710,8 @@
     "unit_size": 75,
     "category_icon": "wh2_main_lzd_infantry_mace",
     "unit_card": "wh2_main_lzd_inf_saurus_warriors_shields_blessed",
+    "ror": false,
+    "category": "Mace Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -657,6 +722,8 @@
     "unit_size": 120,
     "category_icon": "infantry_cudgel",
     "unit_card": "wh2_main_lzd_inf_skink_cohort",
+    "ror": false,
+    "category": "Cudgel Infantry",
     "battle_mounts": null
   },
   {
@@ -666,6 +733,8 @@
     "unit_size": 75,
     "category_icon": "wh2_main_lzd_infantry_halberd",
     "unit_card": "wh2_main_lzd_inf_temple_guards",
+    "ror": false,
+    "category": "Halberd Infantry",
     "battle_mounts": null
   },
   {
@@ -675,6 +744,8 @@
     "unit_size": 75,
     "category_icon": "wh2_main_lzd_infantry_halberd",
     "unit_card": "wh2_main_lzd_inf_temple_guards_blessed",
+    "ror": false,
+    "category": "Halberd Infantry",
     "battle_mounts": null
   },
   {
@@ -684,6 +755,9 @@
     "unit_size": 24,
     "category_icon": "wh2_main_cold_one",
     "unit_card": "wh2_dlc12_lzd_mon_salamander_hunting_pack",
+    "ror": false,
+    "category": "Hunting Packs",
+    "is_missile": true,
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -694,6 +768,9 @@
     "unit_size": 24,
     "category_icon": "wh2_main_cold_one",
     "unit_card": "wh2_dlc12_lzd_mon_salamander_hunting_pack_ror",
+    "ror": true,
+    "category": "Hunting Packs",
+    "is_missile": true,
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -704,6 +781,9 @@
     "unit_size": 24,
     "category_icon": "wh2_main_cold_one",
     "unit_card": "wh2_dlc13_lzd_razordon",
+    "ror": false,
+    "category": "Hunting Packs",
+    "is_missile": true,
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -714,6 +794,9 @@
     "unit_size": 24,
     "category_icon": "wh2_main_cold_one",
     "unit_card": "wh2_dlc13_lzd_razordon_ror",
+    "ror": true,
+    "category": "Hunting Packs",
+    "is_missile": true,
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -724,6 +807,9 @@
     "unit_size": 68,
     "category_icon": "wh2_main_lzd_missile_infantry_blowpipe",
     "unit_card": "wh2_main_lzd_inf_chameleon_skinks",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -733,6 +819,9 @@
     "unit_size": 68,
     "category_icon": "wh2_main_lzd_missile_infantry_blowpipe",
     "unit_card": "wh2_main_lzd_inf_chameleon_skinks_blessed",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -742,6 +831,9 @@
     "unit_size": 120,
     "category_icon": "wh2_main_missile_infantry_javelin",
     "unit_card": "wh2_main_lzd_inf_skink_cohort_javelins",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -751,6 +843,9 @@
     "unit_size": 90,
     "category_icon": "wh2_main_lzd_missile_infantry_blowpipe",
     "unit_card": "wh2_main_lzd_inf_skink_skirmishers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -760,6 +855,9 @@
     "unit_size": 90,
     "category_icon": "wh2_main_lzd_missile_infantry_blowpipe",
     "unit_card": "wh2_main_lzd_inf_skink_skirmishers_blessed",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -769,6 +867,8 @@
     "unit_size": 36,
     "category_icon": "wh2_main_cold_one_spear",
     "unit_card": "wh2_dlc12_lzd_cav_cold_one_spearriders_ror",
+    "ror": true,
+    "category": "Cold One Spear Cavalry",
     "battle_mounts": null
   },
   {
@@ -778,6 +878,8 @@
     "unit_size": 36,
     "category_icon": "wh2_main_cold_one_spear",
     "unit_card": "wh2_main_lzd_cav_cold_one_spearriders",
+    "ror": false,
+    "category": "Cold One Spear Cavalry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -788,6 +890,8 @@
     "unit_size": 36,
     "category_icon": "wh2_main_cold_one_spear",
     "unit_card": "wh2_main_lzd_cav_cold_one_spearriders_blessed",
+    "ror": false,
+    "category": "Cold One Spear Cavalry",
     "battle_mounts": null
   },
   {
@@ -797,6 +901,8 @@
     "unit_size": 36,
     "category_icon": "wh2_main_cold_one",
     "unit_card": "wh2_main_lzd_cav_cold_one_riders",
+    "ror": false,
+    "category": "Cold One Cavalry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -807,6 +913,8 @@
     "unit_size": 24,
     "category_icon": "wh2_main_cold_one",
     "unit_card": "wh2_main_lzd_cav_cold_ones_feral",
+    "ror": false,
+    "category": "Cold One Cavalry",
     "battle_mounts": null
   },
   {
@@ -816,6 +924,8 @@
     "unit_size": 36,
     "category_icon": "wh2_main_cold_one",
     "unit_card": "wh2_main_lzd_cav_horned_ones",
+    "ror": false,
+    "category": "Cold One Cavalry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -826,6 +936,8 @@
     "unit_size": 36,
     "category_icon": "wh2_main_cold_one",
     "unit_card": "wh2_main_lzd_cav_horned_ones_blessed",
+    "ror": false,
+    "category": "Cold One Cavalry",
     "battle_mounts": null
   },
   {
@@ -835,6 +947,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc13_lzd_sacred_kroxigors",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -845,6 +959,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc13_lzd_sacred_kroxigors_ror",
+    "ror": true,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -855,6 +971,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_main_lzd_mon_kroxigors",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -865,6 +983,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_main_lzd_mon_kroxigors_blessed",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -875,6 +995,8 @@
     "unit_size": 8,
     "category_icon": "wh2_main_lzd_terradon",
     "unit_card": "wh2_dlc12_lzd_cav_ripperdactyl_riders",
+    "ror": false,
+    "category": "Flying Cavalry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -885,6 +1007,8 @@
     "unit_size": 8,
     "category_icon": "wh2_main_lzd_terradon",
     "unit_card": "wh2_dlc12_lzd_cav_ripperdactyl_riders_ror",
+    "ror": true,
+    "category": "Flying Cavalry",
     "abilities": [{ "name": "Toad Rage" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -895,6 +1019,9 @@
     "unit_size": 8,
     "category_icon": "wh2_main_lzd_terradon",
     "unit_card": "wh2_dlc12_lzd_mon_terradon_ror",
+    "ror": true,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Drop Rocks of Sundering" }],
     "battle_mounts": null
   },
@@ -905,6 +1032,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_missile",
     "unit_card": "wh2_dlc12_lzd_mon_ancient_salamander",
+    "ror": false,
+    "category": "Missile Monster",
+    "is_missile": true,
     "abilities": [{ "name": "Primal Instincts" }],
     "battle_mounts": null
   },
@@ -915,6 +1045,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_support",
     "unit_card": "wh2_dlc12_lzd_mon_ancient_stegadon_engine_gpds",
+    "ror": false,
+    "category": "Support Monster",
+    "is_missile": true,
     "abilities": [
       { "name": "Burning Alignment" },
       { "name": "Arcane Configuration" },
@@ -929,6 +1062,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_missile",
     "unit_card": "wh2_dlc12_lzd_mon_ancient_stegadon_ror",
+    "ror": true,
+    "category": "Missile Monster",
+    "is_missile": true,
     "abilities": [{ "name": "Judgement of the Uxmac" }],
     "battle_mounts": null
   },
@@ -939,6 +1075,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_support",
     "unit_card": "wh2_dlc12_lzd_mon_bastiladon_ark_of_sotek",
+    "ror": false,
+    "category": "Support Monster",
+    "is_missile": true,
     "abilities": [{ "name": "Ark of Sotek" }],
     "battle_mounts": null
   },
@@ -949,6 +1088,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur",
     "unit_card": "wh2_dlc13_lzd_feral_dread_saurian",
+    "ror": false,
+    "category": "Monster",
     "battle_mounts": null
   },
   {
@@ -958,6 +1099,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur",
     "unit_card": "wh2_dlc13_lzd_dread_saurian",
+    "ror": false,
+    "category": "Monster",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -967,6 +1111,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur",
     "unit_card": "wh2_dlc13_lzd_dread_saurian_ror",
+    "ror": true,
+    "category": "Monster",
+    "is_missile": true,
     "abilities": [{ "name": "Dread Aversion" }],
     "battle_mounts": null
   },
@@ -977,6 +1124,9 @@
     "unit_size": 8,
     "category_icon": "wh2_main_lzd_terradon",
     "unit_card": "wh2_main_lzd_mon_terradon",
+    "ror": false,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Drop Rocks" }],
     "battle_mounts": null
   },
@@ -987,6 +1137,9 @@
     "unit_size": 8,
     "category_icon": "wh2_main_lzd_terradon",
     "unit_card": "wh2_main_lzd_mon_terradon_fireleech",
+    "ror": false,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Drop Rocks" }],
     "battle_mounts": null
   },
@@ -997,6 +1150,9 @@
     "unit_size": 8,
     "category_icon": "wh2_main_lzd_terradon",
     "unit_card": "wh2_main_lzd_mon_terradon_fireleech_blessed",
+    "ror": false,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Drop Rocks" }],
     "battle_mounts": null
   },
@@ -1007,6 +1163,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_missile",
     "unit_card": "wh2_main_lzd_mon_ancient_stegadon",
+    "ror": false,
+    "category": "Missile Monster",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -1016,6 +1175,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur",
     "unit_card": "wh2_main_lzd_mon_bastiladon_feral",
+    "ror": false,
+    "category": "Monster",
     "battle_mounts": null
   },
   {
@@ -1025,6 +1186,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_support",
     "unit_card": "wh2_main_lzd_mon_bastiladon_healing_platform",
+    "ror": false,
+    "category": "Support Monster",
+    "is_missile": true,
     "abilities": [{ "name": "Revivification Crystal" }],
     "battle_mounts": null
   },
@@ -1035,6 +1199,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_missile",
     "unit_card": "wh2_main_lzd_mon_bastiladon_solar",
+    "ror": false,
+    "category": "Missile Monster",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -1044,6 +1211,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_missile",
     "unit_card": "wh2_main_lzd_mon_bastiladon_solar_blessed",
+    "ror": false,
+    "category": "Missile Monster",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -1053,6 +1223,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur",
     "unit_card": "wh2_main_lzd_mon_carnosaur",
+    "ror": false,
+    "category": "Monster",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -1063,6 +1235,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur",
     "unit_card": "wh2_main_lzd_mon_carnosaur_blessed",
+    "ror": false,
+    "category": "Monster",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -1073,6 +1247,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur",
     "unit_card": "wh2_main_lzd_mon_stegadon_feral",
+    "ror": false,
+    "category": "Monster",
     "battle_mounts": null
   },
   {
@@ -1082,6 +1258,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_missile",
     "unit_card": "wh2_main_lzd_mon_stegadon",
+    "ror": false,
+    "category": "Missile Monster",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -1091,6 +1270,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lzd_dinosaur_missile",
     "unit_card": "wh2_main_lzd_mon_stegadon_blessed",
+    "ror": false,
+    "category": "Missile Monster",
+    "is_missile": true,
     "battle_mounts": null
   }
 ]

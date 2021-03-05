@@ -1,11 +1,13 @@
 [
   {
     "name": "Alarielle the Radiant",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 600,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
     "unit_card": "wh_main_emp_karl_franz",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Boon of Isha" },
       { "name": "Martial Prowess" },
@@ -41,11 +43,14 @@
   },
   {
     "name": "Alith Anar",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1100,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "hef_alith_anar_0",
+    "ror": false,
+    "category": "Hybrid-Weapon Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Mislead" },
       { "name": "Darken the Skies" },
@@ -56,11 +61,13 @@
   },
   {
     "name": "Alastar the White Lion on White Lion Chariot",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1650,
     "unit_size": 1,
     "category_icon": "wh2_dlc15_lion_chariot",
     "unit_card": "wh2_main_hef_prince",
+    "ror": false,
+    "category": "Monstrous Chariot",
     "abilities": [
       { "name": "Martial Prowess" },
       { "name": "Foe-Seeker" },
@@ -91,11 +98,13 @@
   },
   {
     "name": "Archmage (Beasts)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Transformation of Kadon" },
@@ -131,11 +140,13 @@
   },
   {
     "name": "Archmage (Death)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_main_lore_death",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Life Leeching" },
@@ -171,11 +182,13 @@
   },
   {
     "name": "Archmage (Fire)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_main_lore_fire",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Kindleflame" },
@@ -211,11 +224,13 @@
   },
   {
     "name": "Archmage (Heavens)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_main_lore_heavens",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Roiling Skies" },
@@ -251,11 +266,13 @@
   },
   {
     "name": "Archmage (High)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_high",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Shield of Saphery" },
@@ -291,11 +308,13 @@
   },
   {
     "name": "Archmage (Life)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Life Bloom" },
@@ -331,11 +350,13 @@
   },
   {
     "name": "Archmage (Light)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_main_lore_light",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Exorcism" },
@@ -371,11 +392,13 @@
   },
   {
     "name": "Archmage (Metal)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_main_lore_metal",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Metalshifting" },
@@ -411,11 +434,13 @@
   },
   {
     "name": "Archmage (Shadows)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Smoke & Mirrors" },
@@ -451,11 +476,13 @@
   },
   {
     "name": "Eltharion the Grim",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1100,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "hef_eltharion_0",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Mistwalkers' Barrage" },
       { "name": "Grim Discipline" }
@@ -484,11 +511,13 @@
   },
   {
     "name": "Imrik",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1200,
     "unit_size": 1,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh2_dlc15_hef_imrik",
+    "ror": false,
+    "category": "Halberd Infantry",
     "abilities": [
       { "name": "Dragonhorn" },
       { "name": "Lord of Dragons" },
@@ -509,11 +538,13 @@
   },
   {
     "name": "Prince on Griffon",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1550,
     "unit_size": 1,
     "category_icon": "wh2_dlc15_griffon_knights",
     "unit_card": "wh2_main_hef_prince",
+    "ror": false,
+    "category": "Flying Monstrous Cavalry",
     "abilities": [
       { "name": "Deadly Onslaught" },
       { "name": "Foe-Seeker" },
@@ -545,11 +576,14 @@
   },
   {
     "name": "Princess on Griffon",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1550,
     "unit_size": 1,
     "category_icon": "wh2_dlc15_griffon_knights",
     "unit_card": "wh2_main_hef_princess",
+    "ror": false,
+    "category": "Flying Monstrous Cavalry",
+    "is_missile": true,
     "abilities": [
       { "name": "Volley of High Arrows" },
       { "name": "Loose!" },
@@ -581,11 +615,13 @@
   },
   {
     "name": "Teclis on Arcane Phoenix",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 2200,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_high",
     "unit_card": "wh2_main_hef_teclis",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Greater Arcane Conduit" },
       { "name": "Potion of Charoi" },
@@ -618,11 +654,13 @@
   },
   {
     "name": "Alastar the White Lion",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "infantry_axe",
     "unit_card": "wh2_main_hef_prince",
+    "ror": false,
+    "category": "Axe Infantry",
     "abilities": [
       { "name": "Martial Prowess" },
       { "name": "Foe-Seeker" },
@@ -653,11 +691,13 @@
   },
   {
     "name": "Prince",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_main_hef_prince",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Martial Prowess" },
       { "name": "Deadly Onslaught" },
@@ -694,11 +734,14 @@
   },
   {
     "name": "Princess",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_main_hef_princess",
+    "ror": false,
+    "category": "Hybrid-Weapon Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Volley of High Arrows" },
       { "name": "Loose!" },
@@ -735,11 +778,13 @@
   },
   {
     "name": "Teclis",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_high",
     "unit_card": "wh2_main_hef_teclis",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Greater Arcane Conduit" },
       { "name": "Potion of Charoi" },
@@ -772,11 +817,13 @@
   },
   {
     "name": "Tyrion",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1400,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_main_hef_tyrion",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Feint & Riposte" },
       { "name": "Martial Mastery" },
@@ -798,6 +845,9 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc10_hef_handmaiden",
     "unit_card": "wh_main_emp_karl_franz",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Quicksilver Shot" },
       { "name": "Martial Prowess" },
@@ -823,6 +873,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_heavens",
     "unit_card": "wh2_main_hef_mage_life",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Roiling Skies" },
@@ -853,6 +905,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "wh2_main_hef_mage_life",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Smoke & Mirrors" },
@@ -883,6 +937,9 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc10_hef_hand_of_the_shadowking",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Assassin",
+    "is_missile": true,
     "abilities": [
       { "name": "Loose!" },
       { "name": "Martial Prowess" },
@@ -897,6 +954,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
     "unit_card": "wh2_dlc15_hef_mage_beasts",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Transformation of Kadon" },
@@ -927,6 +986,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_death",
     "unit_card": "wh2_dlc15_hef_mage_death",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Life Leeching" },
@@ -957,6 +1018,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_fire",
     "unit_card": "wh2_dlc15_hef_mage_fire",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Kindleflame" },
@@ -992,6 +1055,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_metal",
     "unit_card": "wh2_dlc15_hef_mage_metal",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Metalshifting" },
@@ -1022,6 +1087,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_hef_loremaster",
     "unit_card": "wh2_main_hef_lothern_sea_helm",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Martial Prowess" },
       { "name": "Foe-Seeker" },
@@ -1044,6 +1111,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lore_high",
     "unit_card": "wh2_main_hef_mage_high",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Shield of Saphery" },
@@ -1074,6 +1143,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
     "unit_card": "wh2_main_hef_mage_life",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Life Bloom" },
@@ -1104,6 +1175,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_light",
     "unit_card": "wh2_main_hef_mage_light",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Martial Prowess" }],
     "spells": [
       { "name": "Exorcism" },
@@ -1134,6 +1207,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_hef_champion",
     "unit_card": "wh2_main_hef_noble",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Martial Prowess" },
       { "name": "Deadly Onslaught" },
@@ -1164,6 +1239,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh2_dlc10_hef_phoenix_guard_ror",
+    "ror": true,
+    "category": "Halberd Infantry",
     "abilities": [{ "name": "Martial Mastery" }],
     "battle_mounts": null
   },
@@ -1174,6 +1251,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_dlc10_hef_spearmen_ror",
+    "ror": true,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "Martial Prowess" },
       { "name": "Aura of Protection" }
@@ -1187,6 +1266,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh2_dlc10_hef_white_lions_of_chrace_ror",
+    "ror": true,
+    "category": "Great Axe Infantry",
     "abilities": [{ "name": "Guardian" }, { "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1197,6 +1278,8 @@
     "unit_size": 90,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "wh2_dlc15_hef_inf_rangers",
+    "ror": false,
+    "category": "Dual Sword Infantry",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1207,6 +1290,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_dlc15_hef_inf_silverin_guard",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1217,6 +1302,9 @@
     "unit_size": 68,
     "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
     "unit_card": "wh2_main_hef_inf_gate_guard",
+    "ror": false,
+    "category": "Missile & Spear Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1227,6 +1315,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh2_main_hef_phoenix_guard",
+    "ror": false,
+    "category": "Halberd Infantry",
     "abilities": [{ "name": "Martial Mastery" }],
     "battle_mounts": null
   },
@@ -1237,6 +1327,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_main_hef_spearmen",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1247,6 +1339,8 @@
     "unit_size": 75,
     "category_icon": "infantry_sword_great",
     "unit_card": "wh2_main_hef_swordmasters_of_hoeth",
+    "ror": false,
+    "category": "Greatsword Infantry",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1257,6 +1351,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh2_main_hef_white_lions_of_chrace",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1267,6 +1363,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc10_hef_inf_sisters_of_avelorn_ror",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Banner of Avelorn" },
       { "name": "Martial Prowess" }
@@ -1280,6 +1379,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc10_hef_inf_shadow_warriors",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1290,6 +1392,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc10_hef_inf_sisters_of_avelorn",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1300,6 +1405,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc10_hef_inf_shadow_warriors_ror",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }, { "name": "Loec's Shroud" }],
     "battle_mounts": null
   },
@@ -1310,6 +1418,9 @@
     "unit_size": 68,
     "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
     "unit_card": "wh2_dlc10_hef_lothern_sea_guard_ror",
+    "ror": true,
+    "category": "Missile & Spear Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1320,6 +1431,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc15_hef_inf_archers_ror_0",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Mastery" }],
     "battle_mounts": null
   },
@@ -1330,6 +1444,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_main_hef_archers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1340,6 +1457,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_main_hef_archers_light_armour",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1350,6 +1470,9 @@
     "unit_size": 68,
     "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
     "unit_card": "wh2_main_hef_lothern_sea_guard",
+    "ror": false,
+    "category": "Missile & Spear Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1360,6 +1483,9 @@
     "unit_size": 68,
     "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
     "unit_card": "wh2_main_hef_lothern_sea_guard_shields",
+    "ror": false,
+    "category": "Missile & Spear Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1370,6 +1496,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh2_dlc10_hef_cav_dragon_princes_ror",
+    "ror": true,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Martial Mastery" }],
     "battle_mounts": null
   },
@@ -1380,6 +1508,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh2_main_hef_cav_dragon_princes",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Martial Mastery" }],
     "battle_mounts": null
   },
@@ -1390,6 +1520,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh2_main_hef_ellyrian_reavers",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1400,6 +1532,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh2_main_hef_silver_helms",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1410,6 +1544,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh2_main_hef_silver_helms_shield",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1420,6 +1556,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_bow",
     "unit_card": "wh2_dlc10_hef_ellyrian_reavers_bow_ror",
+    "ror": true,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1430,6 +1569,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_bow",
     "unit_card": "wh2_main_hef_ellyrian_reavers_bow",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1440,6 +1582,8 @@
     "unit_size": 3,
     "category_icon": "wh2_dlc15_lion_chariot",
     "unit_card": "wh2_dlc15_hef_veh_lion_chariot",
+    "ror": false,
+    "category": "Monstrous Chariot",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1450,6 +1594,8 @@
     "unit_size": 3,
     "category_icon": "chariot",
     "unit_card": "wh2_main_hef_cav_ithilmar_tiranoc_chariot",
+    "ror": false,
+    "category": "Chariot",
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1460,6 +1606,9 @@
     "unit_size": 3,
     "category_icon": "missile_chariot",
     "unit_card": "wh2_main_hef_cav_tiranoc_chariot",
+    "ror": false,
+    "category": "Missile Chariot",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   },
@@ -1470,6 +1619,8 @@
     "unit_size": 18,
     "category_icon": "war_beast",
     "unit_card": "wh2_dlc15_hef_mon_war_lions",
+    "ror": false,
+    "category": "War Beasts",
     "battle_mounts": null
   },
   {
@@ -1479,6 +1630,8 @@
     "unit_size": 18,
     "category_icon": "war_beast",
     "unit_card": "wh2_dlc15_hef_mon_war_lions_ror",
+    "ror": true,
+    "category": "War Beasts",
     "abilities": [{ "name": "Mighty Roar" }],
     "battle_mounts": null
   },
@@ -1489,6 +1642,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc15_arcane_phoenix",
     "unit_card": "wh2_dlc15_hef_mon_arcane_phoenix",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [
       { "name": "Emberstorm" },
       { "name": "Fiery Rebirth" },
@@ -1503,6 +1658,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc15_arcane_phoenix",
     "unit_card": "wh2_dlc15_hef_mon_arcane_phoenix_ror",
+    "ror": true,
+    "category": "Flying Monster",
     "abilities": [
       { "name": "Emberstorm" },
       { "name": "Fiery Rebirth" },
@@ -1518,6 +1675,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_great_eagle",
     "unit_card": "wh2_main_hef_mon_great_eagle",
+    "ror": false,
+    "category": "Flying Monster",
     "battle_mounts": null
   },
   {
@@ -1527,6 +1686,8 @@
     "unit_size": 1,
     "category_icon": "dragon",
     "unit_card": "wh2_main_hef_mon_moon_dragon",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [{ "name": "Moon Dragon's Breath" }],
     "battle_mounts": null
   },
@@ -1537,6 +1698,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_hef_phoenix_fire",
     "unit_card": "wh2_main_hef_mon_phoenix_flamespyre",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [
       { "name": "Wake of Fire" },
       { "name": "Attuned to Magic" },
@@ -1551,6 +1714,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_hef_phoenix_frost",
     "unit_card": "wh2_main_hef_mon_phoenix_frostheart",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [{ "name": "Attuned to Magic" }, { "name": "Blizzard Aura" }],
     "battle_mounts": null
   },
@@ -1561,6 +1726,8 @@
     "unit_size": 1,
     "category_icon": "dragon",
     "unit_card": "wh2_main_hef_star_dragon",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [{ "name": "Star Dragon's Breath" }],
     "battle_mounts": null
   },
@@ -1571,6 +1738,8 @@
     "unit_size": 1,
     "category_icon": "dragon",
     "unit_card": "wh2_main_hef_mon_sun_dragon",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [{ "name": "Sun Dragon's Breath" }],
     "battle_mounts": null
   },
@@ -1581,6 +1750,9 @@
     "unit_size": 3,
     "category_icon": "wh_dlc06_dwf_bolt_thrower",
     "unit_card": "wh2_main_hef_art_eagle_claw_bolt_thrower",
+    "ror": false,
+    "category": "Field Artillery",
+    "is_missile": true,
     "abilities": [{ "name": "Martial Prowess" }],
     "battle_mounts": null
   }

@@ -19,9 +19,9 @@
     "name": "Dwarfs",
     "value": "Dwarfs"
   },
-  { "id": 5, "name": "The Empire", "value": "TheEmpire" },
+  { "id": 5, "name": "The Empire", "value": "Empire" },
   { "id": 6, "name": "Greenskins", "value": "Greenskins" },
-  { "id": 7, "name": "High Elves", "value": "Beastmen" },
+  { "id": 7, "name": "High Elves", "value": "HighElves" },
   { "id": 8, "name": "Lizardmen", "value": "Lizardmen" },
   { "id": 9, "name": "Norsca", "value": "Norsca" },
   { "id": 10, "name": "Skaven", "value": "Skaven" },

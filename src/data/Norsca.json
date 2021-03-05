@@ -1,11 +1,13 @@
 [
   {
     "name": "Azrik the Maze Keeper",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1650,
     "unit_size": 1,
     "category_icon": "wh_main_lore_metal",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Fight or Die!" }],
     "spells": [
       { "name": "Metalshifting" },
@@ -20,11 +22,13 @@
   },
   {
     "name": "Skin Wolf Werekin",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1150,
     "unit_size": 1,
     "category_icon": "wh_dlc08_nor_skin_wolf_werekin",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Skin Wolf Werekin",
     "abilities": [
       { "name": "Ruinous Flesh" },
       { "name": "Deadly Onslaught" },
@@ -36,11 +40,13 @@
   },
   {
     "name": "Throgg",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1600,
     "unit_size": 1,
     "category_icon": "infantry_hammer_great",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Hammer Infantry",
     "abilities": [
       { "name": "Copious Vomit" },
       { "name": "Fight or Die!" },
@@ -51,11 +57,13 @@
   },
   {
     "name": "Wulfrik the Wanderer",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Hunter of Champions" },
       { "name": "Fight or Die!" },
@@ -83,11 +91,13 @@
   },
   {
     "name": "Marauder Chieftain",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 700,
     "unit_size": 1,
     "category_icon": "infantry_axe",
     "unit_card": "wh_main_chs_chieftan",
+    "ror": false,
+    "category": "Axe Infantry",
     "abilities": [
       { "name": "Fight or Die!" },
       { "name": "Rage" },
@@ -118,6 +128,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_fire",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "From the Mist" },
       { "name": "Arcane Conduit" },
@@ -141,6 +153,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "From the Mist" },
       { "name": "Arcane Conduit" },
@@ -164,6 +178,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_fire",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Dark Fire of Chaos" },
       { "name": "Arcane Conduit" },
@@ -187,6 +203,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_death",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Rage" }],
     "spells": [
       { "name": "Life Leeching" },
@@ -217,6 +235,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_fire",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Rage" }],
     "spells": [
       { "name": "Kindleflame" },
@@ -247,6 +267,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_metal",
     "unit_card": "a_character_placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Rage" }],
     "spells": [
       { "name": "Metalshifting" },
@@ -277,6 +299,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe_dual",
     "unit_card": "wh_dlc08_nor_marauder_berserkers",
+    "ror": false,
+    "category": "Berserker Axe Infantry",
     "abilities": [{ "name": "Berserk" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -287,6 +311,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe",
     "unit_card": "wh_dlc08_nor_marauder_champions",
+    "ror": false,
+    "category": "Axe Infantry",
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -297,6 +323,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh_dlc08_nor_marauder_champions_great_weapons",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -307,6 +335,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh_dlc08_nor_marauder_spearmen",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -317,6 +347,8 @@
     "unit_size": 18,
     "category_icon": "wh_dlc08_nor_skin_wolves",
     "unit_card": "wh_dlc08_nor_skin_wolves",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Frenzy" }, { "name": "Regeneration" }],
     "battle_mounts": null
   },
@@ -327,6 +359,8 @@
     "unit_size": 18,
     "category_icon": "wh_dlc08_nor_skin_wolves",
     "unit_card": "wh_dlc08_nor_skin_wolves_armoured",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Frenzy" }, { "name": "Regeneration" }],
     "battle_mounts": null
   },
@@ -337,6 +371,8 @@
     "unit_size": 90,
     "category_icon": "infantry_axe",
     "unit_card": "wh_main_chs_marauder",
+    "ror": false,
+    "category": "Axe Infantry",
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -347,6 +383,8 @@
     "unit_size": 90,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh_main_chs_marauder_great_weapons",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -357,6 +395,8 @@
     "unit_size": 90,
     "category_icon": "infantry_axe",
     "unit_card": "wh_pro04_nor_ror_marauder",
+    "ror": true,
+    "category": "Axe Infantry",
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -367,6 +407,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe_dual",
     "unit_card": "wh_pro04_nor_ror_marauder_berserkers",
+    "ror": true,
+    "category": "Berserker Axe Infantry",
     "abilities": [{ "name": "Berserk" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -377,6 +419,8 @@
     "unit_size": 18,
     "category_icon": "wh_dlc08_nor_skin_wolves",
     "unit_card": "wh_pro04_nor_ror_skin_wolves_armoured",
+    "ror": true,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Frenzy" }, { "name": "Regeneration" }],
     "battle_mounts": null
   },
@@ -387,6 +431,9 @@
     "unit_size": 68,
     "category_icon": "wh_dlc06_dwf_throwing_axe",
     "unit_card": "wh_dlc08_nor_marauder_hunters",
+    "ror": false,
+    "category": "Close-Quarters Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -397,6 +444,9 @@
     "unit_size": 68,
     "category_icon": "wh2_main_missile_infantry_javelin",
     "unit_card": "wh_dlc08_nor_marauder_hunters_javelin",
+    "ror": false,
+    "category": "Javelin Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -407,6 +457,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_javelin",
     "unit_card": "wh_main_chs_marauder_horsemen",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -417,6 +470,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_javelin",
     "unit_card": "wh_dlc06_chs_marauder_horsemasters",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -427,6 +483,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_axe",
     "unit_card": "wh_main_chs_marauder_horsemen_throwing_axe",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -437,6 +496,9 @@
     "unit_size": 3,
     "category_icon": "chariot",
     "unit_card": "wh_dlc08_nor_marauder_ice_wolves_chariot",
+    "ror": false,
+    "category": "Chariot",
+    "is_missile": true,
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   },
@@ -447,6 +509,8 @@
     "unit_size": 36,
     "category_icon": "war_beast",
     "unit_card": "wh_dlc08_nor_ice_wolves",
+    "ror": false,
+    "category": "War Beasts",
     "battle_mounts": null
   },
   {
@@ -456,6 +520,8 @@
     "unit_size": 60,
     "category_icon": "war_beast",
     "unit_card": "wh_dlc08_nor_warhounds",
+    "ror": false,
+    "category": "War Beasts",
     "battle_mounts": null
   },
   {
@@ -465,6 +531,8 @@
     "unit_size": 60,
     "category_icon": "war_beast",
     "unit_card": "wh_pro04_nor_ror_chaos_warwolves",
+    "ror": true,
+    "category": "War Beasts",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -475,6 +543,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_dlc08_nor_fimir_warriors",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "From the Mist" }],
     "battle_mounts": null
   },
@@ -485,6 +555,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_dlc08_nor_fimir_warriors_great_weapons",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "From the Mist" }],
     "battle_mounts": null
   },
@@ -495,6 +567,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_dlc08_nor_ice_trolls",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Regeneration" }],
     "battle_mounts": null
   },
@@ -505,6 +579,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_main_chs_trolls",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Regeneration" }],
     "battle_mounts": null
   },
@@ -515,6 +591,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_pro04_nor_ror_fimir_warriors",
+    "ror": true,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "From the Mist" }],
     "battle_mounts": null
   },
@@ -525,6 +603,8 @@
     "unit_size": 1,
     "category_icon": "dragon",
     "unit_card": "wh_dlc03_bst_feral_manticore",
+    "ror": false,
+    "category": "Flying Monster",
     "battle_mounts": null
   },
   {
@@ -534,6 +614,8 @@
     "unit_size": 1,
     "category_icon": "dragon",
     "unit_card": "wh_dlc08_nor_frost_wyrm",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [{ "name": "Frost Breath" }, { "name": "The Chilling Aura" }],
     "battle_mounts": null
   },
@@ -544,6 +626,8 @@
     "unit_size": 1,
     "category_icon": "giant",
     "unit_card": "wh_dlc08_nor_giant",
+    "ror": false,
+    "category": "Monster",
     "battle_mounts": null
   },
   {
@@ -553,6 +637,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
     "unit_card": "wh_dlc08_nor_war_mammoth_feral",
+    "ror": false,
+    "category": "Monster",
     "battle_mounts": null
   },
   {
@@ -562,6 +648,9 @@
     "unit_size": 1,
     "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
     "unit_card": "wh_dlc08_nor_war_mammoth_howdah",
+    "ror": false,
+    "category": "Monster",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -571,6 +660,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
     "unit_card": "wh_dlc08_nor_war_mammoth_warshrine",
+    "ror": false,
+    "category": "Monster",
     "abilities": [
       { "name": "Giver of Glory" },
       { "name": "Favour of the Ruinous Powers" }
@@ -584,6 +675,8 @@
     "unit_size": 4,
     "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
     "unit_card": "wh_dlc08_nor_war_mammoth_feral_god",
+    "ror": true,
+    "category": "Monster",
     "abilities": [{ "name": "Enrage" }],
     "battle_mounts": null
   },
@@ -594,6 +687,9 @@
     "unit_size": 1,
     "category_icon": "wh_dlc08_nor_chaos_war_mammoth",
     "unit_card": "wh_pro04_nor_ror_chaos_war_mammoth_howdah",
+    "ror": true,
+    "category": "Monster",
+    "is_missile": true,
     "abilities": [{ "name": "Enrage" }],
     "battle_mounts": null
   },
@@ -604,6 +700,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh_dlc08_nor_art_hellcannon_god",
+    "ror": true,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -613,6 +712,8 @@
     "unit_size": 3,
     "category_icon": "chariot",
     "unit_card": "wh_main_chs_chariot",
+    "ror": false,
+    "category": "Chariot",
     "abilities": [{ "name": "Rage" }],
     "battle_mounts": null
   }

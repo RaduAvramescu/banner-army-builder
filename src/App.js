@@ -48,13 +48,13 @@ class App extends Component {
       ror,
     } = newProps;
 
-    if (caste !== "Lords" && !units[0])
+    if (caste !== "Lord" && !units[0])
       return alert("You have to pick a Lord first!");
 
     if (multiplayer_cost > funds) return alert("You don't have enough funds!");
 
-    if (caste === "Lords") {
-      if (units.find((unit) => unit.caste === "Lords"))
+    if (caste === "Lord") {
+      if (units.find((unit) => unit.caste === "Lord"))
         this.handleUnitRemove(0, units[0].multiplayer_cost, units[0].unit_size);
     }
 
@@ -247,7 +247,7 @@ class App extends Component {
     if (validation === "countSame") {
       count = units.filter((el) => {
         if (
-          el.unitid === props.unitid ||
+          el.name === props.name ||
           (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
         )
           return count + 1;

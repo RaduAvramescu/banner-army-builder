@@ -1,720 +1,1366 @@
 [
   {
-    "unitid": 1,
+    "name": "Crone Hellebron",
+    "caste": "Lord",
+    "multiplayer_cost": 1150,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh_main_emp_karl_franz",
+    "ror": false,
+    "category": "Sword Infantry",
+    "abilities": [
+      { "name": "Gaze of Khaine" },
+      { "name": "Blood Frenzy" },
+      { "name": "Witchbrew" },
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Heroic Killing Blow" },
+      { "name": "Frenzy" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      {
+        "mount_name": "Cauldron of Blood",
+        "price": 850,
+        "icon_name": "mount_cauldron_of_blood"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 750,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
     "name": "Supreme Sorceress (Beasts)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
-    "unit_card": "def_supreme_sorceress_campaign_01_0",
     "category_icon": "wh_dlc03_lore_beasts",
-    "isSE": true
+    "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Pann's Impenetrable Pelt" },
+      { "name": "The Amber Spear" },
+      { "name": "The Curse of Anraheir" },
+      { "name": "Transformation of Kadon" },
+      { "name": "Wyssan's Wildform" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 500,
+        "icon_name": "mount_dark_pegasus"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 750,
+        "icon_name": "mount_manticore"
+      },
+      {
+        "mount_name": "Black Dragon",
+        "price": 1850,
+        "icon_name": "mount_black_dragon"
+      }
+    ]
   },
   {
-    "unitid": 2,
     "name": "Supreme Sorceress (Dark)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
-    "unit_card": "def_supreme_sorceress_campaign_04_0",
     "category_icon": "wh2_main_lore_dark",
-    "isSE": true
+    "unit_card": "wh_main_emp_karl_franz",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Spiteful Conjuration" },
+      { "name": "Bladewind" },
+      { "name": "Chillwind" },
+      { "name": "Doombolt" },
+      { "name": "Power of Darkness" },
+      { "name": "Soul Stealer" },
+      { "name": "Word of Pain" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 500,
+        "icon_name": "mount_dark_pegasus"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 750,
+        "icon_name": "mount_manticore"
+      },
+      {
+        "mount_name": "Black Dragon",
+        "price": 1850,
+        "icon_name": "mount_black_dragon"
+      }
+    ]
   },
   {
-    "unitid": 3,
     "name": "Supreme Sorceress (Death)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
-    "unit_card": "def_supreme_sorceress_campaign_02_0",
     "category_icon": "wh_main_lore_death",
-    "isSE": true
+    "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 500,
+        "icon_name": "mount_dark_pegasus"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 750,
+        "icon_name": "mount_manticore"
+      },
+      {
+        "mount_name": "Black Dragon",
+        "price": 1850,
+        "icon_name": "mount_black_dragon"
+      }
+    ]
   },
   {
-    "unitid": 4,
     "name": "Supreme Sorceress (Fire)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
-    "unit_card": "def_supreme_sorceress_campaign_03_0",
     "category_icon": "wh_main_lore_fire",
-    "isSE": true
+    "unit_card": "wh_main_emp_karl_franz",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 500,
+        "icon_name": "mount_dark_pegasus"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 750,
+        "icon_name": "mount_manticore"
+      },
+      {
+        "mount_name": "Black Dragon",
+        "price": 1850,
+        "icon_name": "mount_black_dragon"
+      }
+    ]
   },
   {
-    "unitid": 5,
     "name": "Supreme Sorceress (Shadow)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 450,
     "unit_size": 1,
-    "unit_card": "def_supreme_sorceress_campaign_05_0",
     "category_icon": "wh_dlc05_wef_lore_shadow",
-    "isSE": true
+    "unit_card": "wh_main_emp_karl_franz",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Arcane Conduit" }
+    ],
+    "spells": [
+      { "name": "Smoke & Mirrors" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Okkam's Mindrazor" },
+      { "name": "Pit of Shades" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "The Withering" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 500,
+        "icon_name": "mount_dark_pegasus"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 750,
+        "icon_name": "mount_manticore"
+      },
+      {
+        "mount_name": "Black Dragon",
+        "price": 1850,
+        "icon_name": "mount_black_dragon"
+      }
+    ]
   },
   {
-    "unitid": 6,
-    "name": "High Beastmaster",
-    "caste": "Lords",
-    "multiplayer_cost": 750,
-    "unit_size": 1,
-    "unit_card": "def_beastmaster_campaign_03_0",
-    "category_icon": "wh2_dlc14_lord_spear_whip",
-    "isSE": true
-  },
-  {
-    "unitid": 7,
-    "name": "Morathi",
-    "caste": "Lords",
-    "multiplayer_cost": 750,
-    "unit_size": 1,
-    "unit_card": "def_morathi_0",
-    "category_icon": "wh2_main_lore_dark",
-    "isSE": true
-  },
-  {
-    "unitid": 8,
-    "name": "Dreadlord (Sword & Crossbow)",
-    "caste": "Lords",
-    "multiplayer_cost": 850,
-    "unit_size": 1,
-    "unit_card": "def_dreadlord_campaign_02_0",
-    "category_icon": "infantry_sword",
-    "isSE": true
-  },
-  {
-    "unitid": 9,
-    "name": "Dreadlord (Sword & Shield)",
-    "caste": "Lords",
-    "multiplayer_cost": 850,
-    "unit_size": 1,
-    "unit_card": "def_dreadlord_female_campaign_03_0",
-    "category_icon": "infantry_sword",
-    "isSE": true
-  },
-  {
-    "unitid": 10,
     "name": "Lokhir Fellheart",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
+    "category_icon": "infantry_sword",
     "unit_card": "def_cha_lokhir_0",
-    "category_icon": "infantry_sword",
-    "isSE": true
-  },
-  {
-    "unitid": 11,
-    "name": "Crone Hellebron",
-    "caste": "Lords",
-    "multiplayer_cost": 1150,
-    "unit_size": 1,
-    "unit_card": "def_crone_0",
-    "category_icon": "infantry_sword",
-    "isSE": true
-  },
-  {
-    "unitid": 12,
-    "name": "Malekith",
-    "caste": "Lords",
-    "multiplayer_cost": 1150,
-    "unit_size": 1,
-    "unit_card": "def_malekith_0",
-    "category_icon": "wh2_main_lore_dark",
-    "isSE": true,
-    "mounts": [
-      {
-        "name": "Cold One",
-        "multiplayer_cost": 350,
-        "unit_card": "mount_cold_one",
-        "isSEM": true
-      },
-      {
-        "name": "Cold One Chariot",
-        "multiplayer_cost": 500,
-        "unit_card": "mount_cold_one_chariot",
-        "isSEM": true,
-        "limited_type": "Chariots"
-      },
-      {
-        "name": "Seraphon",
-        "multiplayer_cost": 1300,
-        "unit_card": "mount_black_dragon",
-        "isSEM": true,
-        "isFlyer": true,
-        "hasBreath": true
-      }
+    "ror": false,
+    "category": "Sword Infantry",
+    "abilities": [
+      { "name": "Dreaded Duellist" },
+      { "name": "Merciless Slaver" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" }
     ],
-    "spells": [{ "name": "Soul Stealer" }, { "name": "Spirit Leech" }]
+    "battle_mounts": [
+      {
+        "mount_name": "Maelstrom",
+        "price": 1350,
+        "icon_name": "mount_black_dragon"
+      }
+    ]
   },
   {
-    "unitid": 13,
+    "name": "High Beastmaster",
+    "caste": "Lord",
+    "multiplayer_cost": 750,
+    "unit_size": 1,
+    "category_icon": "wh2_dlc14_lord_spear_whip",
+    "unit_card": "placeholder",
+    "ror": false,
+    "category": "Spear & Whip Infantry",
+    "abilities": [
+      { "name": "Beastslaver" },
+      { "name": "Whiplash!" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Stand Your Ground!" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Scourgerunner Chariot",
+        "price": 500,
+        "icon_name": "mount_scourgerunner_chariot"
+      },
+      {
+        "mount_name": "Manticore",
+        "price": 750,
+        "icon_name": "mount_manticore"
+      }
+    ]
+  },
+  {
     "name": "Malus Darkblade",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1600,
     "unit_size": 1,
-    "unit_card": "def_malus_0",
     "category_icon": "infantry_sword",
-    "isSE": true
+    "unit_card": "wh2_dlc14_def_cha_malus_darkblade",
+    "ror": false,
+    "category": "Sword Infantry",
+    "abilities": [
+      { "name": "The Blood Price" },
+      { "name": "The Daemon's Curse" },
+      { "name": "Tz'arkan" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Deadly Onslaught" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Spite", "price": 350, "icon_name": "mount_cold_one" }
+    ]
   },
   {
-    "unitid": 14,
+    "name": "Dreadlord (Sword & Crossbow)",
+    "caste": "Lord",
+    "multiplayer_cost": 850,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh2_main_def_dreadlord",
+    "ror": false,
+    "category": "Hybrid-Weapon Infantry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Volley of Dark Arrows" },
+      { "name": "Loose!" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Black Dragon",
+        "price": 1450,
+        "icon_name": "mount_black_dragon"
+      },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 500,
+        "icon_name": "mount_dark_pegasus"
+      }
+    ]
+  },
+  {
+    "name": "Dreadlord (Sword & Shield)",
+    "caste": "Lord",
+    "multiplayer_cost": 850,
+    "unit_size": 1,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh2_main_def_dreadlord_female",
+    "ror": false,
+    "category": "Sword Infantry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Strength Through Spite" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Black Dragon",
+        "price": 1450,
+        "icon_name": "mount_black_dragon"
+      },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 500,
+        "icon_name": "mount_dark_pegasus"
+      }
+    ]
+  },
+  {
+    "name": "Malekith",
+    "caste": "Lord",
+    "multiplayer_cost": 1150,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_dark",
+    "unit_card": "wh2_main_def_malekith",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Gaze of Malice" },
+      { "name": "Stand Your Ground!" }
+    ],
+    "spells": [
+      { "name": "Spiteful Conjuration" },
+      { "name": "Bladewind" },
+      { "name": "Chillwind" },
+      { "name": "Doombolt" },
+      { "name": "Power of Darkness" },
+      { "name": "Soul Stealer" },
+      { "name": "Word of Pain" }
+    ],
+    "battle_mounts": [
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Cold One Chariot",
+        "price": 500,
+        "icon_name": "mount_cold_one_chariot"
+      },
+      {
+        "mount_name": "Seraphon",
+        "price": 1300,
+        "icon_name": "mount_black_dragon"
+      }
+    ]
+  },
+  {
+    "name": "Morathi",
+    "caste": "Lord",
+    "multiplayer_cost": 750,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_dark",
+    "unit_card": "wh2_main_def_morathi",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Greater Arcane Conduit" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Enchanting Beauty" },
+      { "name": "Deadly Onslaught" }
+    ],
+    "spells": [
+      { "name": "Spiteful Conjuration" },
+      { "name": "Power of Darkness" },
+      { "name": "Soul Stealer" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Pit of Shades" },
+      { "name": "Life Leeching" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Sulephet",
+        "price": 400,
+        "icon_name": "mount_dark_pegasus"
+      }
+    ]
+  },
+  {
     "name": "Sorceress (Beasts)",
     "caste": "Hero",
     "multiplayer_cost": 300,
     "unit_size": 1,
-    "unit_card": "def_sorceress_campaign_04_0",
     "category_icon": "wh_dlc03_lore_beasts",
-    "isSE": true
+    "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "spells": [
+      { "name": "Wild Heart" },
+      { "name": "Flock of Doom" },
+      { "name": "Pann's Impenetrable Pelt" },
+      { "name": "The Amber Spear" },
+      { "name": "The Curse of Anraheir" },
+      { "name": "Transformation of Kadon" },
+      { "name": "Wyssan's Wildform" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 550,
+        "icon_name": "mount_dark_pegasus"
+      }
+    ]
   },
   {
-    "unitid": 15,
     "name": "Sorceress (Death)",
     "caste": "Hero",
     "multiplayer_cost": 300,
     "unit_size": 1,
-    "unit_card": "def_sorceress_campaign_01_0",
     "category_icon": "wh_main_lore_death",
-    "isSE": true
+    "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "spells": [
+      { "name": "Life Leeching" },
+      { "name": "Aspect of the Dread Knight" },
+      { "name": "Doom & Darkness" },
+      { "name": "Soulblight" },
+      { "name": "Spirit Leech" },
+      { "name": "The Fate of Bjuna" },
+      { "name": "The Purple Sun of Xereus" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 550,
+        "icon_name": "mount_dark_pegasus"
+      }
+    ]
   },
   {
-    "unitid": 16,
-    "name": "Sorceress (Dark)",
-    "caste": "Hero",
-    "multiplayer_cost": 300,
-    "unit_size": 1,
-    "unit_card": "def_sorceress_campaign_01_0",
-    "category_icon": "wh2_main_lore_dark",
-    "isSE": true
-  },
-  {
-    "unitid": 17,
-    "name": "Sorceress (Fire)",
-    "caste": "Hero",
-    "multiplayer_cost": 300,
-    "unit_size": 1,
-    "unit_card": "def_sorceress_campaign_02_0",
-    "category_icon": "wh_main_lore_fire",
-    "isSE": true
-  },
-  {
-    "unitid": 18,
-    "name": "Sorceress (Shadow)",
-    "caste": "Hero",
-    "multiplayer_cost": 300,
-    "unit_size": 1,
-    "unit_card": "def_sorceress_campaign_03_0",
-    "category_icon": "wh_dlc05_wef_lore_shadow",
-    "isSE": true
-  },
-  {
-    "unitid": 19,
-    "name": "Death Hag",
-    "caste": "Hero",
-    "multiplayer_cost": 600,
-    "unit_size": 1,
-    "unit_card": "def_death_hag_campaign_01_0",
-    "category_icon": "wh2_main_def_dignitary",
-    "isSE": true
-  },
-  {
-    "unitid": 20,
     "name": "Master",
     "caste": "Hero",
     "multiplayer_cost": 700,
     "unit_size": 1,
-    "unit_card": "def_master_campaign_02_0",
     "category_icon": "wh2_dlc14_def_champion",
-    "isSE": true
+    "unit_card": "placeholder",
+    "ror": false,
+    "category": "Melee Specialist",
+    "abilities": [
+      { "name": "Guardian" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Deadly Onslaught" },
+      { "name": "Foe-Seeker" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 550,
+        "icon_name": "mount_dark_pegasus"
+      },
+      {
+        "mount_name": "Cold One Chariot",
+        "price": 500,
+        "icon_name": "mount_cold_one_chariot"
+      }
+    ]
   },
   {
-    "unitid": 21,
+    "name": "Death Hag",
+    "caste": "Hero",
+    "multiplayer_cost": 600,
+    "unit_size": 1,
+    "category_icon": "wh2_main_def_dignitary",
+    "unit_card": "wh2_main_def_death_hag",
+    "ror": false,
+    "category": "Melee Specialist",
+    "abilities": [
+      { "name": "Witchbrew" },
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Foe-Seeker" },
+      { "name": "Frenzy" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Cauldron of Blood",
+        "price": 800,
+        "icon_name": "mount_cauldron_of_blood"
+      }
+    ]
+  },
+  {
     "name": "Khainite Assassin",
     "caste": "Hero",
     "multiplayer_cost": 700,
     "unit_size": 1,
-    "unit_card": "def_assassin_campaign_01_0",
     "category_icon": "wh2_main_def_spy",
-    "isSE": true,
-    "is360": true
+    "unit_card": "wh2_main_def_khainte_assassin",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Assassin's Trophy" },
+      { "name": "Black Lotus" },
+      { "name": "Dark Venom" },
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 22,
-    "name": "Bleakswords",
-    "caste": "Infantry",
-    "multiplayer_cost": 450,
-    "unit_size": 90,
-    "unit_card": "wh2_main_def_bleakswords",
-    "category_icon": "infantry_sword",
-    "variantUnit": "Bleakswords"
+    "name": "Sorceress (Dark)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh2_main_lore_dark",
+    "unit_card": "wh2_main_def_sorceress",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "spells": [
+      { "name": "Spiteful Conjuration" },
+      { "name": "Bladewind" },
+      { "name": "Chillwind" },
+      { "name": "Doombolt" },
+      { "name": "Power of Darkness" },
+      { "name": "Soul Stealer" },
+      { "name": "Word of Pain" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 550,
+        "icon_name": "mount_dark_pegasus"
+      }
+    ]
   },
   {
-    "unitid": 23,
-    "name": "Dreadspears",
-    "caste": "Infantry",
-    "multiplayer_cost": 450,
-    "unit_size": 90,
-    "unit_card": "wh2_main_def_dreadspears",
-    "category_icon": "infantry_spear",
-    "baseUnit": "Dreadspears",
-    "variantUnit": "Bleakswords"
+    "name": "Sorceress (Fire)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_main_lore_fire",
+    "unit_card": "wh2_main_def_sorceress",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "spells": [
+      { "name": "Kindleflame" },
+      { "name": "Cascading Fire Cloak" },
+      { "name": "Fireball" },
+      { "name": "Flame Storm" },
+      { "name": "Flaming Sword of Rhuin" },
+      { "name": "Piercing Bolts of Burning" },
+      { "name": "The Burning Head" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 550,
+        "icon_name": "mount_dark_pegasus"
+      }
+    ]
   },
   {
-    "unitid": 24,
-    "name": "Black Ark Corsairs",
-    "caste": "Infantry",
-    "multiplayer_cost": 650,
-    "unit_size": 75,
-    "unit_card": "wh2_main_def_black_ark_corsairs",
-    "category_icon": "wh2_main_infantry_dual_swords",
-    "variantUnit": "Black Ark Corsairs"
+    "name": "Sorceress (Shadow)",
+    "caste": "Hero",
+    "multiplayer_cost": 300,
+    "unit_size": 1,
+    "category_icon": "wh_dlc05_wef_lore_shadow",
+    "unit_card": "wh2_main_def_sorceress",
+    "ror": false,
+    "category": "Wizard",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "spells": [
+      { "name": "Smoke & Mirrors" },
+      { "name": "Melkoth's Mystifying Miasma" },
+      { "name": "Okkam's Mindrazor" },
+      { "name": "Pit of Shades" },
+      { "name": "The Enfeebling Foe" },
+      { "name": "The Penumbral Pendulum" },
+      { "name": "The Withering" }
+    ],
+    "battle_mounts": [
+      {
+        "mount_name": "Dark Steed",
+        "price": 200,
+        "icon_name": "mount_dark_steed"
+      },
+      { "mount_name": "Cold One", "price": 350, "icon_name": "mount_cold_one" },
+      {
+        "mount_name": "Dark Pegasus",
+        "price": 550,
+        "icon_name": "mount_dark_pegasus"
+      }
+    ]
   },
   {
-    "unitid": 25,
-    "name": "The Hellebronai (Dreadspears)",
-    "caste": "Infantry",
-    "multiplayer_cost": 700,
-    "unit_size": 90,
-    "unit_card": "wh2_dlc10_def_dreadspears_ror",
-    "category_icon": "infantry_spear",
-    "baseUnit": "Dreadspears",
-    "basePrice": 450,
-    "variantUnit": "Bleakswords",
-    "ror": true
-  },
-  {
-    "unitid": 26,
-    "name": "Witch Elves",
-    "caste": "Infantry",
-    "multiplayer_cost": 800,
-    "unit_size": 75,
-    "unit_card": "wh2_main_def_witch_elves",
-    "category_icon": "wh2_main_def_infantry_dual_daggers",
-    "baseUnit": "Witch Elves"
-  },
-  {
-    "unitid": 27,
-    "name": "Sisters of the Singing Doom (Witch Elves)",
-    "caste": "Infantry",
-    "multiplayer_cost": 1050,
-    "unit_size": 75,
-    "unit_card": "wh2_dlc10_def_witch_elves_ror",
-    "category_icon": "wh2_main_def_infantry_dual_daggers",
-    "baseUnit": "Witch Elves",
-    "basePrice": 800,
-    "ror": true
-  },
-  {
-    "unitid": 28,
-    "name": "Sisters of Slaughter",
-    "caste": "Infantry",
-    "multiplayer_cost": 1100,
-    "unit_size": 75,
-    "unit_card": "wh2_dlc10_def_inf_sisters_of_slaughter",
-    "category_icon": "wh2_dlc09_tmb_whip_infantry"
-  },
-  {
-    "unitid": 29,
-    "name": "Har Ganeth Executioners",
-    "caste": "Infantry",
-    "multiplayer_cost": 1200,
-    "unit_size": 75,
-    "unit_card": "wh2_main_def_har_ganeth_executioners",
-    "category_icon": "infantry_sword_great",
-    "baseUnit": "Har Ganeth Executioners"
-  },
-  {
-    "unitid": 30,
-    "name": "Black Guard of Naggarond",
-    "caste": "Infantry",
-    "multiplayer_cost": 1300,
-    "unit_size": 75,
-    "unit_card": "wh2_main_def_black_guard",
-    "category_icon": "infantry_spear_halberd"
-  },
-  {
-    "unitid": 30,
     "name": "Blades of the Blood Queen (Executioners)",
-    "caste": "Infantry",
+    "caste": "Melee Infantry",
     "multiplayer_cost": 1500,
     "unit_size": 75,
-    "unit_card": "wh2_dlc10_def_har_ganeth_executioners_ror",
     "category_icon": "infantry_sword_great",
-    "baseUnit": "Har Ganeth Executioners",
-    "basePrice": 1200,
-    "ror": true
+    "unit_card": "wh2_dlc10_def_har_ganeth_executioners_ror",
+    "ror": true,
+    "category": "Greatsword Infantry",
+    "abilities": [
+      { "name": "Guardian" },
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Frenzy" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 31,
-    "name": "Darkshards",
-    "caste": "Missile Infantry",
-    "multiplayer_cost": 550,
-    "unit_size": 68,
-    "unit_card": "wh2_main_def_darkshards",
-    "category_icon": "missile_infantry_bow",
-    "isMissile": true,
-    "baseUnit": "Darkshards"
-  },
-  {
-    "unitid": 32,
-    "name": "Darkshards (Shields)",
-    "caste": "Missile Infantry",
-    "multiplayer_cost": 650,
-    "unit_size": 68,
-    "unit_card": "wh2_main_def_darkshards_shields",
-    "category_icon": "missile_infantry_bow",
-    "isMissile": true,
-    "baseUnit": "Darkshards",
-    "basePrice": 550
-  },
-  {
-    "unitid": 33,
-    "name": "Black Ark Corsairs (Handbows)",
-    "caste": "Missile Infantry",
-    "multiplayer_cost": 750,
+    "name": "Sisters of Slaughter",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1100,
     "unit_size": 75,
-    "unit_card": "wh2_main_def_black_ark_corsairs_handbows",
-    "category_icon": "wh2_main_def_missile_infantry_handbow",
-    "isMissile": true,
-    "is360": true,
-    "variantUnit": "Black Ark Corsairs"
+    "category_icon": "wh2_dlc09_tmb_whip_infantry",
+    "unit_card": "wh2_dlc10_def_inf_sisters_of_slaughter",
+    "ror": false,
+    "category": "Whip Infantry",
+    "abilities": [
+      { "name": "The Trial of Blades" },
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 34,
+    "name": "Sisters of the Singing Doom (Witch Elves)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1050,
+    "unit_size": 75,
+    "category_icon": "wh2_main_def_infantry_dual_daggers",
+    "unit_card": "wh2_dlc10_def_witch_elves_ror",
+    "ror": true,
+    "category": "Dual Dagger Infantry",
+    "abilities": [
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Frenzy" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "The Hellebronai (Dreadspears)",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 700,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_dlc10_def_dreadspears_ror",
+    "ror": true,
+    "category": "Spear Infantry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Black Ark Corsairs",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 650,
+    "unit_size": 75,
+    "category_icon": "wh2_main_infantry_dual_swords",
+    "unit_card": "wh2_main_def_black_ark_corsairs",
+    "ror": false,
+    "category": "Dual Sword Infantry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Black Guard of Naggarond",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1300,
+    "unit_size": 75,
+    "category_icon": "infantry_spear_halberd",
+    "unit_card": "wh2_main_def_black_guard",
+    "ror": false,
+    "category": "Halberd Infantry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Bleakswords",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 450,
+    "unit_size": 90,
+    "category_icon": "infantry_sword",
+    "unit_card": "wh2_main_def_bleakswords",
+    "ror": false,
+    "category": "Sword Infantry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Dreadspears",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 450,
+    "unit_size": 90,
+    "category_icon": "infantry_spear",
+    "unit_card": "wh2_main_def_dreadspears",
+    "ror": false,
+    "category": "Spear Infantry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Har Ganeth Executioners",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 1200,
+    "unit_size": 75,
+    "category_icon": "infantry_sword_great",
+    "unit_card": "wh2_main_def_har_ganeth_executioners",
+    "ror": false,
+    "category": "Greatsword Infantry",
+    "abilities": [
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Witch Elves",
+    "caste": "Melee Infantry",
+    "multiplayer_cost": 800,
+    "unit_size": 75,
+    "category_icon": "wh2_main_def_infantry_dual_daggers",
+    "unit_card": "wh2_main_def_witch_elves",
+    "ror": false,
+    "category": "Dual Dagger Infantry",
+    "abilities": [
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Frenzy" }
+    ],
+    "battle_mounts": null
+  },
+  {
     "name": "The Bolt-fiends (Darkshards - Shields)",
     "caste": "Missile Infantry",
     "multiplayer_cost": 900,
     "unit_size": 68,
-    "unit_card": "wh2_dlc10_def_darkshards_shields_ror",
     "category_icon": "missile_infantry_bow",
-    "isMissile": true,
-    "baseUnit": "Darkshards",
-    "basePrice": 550,
-    "ror": true
+    "unit_card": "wh2_dlc10_def_darkshards_shields_ror",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 35,
+    "name": "Black Ark Corsairs (Handbows)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 750,
+    "unit_size": 75,
+    "category_icon": "wh2_main_def_missile_infantry_handbow",
+    "unit_card": "wh2_main_def_black_ark_corsairs_handbows",
+    "ror": false,
+    "category": "Handbow Infantry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Darkshards",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 550,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_main_def_darkshards",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Darkshards (Shields)",
+    "caste": "Missile Infantry",
+    "multiplayer_cost": 650,
+    "unit_size": 68,
+    "category_icon": "missile_infantry_bow",
+    "unit_card": "wh2_main_def_darkshards_shields",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
     "name": "Shades",
     "caste": "Missile Infantry",
     "multiplayer_cost": 950,
     "unit_size": 60,
-    "unit_card": "wh2_main_def_shades",
     "category_icon": "wh2_main_def_missile_infantry_bow_shades",
-    "isMissile": true,
-    "variantUnit": "Shades"
+    "unit_card": "wh2_main_def_shades",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 36,
     "name": "Shades (Dual Weapons)",
     "caste": "Missile Infantry",
     "multiplayer_cost": 1050,
     "unit_size": 60,
-    "unit_card": "wh2_main_def_shades_dual_weapons",
     "category_icon": "wh2_main_def_missile_infantry_bow_shades_dual_weapons",
-    "isMissile": true,
-    "variantUnit": "Shades"
+    "unit_card": "wh2_main_def_shades_dual_weapons",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 37,
     "name": "Shades (Greatswords)",
     "caste": "Missile Infantry",
     "multiplayer_cost": 1150,
     "unit_size": 60,
-    "unit_card": "wh2_main_def_shades_great_weapons",
     "category_icon": "wh2_main_def_missile_infantry_bow_shades_great_weapons",
-    "isMissile": true,
-    "variantUnit": "Shades"
+    "unit_card": "wh2_main_def_shades_great_weapons",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 38,
-    "name": "Dark Riders",
-    "caste": "Cavalry & Chariots",
-    "multiplayer_cost": 450,
-    "unit_size": 45,
-    "unit_card": "wh2_main_def_dark_riders",
-    "category_icon": "shock_cavalry",
-    "limited_type": "Cavalry",
-    "baseUnit": "Dark Riders"
-  },
-  {
-    "unitid": 39,
-    "name": "Dark Riders (Shields)",
-    "caste": "Cavalry & Chariots",
-    "multiplayer_cost": 500,
-    "unit_size": 45,
-    "unit_card": "wh2_main_def_dark_riders_shield",
-    "category_icon": "shock_cavalry",
-    "limited_type": "Cavalry",
-    "baseUnit": "Dark Riders",
-    "basePrice": 450
-  },
-  {
-    "unitid": 40,
-    "name": "Cold One Knights",
-    "caste": "Cavalry & Chariots",
-    "multiplayer_cost": 1000,
-    "unit_size": 36,
-    "unit_card": "wh2_main_def_cold_one_knights",
-    "category_icon": "wh2_main_cold_one_spear",
-    "limited_type": "Cavalry"
-  },
-  {
-    "unitid": 41,
     "name": "Doomfire Warlocks",
-    "caste": "Cavalry & Chariots",
+    "caste": "Melee Cavalry",
     "multiplayer_cost": 1200,
     "unit_size": 45,
+    "category_icon": "wh2_dlc10_magic_cav",
     "unit_card": "wh2_dlc10_def_cav_doomfire_warlocks",
-    "category_icon": "wh2_dlc10_magic_cav",
-    "limited_type": "Cavalry",
-    "baseUnit": "Doomfire Warlocks"
+    "ror": false,
+    "category": "Magical Cavalry",
+    "abilities": [
+      { "name": "Lesser Doombolt" },
+      { "name": "Soulblight" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 42,
-    "name": "Cold One Dread Knights",
-    "caste": "Cavalry & Chariots",
-    "multiplayer_cost": 1300,
-    "unit_size": 36,
-    "unit_card": "wh2_main_def_cold_one_dread_knights",
-    "category_icon": "wh2_main_cold_one",
-    "limited_type": "Cavalry",
-    "baseUnit": "Cold One Dread Knights"
-  },
-  {
-    "unitid": 43,
-    "name": "Slaanesh's Harvesters (Doomfire Warlocks)",
-    "caste": "Cavalry & Chariots",
-    "multiplayer_cost": 1450,
-    "unit_size": 45,
-    "unit_card": "wh2_dlc10_def_cav_doomfire_warlocks_ror",
-    "category_icon": "wh2_dlc10_magic_cav",
-    "limited_type": "Cavalry",
-    "baseUnit": "Doomfire Warlocks",
-    "basePrice": 1200,
-    "ror": true
-  },
-  {
-    "unitid": 44,
     "name": "Knights of the Ebon Claw (Dread Knights)",
-    "caste": "Cavalry & Chariots",
+    "caste": "Melee Cavalry",
     "multiplayer_cost": 1550,
     "unit_size": 36,
-    "unit_card": "wh2_dlc10_def_cold_one_dread_knights_ror",
     "category_icon": "wh2_main_cold_one",
-    "limited_type": "Cavalry",
-    "baseUnit": "Cold One Dread Knights",
-    "basePrice": 1300,
-    "ror": true
+    "unit_card": "wh2_dlc10_def_cold_one_dread_knights_ror",
+    "ror": true,
+    "category": "Cold One Cavalry",
+    "abilities": [
+      { "name": "Murderous Mastery" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 45,
-    "name": "Dark Riders (Repeater Crossbow)",
-    "caste": "Missile Cavalry & Chariots",
-    "multiplayer_cost": 650,
+    "name": "Slaanesh's Harvesters (Doomfire Warlocks)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1450,
     "unit_size": 45,
-    "unit_card": "wh2_main_def_dark_riders_crossbow",
-    "category_icon": "missile_cavalry_bow",
-    "isMissile": true,
-    "limited_type": "Cavalry",
-    "baseUnit": "Dark Riders (Repeater Crossbow)"
+    "category_icon": "wh2_dlc10_magic_cav",
+    "unit_card": "wh2_dlc10_def_cav_doomfire_warlocks_ror",
+    "ror": true,
+    "category": "Magical Cavalry",
+    "abilities": [
+      { "name": "Soul Stealer" },
+      { "name": "Word of Pain" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 46,
+    "name": "Cold One Knights",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1000,
+    "unit_size": 36,
+    "category_icon": "wh2_main_cold_one_spear",
+    "unit_card": "wh2_main_def_cold_one_knights",
+    "ror": false,
+    "category": "Cold One Spear Cavalry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Primal Instincts" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Cold One Dread Knights",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 1300,
+    "unit_size": 36,
+    "category_icon": "wh2_main_cold_one",
+    "unit_card": "wh2_main_def_cold_one_dread_knights",
+    "ror": false,
+    "category": "Cold One Cavalry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Primal Instincts" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Dark Riders",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 450,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_main_def_dark_riders",
+    "ror": false,
+    "category": "Shock Cavalry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Dark Riders (Shields)",
+    "caste": "Melee Cavalry",
+    "multiplayer_cost": 500,
+    "unit_size": 45,
+    "category_icon": "shock_cavalry",
+    "unit_card": "wh2_main_def_dark_riders_shield",
+    "ror": false,
+    "category": "Shock Cavalry",
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
     "name": "Raven Heralds (Repeater Crossbow)",
-    "caste": "Missile Cavalry & Chariots",
+    "caste": "Missile Cavalry",
     "multiplayer_cost": 900,
     "unit_size": 18,
-    "unit_card": "wh2_dlc10_def_raven_heralds_ror",
     "category_icon": "missile_cavalry_bow",
-    "isFlyer": true,
-    "isMissile": true,
-    "limited_type": "Cavalry",
-    "baseUnit": "Dark Riders (Repeater Crossbow)",
-    "basePrice": 650,
-    "ror": true
+    "unit_card": "wh2_dlc10_def_raven_heralds",
+    "ror": true,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 47,
+    "name": "Dark Riders (Repeater Crossbow)",
+    "caste": "Missile Cavalry",
+    "multiplayer_cost": 650,
+    "unit_size": 45,
+    "category_icon": "missile_cavalry_bow",
+    "unit_card": "wh2_main_def_dark_riders_crossbow",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
     "name": "Scourgerunner Chariots",
-    "caste": "Missile Cavalry & Chariots",
+    "caste": "Chariot",
     "multiplayer_cost": 950,
     "unit_size": 3,
+    "category_icon": "missile_chariot",
     "unit_card": "wh2_dlc14_def_cav_scourgerunner_chariot",
-    "category_icon": "missile_chariot",
-    "isMissile": true,
-    "is360": true,
-    "limited_type": "Chariots",
-    "baseUnit": "Scourgerunner Chariots"
+    "ror": false,
+    "category": "Missile Chariot",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 48,
-    "name": "Cold One Chariots",
-    "caste": "Missile Cavalry & Chariots",
-    "multiplayer_cost": 1100,
-    "unit_size": 3,
-    "unit_card": "wh2_main_def_cold_one_chariot",
-    "category_icon": "missile_chariot",
-    "isMissile": true,
-    "is360": true,
-    "limited_type": "Chariots"
-  },
-  {
-    "unitid": 49,
     "name": "Ravagers of Rakarth (Scourgerunner Chariots)",
-    "caste": "Missile Cavalry & Chariots",
+    "caste": "Chariot",
     "multiplayer_cost": 1250,
     "unit_size": 3,
-    "unit_card": "wh2_dlc14_def_cav_scourgerunner_chariot_ror",
     "category_icon": "missile_chariot",
-    "isMissile": true,
-    "is360": true,
-    "limited_type": "Chariots",
-    "baseUnit": "Scourgerunner Chariots",
-    "basePrice": 950,
-    "ror": true
+    "unit_card": "wh2_dlc14_def_cav_scourgerunner_chariot_ror",
+    "ror": true,
+    "category": "Missile Chariot",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Barbed Net" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 50,
-    "name": "Harpies",
-    "caste": "Monsters & Beasts",
-    "multiplayer_cost": 600,
-    "unit_size": 45,
-    "unit_card": "wh2_main_def_harpies",
-    "category_icon": "wh_dlc05_wef_harpies",
-    "limited_type": "War Beasts",
-    "isFlyer": true,
-    "baseUnit": "Harpies"
+    "name": "Cold One Chariots",
+    "caste": "Chariot",
+    "multiplayer_cost": 1100,
+    "unit_size": 3,
+    "category_icon": "missile_chariot",
+    "unit_card": "wh2_main_def_cold_one_chariot",
+    "ror": false,
+    "category": "Missile Chariot",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" },
+      { "name": "Primal Instincts" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 51,
-    "name": "Feral Manticore",
-    "caste": "Monsters & Beasts",
-    "multiplayer_cost": 800,
-    "unit_size": 1,
-    "unit_card": "wh2_dlc10_def_mon_feral_manticore",
-    "category_icon": "dragon",
-    "limited_type": "War Beasts",
-    "isSE": true,
-    "isSEM": true,
-    "isFlyer": true
-  },
-  {
-    "unitid": 52,
     "name": "The Crows of Khaine (Harpies)",
-    "caste": "Monsters & Beasts",
+    "caste": "Monstrous Infantry",
     "multiplayer_cost": 850,
     "unit_size": 45,
-    "unit_card": "wh2_dlc14_def_inf_harpies_ror",
     "category_icon": "wh_dlc05_wef_harpies",
-    "limited_type": "War Beasts",
-    "isFlyer": true,
-    "baseUnit": "Harpies",
-    "basePrice": 600,
-    "ror": true
+    "unit_card": "wh2_dlc14_def_inf_harpies_ror",
+    "ror": true,
+    "category": "Flying Melee Infantry",
+    "abilities": [{ "name": "Crowfeast" }],
+    "battle_mounts": null
   },
   {
-    "unitid": 53,
-    "name": "War Hydra",
-    "caste": "Monsters & Beasts",
-    "multiplayer_cost": 1650,
-    "unit_size": 1,
-    "unit_card": "wh2_main_def_war_hydra",
-    "category_icon": "wh2_main_def_mon_war_hydra",
-    "limited_type": "War Beasts",
-    "isSE": true,
-    "isSEM": true,
-    "hasBreath": true,
-    "baseUnit": "War Hydra"
+    "name": "Harpies",
+    "caste": "Monstrous Infantry",
+    "multiplayer_cost": 600,
+    "unit_size": 45,
+    "category_icon": "wh_dlc05_wef_harpies",
+    "unit_card": "wh2_main_def_harpies",
+    "ror": false,
+    "category": "Flying Melee Infantry",
+    "battle_mounts": null
   },
   {
-    "unitid": 54,
-    "name": "Kharibdyss",
-    "caste": "Monsters & Beasts",
-    "multiplayer_cost": 1700,
-    "unit_size": 1,
-    "unit_card": "wh2_dlc10_def_kharibdyss",
-    "category_icon": "wh2_main_def_mon_war_hydra",
-    "limited_type": "War Beasts",
-    "isSE": true,
-    "isSEM": true
-  },
-  {
-    "unitid": 55,
     "name": "Chill of Sontar (War Hydra)",
-    "caste": "Monsters & Beasts",
+    "caste": "Monster",
     "multiplayer_cost": 2000,
     "unit_size": 1,
-    "unit_card": "wh2_dlc10_def_war_hydra_ror",
     "category_icon": "wh2_main_def_mon_war_hydra",
-    "limited_type": "War Beasts",
-    "isSE": true,
-    "isSEM": true,
-    "hasBreath": true,
-    "baseUnit": "War Hydra",
-    "basePrice": 1650,
-    "ror": true
+    "unit_card": "wh2_dlc10_def_war_hydra_ror",
+    "ror": true,
+    "category": "Monster",
+    "abilities": [
+      { "name": "Frost Breath" },
+      { "name": "Another Takes its Place" },
+      { "name": "Regeneration" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 56,
-    "name": "Black Dragon",
-    "caste": "Monsters & Beasts",
-    "multiplayer_cost": 2100,
+    "name": "Feral Manticore",
+    "caste": "Monster",
+    "multiplayer_cost": 800,
     "unit_size": 1,
-    "unit_card": "wh2_main_def_black_dragon",
     "category_icon": "dragon",
-    "limited_type": "War Beasts",
-    "isSE": true,
-    "isSEM": true,
-    "hasBreath": true
+    "unit_card": "wh2_dlc10_def_mon_feral_manticore",
+    "ror": false,
+    "category": "Flying Monster",
+    "battle_mounts": null
   },
   {
-    "unitid": 57,
+    "name": "Kharibdyss",
+    "caste": "Monster",
+    "multiplayer_cost": 1700,
+    "unit_size": 1,
+    "category_icon": "wh2_main_def_mon_war_hydra",
+    "unit_card": "wh2_dlc10_def_kharibdyss",
+    "ror": false,
+    "category": "Monster",
+    "abilities": [{ "name": "Abyssal Howl" }],
+    "battle_mounts": null
+  },
+  {
     "name": "Bloodwrack Medusa",
-    "caste": "Missile Monsters & Beasts",
+    "caste": "Monster",
     "multiplayer_cost": 1300,
     "unit_size": 1,
-    "unit_card": "wh2_dlc14_def_mon_bloodwrack_medusa",
     "category_icon": "wh2_dlc14_def_medusa",
-    "limited_type": "War Beasts",
-    "isMissile": true,
-    "isSE": true,
-    "isSEM": true,
-    "baseUnit": "Bloodwrack Medusa"
+    "unit_card": "wh2_dlc14_def_mon_bloodwrack_medusa",
+    "ror": false,
+    "category": "Missile Monster",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 58,
     "name": "The Siren of Red Ruin (Bloodwrack Medusa)",
-    "caste": "Missile Monsters & Beasts",
+    "caste": "Monster",
     "multiplayer_cost": 1650,
     "unit_size": 1,
-    "unit_card": "wh2_dlc14_def_mon_bloodwrack_medusa_ror",
     "category_icon": "wh2_dlc14_def_medusa",
-    "limited_type": "War Beasts",
-    "isMissile": true,
-    "isSE": true,
-    "isSEM": true,
-    "baseUnit": "Bloodwrack Medusa",
-    "basePrice": 1300,
-    "ror": true
+    "unit_card": "wh2_dlc14_def_mon_bloodwrack_medusa_ror",
+    "ror": true,
+    "category": "Missile Monster",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Wail of Malice" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   },
   {
-    "unitid": 59,
-    "name": "Reaper Bolt Throwers",
-    "caste": "Artillery & War Machines",
-    "multiplayer_cost": 700,
-    "unit_size": 3,
-    "unit_card": "wh2_main_def_reaper_bolt_thrower",
-    "category_icon": "wh_dlc06_dwf_bolt_thrower",
-    "limited_type": "Artillery",
-    "isMissile": true
+    "name": "Black Dragon",
+    "caste": "Monster",
+    "multiplayer_cost": 2100,
+    "unit_size": 1,
+    "category_icon": "dragon",
+    "unit_card": "wh2_main_def_black_dragon",
+    "ror": false,
+    "category": "Flying Monster",
+    "abilities": [{ "name": "Noxious Breath" }],
+    "battle_mounts": null
   },
   {
-    "unitid": 60,
+    "name": "War Hydra",
+    "caste": "Monster",
+    "multiplayer_cost": 1650,
+    "unit_size": 1,
+    "category_icon": "wh2_main_def_mon_war_hydra",
+    "unit_card": "wh2_main_def_war_hydra",
+    "ror": false,
+    "category": "Monster",
+    "abilities": [
+      { "name": "Fiery Breath" },
+      { "name": "Another Takes its Place" },
+      { "name": "Regeneration" }
+    ],
+    "battle_mounts": null
+  },
+  {
     "name": "Bloodwrack Shrine",
-    "caste": "Artillery & War Machines",
+    "caste": "War Machine",
     "multiplayer_cost": 1800,
     "unit_size": 1,
-    "unit_card": "wh2_dlc14_def_veh_bloodwrack_shrine",
     "category_icon": "magic_chariot",
-    "limited_type": "Chariots",
-    "isMissile": true,
-    "isSE": true,
-    "isSEM": true
+    "unit_card": "wh2_dlc14_def_veh_bloodwrack_shrine",
+    "ror": false,
+    "category": "Magic Chariot",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Aura of Agony" },
+      { "name": "Aura of Ardour" },
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
+  },
+  {
+    "name": "Reaper Bolt Throwers",
+    "caste": "War Machine",
+    "multiplayer_cost": 700,
+    "unit_size": 3,
+    "category_icon": "wh_dlc06_dwf_bolt_thrower",
+    "unit_card": "wh2_main_def_reaper_bolt_thrower",
+    "ror": false,
+    "category": "Field Artillery",
+    "is_missile": true,
+    "abilities": [
+      { "name": "Murderous Prowess" },
+      { "name": "Murderous Prowess Indicator" }
+    ],
+    "battle_mounts": null
   }
 ]

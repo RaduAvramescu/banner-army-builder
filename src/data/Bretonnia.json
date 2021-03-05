@@ -5,7 +5,9 @@
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "infantry_sword_great",
-    "unit_card": "brt_repanse_de_lyonesse_0",
+    "unit_card": "wh2_dlc14_brt_cha_repanse_de_lyonesse",
+    "ror": false,
+    "category": "Greatsword Infantry",
     "abilities": [
       { "name": "Halo of Maidenly Wrath" },
       { "name": "Fleur de Lys Banner" }
@@ -24,7 +26,9 @@
     "multiplayer_cost": 750,
     "unit_size": 1,
     "category_icon": "infantry_spear",
-    "unit_card": "brt_alberic_bordeleaux_0",
+    "unit_card": "wh_dlc07_brt_cha_alberic_bordeleaux",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "Heroic Killing Blow" },
       { "name": "Spirit of the Tempest" },
@@ -51,7 +55,9 @@
     "multiplayer_cost": 550,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
-    "unit_card": "brt_ch_fay_enchantress_0",
+    "unit_card": "wh_dlc07_brt_fay_enchantress",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Favour of the Fay" },
       { "name": "Mist of the Lady" },
@@ -77,7 +83,9 @@
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
-    "unit_card": "brt_prophetess_campaign_02_0",
+    "unit_card": "wh_dlc07_brt_prophetess",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Arcane Conduit" }, { "name": "Aura of the Lady" }],
     "spells": [
       { "name": "Life Bloom" },
@@ -108,7 +116,9 @@
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
-    "unit_card": "brt_prophetess_campaign_03_0",
+    "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Arcane Conduit" }, { "name": "Aura of the Lady" }],
     "spells": [
       { "name": "Wild Heart" },
@@ -139,7 +149,9 @@
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh_main_lore_heavens",
-    "unit_card": "brt_prophetess_campaign_04_0",
+    "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Arcane Conduit" }, { "name": "Aura of the Lady" }],
     "spells": [
       { "name": "Roiling Skies" },
@@ -170,7 +182,9 @@
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "infantry_sword",
-    "unit_card": "brt_ch_king_louen_leoncoeur_0",
+    "unit_card": "wh_main_brt_king_louren",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "The Lion's Shield" },
       { "name": "Foe-Seeker" },
@@ -204,7 +218,9 @@
     "multiplayer_cost": 600,
     "unit_size": 1,
     "category_icon": "infantry_sword",
-    "unit_card": "brt_lords_campaign_01_0",
+    "unit_card": "wh_main_brt_lord",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Deadly Onslaught" },
       { "name": "Foe-Seeker" },
@@ -235,6 +251,8 @@
     "unit_size": 1,
     "category_icon": "wh2_pro08_cha_felix",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Helping Hand" },
       { "name": "Blood Oath" },
@@ -250,6 +268,8 @@
     "unit_size": 1,
     "category_icon": "wh2_pro08_cha_gotrek",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Gotrek's Doom" },
       { "name": "Heroic Fortitude" },
@@ -265,7 +285,9 @@
     "multiplayer_cost": 250,
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
-    "unit_card": "brt_damsel_campaign_01_0",
+    "unit_card": "wh_main_brt_damsel",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Aura of the Lady" }],
     "spells": [
       { "name": "Wild Heart" },
@@ -287,7 +309,9 @@
     "multiplayer_cost": 250,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
-    "unit_card": "brt_damsel_campaign_02_0",
+    "unit_card": "wh_main_brt_damsel",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Aura of the Lady" }],
     "spells": [
       { "name": "Life Bloom" },
@@ -309,7 +333,9 @@
     "multiplayer_cost": 1800,
     "unit_size": 1,
     "category_icon": "wh_dlc07_brt_green_knight",
-    "unit_card": "brt_ch_green_knight_0",
+    "unit_card": "wh_dlc07_brt_green_knight",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Dolorous Blade" },
       { "name": "Sacred Guardian" },
@@ -323,7 +349,9 @@
     "multiplayer_cost": 250,
     "unit_size": 1,
     "category_icon": "wh_main_lore_heavens",
-    "unit_card": "brt_damsel_campaign_01_0",
+    "unit_card": "wh_main_brt_damsel",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Aura of the Lady" }],
     "spells": [
       { "name": "Roiling Skies" },
@@ -345,7 +373,9 @@
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh_main_brt_champion",
-    "unit_card": "brt_paladin_campaign_01_0",
+    "unit_card": "wh_main_brt_paladin",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Guardian" },
       { "name": "Deadly Onslaught" },
@@ -371,6 +401,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh_dlc07_brt_battle_pilgrims",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -381,6 +413,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword_great",
     "unit_card": "wh_dlc07_brt_foot_squires",
+    "ror": false,
+    "category": "Greatsword Infantry",
     "battle_mounts": null
   },
   {
@@ -390,6 +424,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc07_brt_grail_relique",
     "unit_card": "wh_dlc07_brt_grail_reliquae",
+    "ror": false,
+    "category": "Support Infantry",
     "abilities": [
       { "name": "Icon of Devotion" },
       { "name": "The Blessing of the Lady" },
@@ -404,6 +440,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh_dlc07_brt_men_at_arms",
+    "ror": false,
+    "category": "Sword Infantry",
     "battle_mounts": null
   },
   {
@@ -413,6 +451,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh_dlc07_brt_men_at_arms_shields",
+    "ror": false,
+    "category": "Sword Infantry",
     "battle_mounts": null
   },
   {
@@ -422,6 +462,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh_dlc07_brt_spearmen_at_arms",
+    "ror": false,
+    "category": "Spear Infantry",
     "battle_mounts": null
   },
   {
@@ -431,6 +473,8 @@
     "unit_size": 120,
     "category_icon": "infantry_axe",
     "unit_card": "wh_dlc07_brt_peasant_mob",
+    "ror": false,
+    "category": "Axe Infantry",
     "battle_mounts": null
   },
   {
@@ -440,6 +484,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh_main_brt_men_at_arms_halberd",
+    "ror": false,
+    "category": "Halberd Infantry",
     "battle_mounts": null
   },
   {
@@ -449,6 +495,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh_main_brt_spearmen_at_arms_shield",
+    "ror": false,
+    "category": "Spear Infantry",
     "battle_mounts": null
   },
   {
@@ -458,6 +506,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh_pro04_brt_ror_battle_pilgrims",
+    "ror": true,
+    "category": "Sword Infantry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -468,6 +518,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh_pro04_brt_ror_foot_squires",
+    "ror": true,
+    "category": "Halberd Infantry",
     "battle_mounts": null
   },
   {
@@ -477,6 +529,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc07_brt_bowmen_fire",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -486,6 +541,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc07_brt_bowmen_pox",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -495,6 +553,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_main_brt_bowmen",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -504,6 +565,8 @@
     "unit_size": 45,
     "category_icon": "cavalry",
     "unit_card": "wh_dlc07_brt_grail_guardians",
+    "ror": false,
+    "category": "Cavalry",
     "abilities": [{ "name": "Lance" }, { "name": "The Blessing of the Lady" }],
     "battle_mounts": null
   },
@@ -514,6 +577,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_dlc07_brt_knights_errant",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Lance" }],
     "battle_mounts": null
   },
@@ -524,6 +589,8 @@
     "unit_size": 45,
     "category_icon": "cavalry",
     "unit_card": "wh_dlc07_brt_questing_knights",
+    "ror": false,
+    "category": "Cavalry",
     "abilities": [{ "name": "Lance" }],
     "battle_mounts": null
   },
@@ -534,6 +601,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_main_brt_grail_knights",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Lance" }, { "name": "The Blessing of the Lady" }],
     "battle_mounts": null
   },
@@ -544,6 +613,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_main_brt_knights_realm",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Lance" }],
     "battle_mounts": null
   },
@@ -554,6 +625,8 @@
     "unit_size": 45,
     "category_icon": "cavalry",
     "unit_card": "wh_main_brt_mounted_yeomen",
+    "ror": false,
+    "category": "Cavalry",
     "battle_mounts": null
   },
   {
@@ -563,6 +636,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_pro04_brt_ror_knights_errant",
+    "ror": true,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Lance" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -573,6 +648,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_pro04_brt_ror_knights_realm",
+    "ror": true,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Lance" }],
     "battle_mounts": null
   },
@@ -583,6 +660,8 @@
     "unit_size": 45,
     "category_icon": "cavalry",
     "unit_card": "wh_pro04_brt_ror_questing_knights",
+    "ror": true,
+    "category": "Cavalry",
     "abilities": [{ "name": "Lance" }, { "name": "The Blessing of the Lady" }],
     "battle_mounts": null
   },
@@ -593,6 +672,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_bow",
     "unit_card": "wh_main_brt_mounted_yeomen_archers",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -602,6 +684,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_bow",
     "unit_card": "wh_pro04_brt_ror_mounted_yeomen_archers",
+    "ror": true,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -611,6 +696,8 @@
     "unit_size": 6,
     "category_icon": "wh2_dlc15_griffon_knights",
     "unit_card": "wh_dlc07_brt_royal_hippogryph_knights",
+    "ror": false,
+    "category": "Flying Monstrous Cavalry",
     "abilities": [{ "name": "The Blessing of the Lady" }],
     "battle_mounts": null
   },
@@ -621,6 +708,8 @@
     "unit_size": 18,
     "category_icon": "cavalry_flying",
     "unit_card": "wh_dlc07_brt_royal_pegasus_knights",
+    "ror": false,
+    "category": "Flying Cavalry",
     "abilities": [{ "name": "The Blessing of the Lady" }],
     "battle_mounts": null
   },
@@ -631,6 +720,8 @@
     "unit_size": 18,
     "category_icon": "cavalry_flying",
     "unit_card": "wh_main_brt_pegasus_knights",
+    "ror": false,
+    "category": "Flying Cavalry",
     "battle_mounts": null
   },
   {
@@ -640,6 +731,9 @@
     "unit_size": 3,
     "category_icon": "catapult",
     "unit_card": "wh_dlc07_brt_blessed_field_trebuchet",
+    "ror": false,
+    "category": "Catapult",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -649,6 +743,9 @@
     "unit_size": 3,
     "category_icon": "catapult",
     "unit_card": "wh_main_brt_trebuchet",
+    "ror": false,
+    "category": "Catapult",
+    "is_missile": true,
     "battle_mounts": null
   }
 ]

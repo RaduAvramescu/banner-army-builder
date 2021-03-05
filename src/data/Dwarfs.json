@@ -6,6 +6,8 @@
     "unit_size": 1,
     "category_icon": "wh2_pro08_cha_felix",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Helping Hand" },
       { "name": "Blood Oath" },
@@ -21,6 +23,8 @@
     "unit_size": 1,
     "category_icon": "wh2_pro08_cha_gotrek",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Gotrek's Doom" },
       { "name": "Heroic Fortitude" },
@@ -32,11 +36,13 @@
   },
   {
     "name": "Belegar Ironhammer",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "infantry_hammer_great",
     "unit_card": "wh_dlc06_dwf_belegar",
+    "ror": false,
+    "category": "Hammer Infantry",
     "abilities": [
       { "name": "Mighty Oath Stone" },
       { "name": "Revenge Incarnate" },
@@ -46,11 +52,13 @@
   },
   {
     "name": "Runelord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "wh_main_dwf_runesmith",
     "unit_card": "wh_dlc06_dwf_runelord",
+    "ror": false,
+    "category": "Support Specialist",
     "abilities": [
       { "name": "Master Rune of Negation" },
       { "name": "Master Rune of Oath & Steel" },
@@ -68,11 +76,13 @@
   },
   {
     "name": "Thorgrim Grudgebearer",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1500,
     "unit_size": 1,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh_main_dwf_king_thorgrim",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [
       { "name": "Oath of Vengeance" },
       { "name": "Foe-Seeker" },
@@ -83,21 +93,25 @@
   },
   {
     "name": "Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 900,
     "unit_size": 1,
     "category_icon": "infantry_axe",
     "unit_card": "wh_main_dwf_lord",
+    "ror": false,
+    "category": "Axe Infantry",
     "abilities": [{ "name": "Foe-Seeker" }, { "name": "Stand Your Ground!" }],
     "battle_mounts": null
   },
   {
     "name": "Ungrim Ironfist",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1250,
     "unit_size": 1,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh_main_dwf_ungrim",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [
       { "name": "Red Ruin" },
       { "name": "Deadly Onslaught" },
@@ -108,11 +122,13 @@
   },
   {
     "name": "Grombrindal - The White Dwarf",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1500,
     "unit_size": 1,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh_pro01_dwf_grombrinal",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [
       { "name": "Foe-Seeker" },
       { "name": "Flash Bomb" },
@@ -127,6 +143,9 @@
     "unit_size": 1,
     "category_icon": "wh_main_dwf_master_engineer",
     "unit_card": "wh_main_dwf_master_engineer",
+    "ror": false,
+    "category": "Missile Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Ballistics Calibration" },
       { "name": "Extra Powder" },
@@ -141,6 +160,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_dwf_runesmith",
     "unit_card": "wh_main_dwf_rune_smith",
+    "ror": false,
+    "category": "Support Specialist",
     "abilities": [
       { "name": "Forgefire" },
       { "name": "Rune of Negation" },
@@ -156,6 +177,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_dwf_champion",
     "unit_card": "wh_main_dwf_thane",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [{ "name": "Deadly Onslaught" }, { "name": "Foe-Seeker" }],
     "battle_mounts": null
   },
@@ -166,6 +189,8 @@
     "unit_size": 60,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh2_dlc10_dwf_giant_slayers",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "abilities": [{ "name": "Deathblow" }],
     "battle_mounts": null
   },
@@ -176,6 +201,8 @@
     "unit_size": 60,
     "category_icon": "infantry_axe",
     "unit_card": "wh_dlc06_dwf_dragonback_slayers",
+    "ror": true,
+    "category": "Axe Infantry",
     "abilities": [
       { "name": "Power of the Dragonback" },
       { "name": "Deathblow" }
@@ -189,6 +216,9 @@
     "unit_size": 75,
     "category_icon": "infantry_pickaxe",
     "unit_card": "wh_dlc06_dwf_ekrund_miners",
+    "ror": true,
+    "category": "Pickaxe Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -199,6 +229,9 @@
     "unit_size": 90,
     "category_icon": "infantry_axe",
     "unit_card": "wh_dlc06_dwf_norgrimlings_ironbreakers",
+    "ror": true,
+    "category": "Axe Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -208,6 +241,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh_dlc06_dwf_old_grumblers",
+    "ror": true,
+    "category": "Great Axe Infantry",
     "abilities": [{ "name": "The Old Grumblers" }],
     "battle_mounts": null
   },
@@ -218,6 +253,8 @@
     "unit_size": 75,
     "category_icon": "infantry_hammer_great",
     "unit_card": "wh_dlc06_dwf_peak_gate_guard",
+    "ror": true,
+    "category": "Hammer Infantry",
     "battle_mounts": null
   },
   {
@@ -227,6 +264,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe",
     "unit_card": "wh_dlc06_dwf_warriors_dragonfire_pass",
+    "ror": true,
+    "category": "Axe Infantry",
     "battle_mounts": null
   },
   {
@@ -236,6 +275,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe",
     "unit_card": "wh_main_dwf_warriors",
+    "ror": false,
+    "category": "Axe Infantry",
     "battle_mounts": null
   },
   {
@@ -245,6 +286,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh_main_dwf_warriors_great_weapons",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "battle_mounts": null
   },
   {
@@ -254,6 +297,8 @@
     "unit_size": 75,
     "category_icon": "infantry_hammer_great",
     "unit_card": "wh_main_dwf_hammerers",
+    "ror": false,
+    "category": "Hammer Infantry",
     "battle_mounts": null
   },
   {
@@ -263,6 +308,9 @@
     "unit_size": 75,
     "category_icon": "infantry_axe",
     "unit_card": "wh_main_dwf_ironbreakers",
+    "ror": false,
+    "category": "Axe Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -272,6 +320,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe",
     "unit_card": "wh_main_dwf_longbeards",
+    "ror": false,
+    "category": "Axe Infantry",
     "battle_mounts": null
   },
   {
@@ -281,6 +331,8 @@
     "unit_size": 75,
     "category_icon": "infantry_axe_great",
     "unit_card": "wh_main_dwf_longbeards_great_weapons",
+    "ror": false,
+    "category": "Great Axe Infantry",
     "battle_mounts": null
   },
   {
@@ -290,6 +342,8 @@
     "unit_size": 75,
     "category_icon": "infantry_pickaxe",
     "unit_card": "wh_main_dwf_miners",
+    "ror": false,
+    "category": "Pickaxe Infantry",
     "battle_mounts": null
   },
   {
@@ -299,6 +353,9 @@
     "unit_size": 75,
     "category_icon": "infantry_pickaxe",
     "unit_card": "wh_main_dwf_miners_blasting_charges",
+    "ror": false,
+    "category": "Pickaxe Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -308,6 +365,8 @@
     "unit_size": 60,
     "category_icon": "infantry_axe",
     "unit_card": "wh_main_dwf_slayers",
+    "ror": false,
+    "category": "Axe Infantry",
     "abilities": [{ "name": "Deathblow" }],
     "battle_mounts": null
   },
@@ -318,6 +377,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc06_dwf_rangers_bugmans",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Liquid Fortification" }],
     "battle_mounts": null
   },
@@ -328,6 +390,9 @@
     "unit_size": 21,
     "category_icon": "dwf_irondrakes",
     "unit_card": "wh_dlc06_dwf_norgrimlings_irondrakes",
+    "ror": true,
+    "category": "Flamethrower Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -337,6 +402,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc06_dwf_rangers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -346,6 +414,9 @@
     "unit_size": 60,
     "category_icon": "wh_dlc06_dwf_throwing_axe",
     "unit_card": "wh_dlc06_dwf_rangers_great_axe",
+    "ror": false,
+    "category": "Close-Quarters Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -355,6 +426,9 @@
     "unit_size": 60,
     "category_icon": "wh_dlc06_dwf_throwing_axe",
     "unit_card": "wh_dlc06_dwf_ulthars_raiders",
+    "ror": true,
+    "category": "Close-Quarters Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Marked by Ulthar" }],
     "battle_mounts": null
   },
@@ -365,6 +439,9 @@
     "unit_size": 21,
     "category_icon": "dwf_irondrakes",
     "unit_card": "wh_main_dwf_irondrakes",
+    "ror": false,
+    "category": "Flamethrower Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -374,6 +451,9 @@
     "unit_size": 21,
     "category_icon": "dwf_irondrakes_torpedo",
     "unit_card": "wh_main_dwf_irondrakes_troll_hammer",
+    "ror": false,
+    "category": "Torpedo Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -383,6 +463,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_main_dwf_quarrellers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -392,6 +475,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_main_dwf_quarrellers_great_weapons",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -401,6 +487,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh_main_dwf_thunderers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -410,6 +499,9 @@
     "unit_size": 3,
     "category_icon": "wh_dlc06_dwf_bolt_thrower",
     "unit_card": "wh_dlc06_dwf_bolt_thrower",
+    "ror": false,
+    "category": "Field Artillery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -419,6 +511,9 @@
     "unit_size": 3,
     "category_icon": "catapult",
     "unit_card": "wh_dlc06_dwf_gob_lobber",
+    "ror": true,
+    "category": "Catapult",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -428,6 +523,9 @@
     "unit_size": 1,
     "category_icon": "dwf_gyrocopter",
     "unit_card": "wh_dlc06_dwf_skyhammer",
+    "ror": true,
+    "category": "Flying War Machine",
+    "is_missile": true,
     "abilities": [{ "name": "Skyhammer Bomb" }],
     "battle_mounts": null
   },
@@ -438,6 +536,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh_main_dwf_cannon",
+    "ror": false,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -447,6 +548,9 @@
     "unit_size": 3,
     "category_icon": "flame_cannon",
     "unit_card": "wh_main_dwf_flame_cannon",
+    "ror": false,
+    "category": "Field Gun",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -456,6 +560,9 @@
     "unit_size": 3,
     "category_icon": "catapult",
     "unit_card": "wh_main_dwf_grudge_thrower",
+    "ror": false,
+    "category": "Catapult",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -465,6 +572,9 @@
     "unit_size": 3,
     "category_icon": "field_gun",
     "unit_card": "wh_main_dwf_organ_gun",
+    "ror": false,
+    "category": "Field Gun",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -474,6 +584,9 @@
     "unit_size": 1,
     "category_icon": "dwf_gyrocopter",
     "unit_card": "wh_main_dwf_gyrobomber",
+    "ror": false,
+    "category": "Flying War Machine",
+    "is_missile": true,
     "abilities": [{ "name": "Gyrobomber Bomb" }],
     "battle_mounts": null
   },
@@ -484,6 +597,9 @@
     "unit_size": 3,
     "category_icon": "dwf_gyrocopter",
     "unit_card": "wh_main_dwf_gyrocopter",
+    "ror": false,
+    "category": "Flying War Machine",
+    "is_missile": true,
     "abilities": [{ "name": "Gyrocopter Bomb" }],
     "battle_mounts": null
   },
@@ -494,6 +610,9 @@
     "unit_size": 3,
     "category_icon": "dwf_gyrocopter",
     "unit_card": "wh_main_dwf_gyrocopter_brimstone",
+    "ror": false,
+    "category": "Flying War Machine",
+    "is_missile": true,
     "abilities": [{ "name": "Gyrocopter Bomb" }],
     "battle_mounts": null
   }

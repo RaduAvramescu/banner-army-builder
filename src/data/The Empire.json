@@ -6,6 +6,8 @@
     "unit_size": 1,
     "category_icon": "wh2_pro08_cha_felix",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Helping Hand" },
       { "name": "Blood Oath" },
@@ -21,6 +23,8 @@
     "unit_size": 1,
     "category_icon": "wh2_pro08_cha_gotrek",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Gotrek's Doom" },
       { "name": "Heroic Fortitude" },
@@ -32,11 +36,14 @@
   },
   {
     "name": "Huntsman General",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 750,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Hybrid-Weapon Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Arrow of Aqshy" },
       { "name": "Hail of Fire" },
@@ -46,11 +53,14 @@
   },
   {
     "name": "Markus Wulfhart",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Hybrid-Weapon Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Hunter's Snare" },
       { "name": "Focused Shot" },
@@ -60,11 +70,13 @@
   },
   {
     "name": "Boris Todbringer",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "wh_dlc03_emp_boris_todbringer",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Crush the Weak" },
       { "name": "Deadly Onslaught" },
@@ -91,11 +103,13 @@
   },
   {
     "name": "Arch Lector",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 550,
     "unit_size": 1,
     "category_icon": "infantry_hammer_great",
     "unit_card": "wh_dlc04_emp_arch_lector",
+    "ror": false,
+    "category": "Hammer Infantry",
     "abilities": [
       { "name": "Divine Power" },
       { "name": "Grand Hammer of Sigmar" },
@@ -114,11 +128,13 @@
   },
   {
     "name": "Volkmar the Grim",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 750,
     "unit_size": 1,
     "category_icon": "infantry_hammer_great",
     "unit_card": "wh_dlc04_emp_volkmar",
+    "ror": false,
+    "category": "Hammer Infantry",
     "abilities": [
       { "name": "Divine Power" },
       { "name": "Grand Hammer of Sigmar" },
@@ -142,11 +158,13 @@
   },
   {
     "name": "Balthasar Gelt",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 350,
     "unit_size": 1,
     "category_icon": "wh_main_lore_metal",
     "unit_card": "wh_main_emp_balthasar",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Arcane Conduit" }, { "name": "Evasion" }],
     "spells": [
       { "name": "Metalshifting" },
@@ -173,11 +191,13 @@
   },
   {
     "name": "General of the Empire",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 600,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "wh_main_emp_general",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Foe-Seeker" },
       { "name": "Stand Your Ground!" },
@@ -204,11 +224,13 @@
   },
   {
     "name": "Karl Franz",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1100,
     "unit_size": 1,
     "category_icon": "infantry_hammer_great",
     "unit_card": "wh_main_emp_karl_franz",
+    "ror": false,
+    "category": "Hammer Infantry",
     "abilities": [
       { "name": "Foe-Seeker" },
       { "name": "Stand Your Ground!" },
@@ -240,6 +262,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_death",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "spells": [
       { "name": "Life Leeching" },
       { "name": "Aspect of the Dread Knight" },
@@ -270,6 +294,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
     "unit_card": "wh_dlc03_emp_wizard_beasts",
+    "ror": false,
+    "category": "Wizard",
     "spells": [
       { "name": "Wild Heart" },
       { "name": "Flock of Doom" },
@@ -305,6 +331,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
     "unit_card": "wh_dlc05_emp_wizard_life",
+    "ror": false,
+    "category": "Wizard",
     "spells": [
       { "name": "Life Bloom" },
       { "name": "Awakening of the Wood" },
@@ -335,6 +363,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "wh_dlc05_emp_wizard_shadows",
+    "ror": false,
+    "category": "Wizard",
     "spells": [
       { "name": "Smoke & Mirrors" },
       { "name": "Melkoth's Mystifying Miasma" },
@@ -365,6 +395,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_emp_champion",
     "unit_card": "wh_main_emp_captain",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [{ "name": "Foe-Seeker" }, { "name": "Hold the Line!" }],
     "battle_mounts": [
       { "mount_name": "Warhorse", "price": 200, "icon_name": "mount_warhorse" },
@@ -387,6 +419,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_emp_dignitary",
     "unit_card": "wh_main_emp_warrior_priest",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Divine Power" },
       { "name": "Benediction" },
@@ -410,6 +444,9 @@
     "unit_size": 1,
     "category_icon": "wh_main_emp_spy",
     "unit_card": "wh_main_emp_witch_hunter",
+    "ror": false,
+    "category": "Missile Specialist",
+    "is_missile": true,
     "abilities": [{ "name": "Accusation" }, { "name": "Slippery" }],
     "battle_mounts": null
   },
@@ -420,6 +457,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_fire",
     "unit_card": "wh_main_emp_wizard_fire",
+    "ror": false,
+    "category": "Wizard",
     "spells": [
       { "name": "Kindleflame" },
       { "name": "Cascading Fire Cloak" },
@@ -450,6 +489,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_heavens",
     "unit_card": "wh_main_emp_wizard_heavens",
+    "ror": false,
+    "category": "Wizard",
     "spells": [
       { "name": "Roiling Skies" },
       { "name": "Chain Lightning" },
@@ -480,6 +521,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_light",
     "unit_card": "wh_main_emp_wizard_light",
+    "ror": false,
+    "category": "Wizard",
     "spells": [
       { "name": "Exorcism" },
       { "name": "Banishment" },
@@ -510,6 +553,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword_great",
     "unit_card": "wh2_dlc13_emp_greatswords_ror",
+    "ror": false,
+    "category": "Greatsword Infantry",
     "abilities": [{ "name": "Bathed in Blood" }],
     "battle_mounts": null
   },
@@ -520,6 +565,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh2_dlc13_emp_halberdiers_ror",
+    "ror": false,
+    "category": "Halberd Infantry",
     "abilities": [{ "name": "Rowdy" }],
     "battle_mounts": null
   },
@@ -530,6 +577,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_dlc13_emp_spearmen_ror",
+    "ror": false,
+    "category": "Spear Infantry",
     "battle_mounts": null
   },
   {
@@ -539,6 +588,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_dlc13_emp_swordsmen_ror",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -549,6 +600,8 @@
     "unit_size": 90,
     "category_icon": "wh_dlc04_flagellant",
     "unit_card": "wh_dlc04_emp_flagellants",
+    "ror": false,
+    "category": "Mace Infantry",
     "abilities": [{ "name": "Strength of the Penitent" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -559,6 +612,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh_dlc04_emp_sigmars_sons",
+    "ror": true,
+    "category": "Sword Infantry",
     "battle_mounts": null
   },
   {
@@ -568,6 +623,8 @@
     "unit_size": 120,
     "category_icon": "wh_dlc04_flagellant",
     "unit_card": "wh_dlc04_emp_tattersouls",
+    "ror": true,
+    "category": "Mace Infantry",
     "abilities": [{ "name": "Strength of the Penitent" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -578,6 +635,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword_great",
     "unit_card": "wh_main_emp_greatswords",
+    "ror": false,
+    "category": "Greatsword Infantry",
     "battle_mounts": null
   },
   {
@@ -587,6 +646,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh_main_emp_halberd",
+    "ror": false,
+    "category": "Halberd Infantry",
     "battle_mounts": null
   },
   {
@@ -596,6 +657,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh_main_emp_spearmen",
+    "ror": false,
+    "category": "Spear Infantry",
     "battle_mounts": null
   },
   {
@@ -605,6 +668,8 @@
     "unit_size": 90,
     "category_icon": "infantry_spear",
     "unit_card": "wh_main_emp_spearmen_shield",
+    "ror": false,
+    "category": "Spear Infantry",
     "battle_mounts": null
   },
   {
@@ -614,6 +679,8 @@
     "unit_size": 90,
     "category_icon": "infantry_sword",
     "unit_card": "wh_main_emp_swordsmen",
+    "ror": false,
+    "category": "Sword Infantry",
     "battle_mounts": null
   },
   {
@@ -623,6 +690,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc13_emp_archers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -632,6 +702,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc13_emp_archers_ror",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -641,6 +714,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc13_emp_crossbowmen_ror",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -650,6 +726,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh2_dlc13_emp_handgunners_ror",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -659,6 +738,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc13_emp_huntsmen",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -668,6 +750,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh2_dlc13_emp_huntsmen_ror",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -677,6 +762,9 @@
     "unit_size": 90,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh_dlc04_emp_free_company_militia",
+    "ror": false,
+    "category": "Close-Quarters Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -686,6 +774,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh_dlc04_emp_silver_bullets",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -695,6 +786,9 @@
     "unit_size": 90,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh_dlc04_emp_stirlands_revenge",
+    "ror": true,
+    "category": "Close-Quarters Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -704,6 +798,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_main_emp_crossbowmen",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -713,6 +810,9 @@
     "unit_size": 68,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh_main_emp_handgunners",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -722,6 +822,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh2_dlc13_emp_empire_knights_everlasting_light_ror",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Blinding Radiance" }],
     "battle_mounts": null
   },
@@ -732,6 +834,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh2_dlc13_emp_empire_knights_morr_ror",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Grim Resolve" }],
     "battle_mounts": null
   },
@@ -742,6 +846,8 @@
     "unit_size": 45,
     "category_icon": "cavalry",
     "unit_card": "wh2_dlc13_emp_empire_knights_ostland_ror",
+    "ror": false,
+    "category": "Cavalry",
     "battle_mounts": null
   },
   {
@@ -751,6 +857,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_dlc04_emp_knights_blazing_sun",
+    "ror": false,
+    "category": "Shock Cavalry",
     "battle_mounts": null
   },
   {
@@ -760,6 +868,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_dlc04_emp_zintlers",
+    "ror": true,
+    "category": "Shock Cavalry",
     "battle_mounts": null
   },
   {
@@ -769,6 +879,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_main_emp_empire_knights",
+    "ror": false,
+    "category": "Shock Cavalry",
     "battle_mounts": null
   },
   {
@@ -778,6 +890,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh_main_emp_reiksguard",
+    "ror": false,
+    "category": "Shock Cavalry",
     "battle_mounts": null
   },
   {
@@ -787,6 +901,9 @@
     "unit_size": 36,
     "category_icon": "missile_cavalry_rifle",
     "unit_card": "wh2_dlc13_emp_outriders_ror",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -796,6 +913,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_rifle",
     "unit_card": "wh2_dlc13_emp_pistoliers_ror",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -805,6 +925,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_rifle",
     "unit_card": "wh_main_emp_outriders",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -814,6 +937,9 @@
     "unit_size": 36,
     "category_icon": "missile_cavalry_rifle",
     "unit_card": "wh_main_emp_outriders_grenade_launcher",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -823,6 +949,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_rifle",
     "unit_card": "wh_main_emp_pistoliers_brace_pistols",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -832,6 +961,9 @@
     "unit_size": 1,
     "category_icon": "emp_steam_tank",
     "unit_card": "wh2_dlc13_emp_steam_tank_ror",
+    "ror": false,
+    "category": "War Machine",
+    "is_missile": true,
     "abilities": [{ "name": "Emergency Vent" }, { "name": "Kaboom!" }],
     "battle_mounts": null
   },
@@ -842,6 +974,9 @@
     "unit_size": 3,
     "category_icon": "missile_chariot",
     "unit_card": "wh2_dlc13_emp_war_wagon",
+    "ror": false,
+    "category": "Missile Chariot",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -851,6 +986,9 @@
     "unit_size": 3,
     "category_icon": "missile_chariot",
     "unit_card": "wh2_dlc13_emp_war_wagon_mortar",
+    "ror": false,
+    "category": "Missile Chariot",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -860,6 +998,9 @@
     "unit_size": 3,
     "category_icon": "missile_chariot",
     "unit_card": "wh2_dlc13_emp_war_wagon_ror",
+    "ror": true,
+    "category": "Missile Chariot",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -869,6 +1010,9 @@
     "unit_size": 1,
     "category_icon": "magic_chariot",
     "unit_card": "wh_dlc04_emp_templehof_luminark",
+    "ror": true,
+    "category": "Magic Chariot",
+    "is_missile": true,
     "abilities": [
       { "name": "Net of Amyntok" },
       { "name": "Locus of Hysh" },
@@ -883,6 +1027,9 @@
     "unit_size": 1,
     "category_icon": "magic_chariot",
     "unit_card": "wh_main_emp_luminark",
+    "ror": false,
+    "category": "Magic Chariot",
+    "is_missile": true,
     "abilities": [
       { "name": "Locus of Hysh" },
       { "name": "Aura of Protection" }
@@ -896,6 +1043,9 @@
     "unit_size": 1,
     "category_icon": "emp_steam_tank",
     "unit_card": "wh_main_emp_steamtank",
+    "ror": false,
+    "category": "War Machine",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -905,6 +1055,8 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc15_griffon_knights",
     "unit_card": "wh_dlc04_emp_royal_gryphites",
+    "ror": true,
+    "category": "Monstrous Shock Cavalry",
     "battle_mounts": null
   },
   {
@@ -914,6 +1066,8 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc15_griffon_knights",
     "unit_card": "wh_main_emp_demigryph_knights",
+    "ror": false,
+    "category": "Monstrous Shock Cavalry",
     "battle_mounts": null
   },
   {
@@ -923,6 +1077,8 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc15_griffon_knights",
     "unit_card": "wh_main_emp_demigryph_knights_halberd",
+    "ror": false,
+    "category": "Monstrous Shock Cavalry",
     "battle_mounts": null
   },
   {
@@ -932,6 +1088,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh2_dlc13_emp_mortar_ror",
+    "ror": false,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -941,6 +1100,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh_dlc04_emp_hammer_witches",
+    "ror": true,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -950,6 +1112,9 @@
     "unit_size": 3,
     "category_icon": "emp_rocket_battery",
     "unit_card": "wh_dlc04_emp_sunmaker",
+    "ror": true,
+    "category": "Rocket Battery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -959,6 +1124,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh_main_emp_cannon",
+    "ror": false,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -968,6 +1136,9 @@
     "unit_size": 3,
     "category_icon": "field_gun",
     "unit_card": "wh_main_emp_helblaster_volley_gun",
+    "ror": false,
+    "category": "Field Gun",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -977,6 +1148,9 @@
     "unit_size": 3,
     "category_icon": "emp_rocket_battery",
     "unit_card": "wh_main_emp_helstorm_rocket",
+    "ror": false,
+    "category": "Rocket Battery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -986,6 +1160,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh_main_emp_mortar",
+    "ror": false,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "battle_mounts": null
   }
 ]

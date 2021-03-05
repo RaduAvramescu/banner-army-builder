@@ -1,11 +1,13 @@
 [
   {
     "name": "Tretch Craventail",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 750,
     "unit_size": 1,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_dlc09_skv_cha_tretch_craventail",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "\"Stay Here, I'll Get Help!\"" },
       { "name": "Tretch's Raiders" },
@@ -17,11 +19,14 @@
   },
   {
     "name": "Ikit Claw",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_ruin",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "is_missile": true,
     "abilities": [
       { "name": "Brass Orb" },
       { "name": "Unlimited Power!" },
@@ -51,11 +56,13 @@
   },
   {
     "name": "Warlock Master",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 700,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_ruin",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Brass Orb" },
       { "name": "Scurry Away!" },
@@ -86,11 +93,13 @@
   },
   {
     "name": "Deathmaster Snikch",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1050,
     "unit_size": 1,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "skv_snikch_0",
+    "ror": false,
+    "category": "Triple Sword Infantry",
     "abilities": [
       { "name": "Deathmaster's Sigil" },
       { "name": "Concealment Bombs" },
@@ -101,11 +110,14 @@
   },
   {
     "name": "Master Assassin",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 900,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Hybrid-Weapon Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Looming Dread" },
       { "name": "Concealment Bombs" },
@@ -116,11 +128,13 @@
   },
   {
     "name": "Throt the Unclean",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1000,
     "unit_size": 1,
     "category_icon": "wh2_dlc16_skv_packmaster",
     "unit_card": "wh2_dlc16_skv_throt_the_unclean",
+    "ror": false,
+    "category": "Support Specialist",
     "abilities": [
       { "name": "Beast Pack" },
       { "name": "Remouldered" },
@@ -138,11 +152,13 @@
   },
   {
     "name": "Warlord on Brood Horror",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1250,
     "unit_size": 1,
     "category_icon": "infantry_axe",
     "unit_card": "wh2_main_skv_cha_warlord",
+    "ror": false,
+    "category": "Axe Infantry",
     "abilities": [
       { "name": "Verminous Valour" },
       { "name": "Scurry Away!" },
@@ -166,11 +182,13 @@
   },
   {
     "name": "Grey Seer (Plague)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 350,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_plague",
     "unit_card": "wh2_main_skv_cha_grey_seer",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Scurry Away!" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Plague Rash" },
@@ -191,11 +209,13 @@
   },
   {
     "name": "Grey Seer (Ruin)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 350,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_ruin",
     "unit_card": "wh2_main_skv_cha_grey_seer",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Scurry Away!" }, { "name": "Arcane Conduit" }],
     "spells": [
       { "name": "Musk of Fear" },
@@ -216,11 +236,13 @@
   },
   {
     "name": "Lord Skrolk",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_plague",
     "unit_card": "wh2_main_skv_cha_lord_skrolk",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Aura of Pestilence" },
       { "name": "Scurry Away!" },
@@ -240,11 +262,13 @@
   },
   {
     "name": "Queek Headtaker",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_main_skv_cha_queek_headtaker",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Verminous Valour" },
       { "name": "Trophy Heads" },
@@ -255,11 +279,13 @@
   },
   {
     "name": "Warlord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 550,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_main_skv_cha_warlord",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Verminous Valour" },
       { "name": "Scurry Away!" },
@@ -286,6 +312,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc14_lore_stealth",
     "unit_card": "wh2_dlc14_skv_cha_eshin_sorcerer",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Concealment Bombs" }, { "name": "Scurry Away!" }],
     "spells": [
       { "name": "Toxic Rain" },
@@ -305,6 +333,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc16_skv_chieftain",
     "unit_card": "wh2_dlc16_skv_chieftain",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Guardian" },
       { "name": "Power Grab" },
@@ -325,6 +355,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc16_skv_ghoritch",
     "unit_card": "skv_ghoritch_0",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Evisceration" },
       { "name": "Warp Frenzy" },
@@ -341,6 +373,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc16_skv_packmaster",
     "unit_card": "wh2_dlc16_skv_packmaster",
+    "ror": false,
+    "category": "Support Specialist",
     "abilities": [
       { "name": "Shock Collar" },
       { "name": "Running with the Pack" },
@@ -361,6 +395,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_skv_spy",
     "unit_card": "wh2_main_skv_cha_assassin",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "Assassin's Trophy" },
       { "name": "Concealment Bombs" },
@@ -376,6 +412,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lore_plague",
     "unit_card": "wh2_main_skv_cha_plague_priest",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Scurry Away!" }, { "name": "Frenzy" }],
     "spells": [
       { "name": "Plague Rash" },
@@ -401,6 +439,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_lore_ruin",
     "unit_card": "wh2_main_skv_cha_warlock_engineer",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Doomrocket" },
       { "name": "Scurry Away!" },
@@ -424,6 +464,8 @@
     "unit_size": 120,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_dlc12_skv_inf_clanrats_shields_ror",
+    "ror": true,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -437,6 +479,8 @@
     "unit_size": 90,
     "category_icon": "wh2_main_skv_infantry_censer",
     "unit_card": "wh2_dlc12_skv_inf_plague_monk_censer_bearer_ror",
+    "ror": true,
+    "category": "Flail Infantry",
     "abilities": [
       { "name": "Rabble-Rouse" },
       { "name": "Scurry Away!" },
@@ -452,6 +496,8 @@
     "unit_size": 120,
     "category_icon": "wh2_main_skv_infantry_halberd",
     "unit_card": "wh2_dlc12_skv_inf_stormvermin_halberds_ror",
+    "ror": true,
+    "category": "Halberd Infantry",
     "abilities": [{ "name": "Guardian" }, { "name": "Strength in Numbers" }],
     "battle_mounts": null
   },
@@ -462,6 +508,8 @@
     "unit_size": 54,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "wh2_dlc14_skv_inf_death_runners_ror",
+    "ror": true,
+    "category": "Dual Sword Infantry",
     "abilities": [
       { "name": "Duck & Weave" },
       { "name": "Concealment Bombs" },
@@ -477,6 +525,8 @@
     "unit_size": 54,
     "category_icon": "wh2_dlc14_skv_infantry_guandao",
     "unit_card": "wh2_dlc14_skv_inf_eshin_triads",
+    "ror": false,
+    "category": "Guandao Infantry",
     "abilities": [
       { "name": "Concealment Bombs" },
       { "name": "Scurry Away!" },
@@ -491,6 +541,8 @@
     "unit_size": 54,
     "category_icon": "wh2_dlc14_skv_infantry_guandao",
     "unit_card": "wh2_dlc14_skv_inf_eshin_triads_ror",
+    "ror": true,
+    "category": "Guandao Infantry",
     "abilities": [
       { "name": "Doppelgang" },
       { "name": "Concealment Bombs" },
@@ -506,6 +558,8 @@
     "unit_size": 18,
     "category_icon": "wh2_dlc14_skv_warp_grinder",
     "unit_card": "wh2_dlc14_skv_inf_warp_grinder",
+    "ror": false,
+    "category": "Weapon Team",
     "abilities": [
       { "name": "Seismic Snare" },
       { "name": "Warp-Quake" },
@@ -521,6 +575,8 @@
     "unit_size": 120,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_main_skv_inf_clanrat_spearmen",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -534,6 +590,8 @@
     "unit_size": 120,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_main_skv_inf_clanrat_spearmen_shields",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -547,6 +605,8 @@
     "unit_size": 120,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_main_skv_inf_clanrats",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -560,6 +620,8 @@
     "unit_size": 120,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_main_skv_inf_clanrats_shields",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -573,6 +635,8 @@
     "unit_size": 54,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "wh2_main_skv_inf_death_runners",
+    "ror": false,
+    "category": "Dual Sword Infantry",
     "abilities": [
       { "name": "Concealment Bombs" },
       { "name": "Scurry Away!" },
@@ -587,6 +651,8 @@
     "unit_size": 90,
     "category_icon": "wh2_main_skv_infantry_censer",
     "unit_card": "wh2_main_skv_inf_plague_monk_censer_bearer",
+    "ror": false,
+    "category": "Flail Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" },
@@ -601,6 +667,8 @@
     "unit_size": 90,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "wh2_main_skv_inf_plague_monks",
+    "ror": false,
+    "category": "Dual Sword Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" },
@@ -615,6 +683,8 @@
     "unit_size": 135,
     "category_icon": "infantry_spear",
     "unit_card": "wh2_main_skv_inf_skavenslave_spearmen",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -628,6 +698,8 @@
     "unit_size": 135,
     "category_icon": "infantry_sword",
     "unit_card": "wh2_main_skv_inf_skavenslaves",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -641,6 +713,8 @@
     "unit_size": 120,
     "category_icon": "wh2_main_skv_infantry_halberd",
     "unit_card": "wh2_main_skv_inf_stormvermin_halberds",
+    "ror": false,
+    "category": "Halberd Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -654,6 +728,8 @@
     "unit_size": 120,
     "category_icon": "wh2_main_skv_infantry_sword_stormvermin",
     "unit_card": "wh2_main_skv_inf_stormvermin_shields",
+    "ror": false,
+    "category": "Sword Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -667,6 +743,9 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc11_cst_specialist_missile_infantry",
     "unit_card": "wh2_dlc12_skv_warplock_jezzails_ror_tech_lab",
+    "ror": false,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" },
@@ -681,6 +760,9 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc11_cst_specialist_missile_infantry",
     "unit_card": "wh2_dlc12_skv_ratling_gun_team",
+    "ror": false,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -694,6 +776,9 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc11_cst_specialist_missile_infantry",
     "unit_card": "wh2_dlc12_skv_ratling_gun_team_ror",
+    "ror": true,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Concealment Bombs" },
       { "name": "Scurry Away!" },
@@ -708,6 +793,9 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc11_cst_specialist_missile_infantry",
     "unit_card": "wh2_dlc12_skv_ratling_gun_team_ror_tech_lab",
+    "ror": false,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -721,6 +809,9 @@
     "unit_size": 36,
     "category_icon": "dwf_irondrakes",
     "unit_card": "wh2_dlc12_skv_warpfire_thrower_ror_tech_lab",
+    "ror": false,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [{ "name": "Strength in Numbers" }],
     "battle_mounts": null
   },
@@ -731,6 +822,9 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc11_cst_specialist_missile_infantry",
     "unit_card": "wh2_dlc12_skv_warplock_jezzails",
+    "ror": false,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -744,6 +838,9 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc11_cst_specialist_missile_infantry",
     "unit_card": "wh2_dlc12_skv_warplock_jezzails_ror",
+    "ror": true,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -757,6 +854,9 @@
     "unit_size": 9,
     "category_icon": "wh2_dlc14_skv_missile_infantry_poisoned_wind_mortar",
     "unit_card": "wh2_dlc14_skv_inf_poison_wind_mortar",
+    "ror": false,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -770,6 +870,9 @@
     "unit_size": 9,
     "category_icon": "wh2_dlc14_skv_missile_infantry_death_globe_mortar",
     "unit_card": "wh2_dlc14_skv_inf_poison_wind_mortar_ror",
+    "ror": true,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -783,6 +886,9 @@
     "unit_size": 36,
     "category_icon": "wh2_main_skv_missile_infantry_globe_death",
     "unit_card": "wh2_main_skv_inf_death_globe_bombardiers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -796,6 +902,9 @@
     "unit_size": 90,
     "category_icon": "wh2_main_missile_infantry_sling",
     "unit_card": "wh2_main_skv_inf_gutter_runner_slingers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Snare-Net" },
@@ -810,6 +919,9 @@
     "unit_size": 90,
     "category_icon": "wh2_main_missile_infantry_sling",
     "unit_card": "wh2_main_skv_inf_gutter_runner_slingers_poison",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Snare-Net" },
@@ -824,6 +936,9 @@
     "unit_size": 90,
     "category_icon": "wh2_main_skv_missile_infantry_throwing_star",
     "unit_card": "wh2_main_skv_inf_gutter_runners",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Snare-Net" },
@@ -838,6 +953,9 @@
     "unit_size": 90,
     "category_icon": "wh2_main_skv_missile_infantry_throwing_star",
     "unit_card": "wh2_main_skv_inf_gutter_runners_poison",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Snare-Net" },
@@ -852,6 +970,9 @@
     "unit_size": 90,
     "category_icon": "wh2_main_skv_missile_infantry_throwing_star",
     "unit_card": "wh2_main_skv_inf_night_runners",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -865,6 +986,9 @@
     "unit_size": 90,
     "category_icon": "wh2_main_missile_infantry_sling",
     "unit_card": "wh2_main_skv_inf_night_runners_slings",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -878,6 +1002,9 @@
     "unit_size": 36,
     "category_icon": "wh2_main_skv_missile_infantry_globe",
     "unit_card": "wh2_main_skv_inf_poison_wind_globadiers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -891,6 +1018,9 @@
     "unit_size": 105,
     "category_icon": "wh2_main_missile_infantry_sling",
     "unit_card": "wh2_main_skv_inf_skavenslave_slingers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -904,6 +1034,9 @@
     "unit_size": 24,
     "category_icon": "dwf_irondrakes",
     "unit_card": "wh2_main_skv_inf_warpfire_thrower",
+    "ror": false,
+    "category": "Weapon Team",
+    "is_missile": true,
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Strength in Numbers" }
@@ -917,6 +1050,8 @@
     "unit_size": 3,
     "category_icon": "chariot",
     "unit_card": "wh2_dlc12_skv_doom_flayers",
+    "ror": false,
+    "category": "War Machine",
     "abilities": [{ "name": "The Best Defence" }, { "name": "Scurry Away!" }],
     "battle_mounts": null
   },
@@ -927,6 +1062,8 @@
     "unit_size": 3,
     "category_icon": "chariot",
     "unit_card": "wh2_dlc12_skv_doom_flayers_ror",
+    "ror": true,
+    "category": "War Machine",
     "abilities": [{ "name": "The Best Defence" }, { "name": "Scurry Away!" }],
     "battle_mounts": null
   },
@@ -937,6 +1074,8 @@
     "unit_size": 3,
     "category_icon": "chariot",
     "unit_card": "wh2_dlc12_skv_doom_flayers_ror_tech_lab",
+    "ror": false,
+    "category": "War Machine",
     "abilities": [
       { "name": "Brass Orb" },
       { "name": "The Best Defence" },
@@ -951,6 +1090,8 @@
     "unit_size": 60,
     "category_icon": "war_beast",
     "unit_card": "wh2_dlc16_skv_wolf_rats",
+    "ror": false,
+    "category": "War Beasts",
     "abilities": [{ "name": "Scurry Away!" }],
     "battle_mounts": null
   },
@@ -961,6 +1102,8 @@
     "unit_size": 60,
     "category_icon": "war_beast",
     "unit_card": "wh2_dlc16_skv_wolf_rats_poison",
+    "ror": false,
+    "category": "War Beasts",
     "abilities": [{ "name": "Scurry Away!" }],
     "battle_mounts": null
   },
@@ -971,6 +1114,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc16_skv_mon_rat_ogres_ror",
+    "ror": true,
+    "category": "Monstrous Infantry",
     "abilities": [
       { "name": "Scurry Away!" },
       { "name": "Berserk" },
@@ -985,6 +1130,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_main_skv_mon_rat_ogres",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Scurry Away!" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -995,6 +1142,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc16_skv_brood_horror",
     "unit_card": "wh2_dlc16_skv_brood_horror",
+    "ror": false,
+    "category": "Monster",
     "abilities": [{ "name": "Frenzy" }, { "name": "Regeneration" }],
     "battle_mounts": null
   },
@@ -1005,6 +1154,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_skv_hell_pit",
     "unit_card": "wh2_dlc16_skv_mon_hell_pit_abomination_ror",
+    "ror": true,
+    "category": "Monster",
     "abilities": [
       { "name": "Fluid Injection!" },
       { "name": "The Rats Emerge" },
@@ -1020,6 +1171,8 @@
     "unit_size": 1,
     "category_icon": "giant",
     "unit_card": "wh2_dlc16_skv_rat_ogre_mutant",
+    "ror": false,
+    "category": "Monster",
     "abilities": [{ "name": "Scurry Away!" }, { "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -1030,6 +1183,8 @@
     "unit_size": 1,
     "category_icon": "giant",
     "unit_card": "wh2_dlc16_skv_ror_rat_ogre_mutant",
+    "ror": true,
+    "category": "Monster",
     "abilities": [
       { "name": "Warp Discharge" },
       { "name": "Scurry Away!" },
@@ -1044,6 +1199,8 @@
     "unit_size": 1,
     "category_icon": "wh2_main_skv_hell_pit",
     "unit_card": "wh2_main_skv_mon_hell_pit_abomination",
+    "ror": false,
+    "category": "Monster",
     "abilities": [
       { "name": "The Rats Emerge" },
       { "name": "Too Horrible to Die" },
@@ -1058,6 +1215,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh2_dlc12_skv_art_warp_lightning_cannon_ror",
+    "ror": true,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -1067,6 +1227,9 @@
     "unit_size": 1,
     "category_icon": "chariot",
     "unit_card": "wh2_dlc12_skv_veh_doomwheel_ror",
+    "ror": true,
+    "category": "War Machine",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -1076,6 +1239,9 @@
     "unit_size": 1,
     "category_icon": "chariot",
     "unit_card": "wh2_dlc12_skv_veh_doomwheel_ror_tech_lab",
+    "ror": false,
+    "category": "War Machine",
+    "is_missile": true,
     "abilities": [{ "name": "Regeneration" }],
     "battle_mounts": null
   },
@@ -1086,6 +1252,9 @@
     "unit_size": 3,
     "category_icon": "catapult",
     "unit_card": "wh2_main_skv_art_plagueclaw_catapult",
+    "ror": false,
+    "category": "Catapult",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -1095,6 +1264,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh2_main_skv_art_warp_lightning_cannon",
+    "ror": false,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -1104,6 +1276,9 @@
     "unit_size": 1,
     "category_icon": "chariot",
     "unit_card": "wh2_main_skv_veh_doomwheel",
+    "ror": false,
+    "category": "War Machine",
+    "is_missile": true,
     "battle_mounts": null
   }
 ]

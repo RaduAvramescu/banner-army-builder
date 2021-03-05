@@ -1,11 +1,13 @@
 [
   {
     "name": "Aranessa Saltspite",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Halberd Infantry",
     "abilities": [
       { "name": "All Hands Hoay!" },
       { "name": "Manann's Luck" },
@@ -21,11 +23,13 @@
   },
   {
     "name": "Cylostra Direfin",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 750,
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_lore_deeps",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Ghosts of the Past" },
       { "name": "Song of Enthrallment" },
@@ -43,11 +47,14 @@
   },
   {
     "name": "Luthor Harkon",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 900,
     "unit_size": 1,
     "category_icon": "infantry_sword",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Hybrid-Weapon Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Hornswaggle" },
       { "name": "Power Siphon" },
@@ -67,11 +74,13 @@
   },
   {
     "name": "Vampire Fleet Admiral (Polearm - Vampires)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "All Hands Hoay!" },
       { "name": "The Hunger" },
@@ -97,11 +106,13 @@
   },
   {
     "name": "Vampire Fleet Admiral (Polearm - Death)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh_main_lore_death",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "All Hands Hoay!" },
       { "name": "The Hunger" },
@@ -127,11 +138,13 @@
   },
   {
     "name": "Vampire Fleet Admiral (Polearm - Deep)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_lore_deeps",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "All Hands Hoay!" },
       { "name": "The Hunger" },
@@ -157,11 +170,14 @@
   },
   {
     "name": "Vampire Fleet Admiral (Pistol - Vampires)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "is_missile": true,
     "abilities": [
       { "name": "All Hands Hoay!" },
       { "name": "Extra Powder" },
@@ -188,11 +204,14 @@
   },
   {
     "name": "Vampire Fleet Admiral (Pistol - Death)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh_main_lore_death",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "is_missile": true,
     "abilities": [
       { "name": "All Hands Hoay!" },
       { "name": "Extra Powder" },
@@ -219,11 +238,14 @@
   },
   {
     "name": "Vampire Fleet Admiral (Pistol - Deep)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 950,
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_lore_deeps",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
+    "is_missile": true,
     "abilities": [
       { "name": "All Hands Hoay!" },
       { "name": "Extra Powder" },
@@ -250,11 +272,13 @@
   },
   {
     "name": "Count Noctilus",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1400,
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Wraith Storm" },
       { "name": "Arcane Conduit" },
@@ -277,6 +301,9 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_gunnery_wight",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Support Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Enchanted Ballistics" },
       { "name": "Cackle Fruit" },
@@ -302,6 +329,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_mourngul_haunter",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Melee Specialist",
     "abilities": [
       { "name": "The Hunger" },
       { "name": "The Chilling Aura" },
@@ -319,6 +348,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_vampires",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Taunt" },
       { "name": "The Hunger" },
@@ -349,6 +380,8 @@
     "unit_size": 1,
     "category_icon": "wh_main_lore_death",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Taunt" },
       { "name": "The Hunger" },
@@ -379,6 +412,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_lore_deeps",
     "unit_card": "placeholder",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Taunt" },
       { "name": "The Hunger" },
@@ -409,6 +444,8 @@
     "unit_size": 45,
     "category_icon": "infantry_axe_dual",
     "unit_card": "wh2_dlc11_cst_depth_guard",
+    "ror": false,
+    "category": "Berserker Axe Infantry",
     "abilities": [
       { "name": "The Hunger" },
       { "name": "Frenzy" },
@@ -424,6 +461,8 @@
     "unit_size": 45,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh2_dlc11_cst_depth_guard_polearm",
+    "ror": false,
+    "category": "Halberd Infantry",
     "abilities": [
       { "name": "The Hunger" },
       { "name": "Frenzy" },
@@ -439,6 +478,8 @@
     "unit_size": 45,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh2_dlc11_cst_depth_guard_ror",
+    "ror": true,
+    "category": "Halberd Infantry",
     "abilities": [
       { "name": "The Hunger" },
       { "name": "Frenzy" },
@@ -455,6 +496,8 @@
     "unit_size": 45,
     "category_icon": "wh2_dlc11_cst_syreens",
     "unit_card": "wh2_dlc11_cst_syreens",
+    "ror": false,
+    "category": "Melee Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -465,6 +508,8 @@
     "unit_size": 120,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "wh2_dlc11_cst_zombie_deckhands",
+    "ror": false,
+    "category": "Dual Sword Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -475,6 +520,8 @@
     "unit_size": 120,
     "category_icon": "infantry_spear_halberd",
     "unit_card": "wh2_dlc11_cst_zombie_deckhands_polearm",
+    "ror": false,
+    "category": "Halberd Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -485,6 +532,8 @@
     "unit_size": 120,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "wh2_dlc11_cst_zombie_deckhands_ror",
+    "ror": true,
+    "category": "Dual Sword Infantry",
     "abilities": [
       { "name": "Rowdy" },
       { "name": "Frenzy" },
@@ -500,6 +549,9 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc11_cst_specialist_missile_infantry",
     "unit_card": "wh2_dlc11_cst_deck_gunners",
+    "ror": false,
+    "category": "Specialist Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -514,6 +566,9 @@
     "unit_size": 24,
     "category_icon": "wh2_dlc11_cst_specialist_missile_infantry",
     "unit_card": "wh2_dlc11_cst_deck_gunners_ror",
+    "ror": true,
+    "category": "Specialist Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -528,6 +583,9 @@
     "unit_size": 90,
     "category_icon": "wh2_dlc11_cst_missile_pistol",
     "unit_card": "wh2_dlc11_cst_zombie_gunnery_mob",
+    "ror": false,
+    "category": "Pistol Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -542,6 +600,9 @@
     "unit_size": 90,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh2_dlc11_cst_zombie_gunnery_mob_handguns",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -556,6 +617,9 @@
     "unit_size": 90,
     "category_icon": "wh2_dlc11_cst_close_quarters_missile_infantry",
     "unit_card": "wh2_dlc11_cst_zombie_gunnery_mob_hand_cannon",
+    "ror": false,
+    "category": "Close-Quarters Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -570,6 +634,9 @@
     "unit_size": 90,
     "category_icon": "wh2_dlc11_cst_explosives_infantry",
     "unit_card": "wh2_dlc11_cst_zombie_gunnery_mob_bombers",
+    "ror": false,
+    "category": "Explosives Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -584,6 +651,9 @@
     "unit_size": 90,
     "category_icon": "missile_infantry_rifle",
     "unit_card": "wh2_dlc11_cst_zombie_gunnery_mob_ror",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -598,6 +668,9 @@
     "unit_size": 18,
     "category_icon": "vmp_fell_bats",
     "unit_card": "wh2_dlc11_cst_deck_droppers",
+    "ror": false,
+    "category": "Flying Pistol Cavalry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -612,6 +685,9 @@
     "unit_size": 18,
     "category_icon": "wh2_dlc11_cst_flying_explosives_cavalry",
     "unit_card": "wh2_dlc11_cst_deck_droppers_bombers",
+    "ror": false,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -626,6 +702,9 @@
     "unit_size": 18,
     "category_icon": "wh2_dlc11_cst_flying_rifle_cavalry",
     "unit_card": "wh2_dlc11_cst_deck_droppers_handgunners",
+    "ror": false,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -640,6 +719,9 @@
     "unit_size": 18,
     "category_icon": "wh2_dlc11_cst_flying_explosives_cavalry",
     "unit_card": "wh2_dlc11_cst_deck_droppers_ror",
+    "ror": true,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -654,6 +736,8 @@
     "unit_size": 45,
     "category_icon": "vmp_fell_bats",
     "unit_card": "wh_main_vmp_fell_bats",
+    "ror": false,
+    "category": "Flying War Beasts",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -664,6 +748,8 @@
     "unit_size": 60,
     "category_icon": "war_beast",
     "unit_card": "wh2_dlc11_cst_scurvy_dogs",
+    "ror": false,
+    "category": "War Beasts",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -674,6 +760,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc11_cst_animated_hulks",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -684,6 +772,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc11_cst_mournguls",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "abilities": [
       { "name": "The Hunger" },
       { "name": "Crumbling" },
@@ -698,6 +788,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc11_cst_mournguls_ror",
+    "ror": true,
+    "category": "Monstrous Infantry",
     "abilities": [
       { "name": "The Hunger" },
       { "name": "Crumbling" },
@@ -712,6 +804,8 @@
     "unit_size": 9,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc11_cst_rotting_prometheans",
+    "ror": false,
+    "category": "Monstrous Beasts",
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -722,6 +816,9 @@
     "unit_size": 9,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc11_cst_rotting_prometheans_gunnery_mob",
+    "ror": false,
+    "category": "Monstrous Missile Beasts",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -736,6 +833,9 @@
     "unit_size": 9,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh2_dlc11_cst_rotting_prometheans_gunnery_mob_ror",
+    "ror": true,
+    "category": "Monstrous Missile Beasts",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Regeneration" },
@@ -751,6 +851,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_exploding_monster",
     "unit_card": "wh2_dlc11_cst_bloated_corpse",
+    "ror": false,
+    "category": "Exploding Monster",
     "abilities": [
       { "name": "Gaseous Demise" },
       { "name": "Noxious Disintegration" },
@@ -766,6 +868,9 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_missile_monster",
     "unit_card": "wh2_dlc11_cst_necrofex_colossus",
+    "ror": false,
+    "category": "Missile Monster",
+    "is_missile": true,
     "abilities": [
       { "name": "Abandon Ship!" },
       { "name": "Extra Powder" },
@@ -781,6 +886,9 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc11_cst_missile_monster",
     "unit_card": "wh2_dlc11_cst_necrofex_colossus_ror",
+    "ror": true,
+    "category": "Missile Monster",
+    "is_missile": true,
     "abilities": [
       { "name": "Abandon Ship!" },
       { "name": "Extra Powder" },
@@ -796,6 +904,9 @@
     "unit_size": 1,
     "category_icon": "giant",
     "unit_card": "wh2_dlc11_cst_rotting_leviathan",
+    "ror": false,
+    "category": "Monster",
+    "is_missile": true,
     "abilities": [{ "name": "Crumbling" }, { "name": "Disintegrating" }],
     "battle_mounts": null
   },
@@ -806,6 +917,8 @@
     "unit_size": 1,
     "category_icon": "dragon",
     "unit_card": "wh2_dlc11_cst_death_shriek_terrogheist",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [
       { "name": "Death Shriek" },
       { "name": "Regeneration" },
@@ -821,6 +934,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh2_dlc11_cst_carronade",
+    "ror": false,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -835,6 +951,9 @@
     "unit_size": 3,
     "category_icon": "cannon",
     "unit_card": "wh2_dlc11_cst_mortar",
+    "ror": false,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },
@@ -849,6 +968,9 @@
     "unit_size": 1,
     "category_icon": "cannon",
     "unit_card": "wh2_dlc11_cst_queen_bess",
+    "ror": true,
+    "category": "Siege Artillery",
+    "is_missile": true,
     "abilities": [
       { "name": "Extra Powder" },
       { "name": "Crumbling" },

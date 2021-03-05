@@ -1,11 +1,13 @@
 [
   {
     "name": "Drycha",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "wh2_dlc16_wef_drycha",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Roused to Wrath" },
       { "name": "Fanatical Resolve I" },
@@ -27,11 +29,14 @@
   },
   {
     "name": "Glade Lord on Great Stag",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1300,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_waystalker",
     "unit_card": "wh_dlc05_wef_female_glade_lord",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Prey of Anath Raema" },
       { "name": "Arrow of Kurnous" },
@@ -62,11 +67,14 @@
   },
   {
     "name": "Glade Lord on Great Stag",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1300,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_waystalker",
     "unit_card": "wh_dlc05_wef_glade_lord",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Call of the Woods" },
       { "name": "Deadly Onslaught" },
@@ -97,11 +105,14 @@
   },
   {
     "name": "Sisters of Twilight",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1650,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_great_eagle",
     "unit_card": "wh2_dlc16_wef_sisters_of_twilight",
+    "ror": false,
+    "category": "Flying Monster",
+    "is_missile": true,
     "abilities": [
       { "name": "Conjoined Destiny" },
       { "name": "Gwindalor's Vantage" }
@@ -116,11 +127,13 @@
   },
   {
     "name": "Spellweaver (Beasts)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
     "unit_card": "wh2_dlc16_wef_spellweaver",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Loec's Blessing" },
       { "name": "Blessing of the Ancients" },
@@ -151,11 +164,13 @@
   },
   {
     "name": "Spellweaver (Dark)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_dark",
     "unit_card": "wh2_dlc16_wef_spellweaver",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Loec's Blessing" },
       { "name": "Blessing of the Ancients" },
@@ -186,11 +201,13 @@
   },
   {
     "name": "Spellweaver (High)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh2_main_lore_high",
     "unit_card": "wh2_dlc16_wef_spellweaver",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Loec's Blessing" },
       { "name": "Blessing of the Ancients" },
@@ -221,11 +238,13 @@
   },
   {
     "name": "Spellweaver (Life)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
     "unit_card": "wh2_dlc16_wef_spellweaver",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Loec's Blessing" },
       { "name": "Blessing of the Ancients" },
@@ -256,11 +275,13 @@
   },
   {
     "name": "Spellweaver (Shadows)",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 400,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "wh2_dlc16_wef_spellweaver",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Loec's Blessing" },
       { "name": "Blessing of the Ancients" },
@@ -291,11 +312,13 @@
   },
   {
     "name": "Ancient Treeman",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1300,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_treeman",
     "unit_card": "wh_dlc05_wef_ancient_treeman",
+    "ror": false,
+    "category": "Monster",
     "abilities": [
       { "name": "Blessing of the Ancients" },
       { "name": "Call of the Woods" },
@@ -314,11 +337,13 @@
   },
   {
     "name": "Durthu",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1800,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_treeman",
     "unit_card": "wh_dlc05_wef_durthu",
+    "ror": false,
+    "category": "Monster",
     "abilities": [
       { "name": "Blessing of the Ancients" },
       { "name": "Lamentation of Despairs" },
@@ -338,11 +363,14 @@
   },
   {
     "name": "Glade Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_waystalker",
     "unit_card": "wh_dlc05_wef_female_glade_lord",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Prey of Anath Raema" },
       { "name": "Arrow of Kurnous" },
@@ -373,11 +401,14 @@
   },
   {
     "name": "Glade Lord",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 850,
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_waystalker",
     "unit_card": "wh_dlc05_wef_glade_lord",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Call of the Woods" },
       { "name": "Deadly Onslaught" },
@@ -408,11 +439,14 @@
   },
   {
     "name": "Orion",
-    "caste": "Lords",
+    "caste": "Lord",
     "multiplayer_cost": 1600,
     "unit_size": 1,
     "category_icon": "infantry_spear",
     "unit_card": "wh_dlc05_wef_orion",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Hounds of Orion" },
       { "name": "Hawk's Talon" },
@@ -428,6 +462,8 @@
     "unit_size": 1,
     "category_icon": "wh2_dlc12_magic_lore_generic",
     "unit_card": "wh2_dlc16_wef_ariel",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Greater Arcane Conduit" },
       { "name": "Blessing of the Ancients" }
@@ -452,6 +488,9 @@
     "unit_size": 1,
     "category_icon": "wh2_main_hef_missile_infantry_bow_spear",
     "unit_card": "wh2_twa02_wef_glade_captain",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
     "abilities": [{ "name": "Dance of Loec" }, { "name": "Deadly Onslaught" }],
     "battle_mounts": [
       {
@@ -478,6 +517,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "wh_dlc05_wef_branchwraith",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [
       { "name": "Blessing of the Ancients" },
       { "name": "Call of the Woods" },
@@ -501,6 +542,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc03_lore_beasts",
     "unit_card": "wh_dlc05_wef_spellsinger",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Blessing of the Ancients" }],
     "spells": [
       { "name": "Transformation of Kadon" },
@@ -532,6 +575,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_life",
     "unit_card": "wh_dlc05_wef_spellsinger",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Blessing of the Ancients" }],
     "spells": [
       { "name": "Life Bloom" },
@@ -563,6 +608,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_lore_shadow",
     "unit_card": "wh_dlc05_wef_spellsinger",
+    "ror": false,
+    "category": "Wizard",
     "abilities": [{ "name": "Blessing of the Ancients" }],
     "spells": [
       { "name": "Smoke & Mirrors" },
@@ -594,6 +641,9 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_waystalker",
     "unit_card": "wh_dlc05_wef_waystalker",
+    "ror": false,
+    "category": "Hybrid Weapon Specialist",
+    "is_missile": true,
     "abilities": [
       { "name": "Arrow of Kurnous" },
       { "name": "Hawkish Precision" },
@@ -608,6 +658,8 @@
     "unit_size": 75,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "wh2_dlc16_wef_bladesingers",
+    "ror": false,
+    "category": "Dual Sword Infantry",
     "abilities": [{ "name": "Whirling Death" }],
     "battle_mounts": null
   },
@@ -618,6 +670,8 @@
     "unit_size": 75,
     "category_icon": "wh_dlc05_wef_dryad",
     "unit_card": "wh2_dlc16_wef_ror_dryads",
+    "ror": true,
+    "category": "Creature Infantry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -628,6 +682,8 @@
     "unit_size": 75,
     "category_icon": "wh_dlc05_wef_dryad",
     "unit_card": "wh_dlc05_wef_dryads",
+    "ror": false,
+    "category": "Creature Infantry",
     "battle_mounts": null
   },
   {
@@ -637,6 +693,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh_dlc05_wef_eternal_guard",
+    "ror": false,
+    "category": "Spear Infantry",
     "battle_mounts": null
   },
   {
@@ -646,6 +704,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh_dlc05_wef_eternal_guard_shield",
+    "ror": false,
+    "category": "Spear Infantry",
     "battle_mounts": null
   },
   {
@@ -655,6 +715,8 @@
     "unit_size": 75,
     "category_icon": "wh2_main_infantry_dual_swords",
     "unit_card": "wh_dlc05_wef_wardancers",
+    "ror": false,
+    "category": "Dual Sword Infantry",
     "abilities": [{ "name": "The Shadow's Coil" }],
     "battle_mounts": null
   },
@@ -665,6 +727,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh_dlc05_wef_wardancers_spear",
+    "ror": false,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Woven Mist" }],
     "battle_mounts": null
   },
@@ -675,6 +739,8 @@
     "unit_size": 75,
     "category_icon": "infantry_sword_great",
     "unit_card": "wh_dlc05_wef_wildwood_ranger",
+    "ror": false,
+    "category": "Glaive Infantry",
     "abilities": [{ "name": "Guardians of the Wildwood" }],
     "battle_mounts": null
   },
@@ -685,6 +751,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh_pro04_wef_ror_eternal_guard_shield",
+    "ror": true,
+    "category": "Spear Infantry",
     "battle_mounts": null
   },
   {
@@ -694,6 +762,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh_pro04_wef_ror_wardancers_spear",
+    "ror": true,
+    "category": "Spear Infantry",
     "abilities": [
       { "name": "Storm of Blades" },
       { "name": "Frenzy" },
@@ -708,6 +778,8 @@
     "unit_size": 75,
     "category_icon": "infantry_spear",
     "unit_card": "wh_pro04_wef_ror_wildwood_ranger",
+    "ror": true,
+    "category": "Spear Infantry",
     "abilities": [{ "name": "Guardians of the Wildwood" }],
     "battle_mounts": null
   },
@@ -718,6 +790,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc05_wef_deepwood_scouts",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -727,6 +802,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc05_wef_deepwood_scouts_dual",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -736,6 +814,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc05_wef_glade_guard",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -745,6 +826,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc05_wef_glade_guard_flaming",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -754,6 +838,9 @@
     "unit_size": 60,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc05_wef_glade_guard_poison",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -763,6 +850,9 @@
     "unit_size": 45,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_dlc05_wef_waywatchers",
+    "ror": false,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Hawkish Precision" }],
     "battle_mounts": null
   },
@@ -773,6 +863,9 @@
     "unit_size": 45,
     "category_icon": "missile_infantry_bow",
     "unit_card": "wh_pro04_wef_ror_waywatchers",
+    "ror": true,
+    "category": "Missile Infantry",
+    "is_missile": true,
     "abilities": [{ "name": "Hawkish Precision" }, { "name": "Smoke Bomb" }],
     "battle_mounts": null
   },
@@ -783,6 +876,8 @@
     "unit_size": 45,
     "category_icon": "shock_cavalry",
     "unit_card": "wh2_dlc16_wef_glade_riders_spears",
+    "ror": false,
+    "category": "Shock Cavalry",
     "battle_mounts": null
   },
   {
@@ -792,6 +887,8 @@
     "unit_size": 45,
     "category_icon": "wh_dlc05_wef_wild_riders",
     "unit_card": "wh_dlc05_wef_wild_riders",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -802,6 +899,8 @@
     "unit_size": 45,
     "category_icon": "wh_dlc05_wef_wild_riders",
     "unit_card": "wh_dlc05_wef_wild_riders_shield",
+    "ror": false,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -812,6 +911,8 @@
     "unit_size": 45,
     "category_icon": "wh_dlc05_wef_wild_riders",
     "unit_card": "wh_pro04_wef_ror_wild_riders",
+    "ror": true,
+    "category": "Shock Cavalry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -822,6 +923,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_bow",
     "unit_card": "wh_dlc05_wef_glade_riders",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -831,6 +935,9 @@
     "unit_size": 45,
     "category_icon": "missile_cavalry_bow",
     "unit_card": "wh_dlc05_wef_glade_riders_poison",
+    "ror": false,
+    "category": "Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -840,6 +947,9 @@
     "unit_size": 18,
     "category_icon": "wh_dlc05_wef_hawk_riders",
     "unit_card": "wh_dlc05_wef_hawk_riders",
+    "ror": false,
+    "category": "Flying Missile Cavalry",
+    "is_missile": true,
     "battle_mounts": null
   },
   {
@@ -849,6 +959,9 @@
     "unit_size": 36,
     "category_icon": "wh_dlc05_wef_sisters_thorn",
     "unit_card": "wh_dlc05_wef_sisters_thorn",
+    "ror": false,
+    "category": "Magical Cavalry",
+    "is_missile": true,
     "abilities": [
       { "name": "Shield of Thorns" },
       { "name": "The Curse of Anraheir" }
@@ -862,6 +975,8 @@
     "unit_size": 12,
     "category_icon": "chs_shaggoth",
     "unit_card": "wh2_dlc16_wef_zoats",
+    "ror": false,
+    "category": "Monstrous Beasts",
     "abilities": [{ "name": "Earth Blood" }, { "name": "Flesh to Stone" }],
     "battle_mounts": null
   },
@@ -872,6 +987,8 @@
     "unit_size": 12,
     "category_icon": "chs_shaggoth",
     "unit_card": "wh2_dlc16_wef_ror_zoats",
+    "ror": true,
+    "category": "Monstrous Beasts",
     "abilities": [{ "name": "Flesh to Stone" }, { "name": "Regrowth" }],
     "battle_mounts": null
   },
@@ -882,6 +999,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_dlc05_wef_treekin",
+    "ror": false,
+    "category": "Monstrous Infantry",
     "battle_mounts": null
   },
   {
@@ -891,6 +1010,8 @@
     "unit_size": 12,
     "category_icon": "monstrous_infantry",
     "unit_card": "wh_pro04_wef_ror_treekin",
+    "ror": true,
+    "category": "Monstrous Infantry",
     "abilities": [{ "name": "The Wildfire Aura" }],
     "battle_mounts": null
   },
@@ -901,6 +1022,8 @@
     "unit_size": 24,
     "category_icon": "wh_dlc05_wef_wild_riders",
     "unit_card": "wh2_dlc16_wef_great_stag_knights",
+    "ror": false,
+    "category": "Monstrous Shock Cavalry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -911,6 +1034,8 @@
     "unit_size": 24,
     "category_icon": "wh_dlc05_wef_wild_riders",
     "unit_card": "wh2_dlc16_wef_ror_great_stag_knights",
+    "ror": true,
+    "category": "Monstrous Shock Cavalry",
     "abilities": [{ "name": "Frenzy" }],
     "battle_mounts": null
   },
@@ -921,6 +1046,8 @@
     "unit_size": 1,
     "category_icon": "dragon",
     "unit_card": "wh_dlc05_wef_forest_dragon",
+    "ror": false,
+    "category": "Flying Monster",
     "abilities": [{ "name": "Soporific Breath" }],
     "battle_mounts": null
   },
@@ -931,6 +1058,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_great_eagle",
     "unit_card": "wh_dlc05_wef_great_eagle",
+    "ror": false,
+    "category": "Flying Monster",
     "battle_mounts": null
   },
   {
@@ -940,6 +1069,8 @@
     "unit_size": 1,
     "category_icon": "wh_dlc05_wef_treeman",
     "unit_card": "wh_dlc05_wef_treeman",
+    "ror": false,
+    "category": "Monster",
     "battle_mounts": null
   }
 ]
