@@ -4,8 +4,6 @@ import { Box, Grid, Typography, CircularProgress } from "@material-ui/core";
 import categories from "../../data/categories.json";
 import UnitCard from "../UnitCard/UnitCard";
 
-import * as factions from "../../data/factionImports";
-
 const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
   let factionRoster = factions[selectedFaction];
 
