@@ -1,14 +1,11 @@
 [
-  { "name": "Lords", "value": "Lords" },
-  { "name": "Heroes", "value": "Hero" },
-  { "name": "Infantry", "value": "Infantry" },
-  { "name": "Missile Infantry", "value": "Missile Infantry" },
-  { "name": "Cavalry & Chariots", "value": "Cavalry & Chariots" },
-  {
-    "name": "Missile Cavalry & Chariots",
-    "value": "Missile Cavalry & Chariots"
-  },
-  { "name": "Monsters & Beasts", "value": "Monsters & Beasts" },
-  { "name": "Missile Monsters & Beasts", "value": "Missile Monsters & Beasts" },
-  { "name": "Artillery & War Machines", "value": "Artillery & War Machines" }
+  "Lords",
+  "Heroes",
+  "Infantry",
+  "Missile Infantry",
+  "Cavalry & Chariots",
+  "Missile Cavalry & Chariots",
+  "Monsters & Beasts",
+  "Missile Monsters & Beasts",
+  "Artillery & War Machines"
 ]

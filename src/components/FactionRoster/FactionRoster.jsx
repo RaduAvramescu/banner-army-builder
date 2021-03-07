@@ -78,7 +78,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
           {categories.map((caste, i) => (
             <Box key={i} id={i} my="1rem">
               <Typography variant="h3" component="h2" align="center">
-                {categories[i].name}
+                {categories[i]}
               </Typography>
               <Grid container justify="center">
                 {factionRoster &&
@@ -86,7 +86,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
                     .filter(
                       (unit) =>
                         unit.ui_unit_group.parent_group.onscreen_name ===
-                        categories[i].value
+                        categories[i]
                     )
                     .map((unit, i) => (
                       <UnitCard
