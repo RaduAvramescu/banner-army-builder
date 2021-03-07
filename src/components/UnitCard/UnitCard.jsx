@@ -47,7 +47,7 @@ const UnitCard = (props) => {
           {props.multiplayer_cost}
         </Typography>
         <img
-          src={`images/unit_card/card_icon/${props.unit_card}.png`}
+          src={`images/${props.unit_card}`}
           alt="Unit Card Image"
           width="60"
           height="130"
