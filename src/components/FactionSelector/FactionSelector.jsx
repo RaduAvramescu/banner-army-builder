@@ -16,7 +16,7 @@ const FactionSelector = ({ handleFactionChange }) => {
         <FormControl>
           <InputLabel htmlFor="faction-select">Faction</InputLabel>
           <NativeSelect
-            defaultValue={"Beastmen"}
+            defaultValue={"wh_dlc03_bst_beastmen"}
             onChange={(e) => handleFactionChange(e.target.value)}
             inputProps={{ id: "faction-select" }}
           >

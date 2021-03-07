@@ -12,7 +12,12 @@ import {
 import "./App.css";
 
 class App extends Component {
-  state = { selectedFaction: "Beastmen", funds: 12400, models: 0, units: [] };
+  state = {
+    selectedFaction: "wh_dlc03_bst_beastmen",
+    funds: 12400,
+    models: 0,
+    units: [],
+  };
 
   handleFactionChange = (selectedFaction) => {
     this.setState((state) => ({

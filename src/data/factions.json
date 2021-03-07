@@ -2,7 +2,7 @@
   {
     "id": 0,
     "name": "Beastmen",
-    "value": "Beastmen"
+    "value": "wh_dlc03_bst_beastmen"
   },
   {
     "id": 1,
@@ -12,22 +12,46 @@
   {
     "id": 2,
     "name": "Dark Elves",
-    "value": "DarkElves"
+    "value": "wh2_main_def_dark_elves"
   },
   {
     "id": 4,
     "name": "Dwarfs",
-    "value": "Dwarfs"
+    "value": "wh_main_dwf_dwarfs_mp_custom_battles_only"
   },
-  { "id": 5, "name": "The Empire", "value": "Empire" },
-  { "id": 6, "name": "Greenskins", "value": "Greenskins" },
-  { "id": 7, "name": "High Elves", "value": "HighElves" },
-  { "id": 8, "name": "Lizardmen", "value": "Lizardmen" },
-  { "id": 9, "name": "Norsca", "value": "Norsca" },
-  { "id": 10, "name": "Skaven", "value": "Skaven" },
-  { "id": 11, "name": "Tomb Kings", "value": "TombKings" },
-  { "id": 12, "name": "Vampire Coast", "value": "VampireCoast" },
-  { "id": 13, "name": "Vampire Counts", "value": "VampireCounts" },
-  { "id": 14, "name": "Warriors of Chaos", "value": "WarriorsOfChaos" },
-  { "id": 15, "name": "Wood Elves", "value": "WoodElves" }
+  {
+    "id": 5,
+    "name": "The Empire",
+    "value": "wh_main_emp_empire_mp_custom_battles_only"
+  },
+  {
+    "id": 6,
+    "name": "Greenskins",
+    "value": "wh_main_grn_greenskins_mp_custom_battles_only"
+  },
+  { "id": 7, "name": "High Elves", "value": "wh2_main_hef_high_elves" },
+  { "id": 8, "name": "Lizardmen", "value": "wh2_main_lzd_lizardmen" },
+  {
+    "id": 9,
+    "name": "Norsca",
+    "value": "wh_dlc08_nor_norsca_mp_custom_battles_only"
+  },
+  { "id": 10, "name": "Skaven", "value": "wh2_main_skv_skaven" },
+  { "id": 11, "name": "Tomb Kings", "value": "wh2_dlc09_tmb_tomb_kings" },
+  {
+    "id": 12,
+    "name": "Vampire Coast",
+    "value": "wh2_dlc11_cst_vampire_coast_mp_custom_battles_only"
+  },
+  {
+    "id": 13,
+    "name": "Vampire Counts",
+    "value": "wh_main_vmp_vampire_counts_mp_custom_battles_only"
+  },
+  { "id": 14, "name": "Warriors of Chaos", "value": "wh_main_chs_chaos" },
+  {
+    "id": 15,
+    "name": "Wood Elves",
+    "value": "wh_dlc05_wef_wood_elves_mp_custom_battles_only"
+  }
 ]
