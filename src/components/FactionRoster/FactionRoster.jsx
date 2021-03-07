@@ -5,7 +5,8 @@ import categories from "../../data/categories.json";
 import UnitCard from "../UnitCard/UnitCard";
 
 const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
-  let factionRoster = factions[selectedFaction];
+  let factionRoster;
+  // let factionRoster = factions[selectedFaction];
 
   if (
     typeof categories == undefined ||
@@ -33,17 +34,18 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
                 {categories[i].name}
               </Typography>
               <Grid container justify="center">
-                {factionRoster
-                  .filter((unit) => unit.caste === categories[i].value)
-                  .map((unit, i) => (
-                    <UnitCard
-                      key={i}
-                      id={i}
-                      onUnitAdd={onUnitAdd}
-                      addUnit={true}
-                      {...unit}
-                    />
-                  ))}
+                {factionRoster &&
+                  factionRoster
+                    .filter((unit) => unit.caste === categories[i].value)
+                    .map((unit, i) => (
+                      <UnitCard
+                        key={i}
+                        id={i}
+                        onUnitAdd={onUnitAdd}
+                        addUnit={true}
+                        {...unit}
+                      />
+                    ))}
               </Grid>
             </Box>
           ))}

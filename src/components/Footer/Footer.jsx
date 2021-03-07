@@ -66,7 +66,7 @@ const Footer = () => (
         </Typography>
       </Box>
       <Box display="flex" justifyContent="center">
-        <Typography>2020-2021</Typography>
+        <Typography>2021</Typography>
       </Box>
     </Box>
   </footer>
