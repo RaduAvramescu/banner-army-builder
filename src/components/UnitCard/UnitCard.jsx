@@ -55,7 +55,7 @@ const UnitCard = (props) => {
         />
         <img
           className="unit_card position_absolute"
-          src={`images/unit_card/effects/unit_card_frame_plain.png`}
+          src={`images/ui/skins/default/unit_card_frame_plain.png`}
           alt="Unit Card Frame"
           width="60"
           height="130"
@@ -64,7 +64,7 @@ const UnitCard = (props) => {
 
         <img
           className="position_absolute"
-          src={`images/unit_card/semicircle_icon/${semicircle_icon}.png`}
+          src={`images/ui/skins/default/${semicircle_icon}.png`}
           alt="Unit Card Semicircle Icon"
           width="55"
           height="35"
@@ -72,15 +72,15 @@ const UnitCard = (props) => {
         />
         <img
           className="position_absolute"
-          src={`images/unit_card/category_icon/${props.category_icon}.png`}
-          alt="Unit Card caste Icon"
+          src={`images/ui/common_ui/unit_category_icons/${props.ui_unit_group.icon}.png`}
+          alt="Unit Card Category Icon"
           width="22"
           height="22"
           loading="lazy"
         />
         <img
           className="unit_card unit_card_hover position_absolute"
-          src={`images/unit_card/effects/unit_card_hover.png`}
+          src={`images/ui/skins/default/unit_card_hover.png`}
           alt="Unit Card Hover"
           width="60"
           height="130"
