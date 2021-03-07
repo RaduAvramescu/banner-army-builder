@@ -1,12 +1,60 @@
 import React from "react";
 
+import { useQuery, gql } from "@apollo/client";
 import { Box, Grid, Typography, CircularProgress } from "@material-ui/core";
 import categories from "../../data/categories.json";
 import UnitCard from "../UnitCard/UnitCard";
 
+const factionUnitData = gql`
+  query unitGetter($faction: String!) {
+    getUnits(faction: $faction) {
+      key
+      name
+      caste
+      category
+      multiplayer_cost
+      unit_size
+      ror
+      category_icon
+      unit_card
+      abilities {
+        name
+      }
+      spells {
+        name
+      }
+      battle_mounts {
+        mount_name
+        price
+        icon_name
+      }
+      ui_unit_group {
+        key
+        name
+        icon
+        tooltip
+        parent_group {
+          key
+          onscreen_name
+          icon
+          order
+          mp_cap
+        }
+      }
+    }
+  }
+`;
+
 const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
-  let factionRoster;
-  // let factionRoster = factions[selectedFaction];
+  const { loading, error, data } = useQuery(factionUnitData, {
+    variables: { faction: selectedFaction },
+  });
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error :(</p>;
+
+  let factionRoster = data.getUnits;
+  console.log(factionRoster);
 
   if (
     typeof categories == undefined ||
@@ -36,7 +84,11 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
               <Grid container justify="center">
                 {factionRoster &&
                   factionRoster
-                    .filter((unit) => unit.caste === categories[i].value)
+                    .filter(
+                      (unit) =>
+                        unit.ui_unit_group.parent_group.onscreen_name ===
+                        categories[i].value
+                    )
                     .map((unit, i) => (
                       <UnitCard
                         key={i}
