@@ -50,21 +50,21 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
     variables: { faction: selectedFaction },
   });
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
-
-  let factionRoster = data.getUnits;
-
-  if (
-    typeof categories == undefined ||
-    typeof selectedFaction == undefined ||
-    typeof factionRoster == undefined
-  )
+  if (loading)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
         <CircularProgress />
       </Box>
     );
+
+  if (error)
+    return (
+      <Box display="flex" justifyContent="center" my="1rem">
+        <CircularProgress />
+      </Box>
+    );
+
+  let factionRoster = data.getUnits;
 
   return (
     <Box my="1rem">
