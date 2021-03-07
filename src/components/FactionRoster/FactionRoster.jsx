@@ -54,7 +54,6 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
   if (error) return <p>Error :(</p>;
 
   let factionRoster = data.getUnits;
-  console.log(factionRoster);
 
   if (
     typeof categories == undefined ||
