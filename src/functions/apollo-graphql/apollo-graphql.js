@@ -86,7 +86,7 @@ const resolvers = {
             if (unit.battle_mounts?.find((o) => o.base_unit === unit.key))
               return unit;
 
-            if (unit.battle_mounts.length < 1) return unit;
+            if (unit.battle_mounts?.length < 1) return unit;
           }
       });
       return element;
