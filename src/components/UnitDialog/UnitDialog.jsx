@@ -86,6 +86,11 @@ function SimpleDialog(props) {
     }
   };
 
+  const getIndex = () => {
+    if (battle_mounts?.length === 0) return 0;
+    return 1;
+  };
+
   const handleClose = () => {
     onClose(mount, spell);
     setSelectedSpell([]);
@@ -107,30 +112,34 @@ function SimpleDialog(props) {
           aria-label="Lord/Hero Tabs"
           variant="fullWidth"
         >
-          <Tab label="Mounts" {...a11yProps(0)} />
-          <Tab label="Spells" {...a11yProps(1)} />
+          {battle_mounts?.length !== 0 && (
+            <Tab label="Mounts" {...a11yProps(0)} />
+          )}
+          {spells?.length !== 0 && <Tab label="Spells" {...a11yProps(1)} />}
         </Tabs>
       </AppBar>
-      <TabPanel value={value} index={0}>
-        <List>
-          {battle_mounts?.map((el, i) => (
-            <ListItem
-              button
-              selected={selectedMount === i}
-              onClick={() => handleListItemClick(el, "mount", i)}
-              key={i}
-            >
-              <ListItemAvatar>
-                <Avatar alt={el.mount_name} src={`images/${el.icon_name}`}>
-                  <PersonIcon />
-                </Avatar>
-              </ListItemAvatar>
-              <ListItemText primary={el.mount_name} />
-            </ListItem>
-          ))}
-        </List>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
+      {battle_mounts?.length !== 0 && (
+        <TabPanel value={value} index={0}>
+          <List>
+            {battle_mounts?.map((el, i) => (
+              <ListItem
+                button
+                selected={selectedMount === i}
+                onClick={() => handleListItemClick(el, "mount", i)}
+                key={i}
+              >
+                <ListItemAvatar>
+                  <Avatar alt={el.mount_name} src={`images/${el.icon_name}`}>
+                    <PersonIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary={el.mount_name} />
+              </ListItem>
+            ))}
+          </List>
+        </TabPanel>
+      )}
+      <TabPanel value={value} index={getIndex(spells)}>
         <List>
           {spells?.map((el, i) => (
             <ListItem

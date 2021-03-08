@@ -16,7 +16,10 @@ const UnitCard = (props) => {
     const { addUnit } = props;
     if (addUnit) {
       const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
-      if (!open && props.battle_mounts?.length >= 1) {
+      if (
+        !open &&
+        (props.battle_mounts?.length >= 1 || props.spells?.length >= 1)
+      ) {
         setOpen(true);
       } else onUnitAdd(newProps);
     } else {
