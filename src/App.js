@@ -222,7 +222,7 @@ class App extends Component {
       newUnits.push(props);
 
       newUnits.sort((a, b) =>
-        a.multiplayer_cost > b.multiplayer_cost ? 1 : -1
+        a.multiplayer_cost < b.multiplayer_cost ? 1 : -1
       );
 
       newUnits.sort((a, b) =>
