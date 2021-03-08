@@ -121,10 +121,7 @@ function SimpleDialog(props) {
               key={i}
             >
               <ListItemAvatar>
-                <Avatar
-                  alt={el.mount_name}
-                  src={`images/mounts/${el.icon_name}.png`}
-                >
+                <Avatar alt={el.mount_name} src={`images/${el.icon_name}`}>
                   <PersonIcon />
                 </Avatar>
               </ListItemAvatar>

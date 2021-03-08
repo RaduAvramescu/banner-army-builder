@@ -27,6 +27,7 @@ const factionUnitData = gql`
         base_unit
         mount_name
         mounted_unit
+        icon_name
       }
       ui_unit_group {
         key
