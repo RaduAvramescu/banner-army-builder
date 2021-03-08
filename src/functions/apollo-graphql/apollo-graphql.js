@@ -54,6 +54,7 @@ const typeDefs = gql`
     base_unit: String
     mount_name: String
     mounted_unit: String
+    icon_name: String
   }
 
   type Permissions {
@@ -71,15 +72,10 @@ const resolvers = {
             const elementNew = mountsAndPermissions.data.tww.units.find(
               (newUnit) => newUnit.unit === unit.key
             );
-            if (
-              elementNew &&
-              elementNew.hasOwnProperty("custom_battle_permissions")
-            )
-              unit.custom_battle_permissions =
-                elementNew.custom_battle_permissions;
+            unit.custom_battle_permissions =
+              elementNew.custom_battle_permissions;
 
-            if (elementNew && elementNew.hasOwnProperty("battle_mounts"))
-              unit.battle_mounts = elementNew.battle_mounts;
+            unit.battle_mounts = elementNew.battle_mounts;
 
             const elementNewTwo = unitGroupData.data.tww.units.find(
               (newUnit) => newUnit.unit === unit.key

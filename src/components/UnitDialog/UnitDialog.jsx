@@ -50,7 +50,7 @@ function SimpleDialog(props) {
   const [spell, setSpell] = React.useState([]);
   const [selectedMount, setSelectedMount] = React.useState({});
   const [selectedSpell, setSelectedSpell] = React.useState([]);
-  const { onClose, open, mounts, spells } = props;
+  const { onClose, open, battle_mounts, spells } = props;
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -113,41 +113,39 @@ function SimpleDialog(props) {
       </AppBar>
       <TabPanel value={value} index={0}>
         <List>
-          {
-            mounts?.map((el, i) => (
-              <ListItem
-                button
-                selected={selectedMount === i}
-                onClick={() => handleListItemClick(el, "mount", i)}
-                key={i}
-              >
-                <ListItemAvatar>
-                  <Avatar
-                    alt={el.name}
-                    src={`images/mounts/${el.unit_card}.png`}
-                  >
-                    <PersonIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary={el.name} />
-              </ListItem>
-            ))}
+          {battle_mounts?.map((el, i) => (
+            <ListItem
+              button
+              selected={selectedMount === i}
+              onClick={() => handleListItemClick(el, "mount", i)}
+              key={i}
+            >
+              <ListItemAvatar>
+                <Avatar
+                  alt={el.mount_name}
+                  src={`images/mounts/${el.icon_name}.png`}
+                >
+                  <PersonIcon />
+                </Avatar>
+              </ListItemAvatar>
+              <ListItemText primary={el.mount_name} />
+            </ListItem>
+          ))}
         </List>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <List>
-          {
-            spells?.map((el, i) => (
-              <ListItem
-                button
-                selected={selectedSpell.includes(i)}
-                onClick={() => handleListItemClick(el, "spell", i)}
-                key={i}
-              >
-                <ListItemAvatar></ListItemAvatar>
-                <ListItemText primary={el.name} />
-              </ListItem>
-            ))}
+          {spells?.map((el, i) => (
+            <ListItem
+              button
+              selected={selectedSpell.includes(i)}
+              onClick={() => handleListItemClick(el, "spell", i)}
+              key={i}
+            >
+              <ListItemAvatar></ListItemAvatar>
+              <ListItemText primary={el.name} />
+            </ListItem>
+          ))}
         </List>
       </TabPanel>
       <DialogActions style={{ justifyContent: "center" }}>
