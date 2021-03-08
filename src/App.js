@@ -220,7 +220,16 @@ class App extends Component {
       const newUnits = [...state.units];
 
       newUnits.push(props);
-      newUnits.sort((a, b) => (a.unitid > b.unitid ? 1 : -1));
+
+      newUnits.sort((a, b) =>
+        a.multiplayer_cost > b.multiplayer_cost ? 1 : -1
+      );
+
+      newUnits.sort((a, b) =>
+        a.ui_unit_group.parent_group.order > b.ui_unit_group.parent_group.order
+          ? 1
+          : -1
+      );
 
       return {
         ...state,
