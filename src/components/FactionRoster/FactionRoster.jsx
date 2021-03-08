@@ -41,6 +41,10 @@ const factionUnitData = gql`
           mp_cap
         }
       }
+      custom_battle_permissions {
+        general_unit
+        general_portrait
+      }
     }
   }
 `;

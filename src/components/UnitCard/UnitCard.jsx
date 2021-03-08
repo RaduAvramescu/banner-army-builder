@@ -46,13 +46,24 @@ const UnitCard = (props) => {
         >
           {props.multiplayer_cost}
         </Typography>
-        <img
-          src={`images/${props.unit_card}`}
-          alt="Unit Card Image"
-          width="60"
-          height="130"
-          loading="lazy"
-        />
+        {props.caste === "Lord" || props.caste === "Hero" ? (
+          <img
+            src={`images/${props.custom_battle_permissions[0].general_portrait.toLowerCase()}`}
+            alt="Unit Card Image"
+            width="60"
+            height="130"
+            loading="lazy"
+          />
+        ) : (
+          <img
+            src={`images/${props.unit_card}`}
+            alt="Unit Card Image"
+            width="60"
+            height="130"
+            loading="lazy"
+          />
+        )}
+
         <img
           className="unit_card position_absolute"
           src={`images/ui/skins/default/unit_card_frame_plain.png`}
@@ -61,7 +72,6 @@ const UnitCard = (props) => {
           height="130"
           loading="lazy"
         ></img>
-
         <img
           className="position_absolute"
           src={`images/ui/skins/default/${semicircle_icon}.png`}

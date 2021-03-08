@@ -1,6 +1,7 @@
 const { ApolloServer, gql } = require("apollo-server-lambda");
 const factionData = require("../../data/main.json");
 const unitGroupData = require("../../data/ui_unit_groups.json");
+const mountsAndPermissions = require("../../data/battle_mounts_and_custom_battle_permissions.json");
 
 const typeDefs = gql`
   type Query {
@@ -22,6 +23,7 @@ const typeDefs = gql`
     abilities: [Abilities]
     spells: [Spells]
     battle_mounts: [Mounts]
+    custom_battle_permissions: [Permissions]
   }
 
   type UnitGroup {
@@ -52,6 +54,11 @@ const typeDefs = gql`
     mount_name: String
     price: Int
     icon_name: String
+  }
+
+  type Permissions {
+    general_unit: String
+    general_portrait: String
   }
 `;
 
@@ -89,6 +96,14 @@ const resolvers = {
       const element = factionData.find((unit) => unit.key === parent.key);
       if (element && element.hasOwnProperty("battle_mounts"))
         return element.battle_mounts;
+    },
+
+    custom_battle_permissions: (parent) => {
+      const element = mountsAndPermissions.data.tww.units.find(
+        (unit) => unit.unit === parent.key
+      );
+      if (element && element.hasOwnProperty("custom_battle_permissions"))
+        return element.custom_battle_permissions;
     },
   },
 };
