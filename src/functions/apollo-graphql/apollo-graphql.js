@@ -51,9 +51,9 @@ const typeDefs = gql`
   }
 
   type Mounts {
+    base_unit: String
     mount_name: String
-    price: Int
-    icon_name: String
+    mounted_unit: String
   }
 
   type Permissions {
@@ -66,8 +66,28 @@ const resolvers = {
   Query: {
     getUnits: (_, { faction }) => {
       const element = factionData.filter((unit) => {
-        if (!unit.key.includes("summoned"))
-          if (unit.factions.some((el) => el.key === faction)) return unit;
+        if (unit.factions.some((el) => el.key === faction))
+          if (!unit.key.includes("summoned")) {
+            const elementNew = mountsAndPermissions.data.tww.units.find(
+              (newUnit) => newUnit.unit === unit.key
+            );
+            if (
+              elementNew &&
+              elementNew.hasOwnProperty("custom_battle_permissions")
+            )
+              unit.custom_battle_permissions =
+                elementNew.custom_battle_permissions;
+
+            if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
+            unit.battle_mounts = mountsAndPermissions.data.tww.units.find(
+              (mounts) => mounts.unit === unit.key
+            ).battle_mounts;
+
+            if (unit.battle_mounts?.find((o) => o.base_unit === unit.key))
+              return unit;
+
+            if (unit.battle_mounts.length < 1) return unit;
+          }
       });
       return element;
     },
@@ -90,20 +110,6 @@ const resolvers = {
     spells: (parent) => {
       const element = factionData.find((unit) => unit.key === parent.key);
       if (element && element.hasOwnProperty("spells")) return element.spells;
-    },
-
-    battle_mounts: (parent) => {
-      const element = factionData.find((unit) => unit.key === parent.key);
-      if (element && element.hasOwnProperty("battle_mounts"))
-        return element.battle_mounts;
-    },
-
-    custom_battle_permissions: (parent) => {
-      const element = mountsAndPermissions.data.tww.units.find(
-        (unit) => unit.unit === parent.key
-      );
-      if (element && element.hasOwnProperty("custom_battle_permissions"))
-        return element.custom_battle_permissions;
     },
   },
 };

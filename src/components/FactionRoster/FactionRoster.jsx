@@ -24,9 +24,9 @@ const factionUnitData = gql`
         name
       }
       battle_mounts {
+        base_unit
         mount_name
-        price
-        icon_name
+        mounted_unit
       }
       ui_unit_group {
         key
