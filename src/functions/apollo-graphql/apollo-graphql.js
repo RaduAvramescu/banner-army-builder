@@ -53,6 +53,7 @@ const typeDefs = gql`
   type Mounts {
     base_unit: String
     mount_name: String
+    multiplayer_cost: Int
     mounted_unit: String
     icon_name: String
   }
@@ -83,6 +84,18 @@ const resolvers = {
             unit.ui_unit_group = elementNewTwo.ui_unit_group;
 
             if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
+
+            if (unit.key.slice(-1) === "0" && unit.battle_mounts) {
+              const newMounts = unit.battle_mounts?.filter((mount) => {
+                mount.multiplayer_cost =
+                  factionData.find((newUnit) =>
+                    newUnit.name.includes(mount.mount_name)
+                  ).multiplayer_cost - unit.multiplayer_cost;
+
+                return mount;
+              });
+              unit.battle_mounts = newMounts;
+            }
 
             if (unit.caste === "Lord") {
               unit.ui_unit_group.parent_group.onscreen_name = "Lords";
