@@ -92,6 +92,9 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
                         unit.ui_unit_group.parent_group.onscreen_name ===
                         categories[i]
                     )
+                    .sort((a, b) =>
+                      a.multiplayer_cost > b.multiplayer_cost ? 1 : -1
+                    )
                     .map((unit, i) => (
                       <UnitCard
                         key={i}
