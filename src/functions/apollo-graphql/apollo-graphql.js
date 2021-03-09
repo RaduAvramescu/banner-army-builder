@@ -1,10 +1,12 @@
 const { ApolloServer, gql } = require("apollo-server-lambda");
 const factionData = require("../../data/main.json");
+const factionsData = require("../../data/factions.json");
 const unitGroupData = require("../../data/ui_unit_groups.json");
 const mountsAndPermissions = require("../../data/battle_mounts_and_custom_battle_permissions.json");
 
 const typeDefs = gql`
   type Query {
+    getFactions(include_non_mp: Boolean!): [Faction!]
     getUnits(faction: String!): [Unit!]
   }
 
@@ -62,67 +64,69 @@ const typeDefs = gql`
     general_unit: String
     general_portrait: String
   }
+
+  type Faction {
+    key: String
+    subculture: Subculture
+    screen_name: String
+    screen_adjective: String
+    is_rebel: Boolean
+    mp_available: Boolean
+    flags_path: String
+    flags_url: String
+    name_group: String
+  }
+
+  type Subculture {
+    subculture: String
+    name: String
+  }
 `;
 
 const resolvers = {
   Query: {
+    getFactions: (_, { include_non_mp }) => {
+      const factions = factionsData.data.tww.factions?.filter((faction) => {
+        if (include_non_mp === true)
+          if (faction.mp_available === true)
+            if (
+              faction.screen_name === faction.subculture.name ||
+              faction.key === "wh_dlc03_bst_beastmen"
+            )
+              return faction;
+      });
+      return factions;
+    },
+
     getUnits: (_, { faction }) => {
-      const element = factionData.filter((unit) => {
+      const units = factionData.filter((unit) => {
         if (unit.factions.some((el) => el.key === faction))
-          if (!unit.key.includes("summoned")) {
-            const elementNew = mountsAndPermissions.data.tww.units.find(
-              (newUnit) => newUnit.unit === unit.key
-            );
-            unit.custom_battle_permissions =
-              elementNew.custom_battle_permissions;
-
-            unit.battle_mounts = elementNew.battle_mounts;
-
-            const elementNewTwo = unitGroupData.data.tww.units.find(
-              (newUnit) => newUnit.unit === unit.key
-            );
-            unit.ui_unit_group = elementNewTwo.ui_unit_group;
-
-            if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
-
-            if (unit.key.slice(-1) === "0" && unit.battle_mounts?.length > 0) {
-              const newMounts = unit.battle_mounts.filter((mount) => {
-                const newCost = factionData.find(
-                  (newUnit) =>
-                    newUnit.name.includes(mount.mount_name) &&
-                    newUnit.factions[0].key === unit.factions[0].key
-                );
-                if (newCost.multiplayer_cost !== unit.multiplayer_cost)
-                  mount.multiplayer_cost =
-                    newCost.multiplayer_cost - unit.multiplayer_cost;
-                return mount;
-              });
-              unit.battle_mounts = newMounts;
-            }
-
-            if (unit.custom_battle_permissions[0]?.general_unit) {
-              unit.ui_unit_group.parent_group.onscreen_name = "Lords";
-            } else if (unit.caste === "Hero") {
-              unit.ui_unit_group.parent_group.onscreen_name = "Heroes";
-            }
-
-            if (unit.battle_mounts?.find((o) => o.base_unit === unit.key)) {
-              return unit;
-            }
-
-            if (unit.battle_mounts?.length < 1) {
-              return unit;
-            }
-
-            // return unit;
-          }
+          if (!unit.key.includes("summoned")) return unit;
       });
 
-      return element;
+      return units;
+    },
+  },
+
+  Faction: {
+    subculture: (parent) => {
+      const element = factionsData.data.tww.factions.find(
+        (faction) => faction.key === parent.key
+      );
+      if (element && element.hasOwnProperty("subculture"))
+        return element.subculture;
     },
   },
 
   Unit: {
+    ui_unit_group: (parent) => {
+      const element = unitGroupData.data.tww.units.find(
+        (unit) => unit.unit === parent.key
+      );
+      if (element && element.hasOwnProperty("ui_unit_group"))
+        return element.ui_unit_group;
+    },
+
     abilities: (parent) => {
       const element = factionData.find((unit) => unit.key === parent.key);
       if (element && element.hasOwnProperty("abilities"))
@@ -132,6 +136,22 @@ const resolvers = {
     spells: (parent) => {
       const element = factionData.find((unit) => unit.key === parent.key);
       if (element && element.hasOwnProperty("spells")) return element.spells;
+    },
+
+    battle_mounts: (parent) => {
+      const element = mountsAndPermissions.data.tww.units.find(
+        (unit) => unit.unit === parent.key
+      );
+      if (element && element.hasOwnProperty("battle_mounts"))
+        return element.battle_mounts;
+    },
+
+    custom_battle_permissions: (parent) => {
+      const element = mountsAndPermissions.data.tww.units.find(
+        (unit) => unit.unit === parent.key
+      );
+      if (element && element.hasOwnProperty("custom_battle_permissions"))
+        return element.custom_battle_permissions;
     },
   },
 };

@@ -2,10 +2,10 @@ import React from "react";
 
 import { useQuery, gql } from "@apollo/client";
 import { Box, Grid, Typography, CircularProgress } from "@material-ui/core";
-import categories from "../../data/categories.json";
 import UnitCard from "../UnitCard/UnitCard";
+import unitGroupData from "../../data/ui_unit_groups.json";
 
-const factionUnitData = gql`
+const factionUnitQuery = gql`
   query unitGetter($faction: String!) {
     getUnits(faction: $faction) {
       key
@@ -52,7 +52,7 @@ const factionUnitData = gql`
 `;
 
 const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
-  const { loading, error, data } = useQuery(factionUnitData, {
+  const { loading, error, data } = useQuery(factionUnitQuery, {
     variables: { faction: selectedFaction },
   });
 
@@ -72,6 +72,90 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
 
   let factionRoster = data.getUnits;
 
+  const filterUnits = () => {
+    var newRoster = JSON.parse(JSON.stringify(factionRoster));
+    newRoster = newRoster.filter((unit) => {
+      if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
+      // if (unit.key.slice(-1) === "0" && unit.battle_mounts?.length > 0) {
+      //   const newMounts = unit.battle_mounts.filter((mount) => {
+      //     const newCost = factionRoster.find(
+      //       (newUnit) =>
+      //         newUnit.name.includes(mount.mount_name) &&
+      //         newUnit.unit_card === unit.unit_card
+      //     );
+      //     console.log(newCost)
+      //     if (newCost?.multiplayer_cost !== unit.multiplayer_cost)
+      //       mount.multiplayer_cost =
+      //         newCost.multiplayer_cost - unit.multiplayer_cost;
+      //     return mount;
+      //   });
+      //   unit.battle_mounts = newMounts;
+      // }
+      if (unit.custom_battle_permissions[0]?.general_unit === true)
+        unit.ui_unit_group.parent_group.onscreen_name = "Lords";
+
+      if (unit.battle_mounts?.find((o) => o.base_unit === unit.key)) {
+        return unit;
+      }
+      if (unit.battle_mounts?.length < 1) {
+        return unit;
+      }
+    });
+    factionRoster = newRoster;
+  };
+
+  filterUnits();
+
+  const getUnitGroup = (u) =>
+    u.custom_battle_permissions[0]?.general_unit === true
+      ? "Lords"
+      : u.ui_unit_group.parent_group.onscreen_name;
+
+  const FactionGroups = () => {
+    let groups = JSON.parse(JSON.stringify(factionRoster));
+    groups = groups.reduce((acc, value) => {
+      let x = getUnitGroup(value);
+      if (!acc.find((obj) => obj === x)) acc.push(x);
+      return acc;
+    }, []);
+
+    groups.sort((a, b) =>
+      unitGroupData.data.tww.units.find(
+        (obj) => obj.ui_unit_group.parent_group.onscreen_name === a
+      )?.ui_unit_group.parent_group.order >
+      unitGroupData.data.tww.units.find(
+        (obj) => obj.ui_unit_group.parent_group.onscreen_name === b
+      )?.ui_unit_group.parent_group.order
+        ? 1
+        : -1
+    );
+
+    return groups.map((_, i) => (
+      <Box key={i} id={i} my="1rem">
+        <Typography variant="h3" component="h2" align="center">
+          {groups[i]}
+        </Typography>
+        <Grid container justify="center">
+          {factionRoster &&
+            factionRoster
+              .filter((unit) => getUnitGroup(unit) === groups[i])
+              .sort((a, b) =>
+                a.multiplayer_cost > b.multiplayer_cost ? 1 : -1
+              )
+              .map((unit, i) => (
+                <UnitCard
+                  key={i}
+                  id={i}
+                  onUnitAdd={onUnitAdd}
+                  addUnit={true}
+                  {...unit}
+                />
+              ))}
+        </Grid>
+      </Box>
+    ));
+  };
+
   return (
     <Box my="1rem">
       <Box letterSpacing={5}>
@@ -81,34 +165,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
       </Box>
       <Grid container justify="center" alignContent="center" direction="column">
         <div>
-          {categories.map((caste, i) => (
-            <Box key={i} id={i} my="1rem">
-              <Typography variant="h3" component="h2" align="center">
-                {categories[i]}
-              </Typography>
-              <Grid container justify="center">
-                {factionRoster &&
-                  factionRoster
-                    .filter(
-                      (unit) =>
-                        unit.ui_unit_group.parent_group.onscreen_name ===
-                        categories[i]
-                    )
-                    .sort((a, b) =>
-                      a.multiplayer_cost > b.multiplayer_cost ? 1 : -1
-                    )
-                    .map((unit, i) => (
-                      <UnitCard
-                        key={i}
-                        id={i}
-                        onUnitAdd={onUnitAdd}
-                        addUnit={true}
-                        {...unit}
-                      />
-                    ))}
-              </Grid>
-            </Box>
-          ))}
+          <FactionGroups />
         </div>
       </Grid>
     </Box>

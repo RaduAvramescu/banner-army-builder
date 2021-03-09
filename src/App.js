@@ -51,6 +51,7 @@ class App extends Component {
       hasDrain,
       variantUnit,
       ror,
+      spells,
     } = newProps;
 
     if (caste !== "Lord" && !units[0])
@@ -185,16 +186,14 @@ class App extends Component {
       if (this.handleVerifyDuplicates("countSame", newProps) === 1)
         return alert("You can't have more than 1 of the same RoR!");
 
+    if (spells)
+      if (this.handleVerifyDuplicates("countSpells", newProps) === 1)
+        return alert("You can't have more than 1 of the same Spell!");
     this.handleUnitAdd(newProps);
   };
 
   handleUpdateUnit = (props, mount, spell) => {
     let { ...newProps } = props;
-
-    if (spell)
-      newProps.spells = newProps.spells.filter((el) => {
-        if (el.name == spell.name) return el;
-      });
 
     if (mount) {
       if (mount.hasOwnProperty("multiplayer_cost"))
@@ -210,6 +209,11 @@ class App extends Component {
         if (mount.hasOwnProperty(property)) newProps[property] = true;
       });
     }
+
+    if (spell)
+      newProps.spells = newProps.spells.filter((el) => {
+        if (el.name == spell.name) return el;
+      });
 
     return newProps;
   };
@@ -289,6 +293,24 @@ class App extends Component {
       count = units.filter((el) => {
         if (el.multiplayer_cost >= 1800) return count + 1;
       }).length;
+      return count;
+    }
+
+    if (validation === "countSpells") {
+      count = units.filter((el) => {
+        if (
+          el.spells?.filter(
+            (elTwo) =>
+              elTwo.name ===
+              props.spells?.find(
+                (originalSpell) => originalSpell.name === elTwo.name
+              )
+          )
+        ) {
+          if (props.spells.length > 0) return count + 1;
+        }
+      }).length;
+
       return count;
     }
 

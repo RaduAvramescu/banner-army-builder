@@ -49,7 +49,7 @@ const UnitCard = (props) => {
         >
           {props.multiplayer_cost}
         </Typography>
-        {props.caste === "Lord" || props.caste === "Hero" ? (
+        {props.caste === "Hero" || props.caste === "Lord" ? (
           <img
             src={`images/${props.custom_battle_permissions[0].general_portrait.toLowerCase()}`}
             alt="Unit Card Image"
