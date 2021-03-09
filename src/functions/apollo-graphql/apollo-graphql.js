@@ -87,10 +87,12 @@ const resolvers = {
 
             if (unit.key.slice(-1) === "0" && unit.battle_mounts?.length > 0) {
               const newMounts = unit.battle_mounts.filter((mount) => {
-                const newCost = factionData.find((newUnit) =>
-                  newUnit.name.includes(mount.mount_name)
+                const newCost = factionData.find(
+                  (newUnit) =>
+                    newUnit.name.includes(mount.mount_name) &&
+                    newUnit.factions[0].key === unit.factions[0].key
                 );
-                if (newCost.multiplayer_cost)
+                if (newCost.multiplayer_cost !== unit.multiplayer_cost)
                   mount.multiplayer_cost =
                     newCost.multiplayer_cost - unit.multiplayer_cost;
                 return mount;
@@ -111,6 +113,8 @@ const resolvers = {
             if (unit.battle_mounts?.length < 1) {
               return unit;
             }
+
+            // return unit;
           }
       });
 
