@@ -85,28 +85,30 @@ const resolvers = {
 
             if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
 
-            if (unit.key.slice(-1) === "0" && unit.battle_mounts) {
-              const newMounts = unit.battle_mounts?.filter((mount) => {
-                mount.multiplayer_cost =
-                  factionData.find((newUnit) =>
-                    newUnit.name.includes(mount.mount_name)
-                  ).multiplayer_cost - unit.multiplayer_cost;
-
+            if (unit.key.slice(-1) === "0" && unit.battle_mounts?.length > 0) {
+              const newMounts = unit.battle_mounts.filter((mount) => {
+                const newCost = factionData.find((newUnit) =>
+                  newUnit.name.includes(mount.mount_name)
+                );
+                if (newCost.multiplayer_cost)
+                  mount.multiplayer_cost =
+                    newCost.multiplayer_cost - unit.multiplayer_cost;
                 return mount;
               });
               unit.battle_mounts = newMounts;
             }
 
-            if (unit.caste === "Lord") {
+            if (unit.custom_battle_permissions[0]?.general_unit) {
               unit.ui_unit_group.parent_group.onscreen_name = "Lords";
-            } else if (unit.caste === "Hero")
+            } else if (unit.caste === "Hero") {
               unit.ui_unit_group.parent_group.onscreen_name = "Heroes";
+            }
 
-            if (unit.battle_mounts.find((o) => o.base_unit === unit.key)) {
+            if (unit.battle_mounts?.find((o) => o.base_unit === unit.key)) {
               return unit;
             }
 
-            if (unit.battle_mounts.length < 1) {
+            if (unit.battle_mounts?.length < 1) {
               return unit;
             }
           }
