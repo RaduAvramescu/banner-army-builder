@@ -87,10 +87,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
       //   });
       //   unit.battle_mounts = newMounts;
       // }
-      if (
-        unit.custom_battle_permissions[0]?.general_unit === true ||
-        unit.caste === "Lord"
-      )
+      if (unit.caste === "Lord")
         unit.ui_unit_group.parent_group.onscreen_name = "Lords";
 
       if (unit.battle_mounts?.find((o) => o.base_unit === unit.key))

@@ -110,48 +110,43 @@ const resolvers = {
 
   Faction: {
     subculture: (parent) => {
-      const element = factionsData.data.tww.factions.find(
+      const unit = factionsData.data.tww.factions.find(
         (faction) => faction.key === parent.key
       );
-      if (element && element.hasOwnProperty("subculture"))
-        return element.subculture;
+      return unit.subculture;
     },
   },
 
   Unit: {
     ui_unit_group: (parent) => {
-      const element = unitGroupData.data.tww.units.find(
-        (unit) => unit.unit === parent.key
+      const unit = unitGroupData.data.tww.units.find(
+        (u) => u.unit === parent.key
       );
-      if (element && element.hasOwnProperty("ui_unit_group"))
-        return element.ui_unit_group;
+      return unit.ui_unit_group;
     },
 
     abilities: (parent) => {
-      const element = factionData.find((unit) => unit.key === parent.key);
-      if (element && element.hasOwnProperty("abilities"))
-        return element.abilities;
+      const unit = factionData.find((u) => u.key === parent.key);
+      return unit.abilities;
     },
 
     spells: (parent) => {
-      const element = factionData.find((unit) => unit.key === parent.key);
-      if (element && element.hasOwnProperty("spells")) return element.spells;
+      const unit = factionData.find((u) => u.key === parent.key);
+      return unit.spells;
     },
 
     battle_mounts: (parent) => {
-      const element = mountsAndPermissions.data.tww.units.find(
-        (unit) => unit.unit === parent.key
+      const unit = mountsAndPermissions.data.tww.units.find(
+        (u) => u.unit === parent.key
       );
-      if (element && element.hasOwnProperty("battle_mounts"))
-        return element.battle_mounts;
+      return unit.battle_mounts;
     },
 
     custom_battle_permissions: (parent) => {
-      const element = mountsAndPermissions.data.tww.units.find(
-        (unit) => unit.unit === parent.key
+      const unit = mountsAndPermissions.data.tww.units.find(
+        (u) => u.unit === parent.key
       );
-      if (element && element.hasOwnProperty("custom_battle_permissions"))
-        return element.custom_battle_permissions;
+      return unit.custom_battle_permissions;
     },
   },
 };
