@@ -56,7 +56,7 @@ const styles = (theme) => ({
   },
   dialog__faction_image: {
     cursor: "pointer",
-    margin: "auto 0.5rem",
+    margin: "0.5rem 0.5rem",
     border: "2px solid grey",
     transition: "0.1s ease-in-out",
     "&:hover": {
@@ -161,36 +161,35 @@ const FactionSelector = ({ handleFactionChange }) => {
             >
               {category.toUpperCase()}
             </Typography>
-            <Grid container justify="center">
-              <Box mt="0.5rem">
-                {factions
-                  .filter((faction, i) => faction.screen_name === category)
-                  .map((faction, i) => (
-                    <img
-                      src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
-                      onClick={() => handleClose(faction)}
-                      className={classes.dialog__faction_image}
-                      alt={faction.screen_name}
-                      title={faction.screen_name}
-                    />
-                  ))}
-                {factions
-                  .filter(
-                    (faction, i) =>
-                      faction.subculture.name === category &&
-                      faction.screen_name !== category
-                  )
-                  .map((faction, i) => (
-                    <img
-                      src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
-                      onClick={() => handleClose(faction)}
-                      className={classes.dialog__faction_image}
-                      alt={faction.screen_name}
-                      title={faction.screen_name}
-                    />
-                  ))}
-              </Box>
-            </Grid>
+
+            <Box display="flex" justifyContent="center" flexWrap="wrap">
+              {factions
+                .filter((faction, i) => faction.screen_name === category)
+                .map((faction, i) => (
+                  <img
+                    src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
+                    onClick={() => handleClose(faction)}
+                    className={classes.dialog__faction_image}
+                    alt={faction.screen_name}
+                    title={faction.screen_name}
+                  />
+                ))}
+              {factions
+                .filter(
+                  (faction, i) =>
+                    faction.subculture.name === category &&
+                    faction.screen_name !== category
+                )
+                .map((faction, i) => (
+                  <img
+                    src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
+                    onClick={() => handleClose(faction)}
+                    className={classes.dialog__faction_image}
+                    alt={faction.screen_name}
+                    title={faction.screen_name}
+                  />
+                ))}
+            </Box>
           </Box>
         ))}
       </MuiDialogContent>
