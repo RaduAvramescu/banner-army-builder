@@ -4,6 +4,10 @@ let theme = createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       "@global": {
+        "*::-webkit-scrollbar": {
+          width: "0px",
+          height: "0px",
+        },
         footer: {
           color: "white",
           backgroundColor: "black",
@@ -20,11 +24,6 @@ let theme = createMuiTheme({
             opacity: "0.4",
           },
         },
-      },
-    },
-    MuiDialog: {
-      paper: {
-        border: "2px solid grey",
       },
     },
     MuiListItem: {

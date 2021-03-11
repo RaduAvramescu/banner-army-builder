@@ -50,7 +50,7 @@ const styles = (theme) => ({
     backgroundColor: "black",
   },
   dialog__text_color: {
-    color: "white",
+    color: "#c4941c",
   },
   dialog__faction_image: {
     cursor: "pointer",
@@ -58,8 +58,64 @@ const styles = (theme) => ({
     border: "2px solid grey",
     transition: "0.1s ease-in-out",
     "&:hover": {
-      borderColor: "white",
+      borderColor: "#c4941c",
     },
+  },
+  contour: {
+    backgroundImage: "url('images/ui/skins/default/panel_back_border.png')",
+    backgroundRepeat: "no-repeat",
+    position: "fixed",
+    height: "64px",
+    width: "64px",
+    pointerEvents: "none",
+  },
+  contour_top_left: {
+    top: "30px",
+    left: "30px",
+    backgroundPosition: "0 0",
+  },
+  contour_top_right: {
+    top: "30px",
+    right: "30px",
+    backgroundPosition: "-192px 0",
+  },
+  contour_bottom_left: {
+    bottom: "30px",
+    left: "30px",
+    backgroundPosition: "0 -192px",
+  },
+  contour_bottom_right: {
+    bottom: "30px",
+    right: "30px",
+    backgroundPosition: "-192px -192px",
+  },
+  contour_top: {
+    top: "30px",
+    left: "64px",
+    width: "calc(100% - 128px)",
+    backgroundSize: "calc(100% + 256px) 256px",
+    backgroundPosition: "-128px 0px",
+  },
+  contour_bottom: {
+    bottom: "30px",
+    left: "64px",
+    width: "calc(100% - 128px)",
+    backgroundSize: "calc(100% + 256px) 256px",
+    backgroundPosition: "-128px -192px",
+  },
+  contour_right: {
+    right: "30px",
+    top: "64px",
+    height: "calc(100% - 128px)",
+    backgroundSize: "256px calc(100% + 1024px)",
+    backgroundPosition: "-192px -512px",
+  },
+  contour_left: {
+    left: "30px",
+    top: "64px",
+    height: "calc(100% - 128px)",
+    backgroundSize: "256px calc(100% + 1024px)",
+    backgroundPosition: "0 -512px",
   },
 });
 
@@ -149,6 +205,8 @@ const FactionSelector = ({ handleFactionChange }) => {
     const { classes } = props;
     return (
       <MuiDialogContent className={classes.dialog}>
+        <Contours />
+
         {FactionCategories().map((category, i) => (
           <Box my="1rem">
             <Typography
@@ -170,6 +228,8 @@ const FactionSelector = ({ handleFactionChange }) => {
                     className={classes.dialog__faction_image}
                     alt={faction.screen_name}
                     title={faction.screen_name}
+                    height="64px"
+                    width="64px"
                   />
                 ))}
               {factions
@@ -185,12 +245,36 @@ const FactionSelector = ({ handleFactionChange }) => {
                     className={classes.dialog__faction_image}
                     alt={faction.screen_name}
                     title={faction.screen_name}
+                    height="64px"
+                    width="64px"
                   />
                 ))}
             </Box>
           </Box>
         ))}
       </MuiDialogContent>
+    );
+  });
+
+  const Contours = withStyles(styles)((props) => {
+    const { classes } = props;
+    return (
+      <div>
+        <div className={`${classes.contour} ${classes.contour_top_left}`}></div>
+        <div className={`${classes.contour} ${classes.contour_top}`}></div>
+        <div
+          className={`${classes.contour} ${classes.contour_top_right}`}
+        ></div>
+        <div className={`${classes.contour} ${classes.contour_left}`}></div>
+        <div className={`${classes.contour} ${classes.contour_right}`}></div>
+        <div
+          className={`${classes.contour} ${classes.contour_bottom_left}`}
+        ></div>
+        <div className={`${classes.contour} ${classes.contour_bottom}`}></div>
+        <div
+          className={`${classes.contour} ${classes.contour_bottom_right}`}
+        ></div>
+      </div>
     );
   });
 
@@ -203,9 +287,6 @@ const FactionSelector = ({ handleFactionChange }) => {
         aria-labelledby="simple-dialog-title"
         fullWidth
         maxWidth="xl"
-        props={{
-          onTest: <div style={{ color: "white" }}>Ayy lmao</div>,
-        }}
       >
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           FACTIONS
