@@ -99,13 +99,14 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
 
   filterUnits();
 
-  const getUnitGroup = (u) =>
-    u.custom_battle_permissions[0]?.general_unit === true
+  const getUnitGroup = (unit) => {
+    return unit.custom_battle_permissions[0]?.general_unit
       ? "Lords"
-      : u.ui_unit_group.parent_group.onscreen_name;
+      : unit.ui_unit_group.parent_group.onscreen_name;
+  };
 
   const FactionGroups = () => {
-    let groups = JSON.parse(JSON.stringify(factionRoster));
+    let groups = filteredRoster;
     groups = groups.reduce((acc, value) => {
       let x = getUnitGroup(value);
       if (!acc.find((obj) => obj === x)) acc.push(x);
@@ -129,21 +130,18 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
           {groups[i]}
         </Typography>
         <Grid container justify="center">
-          {filteredRoster &&
-            filteredRoster
-              .filter((unit) => getUnitGroup(unit) === groups[i])
-              .sort((a, b) =>
-                a.multiplayer_cost > b.multiplayer_cost ? 1 : -1
-              )
-              .map((unit, i) => (
-                <UnitCard
-                  key={i}
-                  id={i}
-                  onUnitAdd={onUnitAdd}
-                  addUnit={true}
-                  {...unit}
-                />
-              ))}
+          {filteredRoster
+            .filter((unit) => getUnitGroup(unit) === groups[i])
+            .sort((a, b) => (a.multiplayer_cost > b.multiplayer_cost ? 1 : -1))
+            .map((unit, i) => (
+              <UnitCard
+                key={i}
+                id={i}
+                onUnitAdd={onUnitAdd}
+                addUnit={true}
+                {...unit}
+              />
+            ))}
         </Grid>
       </Box>
     ));

@@ -61,7 +61,7 @@ const typeDefs = gql`
   }
 
   type Permissions {
-    general_unit: String
+    general_unit: Boolean
     general_portrait: String
   }
 
