@@ -87,13 +87,7 @@ const resolvers = {
   Query: {
     getFactions: (_, { include_non_mp }) => {
       const factions = factionsData.data.tww.factions?.filter((faction) => {
-        if (include_non_mp)
-          if (faction.mp_available)
-            if (
-              faction.screen_name === faction.subculture.name ||
-              faction.key === "wh_dlc03_bst_beastmen"
-            )
-              return faction;
+        if (include_non_mp) if (faction.mp_available) return faction;
       });
       return factions;
     },
