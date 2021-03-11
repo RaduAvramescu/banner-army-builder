@@ -71,10 +71,10 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
     );
 
   let factionRoster = data.getUnits;
+  let filteredRoster = JSON.parse(JSON.stringify(factionRoster));
 
   const filterUnits = () => {
-    var newRoster = JSON.parse(JSON.stringify(factionRoster));
-    newRoster = newRoster.filter((unit) => {
+    filteredRoster = filteredRoster.filter((unit) => {
       if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
       // if (unit.key.slice(-1) === "0" && unit.battle_mounts?.length > 0) {
       //   const newMounts = unit.battle_mounts.filter((mount) => {
@@ -83,25 +83,21 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
       //         newUnit.name.includes(mount.mount_name) &&
       //         newUnit.unit_card === unit.unit_card
       //     );
-      //     console.log(newCost)
-      //     if (newCost?.multiplayer_cost !== unit.multiplayer_cost)
-      //       mount.multiplayer_cost =
-      //         newCost.multiplayer_cost - unit.multiplayer_cost;
       //     return mount;
       //   });
       //   unit.battle_mounts = newMounts;
       // }
-      if (unit.custom_battle_permissions[0]?.general_unit === true)
+      if (
+        unit.custom_battle_permissions[0]?.general_unit === true ||
+        unit.caste === "Lord"
+      )
         unit.ui_unit_group.parent_group.onscreen_name = "Lords";
 
-      if (unit.battle_mounts?.find((o) => o.base_unit === unit.key)) {
+      if (unit.battle_mounts?.find((o) => o.base_unit === unit.key))
         return unit;
-      }
-      if (unit.battle_mounts?.length < 1) {
-        return unit;
-      }
+
+      if (!unit.name.includes(" on ")) return unit;
     });
-    factionRoster = newRoster;
   };
 
   filterUnits();
@@ -136,8 +132,8 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
           {groups[i]}
         </Typography>
         <Grid container justify="center">
-          {factionRoster &&
-            factionRoster
+          {filteredRoster &&
+            filteredRoster
               .filter((unit) => getUnitGroup(unit) === groups[i])
               .sort((a, b) =>
                 a.multiplayer_cost > b.multiplayer_cost ? 1 : -1
