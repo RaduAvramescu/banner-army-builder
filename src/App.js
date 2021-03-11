@@ -13,7 +13,7 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    selectedFaction: "wh_dlc03_bst_beastmen",
+    selectedFaction: "",
     funds: 12400,
     models: 0,
     units: [],

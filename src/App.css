@@ -53,3 +53,15 @@
   max-width: 100%;
   height: auto;
 }
+
+.dialog {
+  background-color: black;
+}
+
+.dialog--text_color {
+  color: white !important;
+}
+
+.dialog__faction_image:hover {
+  cursor: pointer;
+}

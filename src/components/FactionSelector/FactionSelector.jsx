@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useQuery, gql } from "@apollo/client";
 import {
   Box,
   Grid,
-  FormControl,
-  NativeSelect,
-  InputLabel,
+  Typography,
   CircularProgress,
+  ButtonBase,
+  Dialog,
+  DialogContent,
 } from "@material-ui/core";
+import { IconButton, closeIcon } from "@material-ui/icons";
 
 const factionsQuery = gql`
   query factionsGetter($include_non_mp: Boolean!) {
@@ -30,6 +32,17 @@ const factionsQuery = gql`
 `;
 
 const FactionSelector = ({ handleFactionChange }) => {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (faction) => {
+    setOpen(false);
+    if (faction?.key) handleFactionChange(faction.key);
+  };
+
   const { loading, error, data } = useQuery(factionsQuery, {
     variables: { include_non_mp: true },
   });
@@ -53,24 +66,55 @@ const FactionSelector = ({ handleFactionChange }) => {
     .sort((a, b) => (a.screen_name > b.screen_name ? 1 : -1));
 
   return (
-    <Box my="1rem">
-      <Grid container justify="center">
-        <FormControl>
-          <InputLabel htmlFor="faction-select">Faction</InputLabel>
-          <NativeSelect
-            defaultValue={"wh_dlc03_bst_beastmen"}
-            onChange={(e) => handleFactionChange(e.target.value)}
-            inputProps={{ id: "faction-select" }}
-          >
+    <React.Fragment>
+      <Typography variant="h2" align="center" onClick={handleClickOpen}>
+        <span className="dialog__faction_image">CHOOSE FACTION</span>
+      </Typography>
+      <Dialog
+        onClose={handleClose}
+        open={open}
+        aria-labelledby="simple-dialog-title"
+        fullWidth
+        maxWidth="xl"
+      >
+        <Grid container justify="center" className="dialog">
+          <DialogContent>
+            <Box mb="1rem">
+              <Typography
+                variant="h2"
+                align="center"
+                className="dialog--text_color"
+              >
+                FACTIONS
+              </Typography>
+            </Box>
             {factions.map((faction, i) => (
-              <option key={i} value={faction.key}>
-                {faction.screen_name}
-              </option>
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                px="5rem"
+              >
+                <img
+                  src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
+                  onClick={() => handleClose(faction)}
+                  className="dialog__faction_image"
+                />
+                <Typography
+                  align="center"
+                  variant="h4"
+                  className="dialog--text_color"
+                  key={i}
+                >
+                  &nbsp;
+                  {faction.screen_name}
+                </Typography>
+              </Box>
             ))}
-          </NativeSelect>
-        </FormControl>
-      </Grid>
-    </Box>
+          </DialogContent>
+        </Grid>
+      </Dialog>
+    </React.Fragment>
   );
 };
 
