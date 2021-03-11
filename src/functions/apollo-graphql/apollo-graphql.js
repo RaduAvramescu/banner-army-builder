@@ -87,8 +87,8 @@ const resolvers = {
   Query: {
     getFactions: (_, { include_non_mp }) => {
       const factions = factionsData.data.tww.factions?.filter((faction) => {
-        if (include_non_mp === true)
-          if (faction.mp_available === true)
+        if (include_non_mp)
+          if (faction.mp_available)
             if (
               faction.screen_name === faction.subculture.name ||
               faction.key === "wh_dlc03_bst_beastmen"
@@ -100,7 +100,7 @@ const resolvers = {
 
     getUnits: (_, { faction }) => {
       const units = factionData.filter((unit) => {
-        if (unit.factions.some((el) => el.key === faction))
+        if (unit.factions.some((u) => u.key === faction))
           if (!unit.key.includes("summoned")) return unit;
       });
 
