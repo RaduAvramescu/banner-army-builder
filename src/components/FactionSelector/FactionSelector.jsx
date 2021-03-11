@@ -4,12 +4,10 @@ import { useQuery, gql } from "@apollo/client";
 import { withStyles } from "@material-ui/core";
 import {
   Box,
-  Grid,
   Typography,
   CircularProgress,
   IconButton,
   Dialog,
-  DialogContent,
 } from "@material-ui/core";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
 import MuiDialogContent from "@material-ui/core/DialogContent";
