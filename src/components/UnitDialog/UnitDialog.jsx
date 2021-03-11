@@ -15,7 +15,6 @@ import {
   Typography,
   Box,
 } from "@material-ui/core";
-import PersonIcon from "@material-ui/icons/Person";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -129,9 +128,10 @@ function SimpleDialog(props) {
                 key={i}
               >
                 <ListItemAvatar>
-                  <Avatar alt={el.mount_name} src={`images/${el.icon_name}`}>
-                    <PersonIcon />
-                  </Avatar>
+                  <Avatar
+                    alt={el.mount_name}
+                    src={`images/${el.icon_name}`}
+                  ></Avatar>
                 </ListItemAvatar>
                 <ListItemText primary={el.mount_name} />
               </ListItem>
