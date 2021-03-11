@@ -9,7 +9,6 @@ let theme = createMuiTheme({
           backgroundColor: "black",
           textShadow: "1px 1px 1px black",
         },
-
         ".headerText": {
           textShadow: "2px 2px 2px black",
         },
@@ -21,6 +20,11 @@ let theme = createMuiTheme({
             opacity: "0.4",
           },
         },
+      },
+    },
+    MuiDialog: {
+      paper: {
+        border: "2px solid grey",
       },
     },
     MuiListItem: {

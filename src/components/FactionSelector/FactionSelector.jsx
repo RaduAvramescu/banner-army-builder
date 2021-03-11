@@ -197,21 +197,21 @@ const FactionSelector = ({ handleFactionChange }) => {
   return (
     <React.Fragment>
       <DialogOpenButton />
-      <Box border={1}>
-        <Dialog
-          onClose={handleClose}
-          open={open}
-          aria-labelledby="simple-dialog-title"
-          fullWidth
-          maxWidth="xl"
-          border=""
-        >
-          <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-            FACTIONS
-          </DialogTitle>
-          <DialogContent />
-        </Dialog>
-      </Box>
+      <Dialog
+        onClose={handleClose}
+        open={open}
+        aria-labelledby="simple-dialog-title"
+        fullWidth
+        maxWidth="xl"
+        props={{
+          onTest: <div style={{ color: "white" }}>Ayy lmao</div>,
+        }}
+      >
+        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+          FACTIONS
+        </DialogTitle>
+        <DialogContent />
+      </Dialog>
     </React.Fragment>
   );
 };
