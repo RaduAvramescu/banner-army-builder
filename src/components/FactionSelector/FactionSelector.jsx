@@ -106,6 +106,7 @@ const FactionSelector = ({ handleFactionChange }) => {
       if (!acc.find((subculture) => subculture === x)) acc.push(x);
       return acc;
     }, []);
+    categories = categories.sort((a, b) => (a > b ? 1 : -1));
     return categories;
   };
 
@@ -167,7 +168,22 @@ const FactionSelector = ({ handleFactionChange }) => {
               mt="0.5rem"
             >
               {factions
-                .filter((faction, i) => faction.subculture.name === category)
+                .filter((faction, i) => faction.screen_name === category)
+                .map((faction, i) => (
+                  <img
+                    src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
+                    onClick={() => handleClose(faction)}
+                    className={classes.dialog__faction_image}
+                    alt={faction.screen_name}
+                    title={faction.screen_name}
+                  />
+                ))}
+              {factions
+                .filter(
+                  (faction, i) =>
+                    faction.subculture.name === category &&
+                    faction.screen_name !== category
+                )
                 .map((faction, i) => (
                   <img
                     src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
