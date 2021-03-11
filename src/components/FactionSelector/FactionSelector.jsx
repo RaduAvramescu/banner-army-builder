@@ -161,39 +161,36 @@ const FactionSelector = ({ handleFactionChange }) => {
             >
               {category.toUpperCase()}
             </Typography>
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              mt="0.5rem"
-            >
-              {factions
-                .filter((faction, i) => faction.screen_name === category)
-                .map((faction, i) => (
-                  <img
-                    src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
-                    onClick={() => handleClose(faction)}
-                    className={classes.dialog__faction_image}
-                    alt={faction.screen_name}
-                    title={faction.screen_name}
-                  />
-                ))}
-              {factions
-                .filter(
-                  (faction, i) =>
-                    faction.subculture.name === category &&
-                    faction.screen_name !== category
-                )
-                .map((faction, i) => (
-                  <img
-                    src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
-                    onClick={() => handleClose(faction)}
-                    className={classes.dialog__faction_image}
-                    alt={faction.screen_name}
-                    title={faction.screen_name}
-                  />
-                ))}
-            </Box>
+            <Grid container justify="center">
+              <Box mt="0.5rem">
+                {factions
+                  .filter((faction, i) => faction.screen_name === category)
+                  .map((faction, i) => (
+                    <img
+                      src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
+                      onClick={() => handleClose(faction)}
+                      className={classes.dialog__faction_image}
+                      alt={faction.screen_name}
+                      title={faction.screen_name}
+                    />
+                  ))}
+                {factions
+                  .filter(
+                    (faction, i) =>
+                      faction.subculture.name === category &&
+                      faction.screen_name !== category
+                  )
+                  .map((faction, i) => (
+                    <img
+                      src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
+                      onClick={() => handleClose(faction)}
+                      className={classes.dialog__faction_image}
+                      alt={faction.screen_name}
+                      title={faction.screen_name}
+                    />
+                  ))}
+              </Box>
+            </Grid>
           </Box>
         ))}
       </MuiDialogContent>
@@ -203,18 +200,21 @@ const FactionSelector = ({ handleFactionChange }) => {
   return (
     <React.Fragment>
       <DialogOpenButton />
-      <Dialog
-        onClose={handleClose}
-        open={open}
-        aria-labelledby="simple-dialog-title"
-        fullWidth
-        maxWidth="xl"
-      >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          FACTIONS
-        </DialogTitle>
-        <DialogContent />
-      </Dialog>
+      <Box border={1}>
+        <Dialog
+          onClose={handleClose}
+          open={open}
+          aria-labelledby="simple-dialog-title"
+          fullWidth
+          maxWidth="xl"
+          border=""
+        >
+          <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+            FACTIONS
+          </DialogTitle>
+          <DialogContent />
+        </Dialog>
+      </Box>
     </React.Fragment>
   );
 };
