@@ -48,6 +48,10 @@ const styles = (theme) => ({
   },
   dialog: {
     backgroundColor: "black",
+    "&::-webkit-scrollbar": {
+      width: "0px",
+      height: "0px",
+    },
   },
   dialog__text_color: {
     color: "#c4941c",
@@ -206,7 +210,6 @@ const FactionSelector = ({ handleFactionChange }) => {
     return (
       <MuiDialogContent className={classes.dialog}>
         <Contours />
-
         {FactionCategories().map((category, i) => (
           <Box my="1rem">
             <Typography
@@ -217,7 +220,6 @@ const FactionSelector = ({ handleFactionChange }) => {
             >
               {category.toUpperCase()}
             </Typography>
-
             <Box display="flex" justifyContent="center" flexWrap="wrap">
               {factions
                 .filter((faction, i) => faction.screen_name === category)

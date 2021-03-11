@@ -4,10 +4,6 @@ let theme = createMuiTheme({
   overrides: {
     MuiCssBaseline: {
       "@global": {
-        "*::-webkit-scrollbar": {
-          width: "0px",
-          height: "0px",
-        },
         footer: {
           color: "white",
           backgroundColor: "black",
