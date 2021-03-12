@@ -1,18 +1,24 @@
 import React, { useState } from "react";
 
+import SimpleDialog from "../SimpleDialog/SimpleDialog";
 import { useQuery, gql } from "@apollo/client";
 import { withStyles } from "@material-ui/core";
-import {
-  Box,
-  Typography,
-  CircularProgress,
-  IconButton,
-  Button,
-} from "@material-ui/core";
-import MuiDialog from "@material-ui/core/Dialog";
-import MuiDialogTitle from "@material-ui/core/DialogTitle";
-import MuiDialogContent from "@material-ui/core/DialogContent";
-import CloseIcon from "@material-ui/icons/Close";
+import { Box, Typography, CircularProgress, Button } from "@material-ui/core";
+
+const styles = (theme) => ({
+  dialog__text_color: {
+    color: "#c4941c",
+  },
+  dialog__faction_image: {
+    cursor: "pointer",
+    margin: "0.5rem 0.5rem",
+    border: "2px solid grey",
+    transition: "0.3s ease-in-out",
+    "&:hover": {
+      borderColor: "#c4941c",
+    },
+  },
+});
 
 const factionsQuery = gql`
   query factionsGetter($include_non_mp: Boolean!) {
@@ -32,39 +38,6 @@ const factionsQuery = gql`
     }
   }
 `;
-
-const styles = (theme) => ({
-  root: {
-    margin: 0,
-    padding: theme.spacing(2),
-  },
-  closeButton: {
-    position: "absolute",
-    right: theme.spacing(1),
-    top: theme.spacing(1),
-    color: theme.palette.grey[500],
-  },
-  openButton: {
-    cursor: "pointer",
-  },
-  dialog: {
-    backgroundColor: "black",
-    border: "30px solid transparent",
-    borderImage: `url("images/ui/skins/default/panel_back_border.png") 30 / 30px / 7px round`,
-  },
-  dialog__text_color: {
-    color: "#c4941c",
-  },
-  dialog__faction_image: {
-    cursor: "pointer",
-    margin: "0.5rem 0.5rem",
-    border: "2px solid grey",
-    transition: "0.3s ease-in-out",
-    "&:hover": {
-      borderColor: "#c4941c",
-    },
-  },
-});
 
 const FactionSelector = ({ handleFactionChange }) => {
   const [open, setOpen] = useState(false);
@@ -111,126 +84,76 @@ const FactionSelector = ({ handleFactionChange }) => {
     return categories;
   };
 
-  const DialogOpenButton = withStyles(styles)((props) => {
-    const { classes } = props;
+  const DialogOpenButton = () => {
     return (
       <Box display="flex" justifyContent="center" my="1rem">
         <Button onClick={handleClickOpen} variant="contained" color="secondary">
-          <Typography
-            variant="h3"
-            align="center"
-            className={classes.openButton}
-          >
+          <Typography variant="h3" align="center">
             SELECT FACTION
           </Typography>
         </Button>
       </Box>
     );
-  });
-
-  const DialogTitle = withStyles(styles)((props) => {
-    const { children, classes, onClose, ...other } = props;
-    return (
-      <MuiDialogTitle disableTypography className={classes.root} {...other}>
-        <Typography
-          variant="h2"
-          align="center"
-          className={classes.dialog__text_color}
-        >
-          {children}
-        </Typography>
-        {onClose ? (
-          <IconButton
-            aria-label="close"
-            className={classes.closeButton}
-            onClick={onClose}
-          >
-            <CloseIcon />
-          </IconButton>
-        ) : null}
-      </MuiDialogTitle>
-    );
-  });
+  };
 
   const DialogContent = withStyles(styles)((props) => {
     const { classes } = props;
-    return (
-      <MuiDialogContent>
-        {FactionCategories().map((category, i) => (
-          <Box key={i} id={i} my="1rem">
-            <Typography
-              align="center"
-              variant="h4"
-              className={classes.dialog__text_color}
-              key={i}
-            >
-              {category.toUpperCase()}
-            </Typography>
-            <Box display="flex" justifyContent="center" flexWrap="wrap">
-              {factions
-                .filter((faction, i) => faction.screen_name === category)
-                .map((faction, i) => (
-                  <img
-                    key={i}
-                    id={i}
-                    src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
-                    onClick={() => handleClose(faction)}
-                    className={classes.dialog__faction_image}
-                    alt={faction.screen_name}
-                    title={faction.screen_name}
-                    height="64px"
-                    width="64px"
-                  />
-                ))}
-              {factions
-                .filter(
-                  (faction, i) =>
-                    faction.subculture.name === category &&
-                    faction.screen_name !== category
-                )
-                .map((faction, i) => (
-                  <img
-                    key={i}
-                    id={i}
-                    src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
-                    onClick={() => handleClose(faction)}
-                    className={classes.dialog__faction_image}
-                    alt={faction.screen_name}
-                    title={faction.screen_name}
-                    height="64px"
-                    width="64px"
-                  />
-                ))}
-            </Box>
-          </Box>
-        ))}
-      </MuiDialogContent>
-    );
-  });
-
-  const Dialog = withStyles(styles)((props) => {
-    const { classes } = props;
-    return (
-      <MuiDialog
-        onClose={handleClose}
-        open={open}
-        aria-labelledby="simple-dialog-title"
-        fullWidth
-        maxWidth="xl"
-        PaperProps={{ className: classes.dialog }}
-      >
-        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-          FACTIONS
-        </DialogTitle>
-        <DialogContent />
-      </MuiDialog>
-    );
+    return FactionCategories().map((category, i) => (
+      <Box key={i} id={i} my="1rem">
+        <Typography
+          align="center"
+          variant="h4"
+          className={classes.dialog__text_color}
+          key={i}
+        >
+          {category.toUpperCase()}
+        </Typography>
+        <Box display="flex" justifyContent="center" flexWrap="wrap">
+          {factions
+            .filter((faction, i) => faction.screen_name === category)
+            .map((faction, i) => (
+              <img
+                key={i}
+                id={i}
+                src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
+                onClick={() => handleClose(faction)}
+                className={classes.dialog__faction_image}
+                alt={faction.screen_name}
+                title={faction.screen_name}
+                height="64px"
+                width="64px"
+              />
+            ))}
+          {factions
+            .filter(
+              (faction, i) =>
+                faction.subculture.name === category &&
+                faction.screen_name !== category
+            )
+            .map((faction, i) => (
+              <img
+                key={i}
+                id={i}
+                src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
+                onClick={() => handleClose(faction)}
+                className={classes.dialog__faction_image}
+                alt={faction.screen_name}
+                title={faction.screen_name}
+                height="64px"
+                width="64px"
+              />
+            ))}
+        </Box>
+      </Box>
+    ));
   });
 
   return (
     <React.Fragment>
       <DialogOpenButton />
-      <Dialog />
+      <SimpleDialog open={open} onClose={handleClose} title="FACTIONS">
+        <DialogContent />
+      </SimpleDialog>
     </React.Fragment>
   );
 };

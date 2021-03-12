@@ -158,11 +158,13 @@ function SimpleDialog(props) {
           ))}
         </List>
       </TabPanel>
-      <DialogActions style={{ justifyContent: "center" }}>
-        <Button autoFocus onClick={handleClose} color="primary">
-          Confirm
-        </Button>
-      </DialogActions>
+      <Box display="flex" justifyContent="center">
+        <DialogActions>
+          <Button autoFocus onClick={handleClose} color="primary">
+            Confirm
+          </Button>
+        </DialogActions>
+      </Box>
     </Dialog>
   );
 }

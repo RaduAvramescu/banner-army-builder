@@ -74,25 +74,26 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
 
   const filterUnits = () => {
     filteredRoster = filteredRoster.filter((unit) => {
-      if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
-      // if (unit.key.slice(-1) === "0" && unit.battle_mounts?.length > 0) {
-      //   const newMounts = unit.battle_mounts.filter((mount) => {
-      //     const newCost = factionRoster.find(
-      //       (newUnit) =>
-      //         newUnit.name.includes(mount.mount_name) &&
-      //         newUnit.unit_card === unit.unit_card
-      //     );
-      //     return mount;
-      //   });
-      //   unit.battle_mounts = newMounts;
-      // }
-      if (unit.caste === "Lord")
-        unit.ui_unit_group.parent_group.onscreen_name = "Lords";
-
-      if (unit.battle_mounts?.find((o) => o.base_unit === unit.key))
-        return unit;
-
-      if (!unit.name.includes(" on ")) return unit;
+      if (unit.custom_battle_permissions) {
+        if (
+          !unit.name.includes(" on ") &&
+          (unit.special_category === "renown" || !unit.special_category) &&
+          !unit.key.includes("campaign")
+        )
+          return unit;
+        // if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
+        // if (unit.key.slice(-1) === "0" && unit.battle_mounts?.length > 0) {
+        //   const newMounts = unit.battle_mounts.filter((mount) => {
+        //     const newCost = factionRoster.find(
+        //       (newUnit) =>
+        //         newUnit.name.includes(mount.mount_name) &&
+        //         newUnit.unit_card === unit.unit_card
+        //     );
+        //     return mount;
+        //   });
+        //   unit.battle_mounts = newMounts;
+        // }
+      }
     });
   };
 

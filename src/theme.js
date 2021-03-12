@@ -2,6 +2,19 @@ import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 let theme = createMuiTheme({
   overrides: {
+    MuiDialogContent: {
+      root: {
+        msOverflowStyle: "none",
+        overflow: "-moz-scrollbars-none",
+        scrollbarWidth: "none",
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+      },
+    },
     MuiCssBaseline: {
       "@global": {
         footer: {

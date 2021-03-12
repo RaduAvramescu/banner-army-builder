@@ -141,7 +141,7 @@ const resolvers = {
       const unit = mountsAndPermissions.data.tww.units.find(
         (u) => u.unit === parent.key
       );
-      return unit.custom_battle_permissions;
+      if (unit.custom_battle_permissions) return unit.custom_battle_permissions;
     },
   },
 };
