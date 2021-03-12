@@ -7,6 +7,7 @@ import {
   Typography,
   CircularProgress,
   IconButton,
+  Button,
 } from "@material-ui/core";
 import MuiDialog from "@material-ui/core/Dialog";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
@@ -113,9 +114,17 @@ const FactionSelector = ({ handleFactionChange }) => {
   const DialogOpenButton = withStyles(styles)((props) => {
     const { classes } = props;
     return (
-      <Typography variant="h2" align="center" onClick={handleClickOpen}>
-        <span className={classes.openButton}>CHOOSE FACTION</span>
-      </Typography>
+      <Box display="flex" justifyContent="center" my="1rem">
+        <Button onClick={handleClickOpen} variant="contained" color="secondary">
+          <Typography
+            variant="h3"
+            align="center"
+            className={classes.openButton}
+          >
+            SELECT FACTION
+          </Typography>
+        </Button>
+      </Box>
     );
   });
 
