@@ -7,8 +7,8 @@ import {
   Typography,
   CircularProgress,
   IconButton,
-  Dialog,
 } from "@material-ui/core";
+import MuiDialog from "@material-ui/core/Dialog";
 import MuiDialogTitle from "@material-ui/core/DialogTitle";
 import MuiDialogContent from "@material-ui/core/DialogContent";
 import CloseIcon from "@material-ui/icons/Close";
@@ -32,6 +32,12 @@ const factionsQuery = gql`
   }
 `;
 
+// MuiPaper: {
+//   root: {
+
+//   },
+// },
+
 const styles = (theme) => ({
   root: {
     margin: 0,
@@ -48,6 +54,9 @@ const styles = (theme) => ({
   },
   dialog: {
     backgroundColor: "black",
+    border: "30px solid transparent",
+    borderImage:
+      "url('images/ui/skins/default/panel_back_border.png') 30 round",
     "&::-webkit-scrollbar": {
       width: "0px",
       height: "0px",
@@ -124,11 +133,7 @@ const FactionSelector = ({ handleFactionChange }) => {
   const DialogTitle = withStyles(styles)((props) => {
     const { children, classes, onClose, ...other } = props;
     return (
-      <MuiDialogTitle
-        disableTypography
-        className={`${classes.root} ${classes.dialog}`}
-        {...other}
-      >
+      <MuiDialogTitle disableTypography className={classes.root} {...other}>
         <Typography
           variant="h2"
           align="center"
@@ -152,7 +157,7 @@ const FactionSelector = ({ handleFactionChange }) => {
   const DialogContent = withStyles(styles)((props) => {
     const { classes } = props;
     return (
-      <MuiDialogContent className={`${classes.dialog}`}>
+      <MuiDialogContent>
         {FactionCategories().map((category, i) => (
           <Box my="1rem">
             <Typography
@@ -201,21 +206,29 @@ const FactionSelector = ({ handleFactionChange }) => {
     );
   });
 
-  return (
-    <React.Fragment>
-      <DialogOpenButton />
-      <Dialog
+  const Dialog = withStyles(styles)((props) => {
+    const { classes } = props;
+    return (
+      <MuiDialog
         onClose={handleClose}
         open={open}
         aria-labelledby="simple-dialog-title"
         fullWidth
         maxWidth="xl"
+        PaperProps={{ className: classes.dialog }}
       >
         <DialogTitle id="customized-dialog-title" onClose={handleClose}>
           FACTIONS
         </DialogTitle>
         <DialogContent />
-      </Dialog>
+      </MuiDialog>
+    );
+  });
+
+  return (
+    <React.Fragment>
+      <DialogOpenButton />
+      <Dialog />
     </React.Fragment>
   );
 };
