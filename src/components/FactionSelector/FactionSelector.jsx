@@ -65,62 +65,6 @@ const styles = (theme) => ({
       borderColor: "#c4941c",
     },
   },
-  contour: {
-    backgroundImage: "url('images/ui/skins/default/panel_back_border.png')",
-    backgroundRepeat: "no-repeat",
-    position: "fixed",
-    height: "64px",
-    width: "64px",
-    pointerEvents: "none",
-  },
-  contour_top_left: {
-    top: "30px",
-    left: "30px",
-    backgroundPosition: "0 0",
-  },
-  contour_top_right: {
-    top: "30px",
-    right: "30px",
-    backgroundPosition: "-192px 0",
-  },
-  contour_bottom_left: {
-    bottom: "30px",
-    left: "30px",
-    backgroundPosition: "0 -192px",
-  },
-  contour_bottom_right: {
-    bottom: "30px",
-    right: "30px",
-    backgroundPosition: "-192px -192px",
-  },
-  contour_top: {
-    top: "30px",
-    left: "64px",
-    width: "calc(100% - 128px)",
-    backgroundSize: "calc(100% + 256px) 256px",
-    backgroundPosition: "-128px 0px",
-  },
-  contour_bottom: {
-    bottom: "30px",
-    left: "64px",
-    width: "calc(100% - 128px)",
-    backgroundSize: "calc(100% + 256px) 256px",
-    backgroundPosition: "-128px -192px",
-  },
-  contour_right: {
-    right: "30px",
-    top: "64px",
-    height: "calc(100% - 128px)",
-    backgroundSize: "256px calc(100% + 1024px)",
-    backgroundPosition: "-192px -512px",
-  },
-  contour_left: {
-    left: "30px",
-    top: "64px",
-    height: "calc(100% - 128px)",
-    backgroundSize: "256px calc(100% + 1024px)",
-    backgroundPosition: "0 -512px",
-  },
 });
 
 const FactionSelector = ({ handleFactionChange }) => {
@@ -168,12 +112,21 @@ const FactionSelector = ({ handleFactionChange }) => {
     return categories;
   };
 
+  const DialogOpenButton = withStyles(styles)((props) => {
+    const { classes } = props;
+    return (
+      <Typography variant="h2" align="center" onClick={handleClickOpen}>
+        <span className={classes.openButton}>CHOOSE FACTION</span>
+      </Typography>
+    );
+  });
+
   const DialogTitle = withStyles(styles)((props) => {
     const { children, classes, onClose, ...other } = props;
     return (
       <MuiDialogTitle
         disableTypography
-        className={(classes.root, classes.dialog)}
+        className={`${classes.root} ${classes.dialog}`}
         {...other}
       >
         <Typography
@@ -196,20 +149,10 @@ const FactionSelector = ({ handleFactionChange }) => {
     );
   });
 
-  const DialogOpenButton = withStyles(styles)((props) => {
-    const { classes } = props;
-    return (
-      <Typography variant="h2" align="center" onClick={handleClickOpen}>
-        <span className={classes.openButton}>CHOOSE FACTION</span>
-      </Typography>
-    );
-  });
-
   const DialogContent = withStyles(styles)((props) => {
     const { classes } = props;
     return (
-      <MuiDialogContent className={classes.dialog}>
-        <Contours />
+      <MuiDialogContent className={`${classes.dialog}`}>
         {FactionCategories().map((category, i) => (
           <Box my="1rem">
             <Typography
@@ -255,28 +198,6 @@ const FactionSelector = ({ handleFactionChange }) => {
           </Box>
         ))}
       </MuiDialogContent>
-    );
-  });
-
-  const Contours = withStyles(styles)((props) => {
-    const { classes } = props;
-    return (
-      <div>
-        <div className={`${classes.contour} ${classes.contour_top_left}`}></div>
-        <div className={`${classes.contour} ${classes.contour_top}`}></div>
-        <div
-          className={`${classes.contour} ${classes.contour_top_right}`}
-        ></div>
-        <div className={`${classes.contour} ${classes.contour_left}`}></div>
-        <div className={`${classes.contour} ${classes.contour_right}`}></div>
-        <div
-          className={`${classes.contour} ${classes.contour_bottom_left}`}
-        ></div>
-        <div className={`${classes.contour} ${classes.contour_bottom}`}></div>
-        <div
-          className={`${classes.contour} ${classes.contour_bottom_right}`}
-        ></div>
-      </div>
     );
   });
 
