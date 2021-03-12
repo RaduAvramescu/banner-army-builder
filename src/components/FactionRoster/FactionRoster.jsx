@@ -26,7 +26,6 @@ const factionUnitQuery = gql`
       battle_mounts {
         base_unit
         mount_name
-        multiplayer_cost
         mounted_unit
         icon_name
       }

@@ -122,6 +122,8 @@ function SimpleDialog(props) {
           <List>
             {battle_mounts?.map((el, i) => (
               <ListItem
+                key={i}
+                id={i}
                 button
                 selected={selectedMount === i}
                 onClick={() => handleListItemClick(el, "mount", i)}
@@ -143,6 +145,8 @@ function SimpleDialog(props) {
         <List>
           {spells?.map((el, i) => (
             <ListItem
+              key={i}
+              id={i}
               button
               selected={selectedSpell.includes(i)}
               onClick={() => handleListItemClick(el, "spell", i)}

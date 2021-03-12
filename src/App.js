@@ -33,7 +33,8 @@ class App extends Component {
     const { funds, units } = this.state;
     let { ...newProps } = props;
 
-    if (mount) newProps = this.handleUpdateUnit(newProps, mount, spell);
+    if (mount || spell)
+      newProps = this.handleUpdateUnit(newProps, mount, spell);
 
     const {
       name,
@@ -194,20 +195,17 @@ class App extends Component {
 
   handleUpdateUnit = (props, mount, spell) => {
     let { ...newProps } = props;
-
     if (mount) {
-      if (mount.hasOwnProperty("multiplayer_cost"))
-        newProps.multiplayer_cost += mount.multiplayer_cost;
-      const unitProperties = [
-        "isSEM",
-        "isFlyer",
-        "hasBreath",
-        "hasDrain",
-        "isSpecial",
-      ];
-      unitProperties.forEach((property) => {
-        if (mount.hasOwnProperty(property)) newProps[property] = true;
-      });
+      // const unitProperties = [
+      //   "isSEM",
+      //   "isFlyer",
+      //   "hasBreath",
+      //   "hasDrain",
+      //   "isSpecial",
+      // ];
+      // unitProperties.forEach((property) => {
+      //   if (mount.hasOwnProperty(property)) newProps[property] = true;
+      // });
     }
 
     if (spell)

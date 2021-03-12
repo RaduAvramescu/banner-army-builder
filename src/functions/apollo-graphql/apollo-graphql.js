@@ -55,7 +55,6 @@ const typeDefs = gql`
   type Mounts {
     base_unit: String
     mount_name: String
-    multiplayer_cost: Int
     mounted_unit: String
     icon_name: String
   }
@@ -95,7 +94,9 @@ const resolvers = {
     getUnits: (_, { faction }) => {
       const units = factionData.filter((unit) => {
         if (unit.factions.some((u) => u.key === faction))
-          if (!unit.key.includes("summoned")) return unit;
+          if (!unit.key.includes("summoned"))
+            if (!unit.elector && !unit.blessed && !unit.crafted && !unit.tech)
+              return unit;
       });
 
       return units;

@@ -148,7 +148,7 @@ const FactionSelector = ({ handleFactionChange }) => {
     return (
       <MuiDialogContent>
         {FactionCategories().map((category, i) => (
-          <Box my="1rem">
+          <Box key={i} id={i} my="1rem">
             <Typography
               align="center"
               variant="h4"
@@ -162,6 +162,8 @@ const FactionSelector = ({ handleFactionChange }) => {
                 .filter((faction, i) => faction.screen_name === category)
                 .map((faction, i) => (
                   <img
+                    key={i}
+                    id={i}
                     src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
                     onClick={() => handleClose(faction)}
                     className={classes.dialog__faction_image}
@@ -179,6 +181,8 @@ const FactionSelector = ({ handleFactionChange }) => {
                 )
                 .map((faction, i) => (
                   <img
+                    key={i}
+                    id={i}
                     src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
                     onClick={() => handleClose(faction)}
                     className={classes.dialog__faction_image}
