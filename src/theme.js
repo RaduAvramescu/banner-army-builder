@@ -10,9 +10,6 @@ let theme = createMuiTheme({
         "&::-webkit-scrollbar": {
           display: "none",
         },
-        "&::-webkit-scrollbar": {
-          display: "none",
-        },
       },
     },
     MuiCssBaseline: {
