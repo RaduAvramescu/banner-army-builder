@@ -60,7 +60,7 @@ const styles = (theme) => ({
     cursor: "pointer",
     margin: "0.5rem 0.5rem",
     border: "2px solid grey",
-    transition: "0.1s ease-in-out",
+    transition: "0.3s ease-in-out",
     "&:hover": {
       borderColor: "#c4941c",
     },
