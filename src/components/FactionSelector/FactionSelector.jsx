@@ -32,12 +32,6 @@ const factionsQuery = gql`
   }
 `;
 
-// MuiPaper: {
-//   root: {
-
-//   },
-// },
-
 const styles = (theme) => ({
   root: {
     margin: 0,
@@ -53,14 +47,8 @@ const styles = (theme) => ({
     cursor: "pointer",
   },
   dialog: {
-    backgroundColor: "black",
     border: "30px solid transparent",
-    borderImage:
-      "url('images/ui/skins/default/panel_back_border.png') 30 round",
-    "&::-webkit-scrollbar": {
-      width: "0px",
-      height: "0px",
-    },
+    borderImage: `url("images/ui/skins/default/panel_back_border.png") 30 / 30px / 7px round`,
   },
   dialog__text_color: {
     color: "#c4941c",
