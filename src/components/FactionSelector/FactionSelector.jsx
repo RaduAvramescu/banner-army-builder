@@ -47,6 +47,7 @@ const styles = (theme) => ({
     cursor: "pointer",
   },
   dialog: {
+    backgroundColor: "black",
     border: "30px solid transparent",
     borderImage: `url("images/ui/skins/default/panel_back_border.png") 30 / 30px / 7px round`,
   },

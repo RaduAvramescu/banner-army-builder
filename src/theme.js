@@ -46,7 +46,7 @@ let theme = createMuiTheme({
     },
   },
   palette: {
-    background: { default: "#fff", paper: "black" },
+    background: { default: "#fff" },
     secondary: { main: "#000" },
   },
   typography: {
