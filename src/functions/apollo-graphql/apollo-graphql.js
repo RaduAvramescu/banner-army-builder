@@ -62,6 +62,7 @@ const typeDefs = gql`
   type Permissions {
     general_unit: Boolean
     general_portrait: String
+    campaign_exclusive: Boolean
   }
 
   type Faction {
@@ -94,9 +95,7 @@ const resolvers = {
     getUnits: (_, { faction }) => {
       const units = factionData.filter((unit) => {
         if (unit.factions.some((u) => u.key === faction))
-          if (!unit.key.includes("summoned"))
-            if (!unit.elector && !unit.blessed && !unit.crafted && !unit.tech)
-              return unit;
+          if (!unit.key.includes("summoned")) return unit;
       });
 
       return units;

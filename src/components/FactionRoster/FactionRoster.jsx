@@ -45,6 +45,7 @@ const factionUnitQuery = gql`
       custom_battle_permissions {
         general_unit
         general_portrait
+        campaign_exclusive
       }
     }
   }
@@ -74,13 +75,11 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
 
   const filterUnits = () => {
     filteredRoster = filteredRoster.filter((unit) => {
-      if (unit.custom_battle_permissions) {
-        if (
-          !unit.name.includes(" on ") &&
-          (unit.special_category === "renown" || !unit.special_category) &&
-          !unit.key.includes("campaign")
-        )
-          return unit;
+      if (
+        unit.custom_battle_permissions &&
+        !unit.custom_battle_permissions[0]?.campaign_exclusive
+      ) {
+        if (!unit.name.includes(" on ")) return unit;
         // if (unit.caste !== "Lord" && unit.caste !== "Hero") return unit;
         // if (unit.key.slice(-1) === "0" && unit.battle_mounts?.length > 0) {
         //   const newMounts = unit.battle_mounts.filter((mount) => {
