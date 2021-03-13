@@ -292,19 +292,14 @@ class App extends Component {
     }
 
     if (validation === "countSpells") {
-      // console.log(props.spells);
-      count = units.filter((el) => {
-        if (
-          el.spells?.filter((elTwo) => {
-            if (
-              props.spells?.find(
-                (originalSpell) => originalSpell.name === elTwo.name
-              )
-            )
-              return elTwo;
-          }).length > 0
-        )
-          return el;
+      count = units.filter((unit) => {
+        const found = unit.spells?.filter((el) => {
+          const found2 = props.spells?.find(
+            (originalSpell) => originalSpell.name === el.name
+          );
+          if (found2) return found2;
+        });
+        if (found.length > 0) return found;
       }).length;
 
       return count;
