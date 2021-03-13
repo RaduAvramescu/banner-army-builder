@@ -43,7 +43,7 @@ function a11yProps(index) {
   };
 }
 
-function SimpleDialog(props) {
+function UnitDialog(props) {
   const [value, setValue] = React.useState(0);
   const [mount, setMount] = React.useState({});
   const [spell, setSpell] = React.useState([]);
@@ -169,4 +169,4 @@ function SimpleDialog(props) {
   );
 }
 
-export default SimpleDialog;
+export default UnitDialog;

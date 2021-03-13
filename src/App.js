@@ -208,10 +208,7 @@ class App extends Component {
       // });
     }
 
-    if (spell)
-      newProps.spells = newProps.spells.filter((el) => {
-        if (el.name == spell.name) return el;
-      });
+    if (spell) newProps.spells = spell;
 
     return newProps;
   };
@@ -295,18 +292,19 @@ class App extends Component {
     }
 
     if (validation === "countSpells") {
+      // console.log(props.spells);
       count = units.filter((el) => {
         if (
-          el.spells?.filter(
-            (elTwo) =>
-              elTwo.name ===
+          el.spells?.filter((elTwo) => {
+            if (
               props.spells?.find(
                 (originalSpell) => originalSpell.name === elTwo.name
               )
-          )
-        ) {
-          if (props.spells.length > 0) return count + 1;
-        }
+            )
+              return elTwo;
+          }).length > 0
+        )
+          return el;
       }).length;
 
       return count;

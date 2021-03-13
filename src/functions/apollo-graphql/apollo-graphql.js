@@ -54,8 +54,8 @@ const typeDefs = gql`
 
   type Mounts {
     base_unit: String
-    mount_name: String
     mounted_unit: String
+    mount_name: String
     icon_name: String
   }
 

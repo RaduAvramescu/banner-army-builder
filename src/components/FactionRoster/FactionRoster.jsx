@@ -25,8 +25,8 @@ const factionUnitQuery = gql`
       }
       battle_mounts {
         base_unit
-        mount_name
         mounted_unit
+        mount_name
         icon_name
       }
       ui_unit_group {
