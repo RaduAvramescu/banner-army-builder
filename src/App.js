@@ -52,6 +52,7 @@ class App extends Component {
       variantUnit,
       ror,
       spells,
+      ui_unit_group,
     } = newProps;
 
     if (caste !== "Lord" && !units[0])
@@ -59,10 +60,9 @@ class App extends Component {
 
     if (multiplayer_cost > funds) return alert("You don't have enough funds!");
 
-    if (caste === "Lord") {
+    if (caste === "Lord")
       if (units.find((unit) => unit.caste === "Lord"))
         this.handleUnitRemove(0, units[0].multiplayer_cost, units[0].unit_size);
-    }
 
     if (units.length === 20)
       return alert("You cannot have more than 20 units!");
@@ -152,35 +152,40 @@ class App extends Component {
       if (this.handleVerifyDuplicates("variantUnit", newProps) === 8)
         return alert("You can't have more than 8 units of a unit variant!");
 
-    if (caste === "Melee Infantry" || caste === "Missile Infantry") {
+    if (
+      ((caste === "Melee Infantry" || caste === "Missile Infantry") &&
+        ui_unit_group.parent_group.onscreen_name === "Infantry") ||
+      ui_unit_group.parent_group.onscreen_name === "Missile Infantry"
+    ) {
       if (
         (!ror && multiplayer_cost >= 901 && multiplayer_cost <= 1100) ||
         (basePrice >= 901 && basePrice <= 1100)
       )
         if (this.handleVerifyDuplicates("countSame", newProps) === 4)
           return alert(
-            `You can't have more than 4 of an ${caste} unit with 901-1100 price!`
+            `You can't have more than 4 of a ${caste} unit with 901-1100 price!`
           );
 
       if ((!ror && multiplayer_cost >= 1101) || basePrice >= 1101)
         if (this.handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
-            `You can't have more than 3 of an ${caste} unit with 1101+ price!`
+            `You can't have more than 3 of a ${caste} unit with 1101+ price!`
           );
     }
 
     if (
-      caste !== "Melee Infantry" &&
-      caste !== "Missile Infantry" &&
-      unit_size !== 1
+      ui_unit_group.parent_group.onscreen_name !== "Infantry" ||
+      ui_unit_group.parent_group.onscreen_name !== "Missile Infantry"
     ) {
+      if (this.handleVerifyDuplicates("countSame", newProps) === 4)
+        return alert(
+          `You can't have more than 4 of the same ${props.ui_unit_group.parent_group.onscreen_name} unit!`
+        );
+
       if ((!ror && multiplayer_cost >= 1201) || basePrice >= 1201)
-        if (
-          limited_type &&
-          this.handleVerifyDuplicates("countSame", newProps) === 3
-        )
+        if (this.handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
-            `You can't have more than 3 of the same ${limited_type} with 1201+ price!`
+            `You can't have more than 3 of the same ${props.ui_unit_group.parent_group.onscreen_name} unit with 1201+ price!`
           );
     }
 
