@@ -72,7 +72,8 @@ class App extends Component {
 
     if (
       ui_unit_group.name === "Chariot" ||
-      ui_unit_group.name === "Missile Chariot"
+      ui_unit_group.name === "Missile Chariot" ||
+      ui_unit_group.name === "Monstrous Chariot"
     )
       if (this.handleVerifyDuplicates("countChariots", newProps) === 4)
         return alert(`You can't have more than 4 Chariots!`);
@@ -316,7 +317,8 @@ class App extends Component {
       count = units.filter((el) => {
         if (
           el.ui_unit_group.name === "Chariot" ||
-          el.ui_unit_group.name === "Missile Chariot"
+          el.ui_unit_group.name === "Missile Chariot" ||
+          el.ui_unit_group.name === "Monstrous Chariot"
         )
           return el;
       }).length;
