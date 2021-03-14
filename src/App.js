@@ -152,9 +152,9 @@ class App extends Component {
         return alert("You can't have more than 8 units of a unit variant!");
 
     if (
-      ((caste === "Melee Infantry" || caste === "Missile Infantry") &&
-        ui_unit_group.parent_group.onscreen_name === "Infantry") ||
-      ui_unit_group.parent_group.onscreen_name === "Missile Infantry"
+      (caste === "Melee Infantry" || caste === "Missile Infantry") &&
+      (ui_unit_group.parent_group.onscreen_name === "Infantry" ||
+        ui_unit_group.parent_group.onscreen_name === "Missile Infantry")
     ) {
       if (
         (!ror && multiplayer_cost >= 901 && multiplayer_cost <= 1100) ||
