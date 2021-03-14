@@ -70,17 +70,15 @@ class App extends Component {
     if (this.handleVerifyDuplicates("countSame", newProps) === 5)
       return alert("You can't have more than 5 of the same unit!");
 
-    if (limited_type) {
-      if (limited_type === "Chariots")
-        if (this.handleVerifyDuplicates(newProps, newProps) === 4)
-          return alert(`You can't have more than 4 ${limited_type}!`);
-
-      if (this.handleVerifyDuplicates("countSame", newProps) === 4)
-        return alert(`You can't have more than 4 of the same ${limited_type}!`);
+    if (
+      ui_unit_group.name === "Chariot" ||
+      ui_unit_group.name === "Missile Chariot"
+    )
+      if (this.handleVerifyDuplicates("countChariots", newProps) === 4)
+        return alert(`You can't have more than 4 Chariots!`);
       else if (limited_type === "Restricted")
         if (this.handleVerifyDuplicates("countSame", newProps) === 1)
           return alert(`You can't have more than 1 ${name}!`);
-    }
 
     if (unit_size === 1) {
       if (caste === "Hero") {
@@ -179,19 +177,23 @@ class App extends Component {
     ) {
       if (this.handleVerifyDuplicates("countSame", newProps) === 4)
         return alert(
-          `You can't have more than 4 of the same ${props.ui_unit_group.parent_group.onscreen_name} unit!`
+          `You can't have more than 4 of the same ${ui_unit_group.parent_group.onscreen_name} unit!`
         );
 
       if ((!ror && multiplayer_cost >= 1201) || basePrice >= 1201)
         if (this.handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
-            `You can't have more than 3 of the same ${props.ui_unit_group.parent_group.onscreen_name} unit with 1201+ price!`
+            `You can't have more than 3 of the same ${ui_unit_group.parent_group.onscreen_name} unit with 1201+ price!`
           );
     }
 
-    if (caste === "Missile Cavalry & Chariots")
+    if (
+      ui_unit_group.parent_group.onscreen_name === "Missile Cavalry & Chariots"
+    )
       if (this.handleVerifyDuplicates("countCategory", newProps) === 6)
-        return alert(`You can't have more than 6 ${caste}!`);
+        return alert(
+          `You can't have more than 6 ${ui_unit_group.parent_group.onscreen_name}!`
+        );
 
     if (ror)
       if (this.handleVerifyDuplicates("countSame", newProps) === 1)
@@ -279,7 +281,11 @@ class App extends Component {
     }
 
     if (validation === "countCategory") {
-      count = units.filter((el) => el.caste === props.caste).length;
+      count = units.filter(
+        (el) =>
+          el.ui_unit_group.parent_group.onscreen_name ===
+          props.ui_unit_group.parent_group.onscreen_name
+      ).length;
       return count;
     }
 
@@ -302,6 +308,17 @@ class App extends Component {
     if (validation === "isSEM") {
       count = units.filter((el) => {
         if (el.unit_size === 1 && el.caste === "Monster") return el;
+      }).length;
+      return count;
+    }
+
+    if (validation === "countChariots") {
+      count = units.filter((el) => {
+        if (
+          el.ui_unit_group.name === "Chariot" ||
+          el.ui_unit_group.name === "Missile Chariot"
+        )
+          return el;
       }).length;
       return count;
     }
