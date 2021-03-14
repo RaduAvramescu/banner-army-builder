@@ -173,7 +173,7 @@ class App extends Component {
     }
 
     if (
-      ui_unit_group.parent_group.onscreen_name !== "Infantry" ||
+      ui_unit_group.parent_group.onscreen_name !== "Infantry" &&
       ui_unit_group.parent_group.onscreen_name !== "Missile Infantry"
     ) {
       if (this.handleVerifyDuplicates("countSame", newProps) === 4)
