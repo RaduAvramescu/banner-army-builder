@@ -151,7 +151,7 @@ class App extends Component {
       if (this.handleVerifyDuplicates("variantUnit", newProps) === 8)
         return alert("You can't have more than 8 units of a unit variant!");
 
-    if (caste === "Infantry" || caste === "Missile Infantry") {
+    if (caste === "Melee Infantry" || caste === "Missile Infantry") {
       if (
         (!ror && multiplayer_cost >= 901 && multiplayer_cost <= 1100) ||
         (basePrice >= 901 && basePrice <= 1100)
@@ -168,7 +168,7 @@ class App extends Component {
           );
     }
 
-    if (caste !== "Infantry" && !isSE) {
+    if (caste !== "Melee Infantry" && caste !== "Missile Infantry" && !isSE) {
       if ((!ror && multiplayer_cost >= 1201) || basePrice >= 1201)
         if (
           limited_type &&
@@ -269,9 +269,8 @@ class App extends Component {
     }
 
     if (validation === "countCategory") {
-      count = units.filter((el) => {
-        if (el.caste === props.caste) return count + 1;
-      }).length;
+      count = units.filter((el) => el.caste === props.caste).length;
+      console.log(count);
       return count;
     }
 

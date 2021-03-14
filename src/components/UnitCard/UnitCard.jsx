@@ -30,7 +30,7 @@ const UnitCard = (props) => {
 
   let semicircle_icon;
 
-  if (props.caste === "Lord" || props.caste === "Heroes")
+  if (props.caste === "Lord" || props.caste === "Hero")
     semicircle_icon = "unit_card_semicircle_hero";
   else if (props.ror === true) semicircle_icon = "unit_card_semicircle_renown";
   else semicircle_icon = "unit_card_semicircle";
