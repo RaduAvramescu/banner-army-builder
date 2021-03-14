@@ -41,9 +41,8 @@ class App extends Component {
       multiplayer_cost,
       caste,
       limited_type,
+      unit_size,
       basePrice,
-      isSE,
-      isSEM,
       isMissile,
       is360,
       isFlyer,
@@ -83,10 +82,14 @@ class App extends Component {
           return alert(`You can't have more than 1 ${name}!`);
     }
 
-    if (isSE) {
+    if (unit_size === 1) {
       if (caste === "Hero") {
+        if (this.handleVerifyDuplicates("isSE", newProps) === 5)
+          return alert("You can't have more than 5 Single Entity (SE) units!");
+
         if (this.handleVerifyDuplicates("countCategory", newProps) === 2)
           return alert("You can't have more than 2 Heroes!");
+
         if (
           newProps.hasOwnProperty("isNamed") &&
           this.handleVerifyDuplicates("countSame", newProps) === 1
@@ -96,26 +99,24 @@ class App extends Component {
           );
       }
 
-      if (this.handleVerifyDuplicates("isSE", newProps) === 5)
-        return alert("You can't have more than 5 Single Entity (SE) units!");
+      if (caste === "Monster") {
+        if (this.handleVerifyDuplicates("isSEM", newProps) === 3)
+          return alert(
+            "You can't have more than 3 Single Entity Monsters (SEM)!"
+          );
+
+        if (
+          multiplayer_cost >= 1800 &&
+          this.handleVerifyDuplicates("SEMCost", newProps) === 2
+        )
+          return alert(
+            "You can't have more than 2 Single Entity Monsters (SEM) that cost over 1800!"
+          );
+      }
 
       if (this.handleVerifyDuplicates("countSame", newProps) === 2)
         return alert(
           "You can't have more than 2 of the same Single Entity (SE) units!"
-        );
-    }
-
-    if (isSEM) {
-      if (this.handleVerifyDuplicates("isSEM", newProps) === 3)
-        return alert(
-          "You can't have more than 3 Single Entity Monsters (SEM)!"
-        );
-      if (
-        multiplayer_cost >= 1800 &&
-        this.handleVerifyDuplicates("SEMCost", newProps) === 2
-      )
-        return alert(
-          "You can't have more than 2 Single Entity Monsters (SEM) that cost over 1800!"
         );
     }
 
@@ -168,7 +169,11 @@ class App extends Component {
           );
     }
 
-    if (caste !== "Melee Infantry" && caste !== "Missile Infantry" && !isSE) {
+    if (
+      caste !== "Melee Infantry" &&
+      caste !== "Missile Infantry" &&
+      unit_size !== 1
+    ) {
       if ((!ror && multiplayer_cost >= 1201) || basePrice >= 1201)
         if (
           limited_type &&
@@ -270,7 +275,6 @@ class App extends Component {
 
     if (validation === "countCategory") {
       count = units.filter((el) => el.caste === props.caste).length;
-      console.log(count);
       return count;
     }
 
@@ -283,9 +287,28 @@ class App extends Component {
       return count;
     }
 
+    if (validation === "isSE") {
+      count = units.filter((el) => {
+        if (el.unit_size === 1) return el;
+      }).length;
+      return count;
+    }
+
+    if (validation === "isSEM") {
+      count = units.filter((el) => {
+        if (el.unit_size === 1 && el.caste === "Monster") return el;
+      }).length;
+      return count;
+    }
+
     if (validation === "SEMCost") {
       count = units.filter((el) => {
-        if (el.multiplayer_cost >= 1800) return count + 1;
+        if (
+          el.multiplayer_cost >= 1800 &&
+          el.unit_size === 1 &&
+          el.caste === "Monster"
+        )
+          return el;
       }).length;
       return count;
     }
