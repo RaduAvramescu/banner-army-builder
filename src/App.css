@@ -12,8 +12,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #c4941c;
 }
 
 .unit_card img[alt$="Icon"] {
@@ -38,15 +38,15 @@
 }
 
 .red {
-  color: red;
+  color: #ce2029;
 }
 
 .green {
-  color: green;
+  color: #64e764;
 }
 
 .yellow {
-  color: goldenrod;
+  color: #fff36d;
 }
 
 .imgResponsive {

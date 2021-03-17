@@ -4,8 +4,13 @@ let theme = createMuiTheme({
   overrides: {
     MuiDivider: {
       root: {
-        backgroundColor: "grey",
+        backgroundColor: "#c4941c",
         opacity: "0.6",
+      },
+    },
+    MuiAppBar: {
+      colorSecondary: {
+        color: "c4941c",
       },
     },
     MuiPaper: {
@@ -14,7 +19,7 @@ let theme = createMuiTheme({
       },
     },
     PrivateTabIndicator: {
-      colorPrimary: { backgroundColor: "white" },
+      colorPrimary: { backgroundColor: "#c4941c" },
     },
     MuiDialogContent: {
       root: {
@@ -37,7 +42,7 @@ let theme = createMuiTheme({
         },
         ".footerLink": {
           textDecoration: "none",
-          color: "white",
+          color: "inherit",
           "&:hover div": {
             transition: "opacity 0.3s ease-out",
             opacity: "0.4",
@@ -48,20 +53,17 @@ let theme = createMuiTheme({
     MuiListItem: {
       root: {
         "&:hover": {
-          backgroundColor: "#995400",
+          backgroundColor: "#654b0e",
         },
         "&$selected": {
-          backgroundColor: "#995400",
+          backgroundColor: "#654b0e",
           "&:hover": {
-            backgroundColor: "#995400",
+            backgroundColor: "#654b0e",
           },
         },
       },
     },
     MuiButton: {
-      textPrimary: {
-        color: "white",
-      },
       root: {
         "&:hover": {
           transition: "opacity 0.3s ease-out",
@@ -69,13 +71,19 @@ let theme = createMuiTheme({
           opacity: 0.4,
         },
       },
+      containedSecondary: {
+        color: "#c4941c",
+      },
+      textPrimary: {
+        color: "#c4941c",
+      },
     },
   },
   palette: {
     background: { default: "#fafafa" },
     secondary: { main: "#000" },
     text: {
-      primary: "#fff",
+      primary: "#c4941c",
     },
   },
   typography: {
