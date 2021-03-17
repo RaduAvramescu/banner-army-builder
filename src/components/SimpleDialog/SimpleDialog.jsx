@@ -16,15 +16,14 @@ const styles = (theme) => ({
   },
   closeBtn: {
     color: "#a09d9a",
-    background: `url("images/ui/skins/default/button_basic_pressed.png")`,
+    background: `url("images/ui/skins/default/button_basic.png") no-repeat`,
+    backgroundPosition: "-0px -0px",
     height: "40px",
     width: "40px",
-    backgroundSize: "contain",
     lineHeight: "40px",
     "&:hover": {
+      backgroundPosition: "-0px -40px",
       color: "#fff",
-      background: `url("images/ui/skins/default/button_basic_selected.png")`,
-      backgroundSize: "contain",
     },
   },
   dialog: {

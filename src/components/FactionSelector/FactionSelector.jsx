@@ -7,13 +7,13 @@ import { Box, Typography, Button } from "@material-ui/core";
 
 const styles = (theme) => ({
   selectorButton: {
+    background: `url("images/ui/skins/default/button_cycle.png") no-repeat`,
+    backgroundPosition: "-0px -0px",
     width: "366px",
     height: "60px",
-    background: `url("images/ui/skins/default/button_cycle_active.png")`,
-    cursor: "pointer",
     "&:hover": {
+      backgroundPosition: "-0px -60px",
       opacity: "1",
-      background: `url("images/ui/skins/default/button_cycle_selected_hover.png")`,
     },
   },
   dialog__text_color: {
