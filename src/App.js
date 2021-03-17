@@ -374,14 +374,14 @@ class App extends Component {
         <Container maxWidth="lg">
           <Banner />
           <FactionSelector handleFactionChange={this.handleFactionChange} />
-          <Divider light />
+          <Divider />
           <main>
             <FactionRoster
               selectedFaction={selectedFaction}
               onUnitAdd={this.handleUnitCanAdd}
               fundsRemaining={funds}
             />
-            <Divider light />
+            <Divider />
             <BuildContainer
               units={units}
               onUnitRemove={this.handleUnitRemove}

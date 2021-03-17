@@ -2,6 +2,12 @@ import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 let theme = createMuiTheme({
   overrides: {
+    MuiDivider: {
+      root: {
+        backgroundColor: "grey",
+        opacity: "0.6",
+      },
+    },
     MuiPaper: {
       root: {
         backgroundColor: "black",
