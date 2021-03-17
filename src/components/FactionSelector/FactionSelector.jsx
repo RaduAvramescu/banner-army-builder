@@ -6,6 +6,16 @@ import { withStyles } from "@material-ui/core";
 import { Box, Typography, Button } from "@material-ui/core";
 
 const styles = (theme) => ({
+  selectorButton: {
+    width: "366px",
+    height: "60px",
+    background: `url("images/ui/skins/default/button_cycle_active.png")`,
+    cursor: "pointer",
+    "&:hover": {
+      opacity: "1",
+      background: `url("images/ui/skins/default/button_cycle_selected_hover.png")`,
+    },
+  },
   dialog__text_color: {
     color: "#c4941c",
   },
@@ -84,17 +94,18 @@ const FactionSelector = ({ handleFactionChange }) => {
     return categories;
   };
 
-  const DialogOpenButton = () => {
+  const DialogOpenButton = withStyles(styles)((props) => {
+    const { classes } = props;
     return (
       <Box display="flex" justifyContent="center" my="1rem">
-        <Button onClick={handleClickOpen} variant="contained" color="secondary">
-          <Typography variant="h3" align="center">
+        <Button onClick={handleClickOpen} className={classes.selectorButton}>
+          <Typography variant="h5" align="center">
             SELECT FACTION
           </Typography>
         </Button>
       </Box>
     );
-  };
+  });
 
   const DialogContent = withStyles(styles)((props) => {
     const { classes } = props;
