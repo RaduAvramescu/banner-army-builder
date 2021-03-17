@@ -17,7 +17,6 @@ const styles = (theme) => ({
     color: theme.palette.grey[500],
   },
   dialog: {
-    backgroundColor: "black",
     border: "1px solid transparent",
     borderImage: `url("images/ui/skins/default/panel_back_border.png") 30 / 30px / 7px round`,
   },

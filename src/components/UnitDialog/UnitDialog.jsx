@@ -110,6 +110,7 @@ function UnitDialog(props) {
           onChange={handleChange}
           aria-label="Lord/Hero Tabs"
           variant="fullWidth"
+          indicatorColor="primary"
         >
           {battle_mounts?.length !== 0 && (
             <Tab label="Mounts" {...a11yProps(0)} />

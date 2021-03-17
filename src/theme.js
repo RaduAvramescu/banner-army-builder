@@ -2,6 +2,14 @@ import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 let theme = createMuiTheme({
   overrides: {
+    MuiPaper: {
+      root: {
+        backgroundColor: "black",
+      },
+    },
+    PrivateTabIndicator: {
+      colorPrimary: { backgroundColor: "white" },
+    },
     MuiDialogContent: {
       root: {
         msOverflowStyle: "none",
@@ -15,7 +23,6 @@ let theme = createMuiTheme({
     MuiCssBaseline: {
       "@global": {
         footer: {
-          color: "white",
           backgroundColor: "black",
           textShadow: "1px 1px 1px black",
         },
@@ -35,17 +42,20 @@ let theme = createMuiTheme({
     MuiListItem: {
       root: {
         "&:hover": {
-          backgroundColor: "orange",
+          backgroundColor: "#995400",
         },
         "&$selected": {
-          backgroundColor: "orange",
+          backgroundColor: "#995400",
           "&:hover": {
-            backgroundColor: "orange",
+            backgroundColor: "#995400",
           },
         },
       },
     },
     MuiButton: {
+      textPrimary: {
+        color: "white",
+      },
       root: {
         "&:hover": {
           transition: "opacity 0.3s ease-out",
@@ -58,6 +68,9 @@ let theme = createMuiTheme({
   palette: {
     background: { default: "#fafafa" },
     secondary: { main: "#000" },
+    text: {
+      primary: "#fff",
+    },
   },
   typography: {
     fontFamily: ['"Caslon Antique"', "serif"].join(","),

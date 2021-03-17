@@ -1,5 +1,15 @@
 body {
   padding: 0;
+  background: url("images/background/body_background.webp") no-repeat fixed
+    center;
+}
+
+@supports not (
+  background-image: url("images/background/body_background.webp")
+) {
+  body {
+    background-image: url("images/background/body_background.jpg");
+  }
 }
 
 /* open-sans-regular - latin */
