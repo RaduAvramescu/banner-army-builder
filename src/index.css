@@ -1,13 +1,16 @@
 body {
   padding: 0;
-  background: url("images/background/body_background.webp") no-repeat fixed
-    center;
+}
+
+.App {
+  background: url("images/background/body_background.webp") no-repeat center
+    center/cover fixed;
 }
 
 @supports not (
   background-image: url("images/background/body_background.webp")
 ) {
-  body {
+  .App {
     background-image: url("images/background/body_background.jpg");
   }
 }
