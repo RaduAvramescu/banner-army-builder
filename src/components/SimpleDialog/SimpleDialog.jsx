@@ -3,18 +3,29 @@ import React from "react";
 import { withStyles } from "@material-ui/core";
 import { Typography, IconButton } from "@material-ui/core";
 import { Dialog, DialogTitle, DialogContent } from "@material-ui/core";
-import CloseIcon from "@material-ui/icons/Close";
 
 const styles = (theme) => ({
   root: {
     margin: 0,
     padding: theme.spacing(2),
   },
-  closeButton: {
+  closeBtnContainer: {
     position: "absolute",
-    right: theme.spacing(1),
-    top: theme.spacing(1),
-    color: theme.palette.grey[500],
+    right: theme.spacing(0.5),
+    top: theme.spacing(0.5),
+  },
+  closeBtn: {
+    color: "#a09d9a",
+    background: `url("images/ui/skins/default/button_basic_pressed.png")`,
+    height: "40px",
+    width: "40px",
+    backgroundSize: "contain",
+    lineHeight: "40px",
+    "&:hover": {
+      color: "#fff",
+      background: `url("images/ui/skins/default/button_basic_selected.png")`,
+      backgroundSize: "contain",
+    },
   },
   dialog: {
     border: "1px solid transparent",
@@ -54,10 +65,10 @@ const SimpleDialog = withStyles(styles)((props) => {
         {onClose ? (
           <IconButton
             aria-label="close"
-            className={classes.closeButton}
+            className={classes.closeBtnContainer}
             onClick={onClose}
           >
-            <CloseIcon />
+            <div className={classes.closeBtn}>X</div>
           </IconButton>
         ) : null}
       </DialogTitle>
