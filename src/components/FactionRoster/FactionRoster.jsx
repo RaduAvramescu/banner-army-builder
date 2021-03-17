@@ -1,7 +1,7 @@
 import React from "react";
 
 import { useQuery, gql } from "@apollo/client";
-import { Box, Grid, Typography, CircularProgress } from "@material-ui/core";
+import { Box, Grid, Typography } from "@material-ui/core";
 import UnitCard from "../UnitCard/UnitCard";
 import unitGroupData from "../../data/ui_unit_groups.json";
 

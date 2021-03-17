@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import SimpleDialog from "../SimpleDialog/SimpleDialog";
 import { useQuery, gql } from "@apollo/client";
 import { withStyles } from "@material-ui/core";
-import { Box, Typography, CircularProgress, Button } from "@material-ui/core";
+import { Box, Typography, Button } from "@material-ui/core";
 
 const styles = (theme) => ({
   dialog__text_color: {
