@@ -150,10 +150,9 @@ const FactionSelector = ({ handleFactionChange }) => {
 
   return (
     <React.Fragment>
-      <DialogOpenButton />
-      <SimpleDialog open={open} onClose={handleClose} title="FACTIONS">
-        <DialogContent />
-      </SimpleDialog>
+      <Box display="flex" justifyContent="center" my="1rem">
+        <div class="loader"></div>
+      </Box>
     </React.Fragment>
   );
 };
