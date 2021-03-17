@@ -58,14 +58,14 @@ const FactionSelector = ({ handleFactionChange }) => {
   if (loading)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
-        <CircularProgress />
+        <div class="loader"></div>
       </Box>
     );
 
   if (error)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
-        <CircularProgress />
+        <div class="loader"></div>
       </Box>
     );
 
