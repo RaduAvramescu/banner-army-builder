@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { withStyles, Box, Typography, Button } from "@material-ui/core";
+import Loader from "../Loader/Loader";
 import SimpleDialog from "../SimpleDialog/SimpleDialog";
 
 const styles = (theme) => ({
@@ -66,14 +67,14 @@ const FactionSelector = ({ handleFactionChange }) => {
   if (loading)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
-        <div class="loader"></div>
+        <Loader />
       </Box>
     );
 
   if (error)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
-        <div class="loader"></div>
+        <Loader />
       </Box>
     );
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { useQuery, gql } from "@apollo/client";
 import { Box, Grid, Typography } from "@material-ui/core";
+import Loader from "../Loader/Loader";
 import UnitCard from "../UnitCard/UnitCard";
 import unitGroupData from "../../data/ui_unit_groups.json";
 
@@ -58,14 +59,14 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
   if (loading)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
-        <div class="loader"></div>
+        <Loader />
       </Box>
     );
 
   if (error)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
-        <div class="loader"></div>
+        <Loader />
       </Box>
     );
 
