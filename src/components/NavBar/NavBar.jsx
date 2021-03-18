@@ -14,7 +14,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 
 const styles = () => ({
-  headerText: {
+  "header--text": {
     textShadow: "2px 2px 2px black",
   },
 });
@@ -81,7 +81,7 @@ const NavBar = withStyles(styles)(({ classes }) => {
                 >
                   <Typography variant="h4">
                     <Box
-                      className={classes.headerText}
+                      className={classes["header--text"]}
                       fontWeight="fontWeightBold"
                       letterSpacing={4}
                       align="center"
@@ -101,7 +101,7 @@ const NavBar = withStyles(styles)(({ classes }) => {
                 >
                   <Typography variant="h4">
                     <Box
-                      className={classes.headerText}
+                      className={classes["header--text"]}
                       fontWeight="fontWeightBold"
                       letterSpacing={4}
                       align="center"

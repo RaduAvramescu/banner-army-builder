@@ -2,11 +2,11 @@ import React from "react";
 import { withStyles, Box, Typography } from "@material-ui/core";
 
 const styles = () => ({
-  footerStyling: {
+  footer: {
     backgroundColor: "black",
     textShadow: "1px 1px 1px black",
   },
-  footerLink: {
+  footer__link: {
     textDecoration: "none",
     color: "inherit",
     "&:hover div": {
@@ -17,13 +17,13 @@ const styles = () => ({
 });
 
 const Footer = withStyles(styles)(({ classes }) => (
-  <footer class={classes.footerStyling}>
+  <footer class={classes.footer}>
     <Box py="1rem">
       <Box display="flex" justifyContent="center">
         <Typography>Created by:&nbsp;</Typography>
         <Typography component="div">
           <a
-            className={classes.footerLink}
+            className={classes.footer__link}
             target="_blank"
             href="https://www.youtube.com/c/PrussianPrinceYT"
             aria-label="PrussianPrince"
@@ -37,7 +37,7 @@ const Footer = withStyles(styles)(({ classes }) => (
         <Typography>Ideated by:&nbsp;</Typography>
         <Typography component="div">
           <a
-            className={classes.footerLink}
+            className={classes.footer__link}
             target="_blank"
             href="https://www.youtube.com/channel/UCJtXRY14oOxhvDmTY2Mm1Mg"
             aria-label="Samurai Warrior"
@@ -51,7 +51,7 @@ const Footer = withStyles(styles)(({ classes }) => (
         <Typography>Assisted by:&nbsp;</Typography>
         <Typography component="div">
           <a
-            className={classes.footerLink}
+            className={classes.footer__link}
             target="_blank"
             href="https://www.youtube.com/channel/UCMSo43ocZdraDR6k-7adD1A"
             aria-label="Enticity"
@@ -63,7 +63,7 @@ const Footer = withStyles(styles)(({ classes }) => (
         <Typography>,&nbsp;</Typography>
         <Typography component="div">
           <a
-            className={classes.footerLink}
+            className={classes.footer__link}
             target="_blank"
             href="https://twwstats.com"
             aria-label="TWW Stats"

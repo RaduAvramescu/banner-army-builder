@@ -13,12 +13,12 @@ const styles = (theme) => ({
     margin: 0,
     padding: theme.spacing(2),
   },
-  closeBtnContainer: {
+  btn__container: {
     position: "absolute",
     right: theme.spacing(0.5),
     top: theme.spacing(0.5),
   },
-  closeBtn: {
+  btn: {
     color: "#a09d9a",
     background: `url("images/ui/skins/default/button_basic.png") no-repeat`,
     backgroundPosition: "-0px -0px",
@@ -33,9 +33,6 @@ const styles = (theme) => ({
   dialog: {
     border: "1px solid transparent",
     borderImage: `url("images/ui/skins/default/panel_back_border.png") 30 / 30px / 7px round`,
-  },
-  dialog__text_color: {
-    color: "#c4941c",
   },
 });
 
@@ -58,20 +55,16 @@ const SimpleDialog = withStyles(styles)((props) => {
         {...other}
         onClose={onClose}
       >
-        <Typography
-          variant="h2"
-          align="center"
-          className={classes.dialog__text_color}
-        >
+        <Typography variant="h2" align="center">
           {props.title}
         </Typography>
         {onClose ? (
           <IconButton
             aria-label="close"
-            className={classes.closeBtnContainer}
+            className={classes.btn__container}
             onClick={onClose}
           >
-            <div className={classes.closeBtn}>X</div>
+            <div className={classes.btn}>X</div>
           </IconButton>
         ) : null}
       </DialogTitle>

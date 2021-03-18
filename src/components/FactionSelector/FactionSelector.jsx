@@ -4,8 +4,8 @@ import { withStyles, Box, Typography, Button } from "@material-ui/core";
 import Loader from "../Loader/Loader";
 import SimpleDialog from "../SimpleDialog/SimpleDialog";
 
-const styles = (theme) => ({
-  selectorButton: {
+const styles = () => ({
+  btn: {
     background: `url("images/ui/skins/default/button_cycle.png") no-repeat`,
     backgroundPosition: "-0px -0px",
     width: "366px",
@@ -14,9 +14,6 @@ const styles = (theme) => ({
       backgroundPosition: "-0px -60px",
       opacity: "1",
     },
-  },
-  dialog__text_color: {
-    color: "#c4941c",
   },
   dialog__faction_image: {
     cursor: "pointer",
@@ -97,7 +94,7 @@ const FactionSelector = ({ handleFactionChange }) => {
     const { classes } = props;
     return (
       <Box display="flex" justifyContent="center" my="1rem">
-        <Button onClick={handleClickOpen} className={classes.selectorButton}>
+        <Button onClick={handleClickOpen} className={classes.btn}>
           <Typography variant="h5" align="center">
             SELECT FACTION
           </Typography>
@@ -110,12 +107,7 @@ const FactionSelector = ({ handleFactionChange }) => {
     const { classes } = props;
     return FactionCategories().map((category, i) => (
       <Box key={i} id={i} my="1rem">
-        <Typography
-          align="center"
-          variant="h4"
-          className={classes.dialog__text_color}
-          key={i}
-        >
+        <Typography align="center" variant="h4" key={i}>
           {category.toUpperCase()}
         </Typography>
         <Box display="flex" justifyContent="center" flexWrap="wrap">
