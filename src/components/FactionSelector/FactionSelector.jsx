@@ -95,7 +95,7 @@ const FactionSelector = ({ handleFactionChange }) => {
     return (
       <Box display="flex" justifyContent="center" my="1rem">
         <Button onClick={handleClickOpen} className={classes.btn}>
-          <Typography variant="h5" align="center">
+          <Typography component="span" variant="h5" align="center">
             SELECT FACTION
           </Typography>
         </Button>
