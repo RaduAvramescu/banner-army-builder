@@ -1,8 +1,46 @@
 import React from "react";
-import Typography from "@material-ui/core/Typography";
+import { withStyles, Typography } from "@material-ui/core";
 import UnitDialog from "../UnitDialog/UnitDialog";
 
-const UnitCard = (props) => {
+const styles = () => ({
+  position_absolute: {
+    position: "absolute",
+  },
+  unit_card: {
+    width: "60px",
+    height: "130px",
+    top: "0px",
+    left: "0px",
+    "& img[alt$='Icon']": {
+      bottom: "0px",
+      left: "2px",
+    },
+    "& img[alt$='Category Icon']": {
+      left: "19px",
+    },
+    "& img[alt$='Hover']": {
+      display: "none",
+    },
+    "&:hover": {
+      "& img[alt$='Hover']": {
+        display: "block",
+      },
+    },
+  },
+  unit_card_top: {
+    width: "100%",
+    top: "5px",
+    height: "20px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    color: "#c4941c",
+  },
+});
+
+const UnitCard = withStyles(styles)((props) => {
+  const { classes } = props;
   const [open, setOpen] = React.useState(false);
 
   const handleClose = (mount, spell) => {
@@ -36,13 +74,13 @@ const UnitCard = (props) => {
   return (
     <React.Fragment>
       <div
-        className="unit_card"
+        className={classes.unit_card}
         style={{ position: "relative", cursor: "pointer" }}
         title={props.name}
         onClick={handleClick}
       >
         <Typography
-          className="unit_card_top position_absolute"
+          className={`${classes.unit_card_top} ${classes.position_absolute}`}
           variant="h6"
           component="p"
         >
@@ -67,7 +105,7 @@ const UnitCard = (props) => {
         )}
 
         <img
-          className="unit_card position_absolute"
+          className={`${classes.unit_card} ${classes.position_absolute}`}
           src={`images/ui/skins/default/unit_card_frame_plain.png`}
           alt="Unit Card Frame"
           width="60"
@@ -75,7 +113,7 @@ const UnitCard = (props) => {
           loading="lazy"
         ></img>
         <img
-          className="position_absolute"
+          className={classes.position_absolute}
           src={`images/ui/skins/default/${semicircle_icon}.png`}
           alt="Unit Card Semicircle Icon"
           width="55"
@@ -83,7 +121,7 @@ const UnitCard = (props) => {
           loading="lazy"
         />
         <img
-          className="position_absolute"
+          className={classes.position_absolute}
           src={`images/ui/common_ui/unit_category_icons/${props.ui_unit_group.icon}.png`}
           alt="Unit Card Category Icon"
           width="22"
@@ -91,7 +129,7 @@ const UnitCard = (props) => {
           loading="lazy"
         />
         <img
-          className="unit_card unit_card_hover position_absolute"
+          className={`${classes.unit_card} ${classes.unit_card_hover} ${classes.position_absolute}`}
           src={`images/ui/skins/default/unit_card_hover.png`}
           alt="Unit Card Hover"
           width="60"
@@ -102,6 +140,6 @@ const UnitCard = (props) => {
       <UnitDialog open={open} onClose={handleClose} {...props} />
     </React.Fragment>
   );
-};
+});
 
 export default UnitCard;
