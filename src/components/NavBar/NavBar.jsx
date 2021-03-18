@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  withStyles,
   AppBar,
   Toolbar,
   IconButton,
@@ -12,7 +13,13 @@ import {
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 
-export default function NavBar() {
+const styles = () => ({
+  headerText: {
+    textShadow: "2px 2px 2px black",
+  },
+});
+
+const NavBar = withStyles(styles)(({ classes }) => {
   const [open, setOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("xs"));
@@ -74,7 +81,7 @@ export default function NavBar() {
                 >
                   <Typography variant="h4">
                     <Box
-                      className="headerText"
+                      className={classes.headerText}
                       fontWeight="fontWeightBold"
                       letterSpacing={4}
                       align="center"
@@ -94,7 +101,7 @@ export default function NavBar() {
                 >
                   <Typography variant="h4">
                     <Box
-                      className="headerText"
+                      className={classes.headerText}
                       fontWeight="fontWeightBold"
                       letterSpacing={4}
                       align="center"
@@ -110,4 +117,6 @@ export default function NavBar() {
       </AppBar>
     </React.Fragment>
   );
-}
+});
+
+export default NavBar;

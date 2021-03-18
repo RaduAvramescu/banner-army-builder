@@ -31,25 +31,6 @@ let theme = createMuiTheme({
         },
       },
     },
-    MuiCssBaseline: {
-      "@global": {
-        footer: {
-          backgroundColor: "black",
-          textShadow: "1px 1px 1px black",
-        },
-        ".headerText": {
-          textShadow: "2px 2px 2px black",
-        },
-        ".footerLink": {
-          textDecoration: "none",
-          color: "inherit",
-          "&:hover div": {
-            transition: "opacity 0.3s ease-out",
-            opacity: "0.4",
-          },
-        },
-      },
-    },
     MuiListItem: {
       root: {
         "&:hover": {

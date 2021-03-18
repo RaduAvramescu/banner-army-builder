@@ -1,14 +1,29 @@
 import React from "react";
-import { Box, Typography } from "@material-ui/core";
+import { withStyles, Box, Typography } from "@material-ui/core";
 
-const Footer = () => (
-  <footer>
+const styles = () => ({
+  footerStyling: {
+    backgroundColor: "black",
+    textShadow: "1px 1px 1px black",
+  },
+  footerLink: {
+    textDecoration: "none",
+    color: "inherit",
+    "&:hover div": {
+      transition: "opacity 0.3s ease-out",
+      opacity: "0.4",
+    },
+  },
+});
+
+const Footer = withStyles(styles)(({ classes }) => (
+  <footer class={classes.footerStyling}>
     <Box py="1rem">
       <Box display="flex" justifyContent="center">
         <Typography>Created by:&nbsp;</Typography>
         <Typography component="div">
           <a
-            className="footerLink"
+            className={classes.footerLink}
             target="_blank"
             href="https://www.youtube.com/c/PrussianPrinceYT"
             aria-label="PrussianPrince"
@@ -22,7 +37,7 @@ const Footer = () => (
         <Typography>Ideated by:&nbsp;</Typography>
         <Typography component="div">
           <a
-            className="footerLink"
+            className={classes.footerLink}
             target="_blank"
             href="https://www.youtube.com/channel/UCJtXRY14oOxhvDmTY2Mm1Mg"
             aria-label="Samurai Warrior"
@@ -36,7 +51,7 @@ const Footer = () => (
         <Typography>Assisted by:&nbsp;</Typography>
         <Typography component="div">
           <a
-            className="footerLink"
+            className={classes.footerLink}
             target="_blank"
             href="https://www.youtube.com/channel/UCMSo43ocZdraDR6k-7adD1A"
             aria-label="Enticity"
@@ -48,7 +63,7 @@ const Footer = () => (
         <Typography>,&nbsp;</Typography>
         <Typography component="div">
           <a
-            className="footerLink"
+            className={classes.footerLink}
             target="_blank"
             href="https://twwstats.com"
             aria-label="TWW Stats"
@@ -69,6 +84,6 @@ const Footer = () => (
       </Box>
     </Box>
   </footer>
-);
+));
 
 export default Footer;
