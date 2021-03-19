@@ -3,7 +3,7 @@ import { withStyles, Box, Typography } from "@material-ui/core";
 import styles from "./Footer.styles";
 
 const Footer = withStyles(styles)(({ classes }) => (
-  <footer class={classes.footer}>
+  <footer className={classes.footer}>
     <Box py="1rem">
       <Box display="flex" justifyContent="center">
         <Typography>Created by:&nbsp;</Typography>
