@@ -3,13 +3,9 @@ import BuildContainerView from "./BuildContainer.view";
 
 const BuildContainer = ({ fundsRemaining, unit_size, onUnitRemove, units }) => {
   const getClasses = (type) => {
-    if (type === "funds")
-      if (fundsRemaining >= 1000) return "green";
-      else return "yellow";
+    if (type === "funds") return fundsRemaining >= 1000 ? "green" : "yellow";
 
-    if (type === "model")
-      if (unit_size < 300) return "red";
-      else return "green";
+    if (type === "model") return unit_size < 300 ? "red" : "green";
   };
 
   return (
