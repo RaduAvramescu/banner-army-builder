@@ -1,1 +1,1 @@
-export { default } from "./FactionSelector";
+export { default } from "./FactionSelector.container";

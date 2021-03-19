@@ -1,1 +1,1 @@
-export { default } from "./FactionRoster";
+export { default } from "./FactionRoster.container";

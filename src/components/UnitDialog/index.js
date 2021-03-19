@@ -1,1 +1,1 @@
-export { default } from "./UnitDialog";
+export { default } from "./UnitDialog.container";

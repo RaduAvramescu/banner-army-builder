@@ -1,1 +1,1 @@
-export { default } from "./UnitCard";
+export { default } from "./UnitCard.container";

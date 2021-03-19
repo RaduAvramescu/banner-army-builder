@@ -1,1 +1,1 @@
-export { default } from "./BuildContainer";
+export { default } from "./BuildContainer.container";
