@@ -5,7 +5,6 @@ import FactionSelector from "../FactionSelector";
 import FactionRoster from "../FactionRoster";
 import BuildContainer from "../BuildContainer";
 import Footer from "../Footer";
-import "./App.css";
 
 const AppView = ({
   selectedFaction,

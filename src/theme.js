@@ -2,6 +2,23 @@ import { createMuiTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 let theme = createMuiTheme({
   overrides: {
+    MuiCssBaseline: {
+      "@global": {
+        ".red": {
+          color: "#ce2029",
+        },
+        ".green": {
+          color: "#64e764",
+        },
+        ".yellow": {
+          color: "#fff36d",
+        },
+        ".imgResponsive": {
+          maxWidth: "100%",
+          height: "auto",
+        },
+      },
+    },
     MuiDivider: {
       root: {
         backgroundColor: "#c4941c",
