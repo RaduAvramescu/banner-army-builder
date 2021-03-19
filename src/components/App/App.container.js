@@ -68,7 +68,7 @@ function App() {
 
     if (
       caste !== "Lord" &&
-      units[0].ui_unit_group.parent_group.onscreen_name !== "Lords"
+      !units[0].custom_battle_permissions[0]?.general_unit
     )
       return alert("You have to pick a Lord first!");
 
