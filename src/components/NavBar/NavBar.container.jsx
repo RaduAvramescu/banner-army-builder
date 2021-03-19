@@ -12,12 +12,7 @@ import {
   useMediaQuery,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-
-const styles = () => ({
-  "header--text": {
-    textShadow: "2px 2px 2px black",
-  },
-});
+import styles from "./NavBar.styles";
 
 const NavBar = withStyles(styles)(({ classes }) => {
   const [open, setOpen] = useState(false);
