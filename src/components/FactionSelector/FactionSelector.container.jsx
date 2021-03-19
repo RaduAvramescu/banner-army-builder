@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { withStyles, Box, Typography, Button } from "@material-ui/core";
-import Loader from "../Loader/Loader.view";
-import SimpleDialog from "../SimpleDialog/SimpleDialog";
+import Loader from "../Loader";
+import SimpleDialog from "../SimpleDialog";
 
 const styles = () => ({
   btn: {

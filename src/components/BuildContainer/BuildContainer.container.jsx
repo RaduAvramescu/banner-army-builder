@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, Box, Typography } from "@material-ui/core";
-import UnitCard from "../UnitCard/UnitCard";
+import UnitCard from "../UnitCard";
 
 const BuildContainer = ({ fundsRemaining, unit_size, onUnitRemove, units }) => {
   const getClasses = (type) => {

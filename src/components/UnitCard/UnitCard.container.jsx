@@ -1,6 +1,6 @@
 import React from "react";
 import { withStyles, Typography } from "@material-ui/core";
-import UnitDialog from "../UnitDialog/UnitDialog";
+import UnitDialog from "../UnitDialog";
 
 const styles = () => ({
   position_absolute: {
