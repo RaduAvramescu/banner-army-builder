@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import { CssBaseline, Container, Divider } from "@material-ui/core";
-import NavBar from "../NavBar";
-import Banner from "../Banner";
-import FactionSelector from "../FactionSelector";
-import FactionRoster from "../FactionRoster";
-import BuildContainer from "../BuildContainer";
-import Footer from "../Footer";
-import "./App.css";
+import AppView from "./App.view";
 
 class App extends Component {
   state = {
@@ -362,34 +355,16 @@ class App extends Component {
 
   render() {
     const { selectedFaction, funds, models, units } = this.state;
-
     return (
-      <div className="App">
-        <CssBaseline />
-        <NavBar />
-        <Divider style={{ height: "2px" }} />
-        <Container maxWidth="lg">
-          <Banner />
-          <FactionSelector handleFactionChange={this.handleFactionChange} />
-          <Divider />
-          <main>
-            <FactionRoster
-              selectedFaction={selectedFaction}
-              onUnitAdd={this.handleUnitCanAdd}
-              fundsRemaining={funds}
-            />
-            <Divider />
-            <BuildContainer
-              units={units}
-              onUnitRemove={this.handleUnitRemove}
-              fundsRemaining={funds}
-              unit_size={models}
-            />
-          </main>
-        </Container>
-        <Divider style={{ height: "2px" }} />
-        <Footer />
-      </div>
+      <AppView
+        selectedFaction={selectedFaction}
+        funds={funds}
+        models={models}
+        units={units}
+        onUnitCanAdd={this.handleUnitCanAdd}
+        onUnitRemove={this.handleUnitRemove}
+        onFactionChange={this.handleFactionChange}
+      />
     );
   }
 }
