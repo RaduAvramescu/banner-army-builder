@@ -1,30 +1,23 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import AppView from "./App.view";
 
-class App extends Component {
-  state = {
-    selectedFaction: "",
-    funds: 12400,
-    models: 0,
-    units: [],
+function App() {
+  const [selectedFaction, setSelectedFaction] = useState("");
+  const [funds, setFunds] = useState(12400);
+  const [models, setModels] = useState(0);
+  const [units, setUnits] = useState([]);
+
+  const handleFactionChange = (selectedFaction) => {
+    setSelectedFaction(selectedFaction);
+    setFunds(12400);
+    setModels(0);
+    setUnits([]);
   };
 
-  handleFactionChange = (selectedFaction) => {
-    this.setState((state) => ({
-      ...state,
-      selectedFaction: selectedFaction,
-      funds: 12400,
-      models: 0,
-      units: [],
-    }));
-  };
-
-  handleUnitCanAdd = (props, mount, spell) => {
-    const { funds, units } = this.state;
+  const handleUnitCanAdd = (props, mount, spell) => {
     let { ...newProps } = props;
 
-    if (mount || spell)
-      newProps = this.handleUpdateUnit(newProps, mount, spell);
+    if (mount || spell) newProps = handleUpdateUnit(newProps, mount, spell);
 
     const {
       name,
@@ -52,12 +45,12 @@ class App extends Component {
 
     if (caste === "Lord")
       if (units.find((unit) => unit.caste === "Lord"))
-        this.handleUnitRemove(0, units[0].multiplayer_cost, units[0].unit_size);
+        handleUnitRemove(0, units[0].multiplayer_cost, units[0].unit_size);
 
     if (units.length === 20)
       return alert("You cannot have more than 20 units!");
 
-    if (this.handleVerifyDuplicates("countSame", newProps) === 5)
+    if (handleVerifyDuplicates("countSame", newProps) === 5)
       return alert("You can't have more than 5 of the same unit!");
 
     if (
@@ -65,23 +58,23 @@ class App extends Component {
       ui_unit_group.name === "Missile Chariot" ||
       ui_unit_group.name === "Monstrous Chariot"
     )
-      if (this.handleVerifyDuplicates("countChariots", newProps) === 4)
+      if (handleVerifyDuplicates("countChariots", newProps) === 4)
         return alert(`You can't have more than 4 Chariots!`);
       else if (limited_type === "Restricted")
-        if (this.handleVerifyDuplicates("countSame", newProps) === 1)
+        if (handleVerifyDuplicates("countSame", newProps) === 1)
           return alert(`You can't have more than 1 ${name}!`);
 
     if (unit_size === 1) {
       if (caste === "Hero") {
-        if (this.handleVerifyDuplicates("isSE", newProps) === 5)
+        if (handleVerifyDuplicates("isSE", newProps) === 5)
           return alert("You can't have more than 5 Single Entity (SE) units!");
 
-        if (this.handleVerifyDuplicates("countCategory", newProps) === 2)
+        if (handleVerifyDuplicates("countCategory", newProps) === 2)
           return alert("You can't have more than 2 Heroes!");
 
         if (
           newProps.hasOwnProperty("isNamed") &&
-          this.handleVerifyDuplicates("countSame", newProps) === 1
+          handleVerifyDuplicates("countSame", newProps) === 1
         )
           return alert(
             "You can't have more than 1 of the same named character!"
@@ -89,56 +82,56 @@ class App extends Component {
       }
 
       if (caste === "Monster") {
-        if (this.handleVerifyDuplicates("isSEM", newProps) === 3)
+        if (handleVerifyDuplicates("isSEM", newProps) === 3)
           return alert(
             "You can't have more than 3 Single Entity Monsters (SEM)!"
           );
 
         if (
           multiplayer_cost >= 1800 &&
-          this.handleVerifyDuplicates("SEMCost", newProps) === 2
+          handleVerifyDuplicates("SEMCost", newProps) === 2
         )
           return alert(
             "You can't have more than 2 Single Entity Monsters (SEM) that cost over 1800!"
           );
       }
 
-      if (this.handleVerifyDuplicates("countSame", newProps) === 2)
+      if (handleVerifyDuplicates("countSame", newProps) === 2)
         return alert(
           "You can't have more than 2 of the same Single Entity (SE) units!"
         );
     }
 
     if (isMissile)
-      if (this.handleVerifyDuplicates("isMissile", newProps) === 12)
+      if (handleVerifyDuplicates("isMissile", newProps) === 12)
         return alert("You can't have more than 12 missile units!");
 
     if (is360)
-      if (this.handleVerifyDuplicates("is360", newProps) === 6)
+      if (handleVerifyDuplicates("is360", newProps) === 6)
         return alert(
           "You can't have more than 6 units with 360 degree firing arc!"
         );
 
     if (isFlyer)
-      if (this.handleVerifyDuplicates("isFlyer", newProps) === 5)
+      if (handleVerifyDuplicates("isFlyer", newProps) === 5)
         return alert("You can't have more than 5 flying units!");
 
     if (isSpecial)
-      if (this.handleVerifyDuplicates("isSpecial", newProps) === 1)
+      if (handleVerifyDuplicates("isSpecial", newProps) === 1)
         return alert(
           `Your faction has a special rule regarding ${newProps.limiter} that does not allow this!`
         );
 
     if (hasBreath)
-      if (this.handleVerifyDuplicates("hasBreath", newProps) === 2)
+      if (handleVerifyDuplicates("hasBreath", newProps) === 2)
         return alert("You can't have more than 2 units with breath attacks!");
 
     if (hasDrain)
-      if (this.handleVerifyDuplicates("hasDrain", newProps) === 1)
+      if (handleVerifyDuplicates("hasDrain", newProps) === 1)
         return alert("You can't have more than 1 unit with a HP drain effect!");
 
     if (variantUnit)
-      if (this.handleVerifyDuplicates("variantUnit", newProps) === 8)
+      if (handleVerifyDuplicates("variantUnit", newProps) === 8)
         return alert("You can't have more than 8 units of a unit variant!");
 
     if (
@@ -150,13 +143,13 @@ class App extends Component {
         (!ror && multiplayer_cost >= 901 && multiplayer_cost <= 1100) ||
         (basePrice >= 901 && basePrice <= 1100)
       )
-        if (this.handleVerifyDuplicates("countSame", newProps) === 4)
+        if (handleVerifyDuplicates("countSame", newProps) === 4)
           return alert(
             `You can't have more than 4 of a ${caste} unit with 901-1100 price!`
           );
 
       if ((!ror && multiplayer_cost >= 1101) || basePrice >= 1101)
-        if (this.handleVerifyDuplicates("countSame", newProps) === 3)
+        if (handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
             `You can't have more than 3 of a ${caste} unit with 1101+ price!`
           );
@@ -166,13 +159,13 @@ class App extends Component {
       ui_unit_group.parent_group.onscreen_name !== "Infantry" &&
       ui_unit_group.parent_group.onscreen_name !== "Missile Infantry"
     ) {
-      if (this.handleVerifyDuplicates("countSame", newProps) === 4)
+      if (handleVerifyDuplicates("countSame", newProps) === 4)
         return alert(
           `You can't have more than 4 of the same ${ui_unit_group.parent_group.onscreen_name} unit!`
         );
 
       if ((!ror && multiplayer_cost >= 1201) || basePrice >= 1201)
-        if (this.handleVerifyDuplicates("countSame", newProps) === 3)
+        if (handleVerifyDuplicates("countSame", newProps) === 3)
           return alert(
             `You can't have more than 3 of the same ${ui_unit_group.parent_group.onscreen_name} unit with 1201+ price!`
           );
@@ -181,22 +174,22 @@ class App extends Component {
     if (
       ui_unit_group.parent_group.onscreen_name === "Missile Cavalry & Chariots"
     )
-      if (this.handleVerifyDuplicates("countCategory", newProps) === 6)
+      if (handleVerifyDuplicates("countCategory", newProps) === 6)
         return alert(
           `You can't have more than 6 ${ui_unit_group.parent_group.onscreen_name}!`
         );
 
     if (ror)
-      if (this.handleVerifyDuplicates("countSame", newProps) === 1)
+      if (handleVerifyDuplicates("countSame", newProps) === 1)
         return alert("You can't have more than 1 of the same RoR!");
 
     if (spells)
-      if (this.handleVerifyDuplicates("countSpells", newProps) === 1)
+      if (handleVerifyDuplicates("countSpells", newProps) === 1)
         return alert("You can't have more than 1 of the same Spell!");
-    this.handleUnitAdd(newProps);
+    handleUnitAdd(newProps);
   };
 
-  handleUpdateUnit = (props, mount, spell) => {
+  const handleUpdateUnit = (props, mount, spell) => {
     let { ...newProps } = props;
     if (mount) {
       // const unitProperties = [
@@ -216,48 +209,35 @@ class App extends Component {
     return newProps;
   };
 
-  handleUnitAdd = (props) => {
-    this.setState((state) => {
-      const { multiplayer_cost, unit_size } = props;
-      const newUnits = [...state.units];
+  const handleUnitAdd = (props) => {
+    const { multiplayer_cost, unit_size } = props;
+    const newUnits = [...units];
 
-      newUnits.push(props);
+    newUnits.push(props);
 
-      newUnits.sort((a, b) =>
-        a.multiplayer_cost < b.multiplayer_cost ? 1 : -1
-      );
+    newUnits.sort((a, b) => (a.multiplayer_cost < b.multiplayer_cost ? 1 : -1));
 
-      newUnits.sort((a, b) =>
-        a.ui_unit_group.parent_group.order > b.ui_unit_group.parent_group.order
-          ? 1
-          : -1
-      );
+    newUnits.sort((a, b) =>
+      a.ui_unit_group.parent_group.order > b.ui_unit_group.parent_group.order
+        ? 1
+        : -1
+    );
 
-      return {
-        ...state,
-        units: newUnits,
-        funds: state.funds - multiplayer_cost,
-        models: state.models + unit_size,
-      };
-    });
+    setUnits(newUnits);
+    setFunds(funds - multiplayer_cost);
+    setModels(models + unit_size);
   };
 
-  handleUnitRemove = (id, multiplayer_cost, unit_size) => {
-    this.setState((state) => {
-      const newUnits = [...state.units];
-      newUnits.splice(id, 1);
+  const handleUnitRemove = (id, multiplayer_cost, unit_size) => {
+    const newUnits = [...units];
+    newUnits.splice(id, 1);
 
-      return {
-        ...state,
-        units: newUnits,
-        funds: state.funds + multiplayer_cost,
-        models: state.models - unit_size,
-      };
-    });
+    setUnits(newUnits);
+    setFunds(funds + multiplayer_cost);
+    setModels(models - unit_size);
   };
 
-  handleVerifyDuplicates = (validation, props) => {
-    const { units } = this.state;
+  const handleVerifyDuplicates = (validation, props) => {
     let count = 0;
 
     if (validation === "countSame") {
@@ -353,20 +333,17 @@ class App extends Component {
     return count;
   };
 
-  render() {
-    const { selectedFaction, funds, models, units } = this.state;
-    return (
-      <AppView
-        selectedFaction={selectedFaction}
-        funds={funds}
-        models={models}
-        units={units}
-        onUnitCanAdd={this.handleUnitCanAdd}
-        onUnitRemove={this.handleUnitRemove}
-        onFactionChange={this.handleFactionChange}
-      />
-    );
-  }
+  return (
+    <AppView
+      selectedFaction={selectedFaction}
+      funds={funds}
+      models={models}
+      units={units}
+      onUnitCanAdd={handleUnitCanAdd}
+      onUnitRemove={handleUnitRemove}
+      onFactionChange={handleFactionChange}
+    />
+  );
 }
 
 export default App;
