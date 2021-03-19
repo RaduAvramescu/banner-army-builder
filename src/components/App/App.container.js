@@ -38,7 +38,10 @@ function App() {
       ui_unit_group,
     } = newProps;
 
-    if (caste !== "Lord" && !units[0])
+    if (
+      caste !== "Lord" &&
+      units[0].ui_unit_group.parent_group.onscreen_name !== "Lords"
+    )
       return alert("You have to pick a Lord first!");
 
     if (multiplayer_cost > funds) return alert("You don't have enough funds!");
