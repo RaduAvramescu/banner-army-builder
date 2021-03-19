@@ -1,14 +1,11 @@
 import React, { Component } from "react";
 import { CssBaseline, Container, Divider } from "@material-ui/core";
-import {
-  NavBar,
-  Banner,
-  FactionSelector,
-  FactionRoster,
-  BuildContainer,
-  Footer,
-} from "../";
-
+import NavBar from "../NavBar";
+import Banner from "../Banner";
+import FactionSelector from "../FactionSelector";
+import FactionRoster from "../FactionRoster";
+import BuildContainer from "../BuildContainer";
+import Footer from "../Footer";
 import "./App.css";
 
 class App extends Component {
