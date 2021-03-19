@@ -47,8 +47,9 @@ function App() {
     if (multiplayer_cost > funds) return alert("You don't have enough funds!");
 
     if (caste === "Lord")
-      if (units.find((unit) => unit.caste === "Lord"))
+      if (units.find((unit) => unit.caste === "Lord")) {
         handleUnitRemove(0, units[0].multiplayer_cost, units[0].unit_size);
+      }
 
     if (units.length === 20)
       return alert("You cannot have more than 20 units!");
@@ -189,6 +190,7 @@ function App() {
     if (spells)
       if (handleVerifyDuplicates("countSpells", newProps) === 1)
         return alert("You can't have more than 1 of the same Spell!");
+
     handleUnitAdd(newProps);
   };
 
@@ -214,30 +216,48 @@ function App() {
 
   const handleUnitAdd = (props) => {
     const { multiplayer_cost, unit_size } = props;
-    const newUnits = [...units];
 
-    newUnits.push(props);
+    setUnits((previous) => {
+      const units = [...previous];
+      units.push(props);
 
-    newUnits.sort((a, b) => (a.multiplayer_cost < b.multiplayer_cost ? 1 : -1));
+      units.sort((a, b) => (a.multiplayer_cost < b.multiplayer_cost ? 1 : -1));
 
-    newUnits.sort((a, b) =>
-      a.ui_unit_group.parent_group.order > b.ui_unit_group.parent_group.order
-        ? 1
-        : -1
-    );
+      units.sort((a, b) =>
+        a.ui_unit_group.parent_group.order > b.ui_unit_group.parent_group.order
+          ? 1
+          : -1
+      );
+      return units;
+    });
 
-    setUnits(newUnits);
-    setFunds(funds - multiplayer_cost);
-    setModels(models + unit_size);
+    setFunds((previous) => {
+      const funds = previous;
+      return funds - multiplayer_cost;
+    });
+
+    setModels((previous) => {
+      const models = previous;
+      return models + unit_size;
+    });
   };
 
   const handleUnitRemove = (id, multiplayer_cost, unit_size) => {
-    const newUnits = [...units];
-    newUnits.splice(id, 1);
+    setUnits((previous) => {
+      const units = [...previous];
+      units.splice(id, 1);
+      return units;
+    });
 
-    setUnits(newUnits);
-    setFunds(funds + multiplayer_cost);
-    setModels(models - unit_size);
+    setFunds((previous) => {
+      const funds = previous;
+      return funds + multiplayer_cost;
+    });
+
+    setModels((previous) => {
+      const models = previous;
+      return models - unit_size;
+    });
   };
 
   const handleVerifyDuplicates = (validation, props) => {
