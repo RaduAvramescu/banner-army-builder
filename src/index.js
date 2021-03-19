@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import { ThemeProvider } from "@material-ui/core/styles";
 import theme from "./theme";
-import App from "./App";
+import App from "./components/App";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({

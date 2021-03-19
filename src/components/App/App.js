@@ -7,7 +7,7 @@ import {
   FactionRoster,
   BuildContainer,
   Footer,
-} from "./components";
+} from "../";
 
 import "./App.css";
 
