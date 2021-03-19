@@ -1,17 +1,45 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 import AppView from "./App.view";
 
 function App() {
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case "RESET_FACTION":
+        return {
+          ...state,
+          funds: 12400,
+          models: 0,
+          units: [],
+        };
+
+      case "ADD_UNIT":
+        return {
+          ...state,
+          funds: state.funds - action.payload.props.multiplayer_cost,
+          models: state.models + action.payload.props.unit_size,
+          units: action.payload.newUnits,
+        };
+
+      case "REMOVE_UNIT":
+        return {
+          ...state,
+          funds: state.funds + action.payload.multiplayer_cost,
+          models: state.models - action.payload.unit_size,
+          units: action.payload.newUnits,
+        };
+    }
+  };
+  const [state, dispatch] = useReducer(reducer, {
+    funds: 12400,
+    models: 0,
+    units: [],
+  });
   const [selectedFaction, setSelectedFaction] = useState("");
-  const [funds, setFunds] = useState(12400);
-  const [models, setModels] = useState(0);
-  const [units, setUnits] = useState([]);
+  const { funds, models, units } = state;
 
   const handleFactionChange = (selectedFaction) => {
     setSelectedFaction(selectedFaction);
-    setFunds(12400);
-    setModels(0);
-    setUnits([]);
+    dispatch({ type: "RESET_FACTION" });
   };
 
   const handleUnitCanAdd = (props, mount, spell) => {
@@ -215,48 +243,25 @@ function App() {
   };
 
   const handleUnitAdd = (props) => {
-    const { multiplayer_cost, unit_size } = props;
+    const newUnits = [...units];
 
-    setUnits((previous) => {
-      const units = [...previous];
-      units.push(props);
-
-      units.sort((a, b) => (a.multiplayer_cost < b.multiplayer_cost ? 1 : -1));
-
-      units.sort((a, b) =>
-        a.ui_unit_group.parent_group.order > b.ui_unit_group.parent_group.order
-          ? 1
-          : -1
-      );
-      return units;
-    });
-
-    setFunds((previous) => {
-      const funds = previous;
-      return funds - multiplayer_cost;
-    });
-
-    setModels((previous) => {
-      const models = previous;
-      return models + unit_size;
-    });
+    newUnits.push(props);
+    newUnits.sort((a, b) => (a.multiplayer_cost < b.multiplayer_cost ? 1 : -1));
+    newUnits.sort((a, b) =>
+      a.ui_unit_group.parent_group.order > b.ui_unit_group.parent_group.order
+        ? 1
+        : -1
+    );
+    dispatch({ type: "ADD_UNIT", payload: { props, newUnits } });
   };
 
   const handleUnitRemove = (id, multiplayer_cost, unit_size) => {
-    setUnits((previous) => {
-      const units = [...previous];
-      units.splice(id, 1);
-      return units;
-    });
+    const newUnits = [...units];
 
-    setFunds((previous) => {
-      const funds = previous;
-      return funds + multiplayer_cost;
-    });
-
-    setModels((previous) => {
-      const models = previous;
-      return models - unit_size;
+    newUnits.splice(id, 1);
+    dispatch({
+      type: "REMOVE_UNIT",
+      payload: { id, multiplayer_cost, unit_size, newUnits },
     });
   };
 
