@@ -66,10 +66,7 @@ function App() {
       ui_unit_group,
     } = newProps;
 
-    if (
-      caste !== "Lord" &&
-      !units[0].custom_battle_permissions[0]?.general_unit
-    )
+    if (caste !== "Lord" && !units[0])
       return alert("You have to pick a Lord first!");
 
     if (multiplayer_cost > funds) return alert("You don't have enough funds!");
