@@ -75,9 +75,8 @@ function App() {
     if (multiplayer_cost > funds) return alert("You don't have enough funds!");
 
     if (caste === "Lord")
-      if (units.find((unit) => unit.caste === "Lord")) {
+      if (units.find((unit) => unit.caste === "Lord"))
         handleUnitRemove(0, units[0].multiplayer_cost, units[0].unit_size);
-      }
 
     if (units.length === 20)
       return alert("You cannot have more than 20 units!");
