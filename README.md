@@ -17,7 +17,8 @@ This is the repository for my Banner Army Builder project.
 - Material UI
 - JavaScript
 - React
+- GraphQL
 
 ## Link
 
-- https://bannerarmybuilder.com
+- https://banner-army-builder.netlify.app/
