@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import React, { useState, useReducer, useRef, useEffect } from "react";
 import AppView from "./App.view";
 
 function App() {
@@ -37,6 +37,15 @@ function App() {
   const [selectedFaction, setSelectedFaction] = useState("");
   const { funds, models, units } = state;
 
+  const usePrevious = (value) => {
+    const ref = useRef();
+    useEffect(() => {
+      ref.current = [...value];
+    }, [...value]);
+    return ref.current;
+  };
+  const prevUnits = usePrevious(units);
+
   const handleFactionChange = (selectedFaction) => {
     setSelectedFaction(selectedFaction);
     dispatch({ type: "RESET_FACTION" });
@@ -66,7 +75,7 @@ function App() {
       ui_unit_group,
     } = newProps;
 
-    if (caste !== "Lord" && !units[0])
+    if (caste !== "Lord" && (!units[0] || units[0].caste !== "Lord"))
       return alert("You have to pick a Lord first!");
 
     if (multiplayer_cost > funds) return alert("You don't have enough funds!");
@@ -239,7 +248,7 @@ function App() {
   };
 
   const handleUnitAdd = (props) => {
-    const newUnits = [...units];
+    const newUnits = prevUnits;
 
     newUnits.push(props);
     newUnits.sort((a, b) => (a.multiplayer_cost < b.multiplayer_cost ? 1 : -1));
@@ -252,7 +261,7 @@ function App() {
   };
 
   const handleUnitRemove = (id, multiplayer_cost, unit_size) => {
-    const newUnits = [...units];
+    const newUnits = prevUnits;
 
     newUnits.splice(id, 1);
     dispatch({
