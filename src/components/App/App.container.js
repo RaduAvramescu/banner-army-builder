@@ -75,8 +75,12 @@ function App() {
       ui_unit_group,
     } = newProps;
 
-    if (caste !== "Lord" && (!units[0] || units[0].caste !== "Lord"))
-      return alert("You have to pick a Lord first!");
+    if (caste !== "Lord")
+      if (
+        (!units[0] || units[0].caste !== "Lord") &&
+        !units[0].custom_battle_permissions.general_unit
+      )
+        return alert("You have to pick a Lord first!");
 
     if (multiplayer_cost > funds) return alert("You don't have enough funds!");
 
@@ -224,11 +228,14 @@ function App() {
       if (handleVerifyDuplicates("countSpells", newProps) === 1)
         return alert("You can't have more than 1 of the same Spell!");
 
+    if (caste === "Lord") newProps.ui_unit_group.parent_group.order = 1;
+
     handleUnitAdd(newProps);
   };
 
   const handleUpdateUnit = (props, mount, spell) => {
     let { ...newProps } = props;
+
     if (mount) {
       // const unitProperties = [
       //   "isSEM",
