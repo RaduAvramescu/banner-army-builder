@@ -77,8 +77,9 @@ function App() {
 
     if (caste !== "Lord")
       if (
-        (!units[0] || units[0].caste !== "Lord") &&
-        !units[0].custom_battle_permissions.general_unit
+        !units[0] ||
+        units[0].caste !== "Lord" ||
+        !units[0].custom_battle_permissions[0]?.general_unit
       )
         return alert("You have to pick a Lord first!");
 
