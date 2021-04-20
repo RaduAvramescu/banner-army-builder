@@ -40,14 +40,7 @@ const FactionSelector = ({ handleFactionChange }) => {
     variables: { include_non_mp: true },
   });
 
-  if (loading)
-    return (
-      <Box display="flex" justifyContent="center" my="1rem">
-        <Loader />
-      </Box>
-    );
-
-  if (error)
+  if (loading || error)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
         <Loader />
