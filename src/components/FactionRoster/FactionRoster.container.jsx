@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { Box, Grid, Typography } from "@material-ui/core";
 import Loader from "../Loader";
@@ -55,21 +56,22 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
     variables: { faction: selectedFaction },
   });
 
-  if ((loading || error) && selectedFaction)
+  if (((loading || error) && selectedFaction) || !selectedFaction)
     return (
-      <Box display="flex" justifyContent="center" my="1rem">
-        <Loader />
-      </Box>
-    );
-  else if (!selectedFaction)
-    return (
-      <Box my="1rem">
-        <Box letterSpacing={5}>
-          <Typography variant="h2" align="center">
-            ROSTER
-          </Typography>
+      <Fragment>
+        <Box my="1rem">
+          <Box letterSpacing={5}>
+            <Typography variant="h2" align="center">
+              ROSTER
+            </Typography>
+          </Box>
         </Box>
-      </Box>
+        {selectedFaction && (
+          <Box display="flex" justifyContent="center" my="1rem">
+            <Loader />
+          </Box>
+        )}
+      </Fragment>
     );
 
   let factionRoster = data.getUnits;
