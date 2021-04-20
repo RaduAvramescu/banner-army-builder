@@ -1,11 +1,26 @@
-import React from "react";
+import { Fragment, useState } from "react";
 import { withStyles, Typography } from "@material-ui/core";
 import UnitDialog from "../UnitDialog";
 import styles from "./UnitCard.styles";
 
 const UnitCard = withStyles(styles)((props) => {
-  const { classes } = props;
-  const [open, setOpen] = React.useState(false);
+  const {
+    classes,
+    caste,
+    ror,
+    name,
+    id,
+    multiplayer_cost,
+    unit_size,
+    custom_battle_permissions,
+    battle_mounts,
+    spells,
+    unit_card,
+    ui_unit_group,
+    addUnit,
+    onUnitRemove,
+  } = props;
+  const [open, setOpen] = useState(false);
 
   const handleClose = (mount, spell) => {
     const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
@@ -14,33 +29,27 @@ const UnitCard = withStyles(styles)((props) => {
   };
 
   const handleClick = () => {
-    const { addUnit } = props;
     if (addUnit) {
       const { id, onUnitRemove, addUnit, onUnitAdd, ...newProps } = props;
-      if (
-        !open &&
-        (props.battle_mounts?.length >= 1 || props.spells?.length >= 1)
-      ) {
+      if (!open && (battle_mounts?.length >= 1 || spells?.length >= 1))
         setOpen(true);
-      } else onUnitAdd(newProps);
-    } else {
-      const { id, multiplayer_cost, unit_size, onUnitRemove } = props;
-      onUnitRemove(id, multiplayer_cost, unit_size);
-    }
+      else onUnitAdd(newProps);
+    } else onUnitRemove(id, multiplayer_cost, unit_size);
   };
 
   let semicircle_icon;
 
-  if (props.caste === "Lord" || props.caste === "Hero")
+  if (caste === "Lord" || caste === "Hero")
     semicircle_icon = "unit_card_semicircle_hero";
-  else if (props.ror === true) semicircle_icon = "unit_card_semicircle_renown";
+  else if (ror === true) semicircle_icon = "unit_card_semicircle_renown";
   else semicircle_icon = "unit_card_semicircle";
+
   return (
-    <React.Fragment>
+    <Fragment>
       <div
         className={classes.unit_card}
         style={{ position: "relative", cursor: "pointer" }}
-        title={props.name}
+        title={name}
         onClick={handleClick}
       >
         <Typography
@@ -48,11 +57,11 @@ const UnitCard = withStyles(styles)((props) => {
           variant="h6"
           component="p"
         >
-          {props.multiplayer_cost}
+          {multiplayer_cost}
         </Typography>
-        {props.caste === "Hero" || props.caste === "Lord" ? (
+        {caste === "Hero" || caste === "Lord" ? (
           <img
-            src={`images/${props.custom_battle_permissions[0].general_portrait.toLowerCase()}`}
+            src={`images/${custom_battle_permissions[0].general_portrait.toLowerCase()}`}
             alt="Unit Card Image"
             width="60"
             height="130"
@@ -60,7 +69,7 @@ const UnitCard = withStyles(styles)((props) => {
           />
         ) : (
           <img
-            src={`images/${props.unit_card}`}
+            src={`images/${unit_card}`}
             alt="Unit Card Image"
             width="60"
             height="130"
@@ -86,7 +95,7 @@ const UnitCard = withStyles(styles)((props) => {
         />
         <img
           className={classes.position_absolute}
-          src={`images/ui/common_ui/unit_category_icons/${props.ui_unit_group.icon}.png`}
+          src={`images/ui/common_ui/unit_category_icons/${ui_unit_group.icon}.png`}
           alt="Unit Card Category Icon"
           width="22"
           height="22"
@@ -102,7 +111,7 @@ const UnitCard = withStyles(styles)((props) => {
         />
       </div>
       <UnitDialog open={open} onClose={handleClose} {...props} />
-    </React.Fragment>
+    </Fragment>
   );
 });
 
