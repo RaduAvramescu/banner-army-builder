@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { CssBaseline, Container, Divider } from "@material-ui/core";
 import NavBar from "../NavBar";
 import Banner from "../Banner";
@@ -24,18 +25,22 @@ const AppView = ({
       <FactionSelector handleFactionChange={onFactionChange} />
       <Divider />
       <main>
-        <FactionRoster
-          selectedFaction={selectedFaction}
-          onUnitAdd={onUnitCanAdd}
-          fundsRemaining={funds}
-        />
-        <Divider />
-        <BuildContainer
-          units={units}
-          onUnitRemove={onUnitRemove}
-          fundsRemaining={funds}
-          unit_size={models}
-        />
+        {selectedFaction && (
+          <Fragment>
+            <FactionRoster
+              selectedFaction={selectedFaction}
+              onUnitAdd={onUnitCanAdd}
+              fundsRemaining={funds}
+            />
+            <Divider />
+            <BuildContainer
+              units={units}
+              onUnitRemove={onUnitRemove}
+              fundsRemaining={funds}
+              unit_size={models}
+            />
+          </Fragment>
+        )}
       </main>
     </Container>
     <Divider style={{ height: "2px" }} />

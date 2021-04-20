@@ -56,7 +56,7 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
     variables: { faction: selectedFaction },
   });
 
-  if (((loading || error) && selectedFaction) || !selectedFaction)
+  if (loading || error)
     return (
       <Fragment>
         <Box my="1rem">
@@ -66,11 +66,9 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
             </Typography>
           </Box>
         </Box>
-        {selectedFaction && (
-          <Box display="flex" justifyContent="center" my="1rem">
-            <Loader />
-          </Box>
-        )}
+        <Box display="flex" justifyContent="center" my="1rem">
+          <Loader />
+        </Box>
       </Fragment>
     );
 
