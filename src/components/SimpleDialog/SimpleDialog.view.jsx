@@ -10,7 +10,7 @@ import {
 import styles from "./SimpleDialog.styles";
 
 const SimpleDialog = withStyles(styles)((props) => {
-  const { children, classes, onClose, open, ...other } = props;
+  const { title, children, classes, onClose, open, ...other } = props;
 
   return (
     <Dialog
@@ -29,7 +29,7 @@ const SimpleDialog = withStyles(styles)((props) => {
         onClose={onClose}
       >
         <Typography variant="h2" align="center">
-          {props.title}
+          {title}
         </Typography>
         {onClose ? (
           <IconButton
@@ -41,7 +41,7 @@ const SimpleDialog = withStyles(styles)((props) => {
           </IconButton>
         ) : null}
       </DialogTitle>
-      <DialogContent>{props.children}</DialogContent>
+      <DialogContent>{children}</DialogContent>
     </Dialog>
   );
 });
