@@ -1,4 +1,3 @@
-import React from "react";
 import BuildContainerView from "./BuildContainer.view";
 
 const BuildContainer = ({ fundsRemaining, unit_size, onUnitRemove, units }) => {

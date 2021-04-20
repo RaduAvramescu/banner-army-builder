@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import {
   Avatar,
   List,
@@ -43,11 +43,11 @@ function a11yProps(index) {
 }
 
 function UnitDialog(props) {
-  const [value, setValue] = React.useState(0);
-  const [mount, setMount] = React.useState({});
-  const [spell, setSpell] = React.useState([]);
-  const [selectedMount, setSelectedMount] = React.useState({});
-  const [selectedSpell, setSelectedSpell] = React.useState([]);
+  const [value, setValue] = useState(0);
+  const [mount, setMount] = useState({});
+  const [spell, setSpell] = useState([]);
+  const [selectedMount, setSelectedMount] = useState({});
+  const [selectedSpell, setSelectedSpell] = useState([]);
   const { onClose, open, battle_mounts, spells } = props;
 
   const handleChange = (event, newValue) => {

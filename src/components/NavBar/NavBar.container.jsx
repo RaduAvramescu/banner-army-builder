@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { Fragment, useState } from "react";
 import {
   withStyles,
   AppBar,
@@ -24,10 +24,10 @@ const NavBar = withStyles(styles)(({ classes }) => {
   };
 
   return (
-    <React.Fragment>
+    <Fragment>
       <AppBar position="static" color="secondary">
         {isMobile ? (
-          <React.Fragment>
+          <Fragment>
             <Drawer anchor="left" open={open} onClose={() => setOpen(false)}>
               <Box mx="1rem">
                 <Button
@@ -62,7 +62,7 @@ const NavBar = withStyles(styles)(({ classes }) => {
                 <MenuIcon />
               </IconButton>
             </Toolbar>
-          </React.Fragment>
+          </Fragment>
         ) : (
           <Box display="flex" justifyContent="center">
             <Toolbar>
@@ -110,7 +110,7 @@ const NavBar = withStyles(styles)(({ classes }) => {
           </Box>
         )}
       </AppBar>
-    </React.Fragment>
+    </Fragment>
   );
 });
 

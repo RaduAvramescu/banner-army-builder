@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { Fragment, useState } from "react";
 import { useQuery, gql } from "@apollo/client";
 import { withStyles, Box, Typography, Button } from "@material-ui/core";
 import Loader from "../Loader";
@@ -123,12 +123,12 @@ const FactionSelector = ({ handleFactionChange }) => {
   });
 
   return (
-    <React.Fragment>
+    <Fragment>
       <DialogOpenButton />
       <SimpleDialog open={open} onClose={handleClose} title="FACTIONS">
         <DialogContent />
       </SimpleDialog>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

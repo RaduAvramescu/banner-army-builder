@@ -1,4 +1,4 @@
-import React, { useState, useReducer, useRef, useEffect } from "react";
+import { useState, useReducer, useRef, useEffect } from "react";
 import AppView from "./App.view";
 
 function App() {
