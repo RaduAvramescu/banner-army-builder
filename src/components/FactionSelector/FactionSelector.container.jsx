@@ -31,9 +31,13 @@ const FactionSelector = ({ handleFactionChange }) => {
     setOpen(true);
   };
 
-  const handleClose = (faction) => {
+  const handleClose = () => {
     setOpen(false);
-    if (faction?.key) handleFactionChange(faction.key);
+  };
+
+  const submitHandleClose = (faction) => {
+    handleClose();
+    handleFactionChange(faction.key);
   };
 
   const { loading, error, data } = useQuery(factionsQuery, {
@@ -90,7 +94,7 @@ const FactionSelector = ({ handleFactionChange }) => {
                 key={i}
                 id={i}
                 src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
-                onClick={() => handleClose(faction)}
+                onClick={() => submitHandleClose(faction)}
                 className={classes.dialog__faction_image}
                 alt={faction.screen_name}
                 title={faction.screen_name}
@@ -109,7 +113,7 @@ const FactionSelector = ({ handleFactionChange }) => {
                 key={i}
                 id={i}
                 src={`images/ui/flags/${faction.flags_url}/mon_64.png`}
-                onClick={() => handleClose(faction)}
+                onClick={() => submitHandleClose(faction)}
                 className={classes.dialog__faction_image}
                 alt={faction.screen_name}
                 title={faction.screen_name}
