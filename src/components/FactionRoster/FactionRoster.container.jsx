@@ -55,17 +55,20 @@ const FactionRoster = ({ selectedFaction, onUnitAdd }) => {
     variables: { faction: selectedFaction },
   });
 
-  if (loading)
+  if ((loading || error) && selectedFaction)
     return (
       <Box display="flex" justifyContent="center" my="1rem">
         <Loader />
       </Box>
     );
-
-  if (error)
+  else if (!selectedFaction)
     return (
-      <Box display="flex" justifyContent="center" my="1rem">
-        <Loader />
+      <Box my="1rem">
+        <Box letterSpacing={5}>
+          <Typography variant="h2" align="center">
+            ROSTER
+          </Typography>
+        </Box>
       </Box>
     );
 
