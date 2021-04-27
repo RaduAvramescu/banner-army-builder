@@ -10,6 +10,7 @@ function App() {
           funds: 12400,
           models: 0,
           units: [],
+          prevUnits: [],
         };
 
       case "ADD_UNIT":
@@ -44,7 +45,7 @@ function App() {
     }, [...value]);
     return ref.current;
   };
-  const prevUnits = usePrevious(units);
+  const [prevUnits, setPrevUnits] = useState(usePrevious(units));
 
   const handleFactionChange = (selectedFaction) => {
     setSelectedFaction(selectedFaction);
@@ -256,7 +257,7 @@ function App() {
   };
 
   const handleUnitAdd = (props) => {
-    const newUnits = prevUnits;
+    const newUnits = state.prevUnits;
 
     newUnits.push(props);
     newUnits.sort((a, b) => (a.multiplayer_cost < b.multiplayer_cost ? 1 : -1));
@@ -269,7 +270,7 @@ function App() {
   };
 
   const handleUnitRemove = (id, multiplayer_cost, unit_size) => {
-    const newUnits = prevUnits;
+    const newUnits = state.prevUnits;
 
     newUnits.splice(id, 1);
     dispatch({
