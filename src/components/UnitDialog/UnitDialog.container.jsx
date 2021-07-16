@@ -71,12 +71,8 @@ function UnitDialog(props) {
         newSpells.push(value);
         selectedSpells.push(index);
       } else {
-        newSpells = newSpells.filter((el) => {
-          if (el !== value) return el;
-        });
-        selectedSpells = selectedSpells.filter((el) => {
-          return el !== index;
-        });
+        newSpells = newSpells.filter((el) => el !== value);
+        selectedSpells = selectedSpells.filter((el) => el !== index);
       }
 
       setSelectedSpell(selectedSpells);
