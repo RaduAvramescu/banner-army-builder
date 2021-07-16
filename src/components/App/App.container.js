@@ -346,16 +346,14 @@ function App() {
     }
 
     if (validation === "countSpells") {
-      count = units.filter((unit) => {
-        const found = unit.spells?.filter((el) => {
-          const found2 = props.spells?.find(
-            (originalSpell) => originalSpell.name === el.name
-          );
-          if (found2) return found2;
-        });
-        if (found.length > 0) return found;
-      }).length;
-
+      count = units.filter(
+        (unit) =>
+          unit.spells?.filter((el) =>
+            props.spells?.find(
+              (originalSpell) => originalSpell.name === el.name
+            )
+          ).length
+      ).length;
       return count;
     }
 
@@ -365,7 +363,6 @@ function App() {
       count = units.filter(
         (el) => el.limited_type === props.limited_type
       ).length;
-
     return count;
   };
 
