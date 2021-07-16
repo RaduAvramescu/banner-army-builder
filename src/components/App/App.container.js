@@ -28,6 +28,9 @@ function App() {
           models: state.models - action.payload.unit_size,
           units: action.payload.newUnits,
         };
+
+      default:
+        return { ...state, funds, models, ...units, ...prevUnits };
     }
   };
   const [state, dispatch] = useReducer(reducer, {
@@ -283,13 +286,11 @@ function App() {
     let count = 0;
 
     if (validation === "countSame") {
-      count = units.filter((el) => {
-        if (
+      count = units.filter(
+        (el) =>
           el.name === props.name ||
           (el.hasOwnProperty("baseUnit") && el.baseUnit === props.baseUnit)
-        )
-          return count + 1;
-      }).length;
+      ).length;
       return count;
     }
 
@@ -303,49 +304,44 @@ function App() {
     }
 
     if (validation === "isSpecial") {
-      count = units.filter((el) => {
-        if (el.hasOwnProperty("isSpecial") && el.isSpecial === props.isSpecial)
-          if (el.name === props.limiter || props.name === props.limiter)
-            return count + 1;
-      }).length;
+      count = units.filter(
+        (el) =>
+          el.hasOwnProperty("isSpecial") &&
+          el.isSpecial === props.isSpecial &&
+          (el.name === props.limiter || props.name === props.limiter)
+      ).length;
       return count;
     }
 
     if (validation === "isSE") {
-      count = units.filter((el) => {
-        if (el.unit_size === 1) return el;
-      }).length;
+      count = units.filter((el) => el.unit_size === 1).length;
       return count;
     }
 
     if (validation === "isSEM") {
-      count = units.filter((el) => {
-        if (el.unit_size === 1 && el.caste === "Monster") return el;
-      }).length;
+      count = units.filter(
+        (el) => el.unit_size === 1 && el.caste === "Monster"
+      ).length;
       return count;
     }
 
     if (validation === "countChariots") {
-      count = units.filter((el) => {
-        if (
+      count = units.filter(
+        (el) =>
           el.ui_unit_group.name === "Chariot" ||
           el.ui_unit_group.name === "Missile Chariot" ||
           el.ui_unit_group.name === "Monstrous Chariot"
-        )
-          return el;
-      }).length;
+      ).length;
       return count;
     }
 
     if (validation === "SEMCost") {
-      count = units.filter((el) => {
-        if (
+      count = units.filter(
+        (el) =>
           el.multiplayer_cost >= 1800 &&
           el.unit_size === 1 &&
           el.caste === "Monster"
-        )
-          return el;
-      }).length;
+      ).length;
       return count;
     }
 
@@ -363,15 +359,13 @@ function App() {
       return count;
     }
 
-    if (typeof validation === "string") {
-      count = units.filter((el) => {
-        if (el[validation] === props[validation]) return count + 1;
-      }).length;
-    } else {
-      count = units.filter((el) => {
-        if (el.limited_type === props.limited_type) return count + 1;
-      }).length;
-    }
+    if (typeof validation === "string")
+      count = units.filter((el) => el[validation] === props[validation]).length;
+    else
+      count = units.filter(
+        (el) => el.limited_type === props.limited_type
+      ).length;
+
     return count;
   };
 
