@@ -44,11 +44,11 @@ function App() {
   const usePrevious = (value) => {
     const ref = useRef();
     useEffect(() => {
-      ref.current = [...value];
-    }, [...value]);
+      ref.current = value;
+    }, [value]);
     return ref.current;
   };
-  const [prevUnits, setPrevUnits] = useState(usePrevious(units));
+  const [prevUnits] = useState(usePrevious(units));
 
   const handleFactionChange = (selectedFaction) => {
     setSelectedFaction(selectedFaction);
