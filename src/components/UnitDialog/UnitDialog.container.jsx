@@ -123,7 +123,6 @@ function UnitDialog(props) {
                 button
                 selected={selectedMount === i}
                 onClick={() => handleListItemClick(el, "mount", i)}
-                key={i}
               >
                 <ListItemAvatar>
                   <Avatar
@@ -146,7 +145,6 @@ function UnitDialog(props) {
               button
               selected={selectedSpell.includes(i)}
               onClick={() => handleListItemClick(el, "spell", i)}
-              key={i}
             >
               <ListItemAvatar></ListItemAvatar>
               <ListItemText primary={el.name} />
