@@ -62,7 +62,7 @@ const UnitCard = withStyles(styles)((props) => {
         {caste === "Hero" || caste === "Lord" ? (
           <img
             src={`images/${custom_battle_permissions[0].general_portrait.toLowerCase()}`}
-            alt="Unit Card Image"
+            alt="Unit Card Content"
             width="60"
             height="130"
             loading="lazy"
@@ -70,7 +70,7 @@ const UnitCard = withStyles(styles)((props) => {
         ) : (
           <img
             src={`images/${unit_card}`}
-            alt="Unit Card Image"
+            alt="Unit Card Content"
             width="60"
             height="130"
             loading="lazy"
